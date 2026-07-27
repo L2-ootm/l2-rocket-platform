@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "active_candidate": "candidate_K",
+  "fallback_candidate": "candidate_J",
+  "authority": {
+    "openrocket_version": "24.12",
+    "simulation_seed": 16000,
+    "timestep_s": 0.05,
+    "seed_persisted_in_ork": false,
+    "integrator_seeded_explicitly": true,
+    "multilevel_wind_seeded_explicitly": true
+  },
+  "candidates": {
+    "candidate_F": {
+      "role": "immutable fallback",
+      "params": "candidate_F.json",
+      "ork": "candidate_F.ork",
+      "report": "candidate_F_report.json",
+      "robustness": "candidate_F_robustness.json",
+      "sha256": "48CBAD5F89A8119DED289ADB35F38DE81BDA434E455581114727575FFF856468",
+      "authority_score": 569260.5410173639,
+      "checklist_passes": 17,
+      "robust_cells": 3
+    },
+    "candidate_G": {
+      "role": "previous immutable authority candidate",
+      "params": "candidate_G.json",
+      "ork": "candidate_G.ork",
+      "report": "candidate_G_report.json",
+      "robustness": "candidate_G_robustness.json",
+      "sha256": "D47F7A81B49E2969CEDE37E67C046432CF71901D2B8D92B71EB52B36628530F5",
+      "authority_score": 574624.4397205419,
+      "checklist_passes": 19,
+      "robust_cells": 2
+    },
+    "candidate_H": {
+      "role": "previous immutable authority candidate",
+      "params": "candidate_H.json",
+      "ork": "candidate_H.ork",
+      "report": "candidate_H_report.json",
+      "robustness": "candidate_H_robustness.json",
+      "sha256": "EC219EECA74C387DA5CFA63E7ED422C2004367EB0B38B9946A15785555BF185B",
+      "authority_score": 609932.1346650032,
+      "saved_data_score": 609941.8458485412,
+      "checklist_passes": 19,
+      "robust_cells": 2
+    },
+    "candidate_I": {
+      "role": "highest nominal score; seed/timestep fragile",
+      "params": "candidate_I.json",
+      "ork": "candidate_I.ork",
+      "report": "candidate_I_report.json",
+      "robustness": "candidate_I_robustness.json",
+      "sha256": "74B54EE7AF06E81AFFAE722625398C89CE3F226D1913BB7F4F1C4CBBF7B57172",
+      "authority_score": 614413.0036602145,
+      "saved_data_score": 614421.3009229454,
+      "checklist_passes": 19,
+      "robust_cells": 2
+    },
+    "candidate_J": {
+      "role": "previous authority candidate -- superseded by K on booster delay; immutable fallback",
+      "params": "candidate_J.json",
+      "ork": "candidate_J.ork",
+      "report": "candidate_J_report.json",
+      "sha256": "30484900C65A8732491121CFEBB234331A1420EAC0CF30ADC1711927F881E1C4",
+      "params_sha256": "06D80CF024A587453D21956A5C830D5FDD1B110419288EDDC12ABDACE91FBA22",
+      "authority_score": 603113.125823664,
+      "checklist_passes": 19,
+      "seed_pass_rate_joint": "19/40 (48%)",
+      "seed_pass_rate_booster": "33/40 (83%)",
+      "seed_pass_rate_sustainer": "22/40 (55%)",
+      "timestep_ladder_seed16000": "legal at dt=0.05,0.02,0.01,0.005,0.0025 (converged)",
+      "change_from_I": "booster retro I211W -> I49N (impulse-matched, T/W 6.0 -> 1.4); both retro delays retuned to maximise seed pass rate"
+    },
+    "candidate_K": {
+      "role": "current authority candidate -- Candidate J with the booster retro delay moved to the centre of its pass-rate basin",
+      "params": "candidate_K.json",
+      "ork": "candidate_K.ork",
+      "report": "candidate_K_report.json",
+      "sha256": "65D307F176B8755956B79A32C60E85D19BDD0B68D4DCD79C6C4A1EC76588F15E",
+      "params_sha256": "B1700E4A7755237811033D5F4C65C89BB45810447D465400BC720EBDCE67096C",
+      "authority_score": 602553.2,
+      "checklist_passes": 19,
+      "seed_pass_rate_joint": "49/100 (49%)",
+      "seed_pass_rate_booster": "96/100 (96%)",
+      "seed_pass_rate_sustainer": "50/100 (50%)",
+      "timestep_ladder_seed16000": "legal at dt=0.05,0.02,0.01,0.005,0.0025 (converged; Sustainer 4.034->4.213, Booster 2.849->2.861)",
+      "change_from_J": "s1_retro_delay 79.0500 -> 79.0625 only. Candidate J sat on the rising edge of the booster basin; 79.0625 is the centre of the 79.0550-79.0700 plateau. Booster 93%->96% over 100 seeds.",
+      "certified_seeds": 100
+    }
+  }
+}

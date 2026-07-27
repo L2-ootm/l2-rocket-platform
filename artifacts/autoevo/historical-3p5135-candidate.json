@@ -1,0 +1,495 @@
+{
+  "candidate_id": "historical-3p5135-booster-branch",
+  "source_files": [
+    "designs/osifog_autonomous_hour/sustainer-q-probe.json (entry index 0, rank [0,0,-0.9006139860749303,503.65])",
+    ".planning/HANDOFF.json (verified_branch_result block)",
+    "handoff.md (lines ~60-69, prose description)",
+    "designs/osifog_autonomous_hour/logs/gate3-motor-aware-screen.json (branch 1 screen record)",
+    "designs/osifog_autonomous_hour/logs/gate4-screen-audit.json (fresh_openrocket_probe.booster block)"
+  ],
+  "provenance_note": "The full parameter dictionary below is recovered EXACTLY from sustainer-q-probe.json[0].parameters, which is confirmed to be the canonical topology by three independent matches: (1) its s1_grid_fin_count=8, s1_grid_fin_material=fiberglass, s1_grid_fin_height=0.30, s1_grid_fin_root=0.20, s1_grid_fin_position_m=0.005, s1_retro=7 (motor index 7 = H180W) match the directive's yaml clue for the 'eight-forward-fin booster'; (2) its rank sort key -0.9006139860749303 matches the exact 'q=0.9006' figure quoted in handoff.md and gate3/gate4 logs; (3) its UNPOWERED booster branch free-fall speed (56.14 m/s) matches the '~58 m/s' figure the user cites for the current Phase 4B campaign. ONLY the s1_retro_delay field is changed from the probe's diagnostic value (200.0, retro disabled) to the historically claimed powered value (33.104s) -- this single-field edit is the exact transformation the gate3 screen anticipated (it flagged branch 1 / booster as 'usable' with a predicted ignition window near 29-33s) and that HANDOFF.json / handoff.md report as verified at 33.104s -> 3.5135 m/s.",
+  "complete_parameters_free_descent_diagnostic_source": {
+    "launch_angle_deg": 7.117704158915487,
+    "launch_azimuth": 31.38376516918281,
+    "main_cluster_count": 3,
+    "nose_ballast_pos_m": 0.2621527628935539,
+    "nose_length_m": 0.999367615003782,
+    "nose_mass_kg": 0.17872870579149605,
+    "s0_aft_ballast_kg": 1.3785946490027758,
+    "s0_body_len": 1.086350604124753,
+    "s0_body_rad": 0.065,
+    "s0_fin_count": 4,
+    "s0_fin_height": 0.6666023537783373,
+    "s0_fin_material": "fiberglass",
+    "s0_fin_root": 0.058196069244461926,
+    "s0_fin_sweep": 4.353229916481219,
+    "s0_fin_thickness_m": 0.001,
+    "s0_grid_fin_count": 0,
+    "s0_grid_fin_height": 0.06,
+    "s0_grid_fin_material": "legal_balsa",
+    "s0_grid_fin_position_m": 0.13119898085575282,
+    "s0_grid_fin_root": 0.06,
+    "s0_grid_fin_sweep": 12.764467102535896,
+    "s0_grid_fin_thickness_m": 0.002,
+    "s0_main": 9,
+    "s0_mid_ballast_kg": 0.480031347543515,
+    "s0_retro": 7,
+    "s0_retro_delay": 200.0,
+    "s1_aft_ballast_attachment": "airframe_bonded",
+    "s1_aft_ballast_kg": 0.0,
+    "s1_aft_ballast_pos_m": 0.3335074872657927,
+    "s1_aft_ballast_rod_radius_m": 0.02,
+    "s1_body_len": 0.704,
+    "s1_body_rad": 0.065,
+    "s1_fin_count": 5,
+    "s1_fin_height": 0.35,
+    "s1_fin_material": "cardboard",
+    "s1_fin_root": 0.2,
+    "s1_fin_sweep": 48.57634396868573,
+    "s1_fin_thickness_m": 0.001,
+    "s1_grid_fin_count": 8,
+    "s1_grid_fin_height": 0.3,
+    "s1_grid_fin_material": "fiberglass",
+    "s1_grid_fin_position_m": 0.005,
+    "s1_grid_fin_root": 0.2,
+    "s1_grid_fin_sweep": 0.0,
+    "s1_grid_fin_thickness_m": 0.002,
+    "s1_main": 16,
+    "s1_mid_ballast_kg": 0.0,
+    "s1_retro": 7,
+    "s1_retro_delay": 200.0,
+    "s1_separation_delay": 0.0,
+    "wind_levels": [
+      [
+        2.0,
+        3.063,
+        215.0,
+        0.466
+      ],
+      [
+        7.0,
+        3.995,
+        215.0,
+        0.336
+      ],
+      [
+        12.0,
+        4.409,
+        214.9,
+        0.369
+      ],
+      [
+        17.0,
+        4.686,
+        214.9,
+        0.41
+      ],
+      [
+        22.0,
+        4.898,
+        214.9,
+        0.443
+      ],
+      [
+        27.0,
+        5.073,
+        214.8,
+        0.471
+      ],
+      [
+        32.0,
+        5.222,
+        214.8,
+        0.496
+      ],
+      [
+        37.0,
+        5.354,
+        214.7,
+        0.518
+      ],
+      [
+        42.0,
+        5.473,
+        214.7,
+        0.538
+      ],
+      [
+        47.0,
+        5.582,
+        214.7,
+        0.556
+      ],
+      [
+        52.0,
+        5.683,
+        214.7,
+        0.573
+      ],
+      [
+        62.0,
+        5.867,
+        214.6,
+        0.605
+      ],
+      [
+        72.0,
+        6.032,
+        214.5,
+        0.632
+      ],
+      [
+        82.0,
+        6.185,
+        214.5,
+        0.657
+      ],
+      [
+        92.0,
+        6.327,
+        214.4,
+        0.681
+      ],
+      [
+        102.0,
+        6.436,
+        214.3,
+        0.702
+      ],
+      [
+        108.0,
+        6.48,
+        207.0,
+        0.194
+      ],
+      [
+        320.0,
+        7.51,
+        208.0,
+        0.611
+      ],
+      [
+        537.0,
+        8.93,
+        211.0,
+        0.801
+      ],
+      [
+        759.0,
+        10.72,
+        214.0,
+        0.833
+      ],
+      [
+        986.0,
+        12.26,
+        215.0,
+        0.711
+      ],
+      [
+        1217.0,
+        13.56,
+        216.0,
+        0.492
+      ],
+      [
+        1455.0,
+        14.22,
+        214.0,
+        0.427
+      ],
+      [
+        1697.0,
+        14.38,
+        211.0,
+        0.431
+      ],
+      [
+        1946.0,
+        13.66,
+        207.0,
+        0.41
+      ],
+      [
+        2202.0,
+        12.75,
+        204.0,
+        0.43
+      ],
+      [
+        2464.0,
+        11.94,
+        202.0,
+        0.385
+      ],
+      [
+        2733.0,
+        11.21,
+        204.0,
+        0.365
+      ]
+    ]
+  },
+  "complete_parameters_powered_rerun": {
+    "launch_angle_deg": 7.117704158915487,
+    "launch_azimuth": 31.38376516918281,
+    "main_cluster_count": 3,
+    "nose_ballast_pos_m": 0.2621527628935539,
+    "nose_length_m": 0.999367615003782,
+    "nose_mass_kg": 0.17872870579149605,
+    "s0_aft_ballast_kg": 1.3785946490027758,
+    "s0_body_len": 1.086350604124753,
+    "s0_body_rad": 0.065,
+    "s0_fin_count": 4,
+    "s0_fin_height": 0.6666023537783373,
+    "s0_fin_material": "fiberglass",
+    "s0_fin_root": 0.058196069244461926,
+    "s0_fin_sweep": 4.353229916481219,
+    "s0_fin_thickness_m": 0.001,
+    "s0_grid_fin_count": 0,
+    "s0_grid_fin_height": 0.06,
+    "s0_grid_fin_material": "legal_balsa",
+    "s0_grid_fin_position_m": 0.13119898085575282,
+    "s0_grid_fin_root": 0.06,
+    "s0_grid_fin_sweep": 12.764467102535896,
+    "s0_grid_fin_thickness_m": 0.002,
+    "s0_main": 9,
+    "s0_mid_ballast_kg": 0.480031347543515,
+    "s0_retro": 7,
+    "s0_retro_delay": 200.0,
+    "s1_aft_ballast_attachment": "airframe_bonded",
+    "s1_aft_ballast_kg": 0.0,
+    "s1_aft_ballast_pos_m": 0.3335074872657927,
+    "s1_aft_ballast_rod_radius_m": 0.02,
+    "s1_body_len": 0.704,
+    "s1_body_rad": 0.065,
+    "s1_fin_count": 5,
+    "s1_fin_height": 0.35,
+    "s1_fin_material": "cardboard",
+    "s1_fin_root": 0.2,
+    "s1_fin_sweep": 48.57634396868573,
+    "s1_fin_thickness_m": 0.001,
+    "s1_grid_fin_count": 8,
+    "s1_grid_fin_height": 0.3,
+    "s1_grid_fin_material": "fiberglass",
+    "s1_grid_fin_position_m": 0.005,
+    "s1_grid_fin_root": 0.2,
+    "s1_grid_fin_sweep": 0.0,
+    "s1_grid_fin_thickness_m": 0.002,
+    "s1_main": 16,
+    "s1_mid_ballast_kg": 0.0,
+    "s1_retro": 7,
+    "s1_retro_delay": 33.104,
+    "s1_separation_delay": 0.0,
+    "wind_levels": [
+      [
+        2.0,
+        3.063,
+        215.0,
+        0.466
+      ],
+      [
+        7.0,
+        3.995,
+        215.0,
+        0.336
+      ],
+      [
+        12.0,
+        4.409,
+        214.9,
+        0.369
+      ],
+      [
+        17.0,
+        4.686,
+        214.9,
+        0.41
+      ],
+      [
+        22.0,
+        4.898,
+        214.9,
+        0.443
+      ],
+      [
+        27.0,
+        5.073,
+        214.8,
+        0.471
+      ],
+      [
+        32.0,
+        5.222,
+        214.8,
+        0.496
+      ],
+      [
+        37.0,
+        5.354,
+        214.7,
+        0.518
+      ],
+      [
+        42.0,
+        5.473,
+        214.7,
+        0.538
+      ],
+      [
+        47.0,
+        5.582,
+        214.7,
+        0.556
+      ],
+      [
+        52.0,
+        5.683,
+        214.7,
+        0.573
+      ],
+      [
+        62.0,
+        5.867,
+        214.6,
+        0.605
+      ],
+      [
+        72.0,
+        6.032,
+        214.5,
+        0.632
+      ],
+      [
+        82.0,
+        6.185,
+        214.5,
+        0.657
+      ],
+      [
+        92.0,
+        6.327,
+        214.4,
+        0.681
+      ],
+      [
+        102.0,
+        6.436,
+        214.3,
+        0.702
+      ],
+      [
+        108.0,
+        6.48,
+        207.0,
+        0.194
+      ],
+      [
+        320.0,
+        7.51,
+        208.0,
+        0.611
+      ],
+      [
+        537.0,
+        8.93,
+        211.0,
+        0.801
+      ],
+      [
+        759.0,
+        10.72,
+        214.0,
+        0.833
+      ],
+      [
+        986.0,
+        12.26,
+        215.0,
+        0.711
+      ],
+      [
+        1217.0,
+        13.56,
+        216.0,
+        0.492
+      ],
+      [
+        1455.0,
+        14.22,
+        214.0,
+        0.427
+      ],
+      [
+        1697.0,
+        14.38,
+        211.0,
+        0.431
+      ],
+      [
+        1946.0,
+        13.66,
+        207.0,
+        0.41
+      ],
+      [
+        2202.0,
+        12.75,
+        204.0,
+        0.43
+      ],
+      [
+        2464.0,
+        11.94,
+        202.0,
+        0.385
+      ],
+      [
+        2733.0,
+        11.21,
+        204.0,
+        0.365
+      ]
+    ]
+  },
+  "unrecoverable_fields": [
+    "The exact OpenRocket JAR build used for the original 3.5135 m/s claim is not recorded anywhere (HANDOFF.json has no jar/sha256 field for this branch result, unlike the quarantined 839k artifact which does record authority_sha256). Assumed identical to current lib/OpenRocket-24.12.jar since no other version is referenced anywhere in the repository.",
+    "The exact random seed is assumed to be SIM_SEED from osifog_sweep.py (16000), matching every other artifact in this investigation; not independently confirmed for this specific historical branch run because no saved .ork or raw simulation log for the POWERED (33.104s) run exists on disk -- only the free-descent (200.0s-delay) diagnostic run that produced sustainer-q-probe.json[0] was saved.",
+    "s0_retro_delay for the historical powered run is unknown -- it is irrelevant to the booster (s1) branch physically (stages are separated by then), so it is held at the diagnostic value 200.0 (disabled) in this reconstruction, consistent with how _default_openrocket_evaluator() and osifog_gate4_sustainer_search.py both isolate one stage's retro delay at a time while pinning the other at 200.0."
+  ],
+  "motor_digests": {
+    "s1_main (index 16)": [
+      "AeroTech",
+      "J510W",
+      "d9362a3a9b31a305f13a6c2bb0a93c38"
+    ],
+    "s1_retro (index 7)": [
+      "AeroTech",
+      "H180W",
+      "30ca1252c9156ee8e93e661886b131de"
+    ],
+    "s0_main (index 9)": [
+      "AeroTech",
+      "I161W",
+      "340f946923b8f997472ceb181f4f7605"
+    ],
+    "s0_retro (index 7)": [
+      "AeroTech",
+      "H180W",
+      "30ca1252c9156ee8e93e661886b131de"
+    ]
+  },
+  "known_historical_result": {
+    "branch": "booster",
+    "stage_key": "s1",
+    "retro_motor": "H180W",
+    "retro_delay_s": 33.104,
+    "touchdown_speed_ms": 3.513533312736439,
+    "source": ".planning/HANDOFF.json:30-35",
+    "claimed_qualifiers": "verified opposing thrust (handoff.md line 66-67); single branch result, not complete vehicle"
+  },
+  "geometry_digest": {
+    "free_descent_source_sha256": "16cf6b6db8b4c6d464790d707cb8f55e5e9053d86c9b157ac5b6fc7d4c68c679",
+    "powered_rerun_input_sha256": "ad34db6d94d1feef475218ce37634b9a6602dff389b2efc7e1537dfa4ecd4cc3"
+  }
+}

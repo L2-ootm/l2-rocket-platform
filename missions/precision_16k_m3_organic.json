@@ -1,0 +1,17 @@
+{
+  "name": "Precision 16k M3 Organic",
+  "description": "Fully organic AST mission: evolve topology, motor choice, geometry, materials, recovery, and ballast to reach 16000.000000 m OpenRocket apogee while staying below Mach 3. The proxy apogee objective intentionally aims above 16km to create a valid OpenRocket ballast-polishing bracket.",
+  "target_apogee_m": 16000.0,
+  "objectives": [
+    { "metric": "apogee", "kind": "target", "value": 16650.0, "weight": 200.0 },
+    { "metric": "mach", "kind": "atmost", "value": 3.0, "min_value": 0.3, "weight": 50.0 },
+    { "metric": "burn_time", "kind": "maximize", "scale": 12.0, "weight": 12.0 },
+    { "metric": "mass", "kind": "minimize", "scale": 60.0, "weight": 1.0 }
+  ],
+  "constraints": {
+    "target_apogee_m": 16000.0,
+    "max_mach": 3.0,
+    "min_static_margin": 1.5
+  },
+  "stability": { "phase_machs": [0.3, 2.0, 3.0] }
+}

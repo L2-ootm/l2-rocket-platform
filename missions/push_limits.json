@@ -1,0 +1,16 @@
+{
+  "name": "Push Limits Max Altitude",
+  "description": "Break OR and push engine to the limits. Maximize apogee, maximize speed, up to 8 stages, structure must remain physically plausible.",
+  "target_apogee_m": 1000000.0,
+  "objectives": [
+    { "metric": "apogee", "kind": "maximize", "scale": 100000.0, "weight": 500.0 },
+    { "metric": "mach", "kind": "maximize", "scale": 10.0, "weight": 200.0 },
+    { "metric": "mass", "kind": "minimize", "scale": 100.0, "weight": 5.0 }
+  ],
+  "constraints": {
+    "min_stages": 1,
+    "max_stages": 8,
+    "min_static_margin": 1.5
+  },
+  "stability": { "phase_machs": [0.3, 3.0, 10.0] }
+}

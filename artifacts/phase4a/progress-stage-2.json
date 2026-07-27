@@ -1,0 +1,14 @@
+{
+  "best_behavior_distance": 3.6959999999999997,
+  "best_candidate": "H_fh0.65",
+  "best_free_descent_speed": 15.264,
+  "best_horizontal_speed": 10.503,
+  "best_q_total_mean": 0.7694,
+  "dominant_failure": "stage_2_complete",
+  "evaluations_used": 60,
+  "families_refined": [
+    "H",
+    "E8"
+  ],
+  "next_action": "stage_3_powered"
+}

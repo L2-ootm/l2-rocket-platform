@@ -1,0 +1,31 @@
+;AeroTech I284W extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=157, curve_id=179
+; lookup key 'I284W' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+I284W 38 298 0,4,6,8,10 0.3136 0.5555 A
+0.000 0.00
+0.033 370.68
+0.103 483.61
+0.174 483.28
+0.245 486.86
+0.316 490.84
+0.386 499.43
+0.457 508.80
+0.528 506.33
+0.599 485.29
+0.670 481.04
+0.741 455.78
+0.811 426.92
+0.882 393.42
+0.953 367.40
+1.024 347.49
+1.095 325.19
+1.166 304.06
+1.236 284.16
+1.307 271.17
+1.378 228.58
+1.449 130.52
+1.520 57.21
+1.591 29.55
+1.661 16.41
+1.732 10.37
+1.803 0.00

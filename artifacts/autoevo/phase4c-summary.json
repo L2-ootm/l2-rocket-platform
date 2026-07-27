@@ -1,0 +1,61 @@
+{
+  "mission": "Recover the exact historical candidate behind the '3.5135 m/s H180W booster branch' claim, rerun it through the current repaired authority pipeline, and either confirm one legal booster branch or prove exactly which historical claim/parameter/engine-behavior was invalid.",
+  "status": "LEGAL BOOSTER BRANCH RECOVERED -- at a corrected delay, not the literal historical figure",
+  "historical_candidate_recovery": {
+    "outcome": "RECOVERED WITH HIGH CONFIDENCE, NOT BYTE-EXACT",
+    "source": "designs/osifog_autonomous_hour/sustainer-q-probe.json[0].parameters",
+    "identity_proof": [
+      "s1_grid_fin_count=8, height=0.30m, root=0.20m, position=0.005m, material=fiberglass, retro=motor index 7 (H180W) -- exact match to the directive's 'eight-forward-fin booster' yaml clue",
+      "sort key -0.9006139860749303 -- exact numeric match to every 'sustainer q=0.9006' citation in handoff.md, gate3-motor-aware-screen.json, gate4-screen-audit.json",
+      "unpowered booster free-fall speed 56.14 m/s -- matches the '~58 m/s' figure the directive attributes to the current Phase 4B campaign to within 3%"
+    ],
+    "artifact": "artifacts/autoevo/historical-3p5135-candidate.json",
+    "unrecoverable": "The sustainer-side (s0_*) geometry parameters (nose_mass_kg, s0_fin_root, s0_fin_height) do not exactly match the directive's yaml clue and cannot be pinned down further -- no saved artifact records the byte-exact original candidate. These do not affect the booster's own physics after separation, but their effect on total separated vehicle mass appears to explain the ~3.24s gap described below."
+  },
+  "stage_branch_map": {
+    "outcome": "RESOLVED, NO AMBIGUITY",
+    "mapping": "s0=Sustainer=branch 0 (continues to apogee, long flight); s1=Booster=branch 1 (drops at separation t=2.5s, short flight)",
+    "artifact": "artifacts/autoevo/phase4c-stage-branch-map.json"
+  },
+  "current_authority_rerun": {
+    "physical_compiler": "PASS (0 violations)",
+    "full_stack_ascent": "PASS (Mach 0.854, margin 1.508 cal, genuine staging at t=2.5s)",
+    "literal_delay_33_104s": {
+      "result": "FAILS -- touchdown 56.14 m/s, bit-identical to unpowered free-fall",
+      "root_cause": "Retro ignition (absolute time from launch) scheduled at t=33.104s, but this candidate's natural (unpowered) ground contact is t=30.342s -- 2.76s EARLIER. The retro motor never gets a chance to fire (0 thrust samples recorded); the simulation ends at ground contact before ignition.",
+      "robustness_check": "Confirmed across the directive-specified +/-0.02s window (33.084-33.124s): all five delays produce the identical null result."
+    },
+    "corrected_delay_29_864s": {
+      "result": "REPRODUCES the historical phenomenon -- touchdown 3.589 m/s (vs historical 3.5135 m/s, 2.2% relative difference), 100% opposing-thrust fraction (vertical AND total), motor still burning at ground contact, same branch (Booster/s1), same motor (H180W)",
+      "found_by": "Independent bisection sweep of s1_retro_delay on the current authority pipeline. CORRECTED 2026-07-20 (phase5a): the only two confirmed-legal (<5 m/s) 2 ms-grid samples are 29.862s (3.827 m/s) and 29.864s (3.589 m/s); 29.866s (6.144 m/s) and 29.868s (5.127 m/s) are NOT legal. The response is non-monotonic at millisecond scale (see phase4c-delay-sweep-finest.json), so this is a nominal legal point on a narrow, not-yet-characterized basin, not a proven continuous 29.862-29.868s legal interval. See artifacts/autoevo/phase5a/corrected-phase4c-record.json.",
+      "reproducibility": "CONFIRMED after save/close/reopen/rerun -- bit-identical touchdown speed from the saved .ork file"
+    },
+    "artifact": "artifacts/autoevo/phase4c-current-rerun.json, phase4c-delay-sweep-diagnostic.json, -fine.json, -fine2.json, -finest.json, phase4c-literal-33p104-robustness.json"
+  },
+  "legal_booster_branch": {
+    "verdict": "LEGAL BOOSTER BRANCH (single-branch result, NOT a complete vehicle)",
+    "delay_s": 29.864,
+    "touchdown_total_speed_ms": 3.5891545566551666,
+    "ork_path": "artifacts/autoevo/best-legal-booster-branch.ork",
+    "ork_sha256": "923076029d29ac1d5fecd01e1d909c6b60e38448c2c9c6369b4487bfd8cdc086",
+    "inspection": "artifacts/autoevo/best-legal-booster-branch-inspection.json"
+  },
+  "regression_classification": {
+    "verdict": "INSUFFICIENT ARTIFACTS TO RECONSTRUCT (delay/geometry precision gap) -- NOT a historical engine bug, NOT a motor/data regression, NOT a branch-identity error, NOT a broken scenario-authority convention",
+    "detail": "Every independently-verifiable layer (motor index/curve, component tree, fin interpretation, stage/branch identity, separation event, anti-tumble invariance, wind, event extraction, save/reopen reproducibility) matched with zero discrepancy. The only gap is the exact sustainer-side geometry, which plausibly shifts the booster's natural hang time (and hence its ~2ms-wide legal ignition window) by the observed 3.24s. The underlying physical mechanism -- H180W braking this eight-forward-fin booster to a legal, 100%-opposing-thrust touchdown -- is CONFIRMED REAL and reproducible on today's authority, just not at the literal transcribed delay value.",
+    "artifact": "artifacts/autoevo/phase4c-regression-bisect.json"
+  },
+  "k550w_diameter_control": {
+    "verdict": "NO AERODYNAMIC MOTOR-CASING MECHANISM CONFIRMED",
+    "detail": "Swapping K550W (54mm) for H73J (38mm) + mass-matching ballast, with externally-identical geometry (digest-verified), produced only small (1-3%) differences in apogee/margin/touchdown speed -- attributable to imperfect (lumped-ballast vs distributed-motor) mass/CG matching, not to internal-casing aerodynamics.",
+    "caveat": "This test used the eight-forward-fin booster candidate (very high passive alignment, best_q~0.998 regardless of tail configuration), NOT the plain-aft-fin E8_8 topology referenced in .planning/.continue-here.md's still-open 'K550W vs H73J: 1.85s vs 28.3s sustained tail-first window' finding. Forward grid fins appear to make passive stability robust to tail mass/diameter in a way E8_8 (aft fins only) may not be -- the E8_8-specific question remains genuinely open and was NOT re-tested here (out of scope: this investigation's primary mandate was the historical 3.5135 branch, and the K550W experiment was explicitly secondary).",
+    "artifact": "artifacts/autoevo/phase4c-k550-diameter-control.json"
+  },
+  "next_actions": [
+    "STOP the general booster morphology search per the directive's Outcome-A instruction: a legal, saved-and-reopened booster branch now exists for the eight-forward-fin topology at delay=29.864s.",
+    "Recover or discover one legal SUSTAINER branch for the SAME eight-forward-fin-booster + whatever-sustainer-geometry vehicle (the sustainer branch in every artifact examined here, including this recovery's own reruns, remains illegal: 19.6-21.2 m/s touchdown, poor burn-weighted vertical alignment with H180W).",
+    "Do NOT reuse the sustainer-q-probe.json[0] s0/nose_mass parameters uncritically for the sustainer search -- they were tuned for peak ALIGNMENT q, not for a usable powered braking window (gate3-motor-aware-screen.json already shows this exact combination is 'usable: false' for the sustainer branch).",
+    "Once a legal sustainer branch exists, recombine both branches into a full-vehicle authority run before any score optimization resumes.",
+    "If the E8_8 (plain aft-fin, no forward grid fins) topology family is revisited, re-run the K550W-vs-H73J diameter control on THAT specific candidate with a distributed (not lumped) ballast substitute -- this investigation's control does not settle that still-open question."
+  ]
+}

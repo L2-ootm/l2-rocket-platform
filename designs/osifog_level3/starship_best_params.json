@@ -1,0 +1,277 @@
+{
+  "s0_main": 15,
+  "s0_retro": 15,
+  "s1_main": 9,
+  "s1_retro": 15,
+  "main_cluster_count": 3,
+  "s0_body_rad": 0.065,
+  "s1_body_rad": 0.065,
+  "s0_body_len": 0.55,
+  "s1_body_len": 0.55,
+  "s0_retro_delay": 24.828642362681236,
+  "s1_retro_delay": 67.48920043939158,
+  "s0_retro_ignition_event": "launch",
+  "s1_retro_ignition_event": "launch",
+  "nose_mass_kg": 0.2564780251638096,
+  "nose_length_m": 1.582788005903355,
+  "nose_ballast_pos_m": 0.459366828414396,
+  "s0_aft_ballast_kg": 0.17175854466852938,
+  "s1_aft_ballast_kg": 0.06875778695133734,
+  "s0_aft_ballast_pos_m": 0.22072263265796452,
+  "s1_aft_ballast_pos_m": 0.20771714009907952,
+  "s0_pod_angle_offset_deg": 0.0,
+  "s1_pod_angle_offset_deg": 60.0,
+  "s0_core_fin_angle_offset_deg": 67.85444330316956,
+  "s1_core_fin_angle_offset_deg": 113.6939640848985,
+  "s0_core_fin_root": 0.21039690693210095,
+  "s1_core_fin_root": 0.29779262009516116,
+  "s0_core_fin_height": 0.08548901598664127,
+  "s1_core_fin_height": 0.1935502199148153,
+  "s0_fin_root": 0.21039690693210095,
+  "s1_fin_root": 0.29779262009516116,
+  "s0_fin_height": 0.08548901598664127,
+  "s1_fin_height": 0.1935502199148153,
+  "s0_pod_radius": 0.025,
+  "s1_pod_radius": 0.025,
+  "s0_pod_length": 0.387,
+  "s1_pod_length": 0.241,
+  "s0_pod_fin_count": 3,
+  "s1_pod_fin_count": 3,
+  "s0_pod_fin_root": 0.05805,
+  "s1_pod_fin_root": 0.036149999999999995,
+  "s0_pod_fin_height": 0.007843687821202419,
+  "s1_pod_fin_height": 0.011852458435491112,
+  "s0_aft_ballast_rod_radius_m": 0.014,
+  "s1_aft_ballast_rod_radius_m": 0.014,
+  "s0_aft_ballast_attachment": "central_bonded",
+  "s1_aft_ballast_attachment": "airframe_bonded",
+  "s0_fin_material": "fiberglass",
+  "s1_fin_material": "fiberglass",
+  "s0_fin_thickness_m": 0.004,
+  "s1_fin_thickness_m": 0.003,
+  "s0_grid_fin_count": 3,
+  "s1_grid_fin_count": 3,
+  "s0_grid_fin_root": 0.08615823559445664,
+  "s1_grid_fin_root": 0.07484265848575493,
+  "s0_grid_fin_height": 0.054381339966651454,
+  "s1_grid_fin_height": 0.10238637044673948,
+  "s0_grid_fin_position_m": 0.03064115140345008,
+  "s1_grid_fin_position_m": 0.059032385410931296,
+  "s0_grid_fin_sweep": 14.853490786657668,
+  "s1_grid_fin_sweep": 10.3042706987512,
+  "s0_grid_fin_thickness_m": 0.004,
+  "s1_grid_fin_thickness_m": 0.003,
+  "s0_grid_fin_material": "fiberglass",
+  "s1_grid_fin_material": "legal_balsa",
+  "s0_fin_count": 3,
+  "s1_fin_count": 5,
+  "s0_fin_sweep": 14.634298762482953,
+  "s1_fin_sweep": 30.285637182609975,
+  "s1_separation_delay": 0.0,
+  "launch_angle_deg": 7.7937125986384395,
+  "launch_azimuth": 37.19077820832152,
+  "wind_levels": [
+    [
+      2.0,
+      3.063,
+      215.0,
+      0.466
+    ],
+    [
+      7.0,
+      3.995,
+      215.0,
+      0.336
+    ],
+    [
+      12.0,
+      4.409,
+      214.9,
+      0.369
+    ],
+    [
+      17.0,
+      4.686,
+      214.9,
+      0.41
+    ],
+    [
+      22.0,
+      4.898,
+      214.9,
+      0.443
+    ],
+    [
+      27.0,
+      5.073,
+      214.8,
+      0.471
+    ],
+    [
+      32.0,
+      5.222,
+      214.8,
+      0.496
+    ],
+    [
+      37.0,
+      5.354,
+      214.7,
+      0.518
+    ],
+    [
+      42.0,
+      5.473,
+      214.7,
+      0.538
+    ],
+    [
+      47.0,
+      5.582,
+      214.7,
+      0.556
+    ],
+    [
+      52.0,
+      5.683,
+      214.7,
+      0.573
+    ],
+    [
+      62.0,
+      5.867,
+      214.6,
+      0.605
+    ],
+    [
+      72.0,
+      6.032,
+      214.5,
+      0.632
+    ],
+    [
+      82.0,
+      6.185,
+      214.5,
+      0.657
+    ],
+    [
+      92.0,
+      6.327,
+      214.4,
+      0.681
+    ],
+    [
+      102.0,
+      6.436,
+      214.3,
+      0.702
+    ],
+    [
+      108.0,
+      6.48,
+      207.0,
+      0.194
+    ],
+    [
+      320.0,
+      7.51,
+      208.0,
+      0.611
+    ],
+    [
+      537.0,
+      8.93,
+      211.0,
+      0.801
+    ],
+    [
+      759.0,
+      10.72,
+      214.0,
+      0.833
+    ],
+    [
+      986.0,
+      12.26,
+      215.0,
+      0.711
+    ],
+    [
+      1217.0,
+      13.56,
+      216.0,
+      0.492
+    ],
+    [
+      1455.0,
+      14.22,
+      214.0,
+      0.427
+    ],
+    [
+      1697.0,
+      14.38,
+      211.0,
+      0.431
+    ],
+    [
+      1946.0,
+      13.66,
+      207.0,
+      0.41
+    ],
+    [
+      2202.0,
+      12.75,
+      204.0,
+      0.43
+    ],
+    [
+      2464.0,
+      11.94,
+      202.0,
+      0.385
+    ],
+    [
+      2733.0,
+      11.21,
+      204.0,
+      0.365
+    ]
+  ],
+  "s0_core_radius": 0.051250000000000004,
+  "s0_core_length": 0.774624231076031,
+  "s0_pod_nose_length": 0.12,
+  "s0_pod_axial_offset_m": 0.15519400815077986,
+  "s0_pod_radial_offset": 0.1697390159866413,
+  "s0_core_fin_count": 3,
+  "s0_core_fin_sweep": 14.634298762482953,
+  "s0_core_fin_thickness_m": 0.004,
+  "s0_core_fin_material": "fiberglass",
+  "s0_pod_fin_sweep": 9.124106626028262,
+  "s0_pod_fin_thickness_m": 0.003,
+  "s0_pod_fin_material": "fiberglass",
+  "s0_pod_nose_shape": "ogive",
+  "s0_aero_interference_factor": 1.15,
+  "s0_pylon_chord_m": 0.025,
+  "s0_pylon_thickness_m": 0.003,
+  "s0_pylon_station_count": 2,
+  "s1_core_radius": 0.051250000000000004,
+  "s1_core_length": 0.6466170847280637,
+  "s1_pod_nose_length": 0.12,
+  "s1_pod_axial_offset_m": 0.20883159763184186,
+  "s1_pod_radial_offset": 0.2778002199148153,
+  "s1_core_fin_count": 5,
+  "s1_core_fin_sweep": 30.285637182609975,
+  "s1_core_fin_thickness_m": 0.003,
+  "s1_core_fin_material": "fiberglass",
+  "s1_pod_fin_sweep": 6.192147530187495,
+  "s1_pod_fin_thickness_m": 0.003,
+  "s1_pod_fin_material": "fiberglass",
+  "s1_pod_nose_shape": "ogive",
+  "s1_aero_interference_factor": 1.15,
+  "s1_pylon_chord_m": 0.033591703319135885,
+  "s1_pylon_thickness_m": 0.0033591703319135885,
+  "s1_pylon_station_count": 3
+}

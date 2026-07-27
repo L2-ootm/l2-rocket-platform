@@ -1,0 +1,28 @@
+{
+  "name": "15K Precision Demo",
+  "description": "Hit exactly 15,000m with at least 5 decimals precision. Double step process.",
+  "output": "designs/optimized/15k_precision.ork",
+  "payload_kg": 0.3,
+  "stack": [
+    {
+      "name": "Kick",
+      "body_radius": 0.0420,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "9977M2245-P" }
+    },
+    {
+      "name": "Sustainer",
+      "body_radius": 0.0535,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "20146N5800-P" }
+    },
+    {
+      "name": "Booster",
+      "body_radius": 0.0855,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "40960O8000-P" }
+    }
+  ],
+  "objectives": [
+    { "metric": "apogee", "kind": "target", "value": 15000.0, "tolerance": 0.00001, "weight": 1.0 }
+  ],
+  "constraints": { "min_static_margin": 1.5 },
+  "stability": { "phase_machs": [0.3, 2.0, 3.0] }
+}

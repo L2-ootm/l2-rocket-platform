@@ -1,0 +1,112 @@
+{
+  "test": "motor_alias_resolution",
+  "mismatches": [
+    {
+      "motor_db_designation": "J360",
+      "motor_db_index": 18,
+      "eng_filename": "J360_CTI.eng",
+      "eng_header_designation": "J360_CTI",
+      "alias_type": "filename_suffix",
+      "resolution": "motor_data.load_motor() tries _CTI suffix — resolves correctly",
+      "diameter_m": 0.038,
+      "length_m": 0.419,
+      "propellant_kg": 0.4090,
+      "loaded_kg": 0.7092,
+      "used_by_osifog": true
+    },
+    {
+      "motor_db_designation": "K510",
+      "motor_db_index": 22,
+      "eng_filename": "K510_CTI.eng",
+      "eng_header_designation": "K510_CTI",
+      "alias_type": "filename_suffix",
+      "resolution": "motor_data.load_motor() tries _CTI suffix — resolves correctly",
+      "diameter_m": 0.075,
+      "length_m": 0.350,
+      "propellant_kg": 1.1900,
+      "loaded_kg": 2.5900,
+      "used_by_osifog": false
+    },
+    {
+      "motor_db_designation": "9977M2245-P",
+      "motor_db_index": 31,
+      "eng_filename": "M2245.eng",
+      "eng_header_designation": "9977M2245-P",
+      "alias_type": "filename_stem_shortened",
+      "resolution": "motor_data.load_motor() scans all .eng files — resolves correctly",
+      "diameter_m": 0.075,
+      "length_m": 1.025,
+      "propellant_kg": 5.3090,
+      "loaded_kg": 8.1820,
+      "used_by_osifog": false
+    },
+    {
+      "motor_db_designation": "20146N5800-P",
+      "motor_db_index": 34,
+      "eng_filename": "N5800.eng",
+      "eng_header_designation": "20146N5800-P",
+      "alias_type": "filename_stem_shortened",
+      "resolution": "motor_data.load_motor() scans all .eng files — resolves correctly",
+      "diameter_m": 0.098,
+      "length_m": 1.239,
+      "propellant_kg": 9.4250,
+      "loaded_kg": 14.8260,
+      "used_by_osifog": false
+    },
+    {
+      "motor_db_designation": "40960O8000-P",
+      "motor_db_index": 35,
+      "eng_filename": "O8000.eng",
+      "eng_header_designation": "40960O8000-P",
+      "alias_type": "filename_stem_shortened",
+      "resolution": "motor_data.load_motor() scans all .eng files — resolves correctly",
+      "diameter_m": 0.150,
+      "length_m": 0.957,
+      "propellant_kg": 18.6100,
+      "loaded_kg": 32.6720,
+      "used_by_osifog": false
+    },
+    {
+      "motor_db_designation": "644J94-P",
+      "motor_db_index": 36,
+      "eng_filename": null,
+      "eng_header_designation": null,
+      "alias_type": "missing_eng_file",
+      "resolution": "MOTOR_DATABASE references this motor but no .eng file was extracted from OpenRocket 24.12",
+      "diameter_m": 0.038,
+      "length_m": 0.367,
+      "propellant_kg": null,
+      "loaded_kg": null,
+      "used_by_osifog": true,
+      "action_required": "Extract .eng file from OpenRocket 24.12 motor database"
+    },
+    {
+      "motor_db_designation": "949J150-P",
+      "motor_db_index": 37,
+      "eng_filename": null,
+      "eng_header_designation": null,
+      "alias_type": "missing_eng_file",
+      "resolution": "MOTOR_DATABASE references this motor but no .eng file was extracted from OpenRocket 24.12",
+      "diameter_m": 0.038,
+      "length_m": 0.500,
+      "propellant_kg": null,
+      "loaded_kg": null,
+      "used_by_osifog": true,
+      "action_required": "Extract .eng file from OpenRocket 24.12 motor database"
+    }
+  ],
+  "osifog_mission_motors": {
+    "allowed_designations": ["H73J", "H128W", "H180W", "H238T", "I161W", "I218R", "I357T", "I211W", "I284W", "J350W", "J420R", "J510W", "J800T", "J360", "644J94-P", "949J150-P", "K550W", "K700W", "K1050W", "K510", "L1000", "L1150", "L1500T", "L2200G"],
+    "retro_allowed": ["F50T", "F67W", "G71R", "G104T", "G80T", "H73J", "H128W", "H180W", "H238T", "I161W", "I218R", "I357T", "I211W", "I284W", "J350W", "J420R", "J510W", "644J94-P", "K550W", "K700W"],
+    "missing_from_eng_pool": ["644J94-P", "949J150-P"],
+    "alias_resolved": ["J360→J360_CTI", "K510→K510_CTI", "9977M2245-P→M2245", "20146N5800-P→N5800", "40960O8000-P→O8000"]
+  },
+  "current_authority_candidate_motors": {
+    "s0_main": "949J150-P (MISSING .eng)",
+    "s1_main": "J360 (alias J360_CTI — OK)",
+    "s0_retro": "K550W (OK)",
+    "s1_retro": "K550W (OK)",
+    "note": "Current authority candidate uses 949J150-P which has no .eng file. This motor cannot be loaded by motor_data.py."
+  },
+  "status": "BLOCKED for authority candidate — 949J150-P missing"
+}

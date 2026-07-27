@@ -1,0 +1,85 @@
+{
+  "experiment": "E_wind_parity",
+  "wind_csv": "OSIFOG/OpenWind_File.csv",
+  "total_levels": 28,
+  "surface_speed_ms": 3.063,
+  "surface_direction_deg": 215.0,
+  "test_altitudes": [
+    {
+      "altitude_m": 0,
+      "speed_ms": 3.063,
+      "direction_deg": 215.0,
+      "vx_ms": 1.7569,
+      "vy_ms": 2.5091
+    },
+    {
+      "altitude_m": 100,
+      "speed_ms": 6.4142,
+      "direction_deg": 214.32,
+      "vx_ms": 3.6164,
+      "vy_ms": 5.2975
+    },
+    {
+      "altitude_m": 200,
+      "speed_ms": 6.927,
+      "direction_deg": 207.434,
+      "vx_ms": 3.1914,
+      "vy_ms": 6.148
+    },
+    {
+      "altitude_m": 500,
+      "speed_ms": 8.6879,
+      "direction_deg": 210.4885,
+      "vx_ms": 4.4079,
+      "vy_ms": 7.4866
+    },
+    {
+      "altitude_m": 1000,
+      "speed_ms": 12.3388,
+      "direction_deg": 215.0606,
+      "vx_ms": 7.0879,
+      "vy_ms": 10.0999
+    },
+    {
+      "altitude_m": 1500,
+      "speed_ms": 14.2498,
+      "direction_deg": 213.4421,
+      "vx_ms": 7.853,
+      "vy_ms": 11.8906
+    },
+    {
+      "altitude_m": 2000,
+      "speed_ms": 13.468,
+      "direction_deg": 206.3672,
+      "vx_ms": 5.9815,
+      "vy_ms": 12.0669
+    },
+    {
+      "altitude_m": 2500,
+      "speed_ms": 11.8423,
+      "direction_deg": 202.2677,
+      "vx_ms": 4.4875,
+      "vy_ms": 10.9592
+    },
+    {
+      "altitude_m": 3000,
+      "speed_ms": 11.21,
+      "direction_deg": 204.0,
+      "vx_ms": 4.5595,
+      "vy_ms": 10.2408
+    },
+    {
+      "altitude_m": 3500,
+      "speed_ms": 11.21,
+      "direction_deg": 204.0,
+      "vx_ms": 4.5595,
+      "vy_ms": 10.2408
+    }
+  ],
+  "convention": {
+    "altitude_reference": "AGL",
+    "direction": "meteorological_from_degrees",
+    "ork_xml_storage": "radians",
+    "cartesian": "vx=east, vy=north"
+  }
+}

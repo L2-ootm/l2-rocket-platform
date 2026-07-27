@@ -1,0 +1,75 @@
+{
+  "base_candidate": "K",
+  "authority_score": 602553.1654667659,
+  "all_pass": true,
+  "certification_100_seed": {
+    "checks": {
+      "seed_count_unchanged": true,
+      "sustainer_pass_unchanged": true,
+      "booster_pass_unchanged": true,
+      "joint_pass_unchanged": true,
+      "all_seed_rows_exactly_equal": true
+    },
+    "sustainer_pass": 50,
+    "booster_pass": 96,
+    "joint_pass": 49
+  },
+  "variants": {
+    "candidate_K_living_terrain_institutional_v6": {
+      "checks": {
+        "generated_finish_normal_count_is_3": true,
+        "saved_finish_count_matches_candidate_K": true,
+        "rocket_xml_is_first_zip_entry": true,
+        "declared_decals_resolve": true,
+        "packaged_decals_match_sources": true,
+        "exactly_one_simulation": true,
+        "reopen_status_loaded_from_file": true,
+        "reopen_has_two_branches": true,
+        "reopen_is_legal": true,
+        "checklist_is_20_of_20": true,
+        "authority_score_unchanged": true,
+        "authority_metrics_unchanged": true,
+        "all_heightfield_crossings_match_at_stage_seam": true
+      },
+      "zip_entries": [
+        "rocket.ork",
+        "decals/l2-living-terrain-institutional-v6-booster.png",
+        "decals/l2-living-terrain-institutional-v6-sustainer.png"
+      ],
+      "appearance_count": 6,
+      "generated_finish_normal_count": 3,
+      "saved_finish_normal_count": 5,
+      "authority_score": 602553.1654667659,
+      "reopen_status": "Loaded From File",
+      "reopen_branch_count": 2
+    },
+    "candidate_K_celestial_datum_v7": {
+      "checks": {
+        "generated_finish_normal_count_is_3": true,
+        "saved_finish_count_matches_candidate_K": true,
+        "rocket_xml_is_first_zip_entry": true,
+        "declared_decals_resolve": true,
+        "packaged_decals_match_sources": true,
+        "exactly_one_simulation": true,
+        "reopen_status_loaded_from_file": true,
+        "reopen_has_two_branches": true,
+        "reopen_is_legal": true,
+        "checklist_is_20_of_20": true,
+        "authority_score_unchanged": true,
+        "authority_metrics_unchanged": true,
+        "all_heightfield_and_datum_crossings_match_at_stage_seam": true
+      },
+      "zip_entries": [
+        "rocket.ork",
+        "decals/l2-celestial-datum-v7-booster.png",
+        "decals/l2-celestial-datum-v7-sustainer.png"
+      ],
+      "appearance_count": 6,
+      "generated_finish_normal_count": 3,
+      "saved_finish_normal_count": 5,
+      "authority_score": 602553.1654667659,
+      "reopen_status": "Loaded From File",
+      "reopen_branch_count": 2
+    }
+  }
+}

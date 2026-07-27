@@ -1,0 +1,31 @@
+;AeroTech J350W-OLD extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=190, curve_id=214
+; lookup key 'J350W' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+J350W 38 337 0,4,6,8,10,12,14 0.3759 0.6509 A
+0.000 0.00
+0.038 706.78
+0.115 669.05
+0.192 602.54
+0.270 565.08
+0.348 539.14
+0.425 514.91
+0.503 483.10
+0.581 449.13
+0.658 437.26
+0.736 424.20
+0.815 414.46
+0.892 402.96
+0.970 393.60
+1.048 377.84
+1.125 359.79
+1.203 341.92
+1.281 324.72
+1.358 305.94
+1.436 264.28
+1.515 175.47
+1.592 110.91
+1.670 77.10
+1.748 55.47
+1.825 39.99
+1.903 26.28
+1.981 0.00

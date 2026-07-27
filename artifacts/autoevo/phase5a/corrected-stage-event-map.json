@@ -1,0 +1,45 @@
+{
+  "correction_of": "artifacts/autoevo/phase4c-stage-branch-map.json (openrocket_stage_id field)",
+  "bug": "The prior file's openrocket_stage_id block stated 's0 ignites at t=0 (launch)' and 's1 ignites at burnout of s0', which is the OPPOSITE of the physical event sequence and contradicts that same file's own component_ownership_check (branch 1/booster separates/hits ground at t~30.3s after a short t=2.5s drop -- i.e. branch 1 fired FIRST, at launch).",
+  "verification_method": "Direct inspection of artifacts/autoevo/best-legal-booster-branch.ork's rocket.ork XML (unzipped), not prose.",
+  "verified_from_xml": {
+    "stage_0": {
+      "name": "Sustainer",
+      "main_motor_mount": "Sustainer Main Motor Mount",
+      "main_motor_ignition": {"ignitionevent": "burnout", "ignitiondelay": 0.0},
+      "main_motor_ignition_meaning": "Ignites when the PREVIOUS stage's (Booster's) main motors burn out -- i.e. after separation, not at launch.",
+      "retro_motor_mount": "Sustainer Structural Retro Sleeve",
+      "retro_motor_ignition": {"ignitionevent": "launch", "ignitiondelay": 200.0, "meaning": "Effectively disabled for this candidate -- 200s past launch is after the flight ends."}
+    },
+    "stage_1": {
+      "name": "Booster",
+      "main_motor_mount": "Booster Main Motor Mount",
+      "main_motor_ignition": {"ignitionevent": "launch", "ignitiondelay": 0.0},
+      "main_motor_ignition_meaning": "Ignites AT LAUNCH (t=0) -- the booster provides initial thrust.",
+      "retro_motor_mount": "Booster Structural Retro Sleeve",
+      "retro_motor_ignition": {"ignitionevent": "launch", "ignitiondelay": 29.864},
+      "retro_motor_ignition_meaning": "Ignites 29.864s after LAUNCH (t=0), NOT after booster main-motor burnout or separation. This is an ABSOLUTE mission-time delay, confirmed directly in the XML (ignitionevent=launch, not ignitionevent=burnout)."
+    },
+    "event_log_corroboration": [
+      {"time_s": 0, "type": "ignition", "component": "Booster Main Motor Mount (stage 1)"},
+      {"time_s": 2.5, "type": "ignition", "component": "Sustainer Main Motor Mount (stage 0) -- fires at booster main-motor burnout/separation"},
+      {"time_s": 200, "type": "ignition", "component": "Sustainer Structural Retro Sleeve (stage 0) -- inert, past flight end"},
+      {"time_s": 29.864, "type": "ignition", "component": "Booster Structural Retro Sleeve (stage 1) -- H180W retro/landing motor"}
+    ]
+  },
+  "corrected_physical_event_sequence": [
+    "t=0: Booster (stage 1) main motors ignite at launch.",
+    "t=~2.5s: Booster main motors burn out; STAGE_SEPARATION fires.",
+    "t=~2.5s: Sustainer (stage 0) main motors ignite (ignitionevent=burnout of stage 1).",
+    "t=29.864s (absolute, from launch): Booster retro motor (H180W) ignites -- scheduled by ignitionevent=launch + ignitiondelay, NOT relative to booster burnout or separation.",
+    "t=~30.79s: Booster ground contact (powered, motor still burning).",
+    "t=~31.18s: Booster retro motor burns out (after ground contact -- see burn_remaining_at_contact_s)."
+  ],
+  "component_tree_vs_ignition_are_independent": "OpenRocket's stage NUMBER (0=top/Sustainer, 1=bottom/Booster, fixed by component-tree build order) is a different axis from ignition ORDER (Booster/stage-1 fires first at launch, Sustainer/stage-0 fires second at stage-1 burnout). The former is structural; the latter is a per-motor-mount ignitionconfiguration. The prior file conflated 'lower stage number' with 'ignites first', which is wrong for this two-stage-with-lower-booster topology.",
+  "branch_name_mapping_unchanged": {"branch_0": "Sustainer / stage 0", "branch_1": "Booster / stage 1"},
+  "parameter_prefix_mapping_unchanged": {"s0_*": "Sustainer / stage 0", "s1_*": "Booster / stage 1"},
+  "retro_delay_convention": {
+    "s1_retro_delay": "ABSOLUTE seconds from LAUNCH (t=0), via ignitionevent=launch + ignitiondelay=s1_retro_delay in the XML. NOT relative to booster burnout, separation, or apogee.",
+    "s0_retro_delay": "Same convention (ignitionevent=launch, ignitiondelay=s0_retro_delay), independently of s0's own main-motor ignitionevent=burnout."
+  }
+}

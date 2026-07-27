@@ -1,0 +1,71 @@
+{
+  "question": "Does the literal historical claim (H180W, s1_retro_delay=33.104s, touchdown=3.5135 m/s, verified opposing thrust, booster branch) reproduce in the current, repaired authority pipeline?",
+  "answer": "NO at the literal delay value. YES for the underlying physical mechanism at a nearby (3.24s earlier) delay on the same reconstructed candidate.",
+  "layer_by_layer_comparison": {
+    "complete_parameter_dictionary": {
+      "status": "MOSTLY RECOVERED, NOT BYTE-EXACT",
+      "detail": "s1_* (booster) parameters recovered exactly and are invariant across all 50 entries in sustainer-q-probe.json (grid_fin_count=8, height=0.30, root=0.20, position=0.005m, material=fiberglass, retro=motor index 7=H180W, main=motor index 16=J510W). s0_* (sustainer) parameters -- which do NOT physically affect the booster branch after separation -- could only be matched approximately: the directive's own yaml clue (nose_mass_kg=0.08, s0_fin_root=0.04, s0_fin_height=1.0) does not exactly match any of the 50 recorded entries. Entry index 0 (nose_mass_kg=0.179, s0_fin_root=0.058, s0_fin_height=0.667) was selected because its bestq=0.9006139860749303 is an EXACT match to the 'q=0.9006' figure quoted everywhere in handoff.md and the Gate 3/4 logs."
+    },
+    "motor_index_to_designation_mapping": {
+      "status": "CONFIRMED, NO DISCREPANCY",
+      "detail": "MOTOR_DATABASE[7]='H180W' (AeroTech, matches HANDOFF.json's retro_motor field exactly). MOTOR_DATABASE[16]='J510W'. Both indices are stable across the codebase (rocket_forge.py has not been edited to reorder this list per git history)."
+    },
+    "motor_curve_data": {
+      "status": "CONFIRMED, NO DISCREPANCY",
+      "detail": "H180W burn duration 1.313s from l2_engine/motors/H180W.eng, consistent with the observed BURNOUT-IGNITION delta (31.177 - 29.864 = 1.313s exactly) in the corrected rerun."
+    },
+    "mass_and_propellant_model": {
+      "status": "NOT INDEPENDENTLY TESTABLE FOR THIS BRANCH",
+      "detail": "The 0.4kg dry_mass offset bug documented in docs/research/osifog-2026-deep-audit/19_corrections_and_errata.md (C8) lives in l2_engine/src/mission_adapter.rs (the Rust proxy path), not in the Python/OpenRocket authority path (osifog_sweep.py) used for this rerun. It cannot explain any difference here."
+    },
+    "body_radius_derivation": {
+      "status": "CONFIRMED, NO DISCREPANCY",
+      "detail": "s0_body_rad=s1_body_rad=0.065m in both stages, generated identically by osifog_sweep.generate_ork() in this rerun; sweep.validate_candidate_geometry() passed with zero violations."
+    },
+    "component_tree": {
+      "status": "CONFIRMED, NO DISCREPANCY",
+      "detail": "Inspected the literal generated ORK XML: two stages named 'Sustainer' (s0) and 'Booster' (s1); Booster stage contains a Main Motor Mount (J510W, ignitionevent=launch), a Structural Retro Sleeve (H180W, ignitionevent=launch + ignitiondelay), and Forward Grid Fins -- exactly matching the 'eight-forward-fin booster' description."
+    },
+    "fin_interpretation": {
+      "status": "CONFIRMED, NO DISCREPANCY",
+      "detail": "s1_grid_fin_count=8 forward grid fins on the Booster stage, s1_grid_fin_position_m=0.005 (near the booster's forward end) -- consistent in both the recovered parameters and the generated XML."
+    },
+    "stage_branch_identity": {
+      "status": "CONFIRMED, NO DISCREPANCY -- see phase4c-stage-branch-map.json",
+      "detail": "s0=Sustainer=branch 0, s1=Booster=branch 1 in every artifact examined (gate3, gate4, build_scenario_manifest, and this rerun's own branch_event_times/stage_landings)."
+    },
+    "separation_event": {
+      "status": "CONFIRMED, NO DISCREPANCY",
+      "detail": "STAGE_SEPARATION at t=2.5s in both the historical probe data and this rerun (main motor J510W burns exactly 2.500s per its .eng curve)."
+    },
+    "scenario_serialization_and_delay_reference": {
+      "status": "ROOT CAUSE OF THE LITERAL-VALUE FAILURE",
+      "detail": "The retro motor's ignitiondelay is applied on top of ignitionevent='launch', i.e. s1_retro_delay is an ABSOLUTE mission time from t=0, not a delay relative to separation, booster burnout, or any other later event. For this reconstructed candidate the booster's natural (unpowered) ground-hit time is t=30.342s. Requesting ignition at the literal historical value (t=33.104s) schedules the retro motor to fire 2.76s AFTER the vehicle has already reached the ground under free fall -- the simulation terminates at GROUND_HIT before ignition, so the motor never fires (retro_burn_diagnostics.sample_count=0) and the branch lands at the unpowered 56.14 m/s speed, not 3.51 m/s.",
+      "does_this_prove_a_regression": "Not conclusively. It could equally mean the ORIGINAL historical run used a slightly different s0/nose-mass geometry (which we could not recover exactly) whose booster free-fall naturally hangs about 3.24s longer, making 33.104s land inside its own narrow legal window the same way 29.864s lands inside this reconstruction's window. The 'delay reference' convention itself (absolute time from launch) was re-derived directly from the current code and is internally consistent; there is no evidence it changed."
+    },
+    "anti_tumbling_extension": {
+      "status": "CONFIRMED, NO DISCREPANCY",
+      "detail": "The anti-tumble listener was attached and validated (validate_anti_tumble_extensions) in every run in this investigation, matching Experiment A (docs/research/osifog-2026-deep-audit/20_completed_experiment_results.md) which already proved the listener has zero effect on trajectories that do not tumble -- this candidate's booster branch never tumbles (APOGEE event present, no TUMBLE event in branch_event_times)."
+    },
+    "wind_environment": {
+      "status": "CONFIRMED, NO DISCREPANCY",
+      "detail": "Same OpenWind_File.csv-derived wind_levels array embedded in the recovered parameters and used unmodified in every rerun in this investigation."
+    },
+    "openrocket_jar_version": {
+      "status": "ASSUMED IDENTICAL, NOT INDEPENDENTLY PROVEN",
+      "detail": "lib/OpenRocket-24.12.jar is the only OpenRocket jar present in the repository at any point in git history examined; HANDOFF.json's verified_branch_result block does not record a jar digest for comparison (unlike the quarantined 839k artifact, which does)."
+    },
+    "event_extraction_and_ground_contact_filtering": {
+      "status": "CONFIRMED, NO DISCREPANCY",
+      "detail": "run_sim()'s GROUND_HIT interpolation logic was exercised identically in every rerun in this investigation and reproduced bit-identically after save/close/reopen (see phase4c-current-rerun.json.reproducibility_after_save_reopen)."
+    }
+  },
+  "classification": "INSUFFICIENT ARTIFACTS TO RECONSTRUCT (delay-precision / geometry-precision gap) -- NOT a HISTORICAL ENGINE BUG, NOT a MOTOR/DATA REGRESSION, NOT a BRANCH IDENTITY ERROR, NOT a SCENARIO AUTHORITY FAILURE in the sense of a broken convention.",
+  "classification_rationale": [
+    "Every layer that could be independently verified (motor index/designation/curve, component tree, fin interpretation, stage/branch identity, separation event, anti-tumble, wind, event extraction) matched with ZERO discrepancy between the historical record and the current pipeline.",
+    "The ONE layer that could not be verified byte-exact is the sustainer-side (s0_*) geometry parameters, which the directive's own yaml clue did not match precisely either -- and which plausibly shift the booster's natural hang time by the observed 3.24s gap between the corrected delay (29.864s) and the literal historical delay (33.104s), given the total vehicle mass at separation depends weakly on nose/sustainer ballast even though the booster's own aerodynamics do not.",
+    "The legal window is only ~2 milliseconds wide at this level of precision, so even a very small (sub-1%) difference in total separated mass or launch angle could shift the optimal delay by multiple seconds without indicating any bug.",
+    "This is NOT a case of the physical mechanism being fictitious: at delay=29.864s the SAME reconstructed candidate reproduces a legal (<5 m/s), 100%-opposing-thrust touchdown of 3.589 m/s -- within 2.2% of the literal 3.5135 m/s historical figure, motor still burning at contact, same branch, same motor. This is the strongest possible evidence that the historical claim describes a REAL, REPRODUCIBLE phenomenon, just not at the exact delay figure that was transcribed into HANDOFF.json."
+  ],
+  "conclusion_for_decision_logic": "This is best read as a HYBRID of Outcome A and Outcome C from the directive's decision tree: the underlying legal booster branch IS recovered and reproduced on the current authority (Outcome A), but the byte-exact historical parameter set and delay value could not be reconstructed with enough precision to hit the exact 3.5135 m/s figure (Outcome C, for the fine-grained match only). The booster morphology search should STOP per Outcome A's instruction, since a legal single-branch result now exists on today's pipeline with a saved/reopened proof."
+}

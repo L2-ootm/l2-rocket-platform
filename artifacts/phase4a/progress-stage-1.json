@@ -1,0 +1,22 @@
+{
+  "best_behavior_distance": 3.6959999999999997,
+  "best_candidate_per_family": {
+    "D": "D1",
+    "E8": "E8_1",
+    "H": "H1",
+    "S": "S1"
+  },
+  "best_free_descent_speed": 20.303,
+  "best_horizontal_speed": 17.002,
+  "best_powered_speed": null,
+  "best_q_total_mean": 0.8899,
+  "dominant_failure": "stage_1_complete",
+  "evaluations_used": 22,
+  "families": [
+    "H",
+    "E8",
+    "D",
+    "S"
+  ],
+  "next_action": "stage_2_refinement"
+}

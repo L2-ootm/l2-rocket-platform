@@ -1,0 +1,31 @@
+;AeroTech I218R extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=152, curve_id=174
+; lookup key 'I218R' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+I218R 38 191 0,4,6,8,10,14 0.1926 0.3718 A
+0.000 0.00
+0.027 136.08
+0.088 275.03
+0.148 281.00
+0.208 284.37
+0.268 284.04
+0.327 279.31
+0.388 277.79
+0.448 276.31
+0.509 269.38
+0.570 266.04
+0.630 261.91
+0.690 256.37
+0.750 250.56
+0.810 242.21
+0.870 234.61
+0.930 225.49
+0.991 216.17
+1.053 205.41
+1.112 193.24
+1.173 177.21
+1.233 161.30
+1.292 139.12
+1.353 96.08
+1.413 38.85
+1.474 5.98
+1.535 0.00

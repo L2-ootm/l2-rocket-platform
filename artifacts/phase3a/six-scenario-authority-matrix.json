@@ -1,0 +1,71 @@
+{
+  "anti_tumble_digest": "1c4aecd0044eb6f143aba8038ecb197250eee49508375dc56703507f37775e0d",
+  "gate": 2,
+  "mission_digest": "e9da32f12675e6576d0e3078c36739d4144841d574f78305330a5ac04ea66291",
+  "scenarios": [
+    {
+      "authority_eligible": true,
+      "booster_ground_hit_s": 43.6519,
+      "diagnostic_only": false,
+      "observed_events_match_manifest": true,
+      "retro_fired_in_flight": false,
+      "s1_retro_delay_s": 65.28,
+      "scenario_type": "OFFICIAL_FULL_MISSION",
+      "score_eligible": true
+    },
+    {
+      "authority_eligible": true,
+      "booster_ground_hit_s": 43.6519,
+      "diagnostic_only": false,
+      "note": "Same XML as STAGE_FREE_DESCENT_DIAGNOSTIC; booster events identical",
+      "observed_events_match_manifest": true,
+      "retro_fired_in_flight": false,
+      "s1_retro_delay_s": 200.0,
+      "scenario_type": "EXPOSED_SUSTAINER_ASCENT",
+      "score_eligible": false
+    },
+    {
+      "authority_eligible": false,
+      "booster_ground_hit_s": 43.6519,
+      "diagnostic_only": true,
+      "observed_events_match_manifest": true,
+      "retro_fired_in_flight": false,
+      "s1_retro_delay_s": 200.0,
+      "scenario_type": "STAGE_FREE_DESCENT_DIAGNOSTIC",
+      "score_eligible": false
+    },
+    {
+      "authority_eligible": true,
+      "booster_ground_hit_s": 31.201,
+      "diagnostic_only": false,
+      "observed_events_match_manifest": true,
+      "retro_fired_in_flight": true,
+      "s1_retro_delay_s": 12.0,
+      "scenario_type": "POWERED_STAGE_LANDING_VALIDATION",
+      "score_eligible": false
+    },
+    {
+      "authority_eligible": true,
+      "booster_ground_hit_s": "variable",
+      "diagnostic_only": false,
+      "note": "Same XML structure as POWERED; only delay differs",
+      "observed_events_match_manifest": true,
+      "retro_fired_in_flight": true,
+      "s1_retro_delay_s": "variable",
+      "scenario_type": "DELAY_ROBUSTNESS",
+      "score_eligible": false
+    },
+    {
+      "authority_eligible": false,
+      "booster_ground_hit_s": 43.6519,
+      "diagnostic_only": true,
+      "observed_events_match_manifest": true,
+      "retro_fired_in_flight": false,
+      "s1_retro_delay_s": 200.0,
+      "scenario_type": "DEBUG_ONLY",
+      "score_eligible": false
+    }
+  ],
+  "status": "PASS",
+  "wind_digest": "e3ac3c50fef8c260dee97e2b95b421b0c13c2407b32ff729fc4aff12e382d6cc"
+}

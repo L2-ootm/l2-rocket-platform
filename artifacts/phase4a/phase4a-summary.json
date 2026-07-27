@@ -1,0 +1,20 @@
+{
+  "best_powered": {
+    "best_delay_s": 10.0,
+    "best_speed_ms": 57.101,
+    "candidate": "H_fh0.65",
+    "free_descent_ms": 15.264,
+    "improvement_ms": -41.84,
+    "legal_branch": false,
+    "mean_burn_q": -0.8018,
+    "motor": "J350W"
+  },
+  "elapsed_s": 98.2,
+  "legal_branch": false,
+  "phase": "4a",
+  "powered_evaluations": 312,
+  "status": "NO_LEGAL_BRANCH",
+  "structural_evaluations": 372,
+  "teacher_distance": 15.264,
+  "total_evaluations": 684
+}

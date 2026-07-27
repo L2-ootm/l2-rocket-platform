@@ -1,0 +1,31 @@
+;AeroTech N2000W extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=301, curve_id=331
+; lookup key 'N2000W' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+N2000W 98 1046 0,P 7.6671 12.2828 A
+0.000 0.00
+0.146 2775.07
+0.446 2831.81
+0.746 2834.35
+1.046 2829.56
+1.346 2777.65
+1.646 2688.25
+1.950 2597.97
+2.254 2501.04
+2.554 2415.75
+2.854 2343.62
+3.154 2262.58
+3.454 2178.18
+3.758 2104.16
+4.062 2024.47
+4.362 1935.62
+4.663 1839.78
+4.962 1756.91
+5.262 1351.81
+5.567 954.56
+5.871 681.83
+6.171 475.91
+6.471 361.12
+6.771 194.63
+7.071 44.94
+7.375 6.03
+7.679 0.00

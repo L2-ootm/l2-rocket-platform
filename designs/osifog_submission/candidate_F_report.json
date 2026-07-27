@@ -1,0 +1,551 @@
+{
+ "params": {
+  "s0_main": null,
+  "s0_retro": 20,
+  "s1_main": 20,
+  "s1_retro": 12,
+  "main_cluster_count": 3,
+  "s0_body_len": 0.7,
+  "s0_body_rad": 0.082,
+  "s1_body_len": 1.0,
+  "s1_body_rad": 0.082,
+  "nose_length_m": 0.12,
+  "s0_retro_delay": 49.293,
+  "s1_retro_delay": 81.178025,
+  "s0_fin_count": 0,
+  "s0_fin_sweep": 10.0,
+  "s0_fin_root": 0.2,
+  "s0_fin_height": 0.25,
+  "s1_fin_count": 4,
+  "s1_fin_sweep": 10.0,
+  "s1_fin_root": 0.12,
+  "s1_fin_height": 0.1,
+  "nose_mass_kg": 0.05,
+  "s0_mid_ballast_kg": 7.8,
+  "s0_aft_ballast_kg": 1.0,
+  "s1_mid_ballast_kg": 0.0,
+  "s1_aft_ballast_kg": 0.0,
+  "s1_grid_fin_count": 4,
+  "s1_grid_fin_root": 0.08,
+  "s1_grid_fin_height": 0.06,
+  "s0_grid_fin_count": 0,
+  "launch_azimuth": 35.0,
+  "launch_angle_deg": 2.0,
+  "s1_separation_delay": 23.593,
+  "wind_levels": [
+   [
+    2.0,
+    3.063,
+    215.0,
+    0.466
+   ],
+   [
+    7.0,
+    3.995,
+    215.0,
+    0.336
+   ],
+   [
+    12.0,
+    4.409,
+    214.9,
+    0.369
+   ],
+   [
+    17.0,
+    4.686,
+    214.9,
+    0.41
+   ],
+   [
+    22.0,
+    4.898,
+    214.9,
+    0.443
+   ],
+   [
+    27.0,
+    5.073,
+    214.8,
+    0.471
+   ],
+   [
+    32.0,
+    5.222,
+    214.8,
+    0.496
+   ],
+   [
+    37.0,
+    5.354,
+    214.7,
+    0.518
+   ],
+   [
+    42.0,
+    5.473,
+    214.7,
+    0.538
+   ],
+   [
+    47.0,
+    5.582,
+    214.7,
+    0.556
+   ],
+   [
+    52.0,
+    5.683,
+    214.7,
+    0.573
+   ],
+   [
+    62.0,
+    5.867,
+    214.6,
+    0.605
+   ],
+   [
+    72.0,
+    6.032,
+    214.5,
+    0.632
+   ],
+   [
+    82.0,
+    6.185,
+    214.5,
+    0.657
+   ],
+   [
+    92.0,
+    6.327,
+    214.4,
+    0.681
+   ],
+   [
+    102.0,
+    6.436,
+    214.3,
+    0.702
+   ],
+   [
+    108.0,
+    6.48,
+    207.0,
+    0.194
+   ],
+   [
+    320.0,
+    7.51,
+    208.0,
+    0.611
+   ],
+   [
+    537.0,
+    8.93,
+    211.0,
+    0.801
+   ],
+   [
+    759.0,
+    10.72,
+    214.0,
+    0.833
+   ],
+   [
+    986.0,
+    12.26,
+    215.0,
+    0.711
+   ],
+   [
+    1217.0,
+    13.56,
+    216.0,
+    0.492
+   ],
+   [
+    1455.0,
+    14.22,
+    214.0,
+    0.427
+   ],
+   [
+    1697.0,
+    14.38,
+    211.0,
+    0.431
+   ],
+   [
+    1946.0,
+    13.66,
+    207.0,
+    0.41
+   ],
+   [
+    2202.0,
+    12.75,
+    204.0,
+    0.43
+   ],
+   [
+    2464.0,
+    11.94,
+    202.0,
+    0.385
+   ],
+   [
+    2733.0,
+    11.21,
+    204.0,
+    0.365
+   ]
+  ],
+  "s1_separation_event": "launch",
+  "s1_fin_material": "legal_balsa",
+  "s1_grid_fin_material": "legal_balsa",
+  "s0_aft_ballast_attachment": "airframe_bonded",
+  "s0_aft_ballast_rod_radius_m": 0.025875,
+  "nose_ballast_attachment": "nose_shell_bonded",
+  "nose_ballast_material": "aluminum",
+  "plugged_motors": true,
+  "octaweb_rings": true,
+  "octaweb_ring_width_m": 0.003
+ },
+ "metrics": {
+  "apogee_m": 3000.1846445659635,
+  "mach": 0.9238994525164737,
+  "flight_time_s": 52.885999999999996,
+  "status": "Up To Date",
+  "seed": 16000,
+  "event_times": {
+   "SIM_WARN": [
+    0.0,
+    23.59802548875544,
+    52.885999999999996,
+    83.502025
+   ],
+   "LAUNCH": [
+    0.0
+   ],
+   "IGNITION": [
+    0.0,
+    49.293,
+    81.178025
+   ],
+   "LIFTOFF": [
+    0.05
+   ],
+   "LAUNCHROD": [
+    0.32900000000000007
+   ],
+   "BURNOUT": [
+    3.593,
+    52.885999999999996,
+    83.502025
+   ],
+   "APOGEE": [
+    23.039649674163034
+   ],
+   "STAGE_SEPARATION": [
+    23.593
+   ],
+   "GROUND_HIT": [
+    52.38169840289157,
+    81.91153669675089
+   ],
+   "SIMULATION_END": [
+    52.885999999999996,
+    83.502025
+   ]
+  },
+  "branch_event_times": [
+   {
+    "SIM_WARN": [
+     0.0,
+     23.59802548875544,
+     52.885999999999996
+    ],
+    "LAUNCH": [
+     0.0
+    ],
+    "IGNITION": [
+     0.0,
+     49.293
+    ],
+    "LIFTOFF": [
+     0.05
+    ],
+    "LAUNCHROD": [
+     0.32900000000000007
+    ],
+    "BURNOUT": [
+     3.593,
+     52.885999999999996
+    ],
+    "APOGEE": [
+     23.039649674163034
+    ],
+    "STAGE_SEPARATION": [
+     23.593
+    ],
+    "GROUND_HIT": [
+     52.38169840289157
+    ],
+    "SIMULATION_END": [
+     52.885999999999996
+    ]
+   },
+   {
+    "IGNITION": [
+     0.0,
+     81.178025
+    ],
+    "BURNOUT": [
+     3.593,
+     83.502025
+    ],
+    "STAGE_SEPARATION": [
+     23.593
+    ],
+    "GROUND_HIT": [
+     81.91153669675089
+    ],
+    "SIM_WARN": [
+     83.502025
+    ],
+    "SIMULATION_END": [
+     83.502025
+    ]
+   }
+  ],
+  "apogee_east_m": -0.42807586173086787,
+  "apogee_north_m": -1.2644448725201973,
+  "stage_landings": [
+   {
+    "branch": 0,
+    "branch_name": "Sustainer",
+    "stage_key": "s0",
+    "time_s": 52.38169840289157,
+    "east_m": 64.97793352916702,
+    "north_m": 124.15714896260211,
+    "dist_m": 140.13254255968744,
+    "vz_ms": -0.8737927539776535,
+    "vxy_ms": 0.34170748218080554,
+    "total_speed": 0.9382311976704877,
+    "mass_kg": 10.653156175207505,
+    "orientation_theta_deg": 75.94190089813635,
+    "orientation_phi_deg": 230.6612471556953,
+    "aoa_deg": 96.03698586108233
+   },
+   {
+    "branch": 1,
+    "branch_name": "Booster",
+    "stage_key": "s1",
+    "time_s": 81.91153669675089,
+    "east_m": 302.8969938023203,
+    "north_m": 542.4922075652067,
+    "dist_m": 621.3247010408119,
+    "vz_ms": -0.5121350544747028,
+    "vxy_ms": 2.118831346360789,
+    "total_speed": 2.179846001061286,
+    "mass_kg": 3.562058865267676,
+    "orientation_theta_deg": 81.93670296697954,
+    "orientation_phi_deg": 211.8085055071595,
+    "aoa_deg": 120.30554530254702
+   }
+  ],
+  "branch_identities": [
+   {
+    "branch": 0,
+    "branch_name": "Sustainer",
+    "stage_key": "s0"
+   },
+   {
+    "branch": 1,
+    "branch_name": "Booster",
+    "stage_key": "s1"
+   }
+  ],
+  "ascent_static_margins": [
+   {
+    "branch": 0,
+    "min_calibers": 0.7641408115399956
+   },
+   {
+    "branch": 1,
+    "min_calibers": 0.7641408115399956
+   }
+  ],
+  "ascent_stability_segments": [
+   {
+    "segment": "full_stack",
+    "branch": 0,
+    "min_calibers": 0.7641408115399956
+   },
+   {
+    "segment": "booster",
+    "branch": 1,
+    "min_calibers": 0.7641408115399956
+   }
+  ],
+  "branch_apogee_states": [
+   {
+    "branch": 0,
+    "branch_name": "Sustainer",
+    "stage_key": "s0",
+    "time_s": 23.039649674163034,
+    "altitude_m": 3000.1846445659635,
+    "theta_deg": 37.36604358764417,
+    "phi_deg": 203.93546510747822,
+    "vz_ms": 0.007286388353884621,
+    "vxy_ms": 2.678752496301351
+   },
+   {
+    "branch": 1,
+    "branch_name": "Booster",
+    "stage_key": "s1",
+    "time_s": 23.039649674163034,
+    "altitude_m": 3000.1846445659635,
+    "theta_deg": 37.36604358764417,
+    "phi_deg": 203.93546510747822,
+    "vz_ms": 0.007286388353884621,
+    "vxy_ms": 2.678752496301351
+   }
+  ],
+  "separation_states": [
+   {
+    "branch": 0,
+    "time_s": 23.593,
+    "altitude_m": 2998.741730224264,
+    "theta_deg": 22.026443020821837,
+    "phi_deg": 203.93843110138886,
+    "vz_ms": -5.223400480647055,
+    "vxy_ms": 2.7921864750886076,
+    "aoa_deg": 52.494615573526886
+   }
+  ],
+  "min_static_margin": 0.7641408115399956,
+  "m_prop_kg_actual": 5.2688934643668315,
+  "s0_landing_speed": 0.9382311976704877,
+  "s0_landing_dist": 140.13254255968744,
+  "s0_east_m": 64.97793352916702,
+  "s0_north_m": 124.15714896260211,
+  "s1_landing_speed": 2.179846001061286,
+  "s1_landing_dist": 621.3247010408119,
+  "s1_east_m": 302.8969938023203,
+  "s1_north_m": 542.4922075652067
+ },
+ "score": {
+  "score": 569260.5410173639,
+  "raw_score": 569260.5410173639,
+  "is_legal": true,
+  "violations": [],
+  "apogee_m": 3000.1846445659635,
+  "apogee_err_m": 0.184644565963481,
+  "E_ap": -0.42807586173086787,
+  "N_ap": -1.2644448725201973,
+  "mean_E": 183.93746366574368,
+  "mean_N": 333.32467826390445,
+  "mean_V": 1.5590385993658868,
+  "m_prop_kg": 5.2688934643668315,
+  "apogee_alt_pen": 102.28084721952686,
+  "apogee_horiz_pen": 28.513116464627892,
+  "touch_pos_pen": 289876.66335904435,
+  "touch_vel_pen": 1215.300677156373,
+  "prop_pen": 39516.70098275124,
+  "metrics_gate": {
+   "is_legal": true,
+   "violations": []
+  }
+ },
+ "seed": 16000,
+ "checklist": [
+  [
+   true,
+   "multi-stage, all stages land",
+   "2 landed branches"
+  ],
+  [
+   true,
+   "touchdown |v| < 5 m/s (Sustainer)",
+   "0.938 m/s at t=52.38 s"
+  ],
+  [
+   true,
+   "tail-first attitude (Sustainer)",
+   "theta=+75.9 deg"
+  ],
+  [
+   true,
+   "touchdown |v| < 5 m/s (Booster)",
+   "2.180 m/s at t=81.91 s"
+  ],
+  [
+   true,
+   "tail-first attitude (Booster)",
+   "theta=+81.9 deg"
+  ],
+  [
+   true,
+   "subsonic throughout",
+   "Mach_max=0.9239"
+  ],
+  [
+   true,
+   "overall length <= 4 m",
+   "1.820 m"
+  ],
+  [
+   true,
+   "launch rod <= 6 m",
+   "6.00 m"
+  ],
+  [
+   true,
+   "no recovery devices",
+   "no parachute/streamer/recoverydevice tags"
+  ],
+  [
+   true,
+   "no mass/CG/CD overrides",
+   "no override tags"
+  ],
+  [
+   true,
+   "two valid airframe-spanning rings per stage",
+   "4 centered nondegenerate rings"
+  ],
+  [
+   true,
+   "nose ballast rigidly bonded to nose shell",
+   "centered full-radius structural bulkhead"
+  ],
+  [
+   true,
+   "saved flight-event references resolve",
+   "all warning/event IDs resolve within stored branches"
+  ],
+  [
+   true,
+   "material density in [170, 11340] kg/m3",
+   "min=170 max=7900"
+  ],
+  [
+   true,
+   "no ejection charges (plugged motors)",
+   "none"
+  ],
+  [
+   true,
+   "exactly one simulation",
+   "1"
+  ],
+  [
+   true,
+   "simulation not aborted",
+   "Up To Date"
+  ]
+ ]
+}

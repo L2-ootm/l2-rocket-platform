@@ -1,0 +1,17 @@
+Loading reference rocket...
+Starting exhaustive training run of 500 parallel simulations (Target: 83456m)...
+---
+Training completed in 5.28s
+Simulation rate: 95 sims/sec
+
+Top 10 Foguetes Otimizados para Alvo Exato 83456m:
+#1: Apogee 79.96 km (Err: 3498.73m) | Mach 6.46 | Nose x0.9889 | Fins x0.5165 | Body x0.7465
+#2: Apogee 77.88 km (Err: 5578.54m) | Mach 6.35 | Nose x1.4676 | Fins x0.5172 | Body x0.7868
+#3: Apogee 77.63 km (Err: 5827.18m) | Mach 6.32 | Nose x1.6456 | Fins x0.5103 | Body x0.7616
+#4: Apogee 77.23 km (Err: 6228.11m) | Mach 6.44 | Nose x0.9178 | Fins x0.5127 | Body x0.7782
+#5: Apogee 76.99 km (Err: 6466.71m) | Mach 6.40 | Nose x1.2137 | Fins x0.7316 | Body x0.7035
+#6: Apogee 76.20 km (Err: 7256.80m) | Mach 6.33 | Nose x1.5572 | Fins x0.6278 | Body x0.7421
+#7: Apogee 75.63 km (Err: 7825.53m) | Mach 6.37 | Nose x1.2115 | Fins x0.6457 | Body x0.7820
+#8: Apogee 75.34 km (Err: 8117.35m) | Mach 6.41 | Nose x0.9407 | Fins x0.5613 | Body x0.7972
+#9: Apogee 75.23 km (Err: 8230.68m) | Mach 6.29 | Nose x1.6679 | Fins x0.5209 | Body x0.7998
+#10: Apogee 74.97 km (Err: 8489.76m) | Mach 6.30 | Nose x1.5266 | Fins x0.5173 | Body x0.8360

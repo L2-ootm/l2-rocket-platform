@@ -1,0 +1,292 @@
+{
+  "best": {
+    "label": "fins8_h0.70",
+    "mach": 0.7999,
+    "margin": 1.743,
+    "mean_q": 0.7527,
+    "s1_fin_count": 8,
+    "s1_fin_height": 0.7,
+    "speed": 15.037,
+    "vxy": 10.664
+  },
+  "results": [
+    {
+      "label": "fins8_h0.70",
+      "mach": 0.7999,
+      "margin": 1.743,
+      "mean_q": 0.7527,
+      "s1_fin_count": 8,
+      "s1_fin_height": 0.7,
+      "speed": 15.037,
+      "vxy": 10.664
+    },
+    {
+      "align_window": 30.85,
+      "label": "fin_h0.6",
+      "mach": 0.833,
+      "margin": 1.745,
+      "mean_q": 0.7022,
+      "s1_aft_ballast_kg": 0.0,
+      "s1_fin_height": 0.6,
+      "speed": 15.893,
+      "vxy": 9.783,
+      "vz": -12.524
+    },
+    {
+      "align_window": 32.41,
+      "label": "fin_h0.5",
+      "mach": 0.8383,
+      "margin": 1.748,
+      "mean_q": 0.8037,
+      "s1_aft_ballast_kg": 0.0,
+      "s1_fin_height": 0.5,
+      "speed": 17.812,
+      "vxy": 13.212,
+      "vz": -11.946
+    },
+    {
+      "align_window": 5.13,
+      "label": "fin_h0.7",
+      "mach": 0.8285,
+      "margin": 1.748,
+      "mean_q": -0.318,
+      "s1_aft_ballast_kg": 0.0,
+      "s1_fin_height": 0.7,
+      "speed": 55.85,
+      "vxy": 2.563,
+      "vz": -55.791
+    },
+    {
+      "label": "fins4_h0.70",
+      "mach": 0.8285,
+      "margin": 1.748,
+      "mean_q": -0.318,
+      "s1_fin_count": 4,
+      "s1_fin_height": 0.7,
+      "speed": 55.85,
+      "vxy": 2.563
+    },
+    {
+      "label": "mid_bal0.0_fin0.70",
+      "mach": 0.8285,
+      "margin": 1.748,
+      "mean_q": -0.318,
+      "s1_fin_height": 0.7,
+      "s1_mid_ballast_kg": 0.0,
+      "speed": 55.85,
+      "vxy": 2.563
+    },
+    {
+      "label": "fins6_h0.70",
+      "mach": 0.8147,
+      "margin": 1.741,
+      "mean_q": -0.2498,
+      "s1_fin_count": 6,
+      "s1_fin_height": 0.7,
+      "speed": 56.374,
+      "vxy": 1.957
+    },
+    {
+      "align_window": 4.0,
+      "label": "fin_h0.8",
+      "mach": 0.8246,
+      "margin": 1.75,
+      "mean_q": -0.3784,
+      "s1_aft_ballast_kg": 0.0,
+      "s1_fin_height": 0.8,
+      "speed": 56.877,
+      "vxy": 2.616,
+      "vz": -56.817
+    },
+    {
+      "align_window": 3.6,
+      "label": "fin_h0.9",
+      "mach": 0.8196,
+      "margin": 1.748,
+      "mean_q": -0.4115,
+      "s1_aft_ballast_kg": 0.0,
+      "s1_fin_height": 0.9,
+      "speed": 57.349,
+      "vxy": 3.237,
+      "vz": -57.257
+    },
+    {
+      "align_window": 3.54,
+      "label": "fin_h1.0",
+      "mach": 0.8158,
+      "margin": 1.744,
+      "mean_q": -0.3992,
+      "s1_aft_ballast_kg": 0.0,
+      "s1_fin_height": 1.0,
+      "speed": 57.539,
+      "vxy": 2.721,
+      "vz": -57.474
+    },
+    {
+      "label": "mid_bal0.5_fin0.70",
+      "mach": 0.8222,
+      "margin": 1.744,
+      "mean_q": -0.5629,
+      "s1_fin_height": 0.7,
+      "s1_mid_ballast_kg": 0.5,
+      "speed": 58.897,
+      "vxy": 3.433
+    },
+    {
+      "align_window": 2.7,
+      "label": "best_7",
+      "mach": 0.8057,
+      "margin": 1.736,
+      "mean_q": -0.5186,
+      "params": {
+        "s1_aft_ballast_kg": 0.0,
+        "s1_fin_height": 0.8,
+        "s1_fin_root": 0.25,
+        "s1_mid_ballast_kg": 1.0
+      },
+      "speed": 59.927,
+      "vxy": 2.366
+    },
+    {
+      "align_window": 1.85,
+      "label": "best_6",
+      "mach": 0.7849,
+      "margin": 1.733,
+      "mean_q": -0.5935,
+      "params": {
+        "s1_aft_ballast_kg": 0.0,
+        "s1_fin_count": 6,
+        "s1_fin_height": 1.0,
+        "s1_mid_ballast_kg": 1.0
+      },
+      "speed": 60.08,
+      "vxy": 2.399
+    },
+    {
+      "align_window": 1.75,
+      "label": "best_4",
+      "mach": 0.7941,
+      "margin": 1.738,
+      "mean_q": -0.6302,
+      "params": {
+        "s1_aft_ballast_kg": 0.0,
+        "s1_fin_count": 6,
+        "s1_fin_height": 0.8,
+        "s1_mid_ballast_kg": 1.0
+      },
+      "speed": 60.488,
+      "vxy": 2.569
+    },
+    {
+      "label": "mid_bal1.0_fin0.70",
+      "mach": 0.8143,
+      "margin": 1.731,
+      "mean_q": -0.6811,
+      "s1_fin_height": 0.7,
+      "s1_mid_ballast_kg": 1.0,
+      "speed": 60.493,
+      "vxy": 2.984
+    },
+    {
+      "align_window": 1.35,
+      "label": "best_5",
+      "mach": 0.7841,
+      "margin": 1.731,
+      "mean_q": -0.6706,
+      "params": {
+        "s1_aft_ballast_kg": 0.0,
+        "s1_fin_count": 6,
+        "s1_fin_height": 0.9,
+        "s1_mid_ballast_kg": 1.5
+      },
+      "speed": 61.107,
+      "vxy": 2.276
+    },
+    {
+      "align_window": 2.0,
+      "label": "best_8",
+      "mach": 0.7942,
+      "margin": 1.736,
+      "mean_q": -0.5813,
+      "params": {
+        "s1_aft_ballast_kg": 0.0,
+        "s1_fin_height": 0.9,
+        "s1_fin_root": 0.25,
+        "s1_mid_ballast_kg": 1.5
+      },
+      "speed": 61.182,
+      "vxy": 2.436
+    },
+    {
+      "label": "mid_bal1.5_fin0.70",
+      "mach": 0.8072,
+      "margin": 1.725,
+      "mean_q": -0.7221,
+      "s1_fin_height": 0.7,
+      "s1_mid_ballast_kg": 1.5,
+      "speed": 61.834,
+      "vxy": 3.003
+    },
+    {
+      "label": "mid_bal2.0_fin0.70",
+      "mach": 0.8006,
+      "margin": 1.736,
+      "mean_q": -0.7539,
+      "s1_fin_height": 0.7,
+      "s1_mid_ballast_kg": 2.0,
+      "speed": 62.897,
+      "vxy": 3.034
+    },
+    {
+      "align_window": 1.8,
+      "label": "best_1",
+      "mach": 0.7697,
+      "margin": 1.801,
+      "mean_q": -0.6825,
+      "params": {
+        "s1_aft_ballast_kg": 0.0,
+        "s1_fin_height": 0.8,
+        "s1_mid_ballast_kg": 1.0,
+        "s1_separation_delay": 0.2
+      },
+      "speed": 63.293,
+      "vxy": 3.98
+    },
+    {
+      "align_window": 1.8,
+      "label": "best_3",
+      "mach": 0.7596,
+      "margin": 1.805,
+      "mean_q": -0.6781,
+      "params": {
+        "s1_aft_ballast_kg": 0.0,
+        "s1_fin_height": 1.0,
+        "s1_mid_ballast_kg": 1.0,
+        "s1_separation_delay": 0.2
+      },
+      "speed": 63.514,
+      "vxy": 3.887
+    },
+    {
+      "align_window": 1.4,
+      "label": "best_2",
+      "mach": 0.7564,
+      "margin": 1.8,
+      "mean_q": -0.7379,
+      "params": {
+        "s1_aft_ballast_kg": 0.0,
+        "s1_fin_height": 0.9,
+        "s1_mid_ballast_kg": 1.5,
+        "s1_separation_delay": 0.2
+      },
+      "speed": 64.797,
+      "vxy": 3.598
+    }
+  ],
+  "summary": {
+    "baseline_speed": 21.699,
+    "best_speed": 15.037,
+    "improvement": 6.66,
+    "total_tested": 22
+  }
+}

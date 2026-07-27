@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openrocket version="1.6" creator="L2-OSIFOG-Sweep">
+  <rocket>
+    <name>OSIFOG Level 3 Falcon</name>
+    <designer>L2 Systems AI</designer>
+    <motorconfiguration configid="9c1512a2-3f13-5182-8efb-e75a0c774210" default="true"/>
+    <referencetype>maximum</referencetype>
+    <subcomponents>
+      
+      <stage>
+        <name>Sustainer</name>
+        <subcomponents>
+          
+        <nosecone>
+          <name>Nose Cone</name>
+          <finish>polished</finish>
+          <material type="surface" density="1800">Fiberglass</material>
+          <length>0.200000</length>
+          <thickness>0.002</thickness>
+          <shape>haack</shape>
+          <shapeclipped>false</shapeclipped>
+          <aftradius>0.025000</aftradius>
+          <aftshoulderlength>0.03</aftshoulderlength>
+          <aftshoulderradius>0.023000</aftshoulderradius>
+          <aftshoulderthickness>0.002</aftshoulderthickness>
+          <aftshouldercapped>false</aftshouldercapped>
+        </nosecone>
+          <bodytube>
+            <name>Sustainer Airframe</name>
+            <finish>polished</finish>
+            <material type="bulk" density="600">Cardboard</material>
+            <length>0.350000</length>
+            <thickness>0.002</thickness>
+            <radius>0.025000</radius>
+            <subcomponents>
+              
+          <innertube>
+            <name>Motor Mount</name>
+            <position type="bottom">0.000000</position>
+            <material type="bulk" density="700">Kraft phenolic</material>
+            <length>0.140000</length>
+            <radialposition>0.0</radialposition>
+            <radialdirection>0.0</radialdirection>
+            <outerradius>0.015500</outerradius>
+            <thickness>0.001</thickness>
+            <clusterconfiguration>single</clusterconfiguration>
+            <motormount>
+              <ignitionevent>launch</ignitionevent>
+              <ignitiondelay>0.0</ignitiondelay>
+              <overhang>0.005</overhang>
+              <motor configid="9c1512a2-3f13-5182-8efb-e75a0c774210">
+                <manufacturer>AeroTech</manufacturer>
+                <digest>5a4bcd84827186bf9fe4fafa153822e3</digest>
+                <designation>G71R</designation>
+                <diameter>0.029</diameter>
+                <length>0.12</length>
+                <delay>4</delay>
+              </motor>
+            </motormount>
+          </innertube>
+              
+          <innertube>
+            <name>Motor Mount</name>
+            <position type="bottom">0.150000</position>
+            <material type="bulk" density="700">Kraft phenolic</material>
+            <length>0.118000</length>
+            <radialposition>0.0</radialposition>
+            <radialdirection>0.0</radialdirection>
+            <outerradius>0.015500</outerradius>
+            <thickness>0.001</thickness>
+            <clusterconfiguration>single</clusterconfiguration>
+            <motormount>
+              <ignitionevent>launch</ignitionevent>
+              <ignitiondelay>14.0</ignitiondelay>
+              <overhang>0.005</overhang>
+              <motor configid="9c1512a2-3f13-5182-8efb-e75a0c774210">
+                <manufacturer>AeroTech</manufacturer>
+                <digest>03ffc133123d165c5bbc8d5ed240ba56</digest>
+                <designation>F50T</designation>
+                <diameter>0.029</diameter>
+                <length>0.098</length>
+                <delay>4</delay>
+              </motor>
+            </motormount>
+          </innertube>
+              
+          <freeformfinset>
+            <name>Sustainer Fins</name>
+            <position type="bottom">0.0</position>
+            <material type="surface" density="1800">Fiberglass</material>
+            <fincount>4</fincount>
+            <thickness>0.003</thickness>
+            <crosssection>airfoil</crosssection>
+            <finpoints><point x="0.000000" y="0.000000"/>
+<point x="0.023094" y="0.040000"/>
+<point x="0.047094" y="0.040000"/>
+<point x="0.080000" y="0.000000"/></finpoints>
+          </freeformfinset>
+            </subcomponents>
+          </bodytube>
+        </subcomponents>
+      </stage>
+      
+      <stage>
+        <name>Booster</name>
+        <separationevent>burnout</separationevent>
+        <separationdelay>0.0</separationdelay>
+        <subcomponents>
+          <bodytube>
+            <name>Booster Airframe</name>
+            <finish>polished</finish>
+            <material type="bulk" density="600">Cardboard</material>
+            <length>0.400000</length>
+            <thickness>0.002</thickness>
+            <radius>0.025000</radius>
+            <subcomponents>
+              
+          <innertube>
+            <name>Motor Mount</name>
+            <position type="bottom">0.000000</position>
+            <material type="bulk" density="700">Kraft phenolic</material>
+            <length>0.258000</length>
+            <radialposition>0.0</radialposition>
+            <radialdirection>0.0</radialdirection>
+            <outerradius>0.015500</outerradius>
+            <thickness>0.001</thickness>
+            <clusterconfiguration>single</clusterconfiguration>
+            <motormount>
+              <ignitionevent>launch</ignitionevent>
+              <ignitiondelay>0.0</ignitiondelay>
+              <overhang>0.005</overhang>
+              <motor configid="9c1512a2-3f13-5182-8efb-e75a0c774210">
+                <manufacturer>AeroTech</manufacturer>
+                <digest>30ca1252c9156ee8e93e661886b131de</digest>
+                <designation>H180W</designation>
+                <diameter>0.029</diameter>
+                <length>0.238</length>
+                <delay>10</delay>
+              </motor>
+            </motormount>
+          </innertube>
+              
+          <innertube>
+            <name>Motor Mount</name>
+            <position type="bottom">0.268000</position>
+            <material type="bulk" density="700">Kraft phenolic</material>
+            <length>0.118000</length>
+            <radialposition>0.0</radialposition>
+            <radialdirection>0.0</radialdirection>
+            <outerradius>0.015500</outerradius>
+            <thickness>0.001</thickness>
+            <clusterconfiguration>single</clusterconfiguration>
+            <motormount>
+              <ignitionevent>launch</ignitionevent>
+              <ignitiondelay>10.0</ignitiondelay>
+              <overhang>0.005</overhang>
+              <motor configid="9c1512a2-3f13-5182-8efb-e75a0c774210">
+                <manufacturer>AeroTech</manufacturer>
+                <digest>03ffc133123d165c5bbc8d5ed240ba56</digest>
+                <designation>F50T</designation>
+                <diameter>0.029</diameter>
+                <length>0.098</length>
+                <delay>4</delay>
+              </motor>
+            </motormount>
+          </innertube>
+              
+          <freeformfinset>
+            <name>Booster Fins</name>
+            <position type="bottom">0.0</position>
+            <material type="surface" density="1800">Fiberglass</material>
+            <fincount>4</fincount>
+            <thickness>0.003</thickness>
+            <crosssection>airfoil</crosssection>
+            <finpoints><point x="0.000000" y="0.000000"/>
+<point x="0.023094" y="0.040000"/>
+<point x="0.047094" y="0.040000"/>
+<point x="0.080000" y="0.000000"/></finpoints>
+          </freeformfinset>
+            </subcomponents>
+          </bodytube>
+        </subcomponents>
+      </stage>
+    </subcomponents>
+  </rocket>
+  <simulations>
+    <simulation status="notsimulated">
+      <name>OSIFOG Level 3</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>9c1512a2-3f13-5182-8efb-e75a0c774210</configid>
+        <launchrodlength>2.0</launchrodlength>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+
+        <wind model="average">
+          <speed>3.309</speed>
+          <direction>288.0</direction>
+          <standarddeviation>0.503</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="agl">
+          <windlevel altitude="2.0" speed="3.309" direction="288.0" standarddeviation="0.503"/>
+          <windlevel altitude="7.0" speed="4.315" direction="288.0" standarddeviation="0.363"/>
+          <windlevel altitude="12.0" speed="4.763" direction="287.9" standarddeviation="0.399"/>
+          <windlevel altitude="17.0" speed="5.062" direction="287.9" standarddeviation="0.443"/>
+          <windlevel altitude="22.0" speed="5.291" direction="287.9" standarddeviation="0.479"/>
+          <windlevel altitude="27.0" speed="5.48" direction="287.8" standarddeviation="0.509"/>
+          <windlevel altitude="32.0" speed="5.641" direction="287.8" standarddeviation="0.536"/>
+          <windlevel altitude="37.0" speed="5.784" direction="287.8" standarddeviation="0.559"/>
+          <windlevel altitude="42.0" speed="5.912" direction="287.7" standarddeviation="0.581"/>
+          <windlevel altitude="47.0" speed="6.03" direction="287.7" standarddeviation="0.601"/>
+          <windlevel altitude="52.0" speed="6.139" direction="287.7" standarddeviation="0.619"/>
+          <windlevel altitude="62.0" speed="6.337" direction="287.6" standarddeviation="0.653"/>
+          <windlevel altitude="72.0" speed="6.516" direction="287.6" standarddeviation="0.683"/>
+          <windlevel altitude="82.0" speed="6.681" direction="287.5" standarddeviation="0.71"/>
+          <windlevel altitude="92.0" speed="6.835" direction="287.4" standarddeviation="0.735"/>
+          <windlevel altitude="102.0" speed="6.952" direction="287.4" standarddeviation="0.758"/>
+          <windlevel altitude="108.0" speed="7.0" direction="280.0" standarddeviation="0.21"/>
+          <windlevel altitude="320.0" speed="5.47" direction="295.0" standarddeviation="1.217"/>
+          <windlevel altitude="537.0" speed="2.11" direction="285.0" standarddeviation="0.911"/>
+          <windlevel altitude="759.0" speed="1.86" direction="237.0" standarddeviation="0.214"/>
+          <windlevel altitude="986.0" speed="2.47" direction="229.0" standarddeviation="0.213"/>
+          <windlevel altitude="1217.0" speed="2.23" direction="225.0" standarddeviation="0.142"/>
+          <windlevel altitude="1455.0" speed="1.9" direction="217.0" standarddeviation="0.212"/>
+          <windlevel altitude="1697.0" speed="2.42" direction="189.0" standarddeviation="0.674"/>
+          <windlevel altitude="1946.0" speed="4.62" direction="173.0" standarddeviation="1.152"/>
+          <windlevel altitude="2202.0" speed="7.03" direction="175.0" standarddeviation="0.815"/>
+          <windlevel altitude="2464.0" speed="7.86" direction="183.0" standarddeviation="0.405"/>
+          <windlevel altitude="2733.0" speed="7.07" direction="203.0" standarddeviation="0.395"/>
+        </wind>
+        <windmodeltype>multilevel</windmodeltype>
+        <launchaltitude>3.0</launchaltitude>
+        <launchlatitude>28.5621</launchlatitude>
+        <launchlongitude>-80.5772</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="extendedisa">
+          <basetemperature>290.55</basetemperature>
+          <basepressure>100000.0</basepressure>
+          <baserelativehumidity>0.91</baserelativehumidity>
+        </atmosphere>
+        <timestep>0.05</timestep>
+      </conditions>
+    </simulation>
+  </simulations>
+</openrocket>

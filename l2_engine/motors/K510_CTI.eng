@@ -1,0 +1,24 @@
+;Cesaroni Technology 2486K510 extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=514, curve_id=584
+; lookup key must exactly match MOTOR_DATABASE's designation string in
+; rocket_forge.py -- was "K510_CTI" here vs MOTOR_DATABASE's "K510", same
+; bug class and same fix as J360_CTI.eng's own comment explains.
+K510 75 350 0,P 1.1900 2.5900 CT
+0.000 0.00
+0.100 645.25
+0.300 689.75
+0.500 658.60
+1.000 636.35
+1.600 600.75
+2.000 565.15
+2.400 534.00
+2.500 525.10
+3.000 471.70
+3.500 422.75
+3.700 400.50
+4.000 391.60
+4.400 382.70
+4.500 378.25
+4.600 333.75
+4.700 66.75
+4.840 0.00

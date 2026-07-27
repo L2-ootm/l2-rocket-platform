@@ -1,0 +1,429 @@
+{
+  "gate": 1,
+  "key_finding": "STAGE_FREE_DESCENT_DIAGNOSTIC has retro fire after ground hit (never in flight). POWERED_STAGE_LANDING_VALIDATION has retro fire during descent. Scenarios are semantically different and reproducible.",
+  "scenarios": [
+    {
+      "anti_tumble_digest": true,
+      "booster_ground_hit_s": 43.6519,
+      "branch_events": [
+        {
+          "APOGEE": [
+            20.6833
+          ],
+          "BURNOUT": [
+            1.695,
+            3.39,
+            203.356
+          ],
+          "EJECTION_CHARGE": [
+            13.39,
+            217.356
+          ],
+          "GROUND_HIT": [
+            45.3613
+          ],
+          "IGNITION": [
+            0.0,
+            1.695,
+            200.0
+          ],
+          "LAUNCH": [
+            0.0
+          ],
+          "LAUNCHROD": [
+            0.3321
+          ],
+          "LIFTOFF": [
+            0.041
+          ],
+          "SIMULATION_END": [
+            217.356
+          ],
+          "SIM_WARN": [
+            0.0,
+            200.0,
+            203.356,
+            217.356
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ]
+        },
+        {
+          "APOGEE": [
+            8.5298
+          ],
+          "BURNOUT": [
+            1.695,
+            203.356
+          ],
+          "EJECTION_CHARGE": [
+            11.695,
+            217.356
+          ],
+          "GROUND_HIT": [
+            43.6519
+          ],
+          "IGNITION": [
+            0.0,
+            200.0
+          ],
+          "SIMULATION_END": [
+            217.356
+          ],
+          "SIM_WARN": [
+            1.695,
+            200.0,
+            203.356,
+            203.356,
+            217.356
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ]
+        }
+      ],
+      "branch_mapping": {
+        "Booster": "s1",
+        "Sustainer": "s0"
+      },
+      "diagnostic_only": true,
+      "hashes_match": true,
+      "mission_digest": "2e8b54aab3542212fcc5c38970a82a95b2ec7b631216b7560e53ab0beae91a96",
+      "reopened_document_hash": "bbec4aed2e0a4a16830ba1898348b87aca3220cd471243205c4e29e22077085a",
+      "retro_fired_in_flight": false,
+      "s1_ignitions_before_ground_hit": [],
+      "s1_retro_delay_s": 200.0,
+      "scenario_type": "STAGE_FREE_DESCENT_DIAGNOSTIC",
+      "serialized_document_hash": "bbec4aed2e0a4a16830ba1898348b87aca3220cd471243205c4e29e22077085a",
+      "stage_ids": [
+        {
+          "id": "0ed389ae-f4f8-5c22-824b-b8efefb40598",
+          "name": "Sustainer"
+        },
+        {
+          "id": "d91db97f-c678-58d1-9db7-65ebd3c2fb46",
+          "name": "Booster"
+        }
+      ],
+      "wind_digest": "b3624a4b769a3890ce9be8e7ee2dade0a5370d1d2abaf1c56ac03c2b844be588"
+    },
+    {
+      "anti_tumble_digest": true,
+      "booster_ground_hit_s": 31.201,
+      "branch_events": [
+        {
+          "APOGEE": [
+            20.6833
+          ],
+          "BURNOUT": [
+            1.695,
+            3.39,
+            203.356
+          ],
+          "EJECTION_CHARGE": [
+            13.39,
+            217.356
+          ],
+          "GROUND_HIT": [
+            45.3613
+          ],
+          "IGNITION": [
+            0.0,
+            1.695,
+            200.0
+          ],
+          "LAUNCH": [
+            0.0
+          ],
+          "LAUNCHROD": [
+            0.3321
+          ],
+          "LIFTOFF": [
+            0.041
+          ],
+          "SIMULATION_END": [
+            217.356
+          ],
+          "SIM_WARN": [
+            0.0,
+            200.0,
+            203.356,
+            217.356
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ]
+        },
+        {
+          "APOGEE": [
+            8.5298
+          ],
+          "BURNOUT": [
+            1.695,
+            15.356
+          ],
+          "EJECTION_CHARGE": [
+            11.695,
+            29.356
+          ],
+          "GROUND_HIT": [
+            31.201
+          ],
+          "IGNITION": [
+            0.0,
+            12.0
+          ],
+          "SIMULATION_END": [
+            31.201
+          ],
+          "SIM_WARN": [
+            1.695
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ]
+        }
+      ],
+      "branch_mapping": {
+        "Booster": "s1",
+        "Sustainer": "s0"
+      },
+      "diagnostic_only": false,
+      "hashes_match": true,
+      "mission_digest": "2e8b54aab3542212fcc5c38970a82a95b2ec7b631216b7560e53ab0beae91a96",
+      "reopened_document_hash": "dea7ceb2dd4b61f66d1d78a71d4edcbf92eab7fb6f01da5c79e67557176f77d1",
+      "retro_fired_in_flight": true,
+      "s1_ignitions_before_ground_hit": [
+        12.0
+      ],
+      "s1_retro_delay_s": 12.0,
+      "scenario_type": "POWERED_STAGE_LANDING_VALIDATION",
+      "serialized_document_hash": "dea7ceb2dd4b61f66d1d78a71d4edcbf92eab7fb6f01da5c79e67557176f77d1",
+      "stage_ids": [
+        {
+          "id": "0ed389ae-f4f8-5c22-824b-b8efefb40598",
+          "name": "Sustainer"
+        },
+        {
+          "id": "d91db97f-c678-58d1-9db7-65ebd3c2fb46",
+          "name": "Booster"
+        }
+      ],
+      "wind_digest": "b3624a4b769a3890ce9be8e7ee2dade0a5370d1d2abaf1c56ac03c2b844be588"
+    },
+    {
+      "anti_tumble_digest": true,
+      "booster_ground_hit_s": 43.6519,
+      "branch_events": [
+        {
+          "APOGEE": [
+            20.6833
+          ],
+          "BURNOUT": [
+            1.695,
+            3.39,
+            203.356
+          ],
+          "EJECTION_CHARGE": [
+            13.39,
+            217.356
+          ],
+          "GROUND_HIT": [
+            45.3613
+          ],
+          "IGNITION": [
+            0.0,
+            1.695,
+            200.0
+          ],
+          "LAUNCH": [
+            0.0
+          ],
+          "LAUNCHROD": [
+            0.3321
+          ],
+          "LIFTOFF": [
+            0.041
+          ],
+          "SIMULATION_END": [
+            217.356
+          ],
+          "SIM_WARN": [
+            0.0,
+            200.0,
+            203.356,
+            217.356
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ]
+        },
+        {
+          "APOGEE": [
+            8.5298
+          ],
+          "BURNOUT": [
+            1.695,
+            68.636
+          ],
+          "EJECTION_CHARGE": [
+            11.695,
+            82.636
+          ],
+          "GROUND_HIT": [
+            43.6519
+          ],
+          "IGNITION": [
+            0.0,
+            65.28
+          ],
+          "SIMULATION_END": [
+            82.636
+          ],
+          "SIM_WARN": [
+            1.695,
+            65.28,
+            68.636,
+            68.636,
+            82.636
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ]
+        }
+      ],
+      "branch_mapping": {
+        "Booster": "s1",
+        "Sustainer": "s0"
+      },
+      "diagnostic_only": false,
+      "hashes_match": true,
+      "mission_digest": "2e8b54aab3542212fcc5c38970a82a95b2ec7b631216b7560e53ab0beae91a96",
+      "reopened_document_hash": "fdd7a480ad2bfc9c43fd491b8090088dce014808b90de722e07e5c1cce78e162",
+      "retro_fired_in_flight": false,
+      "s1_ignitions_before_ground_hit": [],
+      "s1_retro_delay_s": 65.28,
+      "scenario_type": "OFFICIAL_FULL_MISSION",
+      "serialized_document_hash": "fdd7a480ad2bfc9c43fd491b8090088dce014808b90de722e07e5c1cce78e162",
+      "stage_ids": [
+        {
+          "id": "0ed389ae-f4f8-5c22-824b-b8efefb40598",
+          "name": "Sustainer"
+        },
+        {
+          "id": "d91db97f-c678-58d1-9db7-65ebd3c2fb46",
+          "name": "Booster"
+        }
+      ],
+      "wind_digest": "b3624a4b769a3890ce9be8e7ee2dade0a5370d1d2abaf1c56ac03c2b844be588"
+    },
+    {
+      "anti_tumble_digest": true,
+      "booster_ground_hit_s": 43.6519,
+      "branch_events": [
+        {
+          "APOGEE": [
+            20.6833
+          ],
+          "BURNOUT": [
+            1.695,
+            3.39,
+            203.356
+          ],
+          "EJECTION_CHARGE": [
+            13.39,
+            217.356
+          ],
+          "GROUND_HIT": [
+            45.3613
+          ],
+          "IGNITION": [
+            0.0,
+            1.695,
+            200.0
+          ],
+          "LAUNCH": [
+            0.0
+          ],
+          "LAUNCHROD": [
+            0.3321
+          ],
+          "LIFTOFF": [
+            0.041
+          ],
+          "SIMULATION_END": [
+            217.356
+          ],
+          "SIM_WARN": [
+            0.0,
+            200.0,
+            203.356,
+            217.356
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ]
+        },
+        {
+          "APOGEE": [
+            8.5298
+          ],
+          "BURNOUT": [
+            1.695,
+            203.356
+          ],
+          "EJECTION_CHARGE": [
+            11.695,
+            217.356
+          ],
+          "GROUND_HIT": [
+            43.6519
+          ],
+          "IGNITION": [
+            0.0,
+            200.0
+          ],
+          "SIMULATION_END": [
+            217.356
+          ],
+          "SIM_WARN": [
+            1.695,
+            200.0,
+            203.356,
+            203.356,
+            217.356
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ]
+        }
+      ],
+      "branch_mapping": {
+        "Booster": "s1",
+        "Sustainer": "s0"
+      },
+      "diagnostic_only": true,
+      "hashes_match": true,
+      "mission_digest": "2e8b54aab3542212fcc5c38970a82a95b2ec7b631216b7560e53ab0beae91a96",
+      "reopened_document_hash": "bbec4aed2e0a4a16830ba1898348b87aca3220cd471243205c4e29e22077085a",
+      "retro_fired_in_flight": false,
+      "s1_ignitions_before_ground_hit": [],
+      "s1_retro_delay_s": 200.0,
+      "scenario_type": "DEBUG_ONLY",
+      "serialized_document_hash": "bbec4aed2e0a4a16830ba1898348b87aca3220cd471243205c4e29e22077085a",
+      "stage_ids": [
+        {
+          "id": "0ed389ae-f4f8-5c22-824b-b8efefb40598",
+          "name": "Sustainer"
+        },
+        {
+          "id": "d91db97f-c678-58d1-9db7-65ebd3c2fb46",
+          "name": "Booster"
+        }
+      ],
+      "wind_digest": "b3624a4b769a3890ce9be8e7ee2dade0a5370d1d2abaf1c56ac03c2b844be588"
+    }
+  ],
+  "status": "PASS"
+}

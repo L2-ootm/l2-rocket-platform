@@ -1,0 +1,59 @@
+{
+  "experiment": "D_score_crossvalidation",
+  "input_data": {
+    "apogee_m": 3000.031,
+    "apogee_east_m": -2.483,
+    "apogee_north_m": 2.154,
+    "stage_landings": [
+      {
+        "east_m": 58.164,
+        "north_m": 109.44,
+        "total_speed": 2.648
+      },
+      {
+        "east_m": 70.282,
+        "north_m": 52.926,
+        "total_speed": 2.459
+      }
+    ],
+    "m_prop_kg_actual": 4.725
+  },
+  "hand_calculation": {
+    "base": 900000.0,
+    "alt_pen": 2.8829999999905267,
+    "horiz_pen": 172.88008000000002,
+    "mean_E": 64.223,
+    "mean_N": 81.18299999999999,
+    "pos_pen": 21430.546435999997,
+    "mean_V": 2.5535,
+    "vel_pen": 3260.1811250000005,
+    "m_prop": 4.725,
+    "prop_pen": 35437.5,
+    "score": 839696.0093589999
+  },
+  "penalty_ranking": [
+    [
+      "Propellant",
+      35437.5
+    ],
+    [
+      "Touch position",
+      21430.546435999997
+    ],
+    [
+      "Touch speed",
+      3260.1811250000005
+    ],
+    [
+      "Horizontal apogee",
+      172.88008000000002
+    ],
+    [
+      "Altitude",
+      2.8829999999905267
+    ]
+  ],
+  "score_ceiling_no_touch": 864386.7369199999,
+  "score_ceiling_zero_all": 864562.5,
+  "target_850k_max_prop_kg": 6.643231589333335
+}

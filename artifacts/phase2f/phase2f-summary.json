@@ -1,0 +1,36 @@
+{
+  "bottleneck_detail": "The booster nose angle collapses from 62\u00b0 to ~6\u00b0 within 6 seconds after apex. After t=15s, the nose is nearly horizontal (theta~5-6\u00b0), so motor thrust is >88% horizontal. But the horizontal thrust direction is nearly perpendicular to the horizontal velocity direction (alignment_q ~0.1), so the motor accelerates the rocket rather than braking it. The horizontal speed peaks at 24.12 m/s and decays to 19.04 m/s at impact \u2014 well above the 5 m/s target.",
+  "exact_bottleneck": "AERODYNAMIC_TOPOLOGY",
+  "gates": {
+    "gate_1_scenario_semantics": "PASS \u2014 scenarios are semantically different and reproducible",
+    "gate_2_ballast_ascent": "PASS \u2014 4.0 kg steel ballast is physically legal, ascent authority confirmed",
+    "gate_3_phase_parity": "DEFERRED \u2014 not the binding constraint",
+    "gate_4_post_apex_window": "PASS \u2014 35.1s tail-first window mapped, nose angle collapse documented",
+    "gate_5_3d_feasibility": "FAIL \u2014 no motor can remove enough horizontal velocity",
+    "gate_6_motor_ranking": "COMPLETE \u2014 all motors increase speed when fired post-apex",
+    "gate_7_powered_search": "FAIL \u2014 best result 18.89 m/s (H180W), target is <5 m/s"
+  },
+  "legal_branch": null,
+  "legal_full_vehicle": false,
+  "not_proven": [
+    "A legal branch with both stages below 5 m/s",
+    "An aerodynamic topology that maintains steep nose angle during descent",
+    "Rust/OpenRocket phase-resolved parity"
+  ],
+  "phase": "2f",
+  "proven": [
+    "Motor fires in correct direction (nose-directed = retrograde during tail-first descent)",
+    "Post-apex ignition window exists (8.53s to 43.65s)",
+    "Scenario semantics are reproducible and different",
+    "4.0 kg ballast is physically legal",
+    "No motor (H180W, J350W, J420R, K550W) can achieve <5 m/s",
+    "The binding constraint is horizontal speed, not vertical"
+  ],
+  "score_850k_proven": false,
+  "status": "BLOCKED_3D_INFEASIBLE",
+  "what_must_change": [
+    "The separation state must produce lower horizontal velocity",
+    "The aerodynamic topology must maintain a steeper nose angle during descent",
+    "Or: the booster must use a fundamentally different descent strategy (e.g., grid fins for attitude control, different fin geometry)"
+  ]
+}

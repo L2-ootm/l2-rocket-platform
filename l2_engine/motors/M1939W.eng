@@ -1,0 +1,31 @@
+;AeroTech M1939W extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=286, curve_id=315
+; lookup key 'M1939W' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+M1939W 98 732 0,P 5.6560 8.9882 A
+0.000 0.00
+0.134 1905.18
+0.406 2021.15
+0.679 2095.90
+0.952 2158.09
+1.225 2198.21
+1.498 2219.69
+1.770 2228.64
+2.042 2229.88
+2.315 2225.64
+2.587 2211.71
+2.860 2164.72
+3.133 2047.01
+3.405 1916.24
+3.677 1805.66
+3.950 1658.49
+4.223 1497.70
+4.496 1339.45
+4.769 1213.06
+5.041 1102.13
+5.313 966.51
+5.585 670.25
+5.858 443.98
+6.131 155.35
+6.404 41.36
+6.677 5.78
+6.950 0.00

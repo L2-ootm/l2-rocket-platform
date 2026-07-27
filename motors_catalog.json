@@ -1,0 +1,122 @@
+{
+  "E-std  (24mm)": {
+    "note": "24mm tube \u2014 sport standard",
+    "imp": 39.891814499999995,
+    "diam": 0.024,
+    "mfr": "AeroTech",
+    "des": "E15W",
+    "dig": "18a9dc35103360aa44b01a8ef799af91",
+    "lm": 0.0502,
+    "ln": 0.065
+  },
+  "F-tiny (24mm)": {
+    "note": "24mm tube \u2014 powerful sport",
+    "imp": 79.20225549999999,
+    "diam": 0.024,
+    "mfr": "AeroTech",
+    "des": "F32W",
+    "dig": "c79f9490fc6a225cb174ac5821219d6b",
+    "lm": 0.0814,
+    "ln": 0.095
+  },
+  "F-std  (29mm)": {
+    "note": "29mm tube \u2014 HPR minimum",
+    "imp": 79.20225549999999,
+    "diam": 0.024,
+    "mfr": "AeroTech",
+    "des": "F32W",
+    "dig": "c79f9490fc6a225cb174ac5821219d6b",
+    "lm": 0.0814,
+    "ln": 0.095
+  },
+  "G-std  (29mm)": {
+    "note": "29mm tube \u2014 HPR standard",
+    "imp": 159.9535,
+    "diam": 0.029,
+    "mfr": "Cesaroni Technology Inc.",
+    "des": "159G125-14A",
+    "dig": "8e19a0d99a992ec75157c2e63b7be8b2",
+    "lm": 0.1945,
+    "ln": 0.187
+  },
+  "G-38mm (38mm)": {
+    "note": "38mm tube \u2014 mid-power",
+    "imp": 159.9535,
+    "diam": 0.029,
+    "mfr": "Cesaroni Technology Inc.",
+    "des": "159G125-14A",
+    "dig": "8e19a0d99a992ec75157c2e63b7be8b2",
+    "lm": 0.1945,
+    "ln": 0.187
+  },
+  "H-29mm (29mm)": {
+    "note": "29mm tube \u2014 HPR high",
+    "imp": 316.7783160000001,
+    "diam": 0.029,
+    "mfr": "AeroTech",
+    "des": "H125W",
+    "dig": "2753c2ee41e6f0293f60ba2e63a75454",
+    "lm": 0.32256,
+    "ln": 0.33
+  },
+  "H-38mm (38mm)": {
+    "note": "38mm tube \u2014 HPR high",
+    "imp": 319.99324999999993,
+    "diam": 0.038,
+    "mfr": "AeroTech",
+    "des": "H999N",
+    "dig": "e8c8cdd09c63c4fc3d6790252de6049a",
+    "lm": 0.331,
+    "ln": 0.203
+  },
+  "I-29mm (29mm)": {
+    "note": "29mm tube \u2014 competition HPR",
+    "imp": 493.3364165,
+    "diam": 0.029,
+    "mfr": "RATT Works",
+    "des": "I90L",
+    "dig": "5a732e5ece0ee594ffabdba862a1695b",
+    "lm": 0.684544,
+    "ln": 0.921
+  },
+  "I-38mm (38mm)": {
+    "note": "38mm tube \u2014 mid HPR",
+    "imp": 639.9649999999999,
+    "diam": 0.038,
+    "mfr": "AeroTech",
+    "des": "I132W",
+    "dig": "a6edc18530fb4ecfa4b2965eefed1ee5",
+    "lm": 0.557,
+    "ln": 0.335
+  },
+  "J-38mm (38mm)": {
+    "note": "38mm tube \u2014 high HPR",
+    "imp": 1263.764361,
+    "diam": 0.038,
+    "mfr": "Loki Research",
+    "des": "J1026CT",
+    "dig": "69a921c219adb2c2519d6803301367da",
+    "lm": 1.172,
+    "ln": 0.6255
+  },
+  "K-54mm (54mm)": {
+    "note": "54mm tube \u2014 EX territory",
+    "imp": 2556.5197534999998,
+    "diam": 0.054,
+    "mfr": "Kosdon by AeroTech",
+    "des": "L1000S",
+    "dig": "9e839697c05536423aedbfb86b39ac27",
+    "lm": 2.32512,
+    "ln": 0.728
+  },
+  "L-75mm (75mm)": {
+    "note": "75mm tube \u2014 large EX",
+    "imp": 5119.627,
+    "diam": 0.075,
+    "mfr": "HyperTEK",
+    "des": "2800CC300M-L970",
+    "dig": "84d013b9b89894ce09c9f178ca2e73b7",
+    "lm": 6.323,
+    "ln": 1.438
+  }
+}

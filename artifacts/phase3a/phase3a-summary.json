@@ -1,0 +1,56 @@
+{
+  "best_topology": {
+    "ascent_margin_cal": 1.74,
+    "config": "8 fins, fin_height=0.80m, fin_sweep=5\u00b0, no aft ballast",
+    "family": "B_descent_trim_alignment (8-fin configuration)",
+    "free_descent_speed_ms": 14.45,
+    "free_descent_vxy_ms": 9.66,
+    "free_descent_vz_ms": 10.75,
+    "improvement_over_baseline_ms": 7.25,
+    "q_total_mean": 0.726
+  },
+  "classification": "CURRENT_BOOSTER_CONFIGURATION_3D_INFEASIBLE",
+  "gates": {
+    "gate_0_classification": "PASS",
+    "gate_1_phase_parity": "DEFERRED \u2014 not binding",
+    "gate_2_six_scenario": "PASS \u2014 all 6 scenarios documented",
+    "gate_3_causal_baseline": "PASS \u2014 horizontal speed decomposition complete",
+    "gate_4_design_requirements": "PASS \u2014 three feasibility levels defined",
+    "gate_5_topology_families": "PASS \u2014 4 families (A-D) defined",
+    "gate_6_controlled_experiments": "PASS \u2014 5 experiment types, ~30 runs",
+    "gate_7_bounded_search": "PASS \u2014 8 combo candidates + 8-fin deep search",
+    "gate_9_powered_validation": "PASS \u2014 3 configs \u00d7 3 motors = 9 powered results"
+  },
+  "legal_branch": null,
+  "legal_full_vehicle": false,
+  "next_steps": [
+    "Investigate why motor firing flips the rocket (thrust-induced torque analysis)",
+    "Explore configurations where motor firing doesn't change attitude (lower thrust, different CG)",
+    "Consider fundamentally different descent strategies (not tail-first retro)",
+    "Investigate whether the motor can fire at a time when the rocket is already decelerating"
+  ],
+  "phase": "3a",
+  "powered_analysis": {
+    "best_powered_config": "8f_h0.70, J350W, delay=40s",
+    "best_powered_ms": 16.16,
+    "finding": "Motor firing flips the 8-fin rocket from tail-first (q=+0.73) to nose-first (q=-0.3 to -0.8) during burn",
+    "root_cause": "Motor thrust vector creates aerodynamic torque that overcomes fin restoring torque, flipping the rocket nose-first during burn"
+  },
+  "remaining_deficit": {
+    "horizontal_deficit_ms": 4.66,
+    "interpretation": "Even the best 8-fin free-descent (14.45 m/s) is 9.45 m/s above the 5 m/s target. The motor cannot close this gap because it flips the rocket nose-first during burn. The fundamental issue is that the motor's thrust vector interacts with aerodynamic forces to change the attitude during the burn, making braking impossible.",
+    "total_speed_deficit_ms": 9.45,
+    "vertical_deficit_ms": 5.75
+  },
+  "score_850k_proven": false,
+  "status": "OUTCOME_B_TOPOLOGY_IMPROVEMENT_NO_LEGAL_BRANCH",
+  "what_was_proven": [
+    "8-fin configuration reduces horizontal speed from 19.04 to 9.66 m/s (50% improvement)",
+    "8-fin maintains tail-first alignment (q=0.726) during free descent",
+    "Larger fins (h>0.65m) with 4 fins flip to nose-first \u2014 8 fins are required",
+    "Forward ballast flips to nose-first \u2014 CG must stay aft for tail-first trim",
+    "Fin sweep >5\u00b0 flips to nose-first \u2014 sweep must stay \u22645\u00b0",
+    "Motor firing flips any tested configuration from tail-first to nose-first",
+    "The motor cannot provide useful braking because it changes the attitude during burn"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "authority_base": {
+    "path": "designs/osifog_submission/candidate_K.ork",
+    "sha256": "65d307f176b8755956b79a32c60e85d19bdd0b68d4dcd79c6c4a1ec76588f15e"
+  },
+  "artifacts": {
+    "candidate_K_living_terrain_institutional_v6.json": {
+      "bytes": 3041,
+      "sha256": "f05fdff7ae65ce0a5a6dbae562392bd64b747b147fb3191665c988da961f27ed"
+    },
+    "candidate_K_living_terrain_institutional_v6.ork": {
+      "bytes": 2317886,
+      "sha256": "a6b7d5e19735ec97ca75acf469ada62e09bf7be9f84b2629a3f4963c549c67d2"
+    },
+    "candidate_K_living_terrain_institutional_v6_report.json": {
+      "bytes": 11898,
+      "sha256": "a1301eb02fff3160faf4770da9d4975f3a75063a2c1e791b0434e92cfaa14077"
+    },
+    "candidate_K_celestial_datum_v7.json": {
+      "bytes": 2950,
+      "sha256": "790afe2a27b6ef042272b98f4d592dcdd143a92e70da10621b1ae2658e1df663"
+    },
+    "candidate_K_celestial_datum_v7.ork": {
+      "bytes": 2470254,
+      "sha256": "1422ba3adf314cab3989a799272244f80dd24b2d186ffc09251aaf0ccd18e6f5"
+    },
+    "candidate_K_celestial_datum_v7_report.json": {
+      "bytes": 11807,
+      "sha256": "21653557e362e694c61f11998c471137a12cc6de9d0ad00eeafbebfb049c5440"
+    },
+    "cert100_candidate_K_topographic.json": {
+      "bytes": 18554,
+      "sha256": "f2063f345698c2fca07275cfe8214c24006e01e85d8f5cfa058b7afdb40fe780"
+    },
+    "verification.json": {
+      "bytes": 2661,
+      "sha256": "ba406b47de424b81e458e022e2527e03bd628a1d183ad714d35181e1c5aec2fd"
+    },
+    "assets/generated/candidate_K_living_terrain_institutional_v6_preview.png": {
+      "bytes": 158050,
+      "sha256": "924cec8edccfa08f08fb3917c3a348b0a0c33cb8ecaae40b319ba6285f431965"
+    },
+    "assets/generated/candidate_K_celestial_datum_v7_preview.png": {
+      "bytes": 163142,
+      "sha256": "16679661051431070632d381ad86bc99abe4751b18fca0d5560df88a72bb8899"
+    },
+    "assets/generated/l2-systems-institutional-lockup-v6.svg": {
+      "bytes": 7185,
+      "sha256": "2a0d5b8ff480d617d4ce717e849b98344b68c82e96bc84b56b5c26b9f5ba674f"
+    },
+    "assets/generated/l2-systems-institutional-lockup-v6.png": {
+      "bytes": 41191,
+      "sha256": "9e3049c08e3dc4eb6d79312036dff3838972d8ee9ec72333e939d295440a7a27"
+    },
+    "assets/generated/l2-living-terrain-institutional-v6-sustainer.svg": {
+      "bytes": 143992,
+      "sha256": "984451e0d696ae6604e0a920a5886c1e75592623b31cabe542ed5c9066b4e797"
+    },
+    "assets/generated/l2-living-terrain-institutional-v6-sustainer.png": {
+      "bytes": 782946,
+      "sha256": "f3906f9de99abe2211aa930fd0419a0dcd1617060568764b2ab627714e40c6b1"
+    },
+    "assets/generated/l2-living-terrain-institutional-v6-booster.svg": {
+      "bytes": 210615,
+      "sha256": "e91cb698d714d0927fb1b37838a7e68bff85cca5ca3425e8d4f07b42a5f96128"
+    },
+    "assets/generated/l2-living-terrain-institutional-v6-booster.png": {
+      "bytes": 962115,
+      "sha256": "62431d5d7989f34b153bba45f10f9867aac07844493cb51c2aa3543abd4c3f7c"
+    },
+    "assets/generated/l2-systems-celestial-datum-v7.svg": {
+      "bytes": 6082,
+      "sha256": "c5e4e5b07a05dee17a51edc1d3f37ba55f30384f4c15e8d40a04b7c317c260b3"
+    },
+    "assets/generated/l2-systems-celestial-datum-v7.png": {
+      "bytes": 31167,
+      "sha256": "7bb286ad9258ab170e0b4c244b75ab8ef3b3778933bbacd1aeb2cfaf9d6f3c7b"
+    },
+    "assets/generated/l2-celestial-datum-v7-sustainer.svg": {
+      "bytes": 147193,
+      "sha256": "6ff2c44006023a6a9d6b456fcd0797dacc5869cb5e8bd7abbf50e6a4f7f536f6"
+    },
+    "assets/generated/l2-celestial-datum-v7-sustainer.png": {
+      "bytes": 840191,
+      "sha256": "c2f4eee7fcdadb265429b794e69bb96a6fc8ae5dba0f28f15d28cb8aee70590c"
+    },
+    "assets/generated/l2-celestial-datum-v7-booster.svg": {
+      "bytes": 214597,
+      "sha256": "88d945a8b7d9d0c32694b667eed20c9a4d712a0890a728ed65fdefd5690aefa7"
+    },
+    "assets/generated/l2-celestial-datum-v7-booster.png": {
+      "bytes": 1058903,
+      "sha256": "76be47bbfe3da4e1a0da5be1efff549c46f1a632061329dd58f3bffb43f625b9"
+    },
+    "concepts/celestial_datum_imagegen_v7.png": {
+      "bytes": 1520229,
+      "sha256": "89fbab0f5074c353ea8f32bb045eb119882de5831f9ebf99b6198f8a765ad8dd"
+    },
+    "assets/source/L2_LOGO_DARK.png": {
+      "bytes": 764831,
+      "sha256": "8867bd2322203ae1a844aa9961edf16ea96ae1d29b5b10ca680147dae08586da"
+    },
+    "assets/source/L2_LOGO_WHITE.png": {
+      "bytes": 611610,
+      "sha256": "1acfefa756b18a8cecd84f205fb1f8f7d249531860f016c1e2e8ffaa3366a3b1"
+    }
+  }
+}

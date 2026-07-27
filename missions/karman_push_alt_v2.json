@@ -1,0 +1,39 @@
+{
+  "name": "Karman Push Altitude v2",
+  "description": "Checkpoint v2. Genoma vencedor do push_alt. Mutacao local fina (sigma_frac reduzido via code) para refinar delays de ignicao - maior alavanca de apogeu vs Mach.",
+  "output": "designs/optimized/L2_Push_Alt_v2.ork",
+  "payload_kg": 0.3,
+  "stack": [
+    {
+      "name": "Kick",
+      "body_radius": 0.0420,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "9977M2245-P" }
+    },
+    {
+      "name": "Sustainer",
+      "body_radius": 0.0535,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "20146N5800-P" }
+    },
+    {
+      "name": "Booster",
+      "body_radius": 0.0855,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "40960O8000-P" }
+    }
+  ],
+  "objectives": [
+    { "metric": "apogee", "kind": "atleast", "value": 100000, "weight": 1.0 },
+    { "metric": "mach",   "kind": "atleast", "value": 6.0,    "weight": 1.0 },
+    { "metric": "apogee", "kind": "maximize", "scale": 1000000, "weight": 3.0 }
+  ],
+  "constraints": { "min_static_margin": 1.5 },
+  "stability": { "phase_machs": [0.3, 2.0, 3.0] },
+  "seeds": [
+    {
+      "s0_span": 0.0931, "s0_root": 0.2779, "s0_nose_len": 0.4094, "s0_ballast": 0.8004,
+      "s0_delay": 11.445,
+      "s1_span": 0.1626, "s1_root": 0.2501, "s1_delay": 14.0511,
+      "s2_span": 0.2324, "s2_root": 0.4837,
+      "sep_delay": 0.4339
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "test": "scenario_forensics",
+  "finding": "The 14.76 m/s result was from a POWERED run (retro enabled), NOT free descent. The report incorrectly labeled it as free descent.",
+  "artifacts": [
+    {
+      "artifact": "artifacts/phase2b/free-descent-results.json",
+      "scenario_type_declared": "STAGE_FREE_DESCENT_DIAGNOSTIC",
+      "scenario_type_actual": "STAGE_FREE_DESCENT_DIAGNOSTIC",
+      "retro_motor_present_as_mass": true,
+      "retro_motor_thrust_enabled": false,
+      "ignition_event": "launch with delay=200.0s",
+      "ignition_time_global_s": 200.0,
+      "stage_separation_time_s": 1.695,
+      "booster_apogee_time_s": 8.530,
+      "ground_contact_time_s": 43.652,
+      "touchdown_total_speed_mps": 21.70,
+      "classification": "UNPOWERED_FREE_DESCENT"
+    },
+    {
+      "artifact": "test_refine_booster_delay.py (delay=3.0s run)",
+      "scenario_type_declared": "POWERED (implicit)",
+      "scenario_type_actual": "POWERED_STAGE_LANDING_VALIDATION",
+      "retro_motor_present_as_mass": true,
+      "retro_motor_thrust_enabled": true,
+      "ignition_event": "launch with delay=3.0s",
+      "ignition_time_global_s": 3.0,
+      "stage_separation_time_s": 1.695,
+      "booster_apogee_time_s": 13.295,
+      "ground_contact_time_s": 114.984,
+      "touchdown_total_speed_mps": 14.76,
+      "classification": "POWERED_LANDING_VALIDATION"
+    },
+    {
+      "artifact": "test_gate_ef_landing.py (delay_offset=-2.0s)",
+      "scenario_type_declared": "POWERED",
+      "scenario_type_actual": "POWERED_STAGE_LANDING_VALIDATION",
+      "retro_motor_present_as_mass": true,
+      "retro_motor_thrust_enabled": true,
+      "ignition_event": "launch with delay=43.005s",
+      "ignition_time_global_s": 43.005,
+      "stage_separation_time_s": 1.695,
+      "booster_apogee_time_s": 13.295,
+      "ground_contact_time_s": ~45s,
+      "touchdown_total_speed_mps": 273.67,
+      "classification": "POWERED_LANDING_VALIDATION"
+    }
+  ],
+  "contradiction_resolution": "The Phase 2b report stated 'FREE DESCENT: COMPLETE — K550W retro fires before booster apogee'. This was incorrect. The 14.76 m/s result came from a powered run (retro enabled at 3.0s global time), NOT a free-descent diagnostic. The free-descent result was 21.70 m/s (retro disabled).",
+  "corrected_classification": {
+    "14.76_ms_result": "POWERED_LANDING_VALIDATION (retro enabled at 3.0s global time)",
+    "21.70_ms_result": "UNPOWERED_FREE_DESCENT (retro disabled, delay=200s)",
+    "273_ms_result": "POWERED_LANDING_VALIDATION (retro enabled at 43.0s global time)"
+  },
+  "status": "CONTRADICTION RESOLVED — 14.76 m/s was a powered result"
+}

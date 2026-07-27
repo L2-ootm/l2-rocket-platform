@@ -1,0 +1,336 @@
+{
+  "best": {
+    "apogee_east_m": 298.9475981753474,
+    "apogee_m": 6595.352519705462,
+    "apogee_north_m": -9.219968805657806e-14,
+    "ast": [
+      {
+        "params": {
+          "name": "Evolved Sustainer",
+          "recovery": "retro_only"
+        },
+        "type": "STAGE"
+      },
+      {
+        "params": {
+          "length": 0.12,
+          "material": "abs",
+          "shape": "ogive",
+          "thickness": 0.002
+        },
+        "type": "NOSE_CONE"
+      },
+      {
+        "params": {
+          "length": 0.9094912914020514,
+          "material": "balsa",
+          "radius": 0.0825,
+          "thickness": 0.002
+        },
+        "type": "BODY_TUBE"
+      },
+      {
+        "params": {
+          "mass": 5.79764388201884
+        },
+        "type": "PAYLOAD"
+      },
+      {
+        "params": {
+          "count": 4,
+          "cross_section": "airfoil",
+          "height": 0.21294454723296186,
+          "material": "fiberglass",
+          "root": 0.10347669111511325,
+          "sweep": 65.0,
+          "thickness": 0.003,
+          "tip": 0.040468803063464315
+        },
+        "type": "FIN_SET"
+      },
+      {
+        "params": {
+          "count": 3,
+          "cross_section": "airfoil",
+          "height": 0.03,
+          "material": "fiberglass",
+          "position_from_top_m": 0.03515523642246332,
+          "role": "forward_flap",
+          "root": 0.06605690660088487,
+          "sweep": 64.66258906784859,
+          "thickness": 0.003,
+          "tip": 0.047824532764320894
+        },
+        "type": "FIN_SET"
+      },
+      {
+        "params": {
+          "ignition": "burnout",
+          "ignition_delay": 0.0,
+          "motor_designation": "L2200G",
+          "motor_index": 26,
+          "role": "main"
+        },
+        "type": "MOTOR_MOUNT"
+      },
+      {
+        "params": {
+          "ignition": "burnout",
+          "ignition_delay": 0.0,
+          "motor_designation": "J510W",
+          "motor_index": 16,
+          "radial_angle_deg": 180.0,
+          "radial_offset_m": 0.058499999999999996,
+          "role": "retro"
+        },
+        "type": "MOTOR_MOUNT"
+      },
+      {
+        "params": {},
+        "type": "CLOSE_BODY"
+      },
+      {
+        "params": {
+          "name": "Evolved Booster 1",
+          "recovery": "retro_only"
+        },
+        "type": "STAGE"
+      },
+      {
+        "params": {
+          "length": 0.7432103292129273,
+          "material": "balsa",
+          "radius": 0.0985,
+          "thickness": 0.002
+        },
+        "type": "BODY_TUBE"
+      },
+      {
+        "params": {
+          "count": 3,
+          "cross_section": "airfoil",
+          "height": 0.06895,
+          "material": "fiberglass",
+          "root": 0.1182,
+          "sweep": 62.73847594793015,
+          "thickness": 0.003,
+          "tip": 0.05710646975477423
+        },
+        "type": "FIN_SET"
+      },
+      {
+        "params": {
+          "count": 3,
+          "cross_section": "airfoil",
+          "height": 0.03,
+          "material": "fiberglass",
+          "position_from_top_m": 0.14008645790902985,
+          "role": "forward_flap",
+          "root": 0.10678852998277484,
+          "sweep": 47.67405682308192,
+          "thickness": 0.003,
+          "tip": 0.04
+        },
+        "type": "FIN_SET"
+      },
+      {
+        "params": {
+          "count": 3,
+          "cross_section": "airfoil",
+          "height": 0.06895,
+          "material": "fiberglass",
+          "root": 0.1182,
+          "sweep": 52.11046878375899,
+          "thickness": 0.003,
+          "tip": 0.03024
+        },
+        "type": "FIN_SET"
+      },
+      {
+        "params": {
+          "count": 3,
+          "cross_section": "airfoil",
+          "height": 0.15328490532976496,
+          "material": "fiberglass",
+          "root": 0.1182,
+          "sweep": 54.822806186985474,
+          "thickness": 0.003,
+          "tip": 0.04137
+        },
+        "type": "FIN_SET"
+      },
+      {
+        "params": {
+          "count": 3,
+          "cross_section": "airfoil",
+          "height": 0.08271350687708787,
+          "material": "fiberglass",
+          "root": 0.2782189563622623,
+          "sweep": 43.71268960305437,
+          "thickness": 0.003,
+          "tip": 0.057102068391218314
+        },
+        "type": "FIN_SET"
+      },
+      {
+        "params": {
+          "count": 3,
+          "cross_section": "airfoil",
+          "height": 0.06895,
+          "material": "fiberglass",
+          "root": 0.14009376079964322,
+          "sweep": 30.57362140303455,
+          "thickness": 0.003,
+          "tip": 0.04137
+        },
+        "type": "FIN_SET"
+      },
+      {
+        "params": {
+          "ignition": "automatic",
+          "ignition_delay": 0.0,
+          "motor_designation": "L2200G",
+          "motor_index": 26,
+          "role": "main"
+        },
+        "type": "MOTOR_MOUNT"
+      },
+      {
+        "params": {
+          "ignition": "automatic",
+          "ignition_delay": 0.0,
+          "motor_designation": "K700W",
+          "motor_index": 20,
+          "radial_angle_deg": 180.0,
+          "radial_offset_m": 0.0665,
+          "role": "retro"
+        },
+        "type": "MOTOR_MOUNT"
+      },
+      {
+        "params": {},
+        "type": "CLOSE_BODY"
+      }
+    ],
+    "mach": 1.8703536095390563,
+    "min_static_margin": 1.964849713776713,
+    "official_score_breakdown": {
+      "base_score": 900000.0,
+      "complete": false,
+      "computed_score": null,
+      "stages_landed": 0,
+      "terms": [
+        {
+          "coefficient": -3000.0,
+          "complete": true,
+          "components": [
+            {
+              "delta": 3595.3525197054623,
+              "metric": "apogee_m",
+              "raw_penalty": 12926559.740952417,
+              "reference": 3000.0,
+              "value": 6595.352519705462
+            }
+          ],
+          "loss": -38779679222.857254,
+          "name": "apogee_altitude"
+        },
+        {
+          "coefficient": -16.0,
+          "complete": true,
+          "components": [
+            {
+              "delta": 298.9475981753474,
+              "metric": "apogee_east_m",
+              "raw_penalty": 89369.66645480899,
+              "reference": 0.0,
+              "value": 298.9475981753474
+            },
+            {
+              "delta": -9.219968805657806e-14,
+              "metric": "apogee_north_m",
+              "raw_penalty": 8.500782477730303e-27,
+              "reference": 0.0,
+              "value": -9.219968805657806e-14
+            }
+          ],
+          "loss": -1429914.6632769438,
+          "name": "apogee_horizontal"
+        },
+        {
+          "coefficient": -2.0,
+          "complete": false,
+          "components": [
+            {
+              "metric": "stage_landing_east_m",
+              "reference": 0.0,
+              "value": null
+            },
+            {
+              "metric": "stage_landing_north_m",
+              "reference": 0.0,
+              "value": null
+            }
+          ],
+          "loss": null,
+          "name": "touchdown_position"
+        },
+        {
+          "coefficient": -500.0,
+          "complete": false,
+          "components": [
+            {
+              "metric": "stage_landing_total_speed_ms",
+              "reference": 0.0,
+              "value": null
+            }
+          ],
+          "loss": null,
+          "name": "touchdown_speed"
+        },
+        {
+          "coefficient": -7500.0,
+          "complete": true,
+          "components": [
+            {
+              "delta": 6.9856,
+              "metric": "total_prop_mass_kg",
+              "raw_penalty": 6.9856,
+              "reference": 0.0,
+              "value": 6.9856
+            }
+          ],
+          "loss": -52392.0,
+          "name": "propellant_used"
+        }
+      ]
+    },
+    "raw_score": 82.45023601586682,
+    "reason": "promoted:balanced:ok",
+    "selection_score": 82.45023601586682,
+    "stage_landings": [],
+    "status": "success",
+    "total_prop_mass_kg": 6.9856
+  },
+  "cumulative_generations": 437,
+  "cycle": 88,
+  "generation_in_cycle": 1,
+  "goal_reached": false,
+  "population_stats": {
+    "failure_reason_histogram": {
+      "constraint_violation:min_thrust_to_weight": 1,
+      "ok": 81,
+      "promoted:balanced:ok": 12,
+      "simulation_diverged": 2
+    },
+    "legality_rate": 0.96875,
+    "n_reached_landing_phase": 7,
+    "n_success": 93,
+    "population_size": 96,
+    "score_max": 82.45023601586682,
+    "score_median": 69.25313499005347,
+    "score_min": 0.0
+  },
+  "target_score": 0.0,
+  "updated_at": "2026-07-23T14:54:33.823063+00:00"
+}

@@ -1,0 +1,33 @@
+;AeroTech G104T extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=67, curve_id=76
+; lookup key 'G104T' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+G104T 29 124 4,6,8,9,10,11,13,14,16,18 0.0408 0.1360 A
+0.000 0.00
+0.007 125.34
+0.047 123.54
+0.086 121.97
+0.102 121.40
+0.146 121.18
+0.184 120.84
+0.203 120.50
+0.238 118.82
+0.264 117.24
+0.280 116.90
+0.328 116.68
+0.392 116.68
+0.430 116.12
+0.462 114.09
+0.507 110.15
+0.540 104.64
+0.576 96.20
+0.607 89.56
+0.682 78.87
+0.769 67.96
+0.786 64.92
+0.799 62.56
+0.806 58.06
+0.819 50.52
+0.839 39.04
+0.863 27.57
+0.877 16.65
+0.902 0.00

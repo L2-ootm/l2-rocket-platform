@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-20",
+  "purpose": "Reconcile the prior session's flip-diagnosis-report.md claims against the raw data files it cites, and root-cause the discrepancy, per the 2026-07-20 corrective-loop directive sections 1, 2, and 6.",
+
+  "bugs_found": [
+    {
+      "id": "apex-detection-second-peak",
+      "severity": "critical",
+      "location": "scripts/strake_batch.py::run_ork, scripts/flip_diagnosis.py::run_diagnosis (both, pre-fix)",
+      "description": "apex_t (the natural, pre-ignition apogee used to bound the descent-analysis window) was computed as argmax(altitude) over the WHOLE flight trace, not the first local apogee. A retro burn that fires close enough to the natural apogee to still be climbing can impart enough net-upward impulse to create a second, HIGHER altitude peak later in the flight. argmax(altitude) then silently selects that later, post-burn peak as 'the apex'. Every downstream filter of the form 'if t < apex_t: continue' (descent_profile in scripts/descent_gates.py, and the ignition/burn-window search in flip_diagnosis.py) then discards the ENTIRE burn window, because the miscomputed apex_t falls after burnout.",
+      "measured_example": {
+        "candidate": "ST3_triangular, J350W retro, delay=6.674s",
+        "true_apogee_event_s": 6.5145,
+        "true_apogee_altitude_m": 247.448,
+        "misidentified_second_peak_s": 10.33,
+        "misidentified_second_peak_altitude_m": 289.81,
+        "actual_ignition_s": 6.674,
+        "actual_burnout_s": 8.369,
+        "actual_peak_thrust_n": 736.52,
+        "effect": "burn_mean_q and i_opp_over_i_total both computed as null, making a motor that ignited exactly on schedule and delivered 736 N peak thrust look like it never fired"
+      },
+      "fix": "scripts/descent_gates.py::apex_time_from_apogee_events() reads OpenRocket's own APOGEE FlightEvent (first/minimum time), falling back to argmax(altitude) only if no APOGEE event exists. Both call sites updated.",
+      "regression_tests": [
+        "tests/test_descent_gates.py::test_apex_time_uses_apogee_event_not_argmax_altitude",
+        "tests/test_descent_gates.py::test_apex_time_falls_back_to_argmax_altitude_without_apogee_event",
+        "tests/test_descent_gates.py::test_apex_time_uses_earliest_apogee_event_if_multiple"
+      ]
+    },
+    {
+      "id": "apex-detection-delayed-own-apogee",
+      "severity": "critical",
+      "location": "scripts/strake_batch.py::run_ork (pre-fix)",
+      "description": "A second, distinct failure mode found while verifying the first fix: if ignition happens AT OR BEFORE the natural free-fall apogee, the burn's added impulse can delay the POWERED branch's own single true APOGEE event past burnout entirely (the branch genuinely does not stop climbing, by OpenRocket's own vertical-velocity-sign criterion, until well after the motor has burned out). Recomputing apex_t from the powered branch's own event -- even via the corrected apex_time_from_apogee_events() -- still discards the whole burn window in this case, because that event is a property of the POWERED (perturbed) trajectory, not the unpowered one the descent-window filter is supposed to bound.",
+      "measured_example": {
+        "candidate": "ST4_hybrid_small_fin, J350W retro, delay=8.736s",
+        "free_descent_apex_t_s": 8.436,
+        "actual_ignition_s": 8.736,
+        "actual_burnout_s": 10.431,
+        "powered_branch_own_apogee_event_s": 15.128,
+        "effect": "burn_mean_q and i_opp_over_i_total again computed as null, because the burn window (8.736-10.431s) is entirely before the powered branch's own (delayed) apogee event at 15.128s"
+      },
+      "fix": "run_ork() now accepts an optional apex_t_hint; every powered probe of a candidate reuses the already-known, uncorrupted free-descent run's own apex_t instead of recomputing one from the (perturbed) powered branch. run_ork() still reports own_apex_t and used_apex_t_hint for auditability.",
+      "regression_tests": [
+        "tests/test_descent_gates.py::test_descent_profile_apex_hint_must_come_from_free_run_not_powered_branch"
+      ]
+    },
+    {
+      "id": "ground-contact-contamination-in-min-speed",
+      "severity": "moderate",
+      "location": "scripts/flip_diagnosis.py::run_diagnosis (pre-fix)",
+      "description": "min_speed_after_ignition took an unfiltered min() over speed_ms across the whole post-ignition trace. OpenRocket zeroes velocity (and this script's trace records q=None) at and after GROUND_HIT, so the unfiltered min() always selected that zeroed ground-hit/post-impact sample (speed_ms=0.0, q=null) rather than any genuine near-hover point during the actual flight -- for 3 of the 4 delays in the original run (9.8s, 10.0s, 15.0s).",
+      "fix": "Extracted scripts/flip_diagnosis.py::_min_speed_after_ignition(), which excludes samples at/after GROUND_HIT, samples with null q, and samples before ignition.",
+      "regression_tests": [
+        "tests/test_flip_diagnosis_helpers.py::test_min_speed_excludes_ground_hit_zeroed_sample",
+        "tests/test_flip_diagnosis_helpers.py::test_min_speed_excludes_samples_before_ignition",
+        "tests/test_flip_diagnosis_helpers.py::test_min_speed_returns_none_if_nothing_qualifies"
+      ]
+    }
+  ],
+
+  "section_6_ignition_gap_resolution": {
+    "prior_claim": "flip-diagnosis-report.md Finding 4 claimed delays 8.5-9.2s on the K550W-default E8_8 topology 'silently never ignite' (thrust stays at 0 for the whole flight), attributed to 'a real engine/config quantization or arming-condition gap in osifog_sweep.py's retro-delay wiring'.",
+    "investigation": "Dense 11-point sweep (8.50-9.50s, 0.1s steps) on the exact K550W/E8_8 topology, with the apex-detection fix applied. See artifacts/autoevo/ignition-window-resolution.json for full per-delay event traces.",
+    "result": "11/11 delays ignited exactly on schedule (observed IGNITION event time == requested delay to the millisecond, e.g. requested 8.90 -> observed 8.9000). Peak thrust after the requested delay was 750-800 N in every case. 0/11 'genuinely never ignited'.",
+    "conclusion": "Finding 4 is FALSE. There is no ignition-arming-window gap in osifog_sweep.py. The 'silent non-ignition' Finding 4 reported was entirely an artifact of the apex-detection bug above: for delays close to the natural apogee, the analysis script's own apex_t was miscomputed as a later time (a second altitude peak, or the powered branch's own delayed apogee event), which made the ignition-search loop's 't > apex_t' condition fail to find real, on-schedule ignition and thrust. No fix to osifog_sweep.py's ignition/delay wiring was needed or made; only the two analysis-script bugs above were fixed.",
+    "classification": "engine_bug_hypothesis_refuted_root_cause_was_analysis_script"
+  },
+
+  "powered_run_reconciliation": {
+    "strake_batch_prior_session": {
+      "report_claim": "flip-diagnosis-report.md Finding 6 stated 'this session's whole gated batch used 4 powered OpenRocket evaluations (all correctly early-stopped within 2 runs each)'.",
+      "actual_openrocket_process_runs": 23,
+      "actual_powered_simulations": 16,
+      "authority_eligible_powered_runs": 0,
+      "diagnostic_powered_runs": 16,
+      "cached_or_inherited_entries": 0,
+      "note_on_16_vs_4_discrepancy": "artifacts/autoevo/strake-batch-results.json (the report's own cited raw data) contains 16 powered_probes entries across 7 candidates (2+3+3+3+3+2+0), not 4. The report's table additionally mislabeled 4 of those 16 as 'not tested (ascent-illegal)' when the JSON shows they were tested (3 powered OpenRocket probes each, real final_speed_ms values recorded) -- the admission gate in scripts/descent_gates.py::passive_descent_admission never checks ascent margin at all (by design: it is a descent-only gate; ascent legality is a separate, independent precondition per the mission's live-insert instruction), so ascent-illegal strake-only candidates were correctly descent-admitted and consumed real powered OpenRocket evaluations. All 16 of those probes additionally had burn_mean_q=null and i_opp_over_i_total=null due to the apex-detection bugs above, which is almost certainly why the report's author (mis)read them as 'not tested' rather than 'tested but with corrupted burn telemetry'.",
+      "verdict": "The reported '78x reduction' and '4 powered evaluations' claims in flip-diagnosis-report.md Finding 6 are not supported by its own cited data file and must not be relied on."
+    },
+    "strake_batch_this_session_corrected_rerun": {
+      "actual_openrocket_process_runs": 13,
+      "actual_powered_simulations": 6,
+      "authority_eligible_powered_runs": 0,
+      "diagnostic_powered_runs": 6,
+      "cached_or_inherited_entries": 0,
+      "note": "With both apex-detection bugs fixed, every admitted candidate's FIRST powered probe now yields real (non-null) i_opp_over_i_total, so PoweredEarlyStop's impulse-fraction threshold check fires immediately for all 6 admitted candidates (one probe each) instead of needing 2-3 probes per candidate as before. This is a genuine, verified reduction, not a reporting artifact: 6 real powered evaluations across 6 admitted candidates + 0 for the 1 descent-rejected candidate = 6 total, all with valid non-null burn telemetry. Current data: artifacts/autoevo/strake-batch-results.json (regenerated this session)."
+    },
+    "flip_diagnosis_prior_and_this_session": {
+      "delays_tested": [9.5, 9.8, 10.0, 15.0],
+      "actual_openrocket_process_runs": 4,
+      "actual_powered_simulations": 4,
+      "authority_eligible_powered_runs": 0,
+      "diagnostic_powered_runs": 4,
+      "cached_or_inherited_entries": 0,
+      "note": "These delays (all >=9.5s, well after this topology's natural apogee at 8.485s) were NOT affected by the apex-detection bugs -- re-running them post-fix reproduces the original Findings 2/3/5 q/direction-cosine numbers to within rounding. Only min_speed_after_ignition changed (ground-contact contamination fix), now showing genuine in-flight minima instead of post-impact zeros."
+    },
+    "ignition_window_resolution_this_session": {
+      "actual_openrocket_process_runs": 11,
+      "actual_powered_simulations": 11,
+      "authority_eligible_powered_runs": 0,
+      "diagnostic_powered_runs": 11,
+      "cached_or_inherited_entries": 0
+    }
+  },
+
+  "replay_corpus_naming": {
+    "finding": "artifacts/autoevo/replay-corpus.json (58 rows) mixes aggregate historical summaries, null candidate lineages, and 22 unclassified rows (see its own replay-corpus-summary.json known_gaps). It is not a calibrated, candidate-level replay corpus.",
+    "action": "Relabeled as a 'historical evidence ledger' in this session's docs; see phase4b-summary.json. From this session forward, new candidate-level rows should carry candidate_id/parent/generation/geometry_digest/engine_version/full_metrics/actual_authority_outcome, per the corrective-loop directive section 9."
+  }
+}

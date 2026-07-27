@@ -1,0 +1,31 @@
+;AeroTech K550W extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=234, curve_id=259
+; lookup key 'K550W' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+K550W 54 410 0,6,8,10,12,14 0.9197 1.4874 A
+0.000 0.00
+0.065 604.26
+0.196 642.62
+0.327 682.20
+0.458 733.00
+0.591 758.24
+0.723 780.29
+0.854 794.45
+0.985 797.94
+1.117 797.60
+1.249 773.84
+1.381 711.61
+1.512 646.52
+1.644 590.72
+1.775 537.50
+1.907 491.01
+2.040 445.84
+2.171 401.46
+2.302 364.29
+2.433 319.61
+2.566 255.58
+2.698 172.57
+2.829 103.50
+2.960 51.80
+3.092 26.81
+3.224 15.20
+3.356 0.00

@@ -1,0 +1,311 @@
+{
+  "candidate_id": "best-legal-booster-branch",
+  "derived_from": "designs/osifog_autonomous_hour/sustainer-q-probe.json[0].parameters",
+  "modification": "s1_retro_delay changed from 200.0 (diagnostic/disabled) to 29.864 (powered, corrected from the historically-claimed literal 33.104)",
+  "parameters": {
+    "launch_angle_deg": 7.117704158915487,
+    "launch_azimuth": 31.38376516918281,
+    "main_cluster_count": 3,
+    "nose_ballast_pos_m": 0.2621527628935539,
+    "nose_length_m": 0.999367615003782,
+    "nose_mass_kg": 0.17872870579149605,
+    "s0_aft_ballast_kg": 1.3785946490027758,
+    "s0_body_len": 1.086350604124753,
+    "s0_body_rad": 0.065,
+    "s0_fin_count": 4,
+    "s0_fin_height": 0.6666023537783373,
+    "s0_fin_material": "fiberglass",
+    "s0_fin_root": 0.058196069244461926,
+    "s0_fin_sweep": 4.353229916481219,
+    "s0_fin_thickness_m": 0.001,
+    "s0_grid_fin_count": 0,
+    "s0_grid_fin_height": 0.06,
+    "s0_grid_fin_material": "legal_balsa",
+    "s0_grid_fin_position_m": 0.13119898085575282,
+    "s0_grid_fin_root": 0.06,
+    "s0_grid_fin_sweep": 12.764467102535896,
+    "s0_grid_fin_thickness_m": 0.002,
+    "s0_main": 9,
+    "s0_mid_ballast_kg": 0.480031347543515,
+    "s0_retro": 7,
+    "s0_retro_delay": 200.0,
+    "s1_aft_ballast_attachment": "airframe_bonded",
+    "s1_aft_ballast_kg": 0.0,
+    "s1_aft_ballast_pos_m": 0.3335074872657927,
+    "s1_aft_ballast_rod_radius_m": 0.02,
+    "s1_body_len": 0.704,
+    "s1_body_rad": 0.065,
+    "s1_fin_count": 5,
+    "s1_fin_height": 0.35,
+    "s1_fin_material": "cardboard",
+    "s1_fin_root": 0.2,
+    "s1_fin_sweep": 48.57634396868573,
+    "s1_fin_thickness_m": 0.001,
+    "s1_grid_fin_count": 8,
+    "s1_grid_fin_height": 0.3,
+    "s1_grid_fin_material": "fiberglass",
+    "s1_grid_fin_position_m": 0.005,
+    "s1_grid_fin_root": 0.2,
+    "s1_grid_fin_sweep": 0.0,
+    "s1_grid_fin_thickness_m": 0.002,
+    "s1_main": 16,
+    "s1_mid_ballast_kg": 0.0,
+    "s1_retro": 7,
+    "s1_retro_delay": 29.864,
+    "s1_separation_delay": 0.0,
+    "wind_levels": [
+      [
+        2.0,
+        3.063,
+        215.0,
+        0.466
+      ],
+      [
+        7.0,
+        3.995,
+        215.0,
+        0.336
+      ],
+      [
+        12.0,
+        4.409,
+        214.9,
+        0.369
+      ],
+      [
+        17.0,
+        4.686,
+        214.9,
+        0.41
+      ],
+      [
+        22.0,
+        4.898,
+        214.9,
+        0.443
+      ],
+      [
+        27.0,
+        5.073,
+        214.8,
+        0.471
+      ],
+      [
+        32.0,
+        5.222,
+        214.8,
+        0.496
+      ],
+      [
+        37.0,
+        5.354,
+        214.7,
+        0.518
+      ],
+      [
+        42.0,
+        5.473,
+        214.7,
+        0.538
+      ],
+      [
+        47.0,
+        5.582,
+        214.7,
+        0.556
+      ],
+      [
+        52.0,
+        5.683,
+        214.7,
+        0.573
+      ],
+      [
+        62.0,
+        5.867,
+        214.6,
+        0.605
+      ],
+      [
+        72.0,
+        6.032,
+        214.5,
+        0.632
+      ],
+      [
+        82.0,
+        6.185,
+        214.5,
+        0.657
+      ],
+      [
+        92.0,
+        6.327,
+        214.4,
+        0.681
+      ],
+      [
+        102.0,
+        6.436,
+        214.3,
+        0.702
+      ],
+      [
+        108.0,
+        6.48,
+        207.0,
+        0.194
+      ],
+      [
+        320.0,
+        7.51,
+        208.0,
+        0.611
+      ],
+      [
+        537.0,
+        8.93,
+        211.0,
+        0.801
+      ],
+      [
+        759.0,
+        10.72,
+        214.0,
+        0.833
+      ],
+      [
+        986.0,
+        12.26,
+        215.0,
+        0.711
+      ],
+      [
+        1217.0,
+        13.56,
+        216.0,
+        0.492
+      ],
+      [
+        1455.0,
+        14.22,
+        214.0,
+        0.427
+      ],
+      [
+        1697.0,
+        14.38,
+        211.0,
+        0.431
+      ],
+      [
+        1946.0,
+        13.66,
+        207.0,
+        0.41
+      ],
+      [
+        2202.0,
+        12.75,
+        204.0,
+        0.43
+      ],
+      [
+        2464.0,
+        11.94,
+        202.0,
+        0.385
+      ],
+      [
+        2733.0,
+        11.21,
+        204.0,
+        0.365
+      ]
+    ]
+  },
+  "ork_path": "artifacts\\autoevo\\best-legal-booster-branch.ork",
+  "ork_sha256": "923076029d29ac1d5fecd01e1d909c6b60e38448c2c9c6369b4487bfd8cdc086",
+  "landing": {
+    "branch": 1,
+    "branch_name": "Booster",
+    "stage_key": "s1",
+    "time_s": 30.786698131031873,
+    "east_m": 66.55109560715528,
+    "north_m": 119.5999399574414,
+    "dist_m": 136.86925865341826,
+    "vz_ms": -1.955891832830143,
+    "vxy_ms": 3.009404853094194,
+    "total_speed": 3.5891545566551666,
+    "mass_kg": 3.4482283727855223,
+    "orientation_theta_deg": 85.88512706023026,
+    "orientation_phi_deg": 210.05202882600145,
+    "aoa_deg": 179.3829038258532
+  },
+  "retro_burn_diagnostic": {
+    "sample_count": 111,
+    "start_time_s": 29.866500000000002,
+    "end_time_s": 30.786698131031873,
+    "mean_direction_cosine": -0.9889267747696743,
+    "fraction_opposing_velocity": 1.0,
+    "fraction_vertical_braking": 1.0,
+    "peak_thrust_sample": {
+      "time_s": 30.24821932424347,
+      "thrust_n": 243.1158121738672,
+      "theta_deg": 86.75241947169089,
+      "phi_deg": 207.61796541276718,
+      "vx_ms": 3.1127548961635094,
+      "vy_ms": 4.876085615624632,
+      "vz_ms": -33.44509790586293,
+      "speed_ms": 33.94171515859575,
+      "direction_cosine": -0.9934056736743728,
+      "thrust_velocity_power_w": -8197.352798726146,
+      "vertical_thrust_n": 242.72538366013168,
+      "vertical_power_w": -8117.974220751246
+    },
+    "retro_braking_verified": true,
+    "branch": 1,
+    "branch_name": "Booster",
+    "stage_key": "s1"
+  },
+  "stage_landings_both_branches": [
+    {
+      "branch": 0,
+      "branch_name": "Sustainer",
+      "stage_key": "s0",
+      "time_s": 198.11419320076646,
+      "east_m": 472.6626586115872,
+      "north_m": 3485.5322837701924,
+      "dist_m": 3517.434475587289,
+      "vz_ms": -13.096508396376718,
+      "vxy_ms": 14.649097791905278,
+      "total_speed": 19.649798937728853,
+      "mass_kg": 5.230184459252614,
+      "orientation_theta_deg": 0.7843535304933785,
+      "orientation_phi_deg": 138.58654976972755,
+      "aoa_deg": 135.48695423761856
+    },
+    {
+      "branch": 1,
+      "branch_name": "Booster",
+      "stage_key": "s1",
+      "time_s": 30.786698131031873,
+      "east_m": 66.55109560715528,
+      "north_m": 119.5999399574414,
+      "dist_m": 136.86925865341826,
+      "vz_ms": -1.955891832830143,
+      "vxy_ms": 3.009404853094194,
+      "total_speed": 3.5891545566551666,
+      "mass_kg": 3.4482283727855223,
+      "orientation_theta_deg": 85.88512706023026,
+      "orientation_phi_deg": 210.05202882600145,
+      "aoa_deg": 179.3829038258532
+    }
+  ],
+  "status": "Up To Date",
+  "apogee_m": 2496.3501255373912,
+  "mach": 0.853767676622328,
+  "min_static_margin": 1.5076748876864916,
+  "legal_this_branch": true,
+  "note": "This is a SINGLE-BRANCH (booster only) result, not a complete legal vehicle. The sustainer (s0) branch in this same run remains illegal/unaddressed -- s0_retro_delay is pinned at 200.0 (disabled) here so its landing figure is meaningless for this test."
+}

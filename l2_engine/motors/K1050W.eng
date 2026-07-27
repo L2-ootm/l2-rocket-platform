@@ -1,0 +1,31 @@
+;AeroTech K1050W-SU extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=213, curve_id=237
+; lookup key 'K1050W' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+K1050W 54 676 0,P 1.3471 2.1284 A
+0.000 0.00
+0.049 1305.65
+0.149 1270.39
+0.249 1288.92
+0.349 1327.06
+0.449 1345.72
+0.549 1359.79
+0.649 1364.45
+0.749 1365.49
+0.849 1377.19
+0.949 1379.52
+1.049 1346.59
+1.149 1286.74
+1.249 1232.10
+1.349 1186.48
+1.449 1156.52
+1.549 1120.05
+1.649 1098.71
+1.749 1070.19
+1.849 889.88
+1.949 646.69
+2.049 441.21
+2.149 302.25
+2.249 155.00
+2.349 52.19
+2.449 43.41
+2.549 0.00

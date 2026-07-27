@@ -1,0 +1,31 @@
+;AeroTech N4800T extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=307, curve_id=338
+; lookup key 'N4800T' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+N4800T 98 1194 0,P 9.7664 14.7840 A
+0.000 0.00
+0.098 4752.72
+0.301 6007.53
+0.506 5594.23
+0.710 5270.36
+0.914 5150.12
+1.119 5108.05
+1.324 5086.21
+1.528 5031.65
+1.731 4941.81
+1.936 4800.40
+2.140 4664.88
+2.344 4527.84
+2.549 4401.00
+2.754 4263.56
+2.958 4120.41
+3.161 3971.14
+3.366 3876.42
+3.570 3916.23
+3.774 3913.51
+3.979 3312.76
+4.184 1649.27
+4.388 523.36
+4.591 327.21
+4.796 251.04
+5.001 128.18
+5.206 0.00

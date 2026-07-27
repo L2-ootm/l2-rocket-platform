@@ -1,0 +1,47 @@
+{
+  "Cesaroni Technology Inc.|20146N5800-P": {
+    "manufacturer": "Cesaroni Technology Inc.",
+    "designation": "20146N5800-P",
+    "digest": "f63bdcd39eb397ae77483e657eea6090",
+    "diameter": 0.098,
+    "length": 1.239,
+    "launch_mass": 14.826,
+    "impulse": 20367.7
+  },
+  "Cesaroni Technology Inc.|40960O8000-P": {
+    "manufacturer": "Cesaroni Technology Inc.",
+    "designation": "40960O8000-P",
+    "digest": "d925d384c9082af5bacb8a64643723cf",
+    "diameter": 0.161,
+    "length": 0.957,
+    "launch_mass": 32.672,
+    "impulse": 41125.3
+  },
+  "Cesaroni Technology Inc.|9977M2245-P": {
+    "manufacturer": "Cesaroni Technology Inc.",
+    "designation": "9977M2245-P",
+    "digest": "8b5df94e82762aba9b91cd3efa75da82",
+    "diameter": 0.075,
+    "length": 1.025,
+    "launch_mass": 8.182,
+    "impulse": 9978.3
+  },
+  "Cesaroni Technology Inc.|163H133-14A": {
+    "manufacturer": "Cesaroni Technology Inc.",
+    "designation": "163H133-14A",
+    "digest": "335900a5e45f04dc3355c46a5e2862c8",
+    "diameter": 0.029,
+    "length": 0.187,
+    "launch_mass": 0.19,
+    "impulse": 163.0
+  },
+  "AeroTech|N2000W": {
+    "manufacturer": "AeroTech",
+    "designation": "N2000W",
+    "digest": "f097ce447c4666d6124670f2768d667a",
+    "diameter": 0.098,
+    "length": 1.046,
+    "launch_mass": 12.283,
+    "impulse": 13263.4
+  }
+}

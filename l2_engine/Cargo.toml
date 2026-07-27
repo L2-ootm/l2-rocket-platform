@@ -1,0 +1,54 @@
+[package]
+name = "l2_engine"
+version = "0.1.0"
+edition = "2024"
+autobins = false
+license = "GPL-3.0-or-later"
+description = "Local rocket topology evaluation and simulation engine"
+readme = "../README.md"
+
+[dependencies]
+roxmltree = "0.21"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+anyhow = "1"
+zip = "8"
+nalgebra = "0.34"
+rayon = "1.12.0"
+rand = "0.8.5"
+rand_distr = "0.4"
+eframe = { version = "0.33", optional = true, default-features = false, features = [
+  "default_fonts",
+  "glow",
+] }
+egui_plot = { version = "0.34", optional = true }
+
+[features]
+default = []
+viz = ["eframe", "egui_plot"]
+
+[[bin]]
+name = "l2_engine"
+path = "src/main.rs"
+
+[[bin]]
+name = "ast_eval"
+path = "src/bin/ast_eval.rs"
+
+[[bin]]
+name = "ast_trace"
+path = "src/bin/ast_trace.rs"
+
+[[bin]]
+name = "divergence_fit"
+path = "src/bin/divergence_fit.rs"
+
+[[bin]]
+name = "optimize"
+path = "src/bin/optimize.rs"
+
+[[bin]]
+name = "viz"
+path = "src/bin/viz.rs"
+required-features = ["viz"]

@@ -1,0 +1,31 @@
+;AeroTech M2500T extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=292, curve_id=321
+; lookup key 'M2500T' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+M2500T 98 751 0,P 4.6592 8.0640 A
+0.000 0.00
+0.082 2651.86
+0.249 2780.28
+0.416 2820.73
+0.583 2843.01
+0.751 2847.76
+0.918 2851.22
+1.084 2854.74
+1.252 2861.69
+1.420 2858.09
+1.586 2851.09
+1.754 2844.62
+1.922 2830.86
+2.089 2804.71
+2.255 2765.80
+2.423 2710.51
+2.591 2648.26
+2.757 2586.91
+2.925 2520.79
+3.093 2462.22
+3.259 2419.94
+3.426 1894.94
+3.594 808.04
+3.761 282.40
+3.928 97.88
+4.096 24.49
+4.264 0.00

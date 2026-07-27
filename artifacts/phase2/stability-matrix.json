@@ -1,0 +1,187 @@
+{
+  "test": "stability_matrix_round2",
+  "tested": 20,
+  "stable": 0,
+  "results": [
+    {
+      "label": "J350W\u00d73/r74/4f_aft_only/balanced",
+      "status": "UNSTABLE_SUPERSONIC",
+      "mach": 1.0028,
+      "margin": 0.8711,
+      "apogee": 2288.3,
+      "staging": true,
+      "time_s": 6.7
+    },
+    {
+      "label": "J350W\u00d73/r74/4f_aft_only/heavy_nose",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.939,
+      "margin": 1.3189,
+      "apogee": 2347.5,
+      "staging": true,
+      "time_s": 0.9
+    },
+    {
+      "label": "J350W\u00d73/r74/4f_aft_only/heavy_aft",
+      "status": "UNSTABLE_SUPERSONIC",
+      "mach": 1.0314,
+      "margin": 0.5876,
+      "apogee": 2228.8,
+      "staging": true,
+      "time_s": 1.0
+    },
+    {
+      "label": "J350W\u00d73/r74/4f_aft_plus_3grid/balanced",
+      "status": "UNSTABLE_SUPERSONIC",
+      "mach": 1.0029,
+      "margin": 0.8705,
+      "apogee": 2288.4,
+      "staging": true,
+      "time_s": 0.3
+    },
+    {
+      "label": "J350W\u00d73/r74/4f_aft_plus_3grid/heavy_nose",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.9388,
+      "margin": 1.3163,
+      "apogee": 2346.2,
+      "staging": true,
+      "time_s": 0.4
+    },
+    {
+      "label": "J350W\u00d73/r74/4f_aft_plus_3grid/heavy_aft",
+      "status": "UNSTABLE_SUPERSONIC",
+      "mach": 1.0315,
+      "margin": 0.5862,
+      "apogee": 2228.8,
+      "staging": true,
+      "time_s": 0.8
+    },
+    {
+      "label": "J350W\u00d73/r80/4f_aft_only/balanced",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.918,
+      "margin": 0.7607,
+      "apogee": 2160.1,
+      "staging": true,
+      "time_s": 0.3
+    },
+    {
+      "label": "J350W\u00d73/r80/4f_aft_only/heavy_nose",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.8638,
+      "margin": 1.1251,
+      "apogee": 2196.4,
+      "staging": true,
+      "time_s": 0.2
+    },
+    {
+      "label": "J350W\u00d73/r80/4f_aft_only/heavy_aft",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.9435,
+      "margin": 0.5032,
+      "apogee": 2118.9,
+      "staging": true,
+      "time_s": 0.5
+    },
+    {
+      "label": "J350W\u00d73/r80/4f_aft_plus_3grid/balanced",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.9182,
+      "margin": 0.76,
+      "apogee": 2160.2,
+      "staging": true,
+      "time_s": 0.3
+    },
+    {
+      "label": "J350W\u00d73/r80/4f_aft_plus_3grid/heavy_nose",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.8637,
+      "margin": 1.1259,
+      "apogee": 2196.2,
+      "staging": true,
+      "time_s": 0.3
+    },
+    {
+      "label": "J350W\u00d73/r80/4f_aft_plus_3grid/heavy_aft",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.9434,
+      "margin": 0.505,
+      "apogee": 2118.6,
+      "staging": true,
+      "time_s": 0.6
+    },
+    {
+      "label": "J350W\u00d73/r85/4f_aft_only/balanced",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.8508,
+      "margin": 0.6587,
+      "apogee": 2052.3,
+      "staging": true,
+      "time_s": 0.2
+    },
+    {
+      "label": "J350W\u00d73/r85/4f_aft_only/heavy_nose",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.7997,
+      "margin": 0.9785,
+      "apogee": 2058.6,
+      "staging": true,
+      "time_s": 0.2
+    },
+    {
+      "label": "J350W\u00d73/r85/4f_aft_only/heavy_aft",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.8737,
+      "margin": 0.4591,
+      "apogee": 2024.5,
+      "staging": true,
+      "time_s": 0.2
+    },
+    {
+      "label": "J350W\u00d73/r85/4f_aft_plus_3grid/balanced",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.8513,
+      "margin": 0.6586,
+      "apogee": 2053.0,
+      "staging": true,
+      "time_s": 0.2
+    },
+    {
+      "label": "J350W\u00d73/r85/4f_aft_plus_3grid/heavy_nose",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.7995,
+      "margin": 0.9788,
+      "apogee": 2058.6,
+      "staging": true,
+      "time_s": 0.2
+    },
+    {
+      "label": "J350W\u00d73/r85/4f_aft_plus_3grid/heavy_aft",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.8736,
+      "margin": 0.4638,
+      "apogee": 2024.2,
+      "staging": true,
+      "time_s": 0.3
+    },
+    {
+      "label": "J420R\u00d73/r74/4f_aft_only/balanced",
+      "status": "UNSTABLE_SUPERSONIC",
+      "mach": 0.9852,
+      "margin": 0.9466,
+      "apogee": 2236.3,
+      "staging": true,
+      "time_s": 0.3
+    },
+    {
+      "label": "J420R\u00d73/r74/4f_aft_only/heavy_nose",
+      "status": "UNSTABLE_SUBSONIC",
+      "mach": 0.9229,
+      "margin": 1.3923,
+      "apogee": 2292.7,
+      "staging": true,
+      "time_s": 0.3
+    }
+  ]
+}

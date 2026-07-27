@@ -1,0 +1,3152 @@
+{
+  "generated_by": "organic_loop v0 (pop=96, gens=5, seed=1016204)",
+  "fitness_def": "Rust AST proxy + CKG multiplier; OpenRocket official only when or_metrics present",
+  "evaluator": "rust",
+  "physics_mode": "openrocket",
+  "execution_profile": "super-speed",
+  "mission": "missions\\osifog_l3_precision.json",
+  "target_apogee_m": 15000.0,
+  "validate_openrocket": 4,
+  "elite": [
+    {
+      "score": 0.049999850000000005,
+      "raw_score": 0.999997,
+      "status": "failed",
+      "reason": "constraint_violation:max_height_m 4.000010 > 4.000000",
+      "rust_apogee_m": 0.0,
+      "rust_mach": 0.0,
+      "rust_min_static_margin": -1000000000.0,
+      "rust_margins": [],
+      "rust_features": [],
+      "rust_stage_landings": [],
+      "rust_total_prop_mass_kg": 0.0,
+      "rust_apogee_east_m": 0.0,
+      "rust_apogee_north_m": 0.0,
+      "screen_apogee_m": 0.0,
+      "screen_mach": 0.0,
+      "screen_features": [],
+      "or_metrics": null,
+      "ork": null,
+      "ast": [
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Sustainer",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "NOSE_CONE",
+          "params": {
+            "shape": "parabolic",
+            "length": 0.2778395695481197,
+            "material": "cardboard",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.2444773187810043,
+            "radius": 0.06657091435062948,
+            "material": "carbon",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 7.0363082086931374
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 5,
+            "sweep": 22.73233477481696,
+            "root": 0.3078538137149836,
+            "height": 0.3261584258434152,
+            "tip": 0.10627325782392597,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 3.165601797990993,
+            "root": 0.08870733471963359,
+            "height": 0.061146505023059655,
+            "position_from_top_m": 0.08024610053522063,
+            "tip": 0.025514406363499637,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 13,
+            "motor_designation": "I284W",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 8,
+            "motor_designation": "H238T",
+            "radial_offset_m": 0.037500000000000006,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 1",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.0299940916620642,
+            "radius": 0.073778674070437,
+            "material": "birch",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 43.22597036622068,
+            "root": 0.24991790565200023,
+            "height": 0.183986539867066,
+            "tip": 0.06681315993152,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 12.019991166438068,
+            "root": 0.04826035074145757,
+            "height": 0.04259876654172767,
+            "position_from_top_m": 0.0761129571414114,
+            "tip": 0.017270663766045028,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 5,
+            "motor_designation": "H73J",
+            "radial_offset_m": 0.041999999999999996,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 2",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.4476991350276274,
+            "radius": 0.0825,
+            "material": "abs",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 0.7006351863061377
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 42.24937236147975,
+            "root": 0.12420741858316742,
+            "height": 0.17281766551994215,
+            "tip": 0.056065720451608646,
+            "thickness": 0.003,
+            "cross_section": "square",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 8.384399841052858,
+            "root": 0.05243583817112715,
+            "height": 0.04497353015971337,
+            "position_from_top_m": 0.0756445501295319,
+            "tip": 0.018352543359894502,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 4,
+            "sweep": 33.2054527964514,
+            "root": 0.2772016107026536,
+            "height": 0.2457900672323059,
+            "tip": 0.09702056374592875,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 19,
+            "motor_designation": "K550W",
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "radial_offset_m": 0.05,
+            "radial_angle_deg": 180.0,
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        }
+      ]
+    },
+    {
+      "score": 0.049999850000000005,
+      "raw_score": 0.999997,
+      "status": "failed",
+      "reason": "constraint_violation:max_height_m 4.000010 > 4.000000",
+      "rust_apogee_m": 0.0,
+      "rust_mach": 0.0,
+      "rust_min_static_margin": -1000000000.0,
+      "rust_margins": [],
+      "rust_features": [],
+      "rust_stage_landings": [],
+      "rust_total_prop_mass_kg": 0.0,
+      "rust_apogee_east_m": 0.0,
+      "rust_apogee_north_m": 0.0,
+      "screen_apogee_m": 0.0,
+      "screen_mach": 0.0,
+      "screen_features": [],
+      "or_metrics": null,
+      "ork": null,
+      "ast": [
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Sustainer",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "NOSE_CONE",
+          "params": {
+            "shape": "parabolic",
+            "length": 0.2778395695481197,
+            "material": "cardboard",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.2444773187810043,
+            "radius": 0.06657091435062948,
+            "material": "carbon",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 7.0363082086931374
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 5,
+            "sweep": 22.73233477481696,
+            "root": 0.3078538137149836,
+            "height": 0.3261584258434152,
+            "tip": 0.10627325782392597,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 3.165601797990993,
+            "root": 0.08870733471963359,
+            "height": 0.061146505023059655,
+            "position_from_top_m": 0.08024610053522063,
+            "tip": 0.025514406363499637,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 10,
+            "motor_designation": "I218R",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 8,
+            "motor_designation": "H238T",
+            "radial_offset_m": 0.037500000000000006,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 1",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.0299940916620642,
+            "radius": 0.073778674070437,
+            "material": "birch",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 43.22597036622068,
+            "root": 0.24991790565200023,
+            "height": 0.183986539867066,
+            "tip": 0.06681315993152,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 5.131249390290341,
+            "root": 0.049829753141374514,
+            "height": 0.03166026395341039,
+            "position_from_top_m": 0.07165607827180408,
+            "tip": 0.017270663766045028,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 7,
+            "motor_designation": "H180W",
+            "radial_offset_m": 0.037500000000000006,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 2",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.4476991350276274,
+            "radius": 0.0825,
+            "material": "abs",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 0.7006351863061377
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 42.24937236147975,
+            "root": 0.12420741858316742,
+            "height": 0.17281766551994215,
+            "tip": 0.056065720451608646,
+            "thickness": 0.003,
+            "cross_section": "square",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 8.384399841052858,
+            "root": 0.05243583817112715,
+            "height": 0.04497353015971337,
+            "position_from_top_m": 0.0756445501295319,
+            "tip": 0.018352543359894502,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 4,
+            "sweep": 33.2054527964514,
+            "root": 0.2772016107026536,
+            "height": 0.2457900672323059,
+            "tip": 0.09702056374592875,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 19,
+            "motor_designation": "K550W",
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "radial_offset_m": 0.05,
+            "radial_angle_deg": 180.0,
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        }
+      ]
+    },
+    {
+      "score": 0.049999850000000005,
+      "raw_score": 0.999997,
+      "status": "failed",
+      "reason": "constraint_violation:max_height_m 4.000010 > 4.000000",
+      "rust_apogee_m": 0.0,
+      "rust_mach": 0.0,
+      "rust_min_static_margin": -1000000000.0,
+      "rust_margins": [],
+      "rust_features": [],
+      "rust_stage_landings": [],
+      "rust_total_prop_mass_kg": 0.0,
+      "rust_apogee_east_m": 0.0,
+      "rust_apogee_north_m": 0.0,
+      "screen_apogee_m": 0.0,
+      "screen_mach": 0.0,
+      "screen_features": [],
+      "or_metrics": null,
+      "ork": null,
+      "ast": [
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Sustainer",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "NOSE_CONE",
+          "params": {
+            "shape": "parabolic",
+            "length": 0.2778395695481197,
+            "material": "cardboard",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.2444773187810043,
+            "radius": 0.06657091435062948,
+            "material": "carbon",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 7.0363082086931374
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 5,
+            "sweep": 22.73233477481696,
+            "root": 0.3078538137149836,
+            "height": 0.3261584258434152,
+            "tip": 0.10627325782392597,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 0.0,
+            "root": 0.10818978498446655,
+            "height": 0.06998267782061188,
+            "position_from_top_m": 0.07049869635976135,
+            "tip": 0.025514406363499637,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 10,
+            "motor_designation": "I218R",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 8,
+            "motor_designation": "H238T",
+            "radial_offset_m": 0.037500000000000006,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 1",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.0299940916620642,
+            "radius": 0.073778674070437,
+            "material": "birch",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 43.22597036622068,
+            "root": 0.24991790565200023,
+            "height": 0.183986539867066,
+            "tip": 0.06681315993152,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 5.131249390290341,
+            "root": 0.049829753141374514,
+            "height": 0.03166026395341039,
+            "position_from_top_m": 0.07165607827180408,
+            "tip": 0.017270663766045028,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 7,
+            "motor_designation": "H180W",
+            "radial_offset_m": 0.037500000000000006,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 2",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.4476991350276274,
+            "radius": 0.0825,
+            "material": "abs",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 0.7006351863061377
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 42.24937236147975,
+            "root": 0.12420741858316742,
+            "height": 0.17281766551994215,
+            "tip": 0.056065720451608646,
+            "thickness": 0.003,
+            "cross_section": "square",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 8.384399841052858,
+            "root": 0.05243583817112715,
+            "height": 0.04497353015971337,
+            "position_from_top_m": 0.0756445501295319,
+            "tip": 0.018352543359894502,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 4,
+            "sweep": 33.2054527964514,
+            "root": 0.2772016107026536,
+            "height": 0.2457900672323059,
+            "tip": 0.09702056374592875,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 19,
+            "motor_designation": "K550W",
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "radial_offset_m": 0.05,
+            "radial_angle_deg": 180.0,
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        }
+      ]
+    },
+    {
+      "score": 0.049999850000000005,
+      "raw_score": 0.999997,
+      "status": "failed",
+      "reason": "constraint_violation:max_height_m 4.000010 > 4.000000",
+      "rust_apogee_m": 0.0,
+      "rust_mach": 0.0,
+      "rust_min_static_margin": -1000000000.0,
+      "rust_margins": [],
+      "rust_features": [],
+      "rust_stage_landings": [],
+      "rust_total_prop_mass_kg": 0.0,
+      "rust_apogee_east_m": 0.0,
+      "rust_apogee_north_m": 0.0,
+      "screen_apogee_m": 0.0,
+      "screen_mach": 0.0,
+      "screen_features": [],
+      "or_metrics": null,
+      "ork": null,
+      "ast": [
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Sustainer",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "NOSE_CONE",
+          "params": {
+            "shape": "parabolic",
+            "length": 0.2778395695481197,
+            "material": "cardboard",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.2444773187810043,
+            "radius": 0.06657091435062948,
+            "material": "carbon",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 7.204093006713188
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 5,
+            "sweep": 22.73233477481696,
+            "root": 0.3078538137149836,
+            "height": 0.3261584258434152,
+            "tip": 0.10627325782392597,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 3.165601797990993,
+            "root": 0.08870733471963359,
+            "height": 0.061146505023059655,
+            "position_from_top_m": 0.08024610053522063,
+            "tip": 0.025514406363499637,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 10,
+            "motor_designation": "I218R",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 8,
+            "motor_designation": "H238T",
+            "radial_offset_m": 0.037500000000000006,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 1",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.0299940916620642,
+            "radius": 0.073778674070437,
+            "material": "birch",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 46.18784670287092,
+            "root": 0.21136154844588417,
+            "height": 0.1958558330879676,
+            "tip": 0.06681315993152,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 5.131249390290341,
+            "root": 0.049829753141374514,
+            "height": 0.03166026395341039,
+            "position_from_top_m": 0.07165607827180408,
+            "tip": 0.017270663766045028,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 7,
+            "motor_designation": "H180W",
+            "radial_offset_m": 0.037500000000000006,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 2",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.4476991350276274,
+            "radius": 0.0825,
+            "material": "abs",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 0.9222156373268924
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 4,
+            "sweep": 40.40237584089003,
+            "root": 0.1069094965524483,
+            "height": 0.1944894556914789,
+            "tip": 0.056065720451608646,
+            "thickness": 0.003,
+            "cross_section": "square",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 8.384399841052858,
+            "root": 0.05243583817112715,
+            "height": 0.04497353015971337,
+            "position_from_top_m": 0.0756445501295319,
+            "tip": 0.018352543359894502,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 4,
+            "sweep": 33.2054527964514,
+            "root": 0.2772016107026536,
+            "height": 0.2457900672323059,
+            "tip": 0.09702056374592875,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 19,
+            "motor_designation": "K550W",
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "radial_offset_m": 0.05,
+            "radial_angle_deg": 180.0,
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        }
+      ]
+    },
+    {
+      "score": 0.049999850000000005,
+      "raw_score": 0.999997,
+      "status": "failed",
+      "reason": "constraint_violation:max_height_m 4.000010 > 4.000000",
+      "rust_apogee_m": 0.0,
+      "rust_mach": 0.0,
+      "rust_min_static_margin": -1000000000.0,
+      "rust_margins": [],
+      "rust_features": [],
+      "rust_stage_landings": [],
+      "rust_total_prop_mass_kg": 0.0,
+      "rust_apogee_east_m": 0.0,
+      "rust_apogee_north_m": 0.0,
+      "screen_apogee_m": 0.0,
+      "screen_mach": 0.0,
+      "screen_features": [],
+      "or_metrics": null,
+      "ork": null,
+      "ast": [
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Sustainer",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "NOSE_CONE",
+          "params": {
+            "shape": "parabolic",
+            "length": 0.2778395695481197,
+            "material": "cardboard",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.2444773187810043,
+            "radius": 0.06657091435062948,
+            "material": "carbon",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 7.0363082086931374
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 5,
+            "sweep": 22.73233477481696,
+            "root": 0.3078538137149836,
+            "height": 0.3261584258434152,
+            "tip": 0.10627325782392597,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 3.165601797990993,
+            "root": 0.08870733471963359,
+            "height": 0.061146505023059655,
+            "position_from_top_m": 0.08024610053522063,
+            "tip": 0.025514406363499637,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 13,
+            "motor_designation": "I284W",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 8,
+            "motor_designation": "H238T",
+            "radial_offset_m": 0.037500000000000006,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 1",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.0299940916620642,
+            "radius": 0.073778674070437,
+            "material": "birch",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 50.8438073128759,
+            "root": 0.2625530206864264,
+            "height": 0.15303742780191162,
+            "tip": 0.06681315993152,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 12.019991166438068,
+            "root": 0.04826035074145757,
+            "height": 0.04259876654172767,
+            "position_from_top_m": 0.0761129571414114,
+            "tip": 0.017270663766045028,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 5,
+            "motor_designation": "H73J",
+            "radial_offset_m": 0.041999999999999996,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 2",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.4476991350276274,
+            "radius": 0.0825,
+            "material": "abs",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 0.4591807592303488
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 47.05105386029014,
+            "root": 0.13933211424965267,
+            "height": 0.14621326984340652,
+            "tip": 0.056065720451608646,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 13.242687005685635,
+            "root": 0.04,
+            "height": 0.033773971872048725,
+            "position_from_top_m": 0.06481980620105526,
+            "tip": 0.018352543359894502,
+            "thickness": 0.003,
+            "cross_section": "double-wedge",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 4,
+            "sweep": 33.2054527964514,
+            "root": 0.2772016107026536,
+            "height": 0.2457900672323059,
+            "tip": 0.09702056374592875,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 19,
+            "motor_designation": "K550W",
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "radial_offset_m": 0.05,
+            "radial_angle_deg": 180.0,
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        }
+      ]
+    },
+    {
+      "score": 0.049999850000000005,
+      "raw_score": 0.999997,
+      "status": "failed",
+      "reason": "constraint_violation:max_height_m 4.000010 > 4.000000",
+      "rust_apogee_m": 0.0,
+      "rust_mach": 0.0,
+      "rust_min_static_margin": -1000000000.0,
+      "rust_margins": [],
+      "rust_features": [],
+      "rust_stage_landings": [],
+      "rust_total_prop_mass_kg": 0.0,
+      "rust_apogee_east_m": 0.0,
+      "rust_apogee_north_m": 0.0,
+      "screen_apogee_m": 0.0,
+      "screen_mach": 0.0,
+      "screen_features": [],
+      "or_metrics": null,
+      "ork": null,
+      "ast": [
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Sustainer",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "NOSE_CONE",
+          "params": {
+            "shape": "parabolic",
+            "length": 0.2778395695481197,
+            "material": "cardboard",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.2444773187810043,
+            "radius": 0.06657091435062948,
+            "material": "carbon",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 7.0363082086931374
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 5,
+            "sweep": 22.73233477481696,
+            "root": 0.3078538137149836,
+            "height": 0.3261584258434152,
+            "tip": 0.10627325782392597,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 3.165601797990993,
+            "root": 0.08870733471963359,
+            "height": 0.061146505023059655,
+            "position_from_top_m": 0.08024610053522063,
+            "tip": 0.025514406363499637,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 13,
+            "motor_designation": "I284W",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 8,
+            "motor_designation": "H238T",
+            "radial_offset_m": 0.037500000000000006,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 1",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.0299940916620642,
+            "radius": 0.073778674070437,
+            "material": "birch",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 43.23348039990266,
+            "root": 0.29140817179809003,
+            "height": 0.19653072782446707,
+            "tip": 0.06681315993152,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 12.019991166438068,
+            "root": 0.04826035074145757,
+            "height": 0.04259876654172767,
+            "position_from_top_m": 0.0761129571414114,
+            "tip": 0.017270663766045028,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 11,
+            "motor_designation": "I357T",
+            "radial_offset_m": 0.041999999999999996,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 2",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.4476991350276274,
+            "radius": 0.0825,
+            "material": "abs",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 0.7006351863061377
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 42.24937236147975,
+            "root": 0.12420741858316742,
+            "height": 0.17281766551994215,
+            "tip": 0.056065720451608646,
+            "thickness": 0.003,
+            "cross_section": "square",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 16.367103247103138,
+            "root": 0.06079679943943335,
+            "height": 0.03581723411776867,
+            "position_from_top_m": 0.06834702402827478,
+            "tip": 0.018352543359894502,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 6,
+            "sweep": 37.121824253789946,
+            "root": 0.2978841368832926,
+            "height": 0.2561961361243664,
+            "tip": 0.09702056374592875,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 19,
+            "motor_designation": "K550W",
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "radial_offset_m": 0.05,
+            "radial_angle_deg": 180.0,
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        }
+      ]
+    },
+    {
+      "score": 0.049999850000000005,
+      "raw_score": 0.999997,
+      "status": "failed",
+      "reason": "constraint_violation:max_height_m 4.000010 > 4.000000",
+      "rust_apogee_m": 0.0,
+      "rust_mach": 0.0,
+      "rust_min_static_margin": -1000000000.0,
+      "rust_margins": [],
+      "rust_features": [],
+      "rust_stage_landings": [],
+      "rust_total_prop_mass_kg": 0.0,
+      "rust_apogee_east_m": 0.0,
+      "rust_apogee_north_m": 0.0,
+      "screen_apogee_m": 0.0,
+      "screen_mach": 0.0,
+      "screen_features": [],
+      "or_metrics": null,
+      "ork": null,
+      "ast": [
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Sustainer",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "NOSE_CONE",
+          "params": {
+            "shape": "parabolic",
+            "length": 0.2778395695481197,
+            "material": "cardboard",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.2444773187810043,
+            "radius": 0.06657091435062948,
+            "material": "carbon",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 7.0363082086931374
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 5,
+            "sweep": 22.73233477481696,
+            "root": 0.3078538137149836,
+            "height": 0.3261584258434152,
+            "tip": 0.10627325782392597,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 3.165601797990993,
+            "root": 0.08870733471963359,
+            "height": 0.061146505023059655,
+            "position_from_top_m": 0.08024610053522063,
+            "tip": 0.025514406363499637,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 10,
+            "motor_designation": "I218R",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 8,
+            "motor_designation": "H238T",
+            "radial_offset_m": 0.037500000000000006,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 1",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.0299940916620642,
+            "radius": 0.073778674070437,
+            "material": "birch",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 43.22597036622068,
+            "root": 0.24991790565200023,
+            "height": 0.183986539867066,
+            "tip": 0.06681315993152,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 5.131249390290341,
+            "root": 0.049829753141374514,
+            "height": 0.03166026395341039,
+            "position_from_top_m": 0.07165607827180408,
+            "tip": 0.017270663766045028,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 0,
+            "motor_designation": "F50T",
+            "radial_offset_m": 0.043427182834938904,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 2",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.4476991350276274,
+            "radius": 0.0825,
+            "material": "abs",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 0.5542399001730961
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 42.24937236147975,
+            "root": 0.12420741858316742,
+            "height": 0.17281766551994215,
+            "tip": 0.056065720451608646,
+            "thickness": 0.003,
+            "cross_section": "square",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 8.384399841052858,
+            "root": 0.05243583817112715,
+            "height": 0.04497353015971337,
+            "position_from_top_m": 0.0756445501295319,
+            "tip": 0.018352543359894502,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 4,
+            "sweep": 33.2054527964514,
+            "root": 0.2772016107026536,
+            "height": 0.2457900672323059,
+            "tip": 0.09702056374592875,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 19,
+            "motor_designation": "K550W",
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "radial_offset_m": 0.05,
+            "radial_angle_deg": 180.0,
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        }
+      ]
+    },
+    {
+      "score": 0.049999850000000005,
+      "raw_score": 0.999997,
+      "status": "failed",
+      "reason": "constraint_violation:max_height_m 4.000010 > 4.000000",
+      "rust_apogee_m": 0.0,
+      "rust_mach": 0.0,
+      "rust_min_static_margin": -1000000000.0,
+      "rust_margins": [],
+      "rust_features": [],
+      "rust_stage_landings": [],
+      "rust_total_prop_mass_kg": 0.0,
+      "rust_apogee_east_m": 0.0,
+      "rust_apogee_north_m": 0.0,
+      "screen_apogee_m": 0.0,
+      "screen_mach": 0.0,
+      "screen_features": [],
+      "or_metrics": null,
+      "ork": null,
+      "ast": [
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Sustainer",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "NOSE_CONE",
+          "params": {
+            "shape": "parabolic",
+            "length": 0.2778395695481197,
+            "material": "cardboard",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.2444773187810043,
+            "radius": 0.06657091435062948,
+            "material": "carbon",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 7.204093006713188
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 5,
+            "sweep": 15.373979071522232,
+            "root": 0.35395844048883185,
+            "height": 0.3148612554731514,
+            "tip": 0.10627325782392597,
+            "thickness": 0.003,
+            "cross_section": "square",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 3.165601797990993,
+            "root": 0.08870733471963359,
+            "height": 0.061146505023059655,
+            "position_from_top_m": 0.08024610053522063,
+            "tip": 0.025514406363499637,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 11,
+            "motor_designation": "I357T",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 8,
+            "motor_designation": "H238T",
+            "radial_offset_m": 0.037500000000000006,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 1",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.0299940916620642,
+            "radius": 0.073778674070437,
+            "material": "birch",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 46.18784670287092,
+            "root": 0.21136154844588417,
+            "height": 0.1958558330879676,
+            "tip": 0.06681315993152,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 6,
+            "sweep": 5.131249390290341,
+            "root": 0.049829753141374514,
+            "height": 0.03166026395341039,
+            "position_from_top_m": 0.07165607827180408,
+            "tip": 0.017270663766045028,
+            "thickness": 0.003,
+            "cross_section": "rounded",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 7,
+            "motor_designation": "H180W",
+            "radial_offset_m": 0.037500000000000006,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 2",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.4476991350276274,
+            "radius": 0.0825,
+            "material": "abs",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 0.9222156373268924
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 4,
+            "sweep": 40.40237584089003,
+            "root": 0.1069094965524483,
+            "height": 0.1944894556914789,
+            "tip": 0.056065720451608646,
+            "thickness": 0.003,
+            "cross_section": "square",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 12.83831991215064,
+            "root": 0.04540653008356052,
+            "height": 0.051885679590149586,
+            "position_from_top_m": 0.08504158756746003,
+            "tip": 0.018352543359894502,
+            "thickness": 0.003,
+            "cross_section": "square",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 4,
+            "sweep": 33.2054527964514,
+            "root": 0.2772016107026536,
+            "height": 0.2457900672323059,
+            "tip": 0.09702056374592875,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 19,
+            "motor_designation": "K550W",
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "radial_offset_m": 0.05,
+            "radial_angle_deg": 180.0,
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        }
+      ]
+    },
+    {
+      "score": 0.0499994,
+      "raw_score": 0.999988,
+      "status": "failed",
+      "reason": "constraint_violation:max_height_m 4.000049 > 4.000000",
+      "rust_apogee_m": 0.0,
+      "rust_mach": 0.0,
+      "rust_min_static_margin": -1000000000.0,
+      "rust_margins": [],
+      "rust_features": [],
+      "rust_stage_landings": [],
+      "rust_total_prop_mass_kg": 0.0,
+      "rust_apogee_east_m": 0.0,
+      "rust_apogee_north_m": 0.0,
+      "screen_apogee_m": 0.0,
+      "screen_mach": 0.0,
+      "screen_features": [],
+      "or_metrics": null,
+      "ork": null,
+      "ast": [
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Sustainer",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "NOSE_CONE",
+          "params": {
+            "shape": "parabolic",
+            "length": 0.3125741487839022,
+            "material": "cardboard",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.2097820498589118,
+            "radius": 0.07775431783175071,
+            "material": "pla",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 6.374399611118143
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 5,
+            "sweep": 22.73233477481696,
+            "root": 0.3078538137149836,
+            "height": 0.3261584258434152,
+            "tip": 0.10627325782392597,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 2.6524453738612146,
+            "root": 0.0774576162382135,
+            "height": 0.05363791023816755,
+            "position_from_top_m": 0.07137350812676385,
+            "tip": 0.025514406363499637,
+            "thickness": 0.003,
+            "cross_section": "square",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 5,
+            "motor_designation": "H73J",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 6,
+            "motor_designation": "H128W",
+            "radial_offset_m": 0.04454909523417444,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 1",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.0299940916620642,
+            "radius": 0.073778674070437,
+            "material": "birch",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 43.22597036622068,
+            "root": 0.24991790565200023,
+            "height": 0.183986539867066,
+            "tip": 0.06681315993152,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 4,
+            "sweep": 9.679312063359596,
+            "root": 0.06707164525724361,
+            "height": 0.03,
+            "position_from_top_m": 0.09840948999798603,
+            "tip": 0.017270663766045028,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 15,
+            "motor_designation": "J420R",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 5,
+            "motor_designation": "H73J",
+            "radial_offset_m": 0.049778674070437005,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 2",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.4476991350276274,
+            "radius": 0.066,
+            "material": "abs",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 0.7006351863061377
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 41.84322425619604,
+            "root": 0.13072579671478482,
+            "height": 0.17240618591059592,
+            "tip": 0.056065720451608646,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 8.384399841052858,
+            "root": 0.05243583817112715,
+            "height": 0.04497353015971337,
+            "position_from_top_m": 0.0756445501295319,
+            "tip": 0.018352543359894502,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 16,
+            "motor_designation": "J510W",
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "radial_offset_m": 0.041999999999999996,
+            "radial_angle_deg": 180.0,
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        }
+      ]
+    },
+    {
+      "score": 0.0499994,
+      "raw_score": 0.999988,
+      "status": "failed",
+      "reason": "constraint_violation:max_height_m 4.000049 > 4.000000",
+      "rust_apogee_m": 0.0,
+      "rust_mach": 0.0,
+      "rust_min_static_margin": -1000000000.0,
+      "rust_margins": [],
+      "rust_features": [],
+      "rust_stage_landings": [],
+      "rust_total_prop_mass_kg": 0.0,
+      "rust_apogee_east_m": 0.0,
+      "rust_apogee_north_m": 0.0,
+      "screen_apogee_m": 0.0,
+      "screen_mach": 0.0,
+      "screen_features": [],
+      "or_metrics": null,
+      "ork": null,
+      "ast": [
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Sustainer",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "NOSE_CONE",
+          "params": {
+            "shape": "parabolic",
+            "length": 0.3125741487839022,
+            "material": "cardboard",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.2097820498589118,
+            "radius": 0.07775431783175071,
+            "material": "pla",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 6.374399611118143
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 5,
+            "sweep": 22.73233477481696,
+            "root": 0.3078538137149836,
+            "height": 0.3261584258434152,
+            "tip": 0.10627325782392597,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 2.6524453738612146,
+            "root": 0.0774576162382135,
+            "height": 0.05363791023816755,
+            "position_from_top_m": 0.07137350812676385,
+            "tip": 0.025514406363499637,
+            "thickness": 0.003,
+            "cross_section": "square",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 5,
+            "motor_designation": "H73J",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 6,
+            "motor_designation": "H128W",
+            "radial_offset_m": 0.04454909523417444,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 1",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.0299940916620642,
+            "radius": 0.073778674070437,
+            "material": "birch",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 43.90915495083322,
+            "root": 0.23679763528769485,
+            "height": 0.18803832299079476,
+            "tip": 0.06681315993152,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 4,
+            "sweep": 9.679312063359596,
+            "root": 0.06707164525724361,
+            "height": 0.03,
+            "position_from_top_m": 0.09840948999798603,
+            "tip": 0.017270663766045028,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 15,
+            "motor_designation": "J420R",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 5,
+            "motor_designation": "H73J",
+            "radial_offset_m": 0.049778674070437005,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 2",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.4476991350276274,
+            "radius": 0.066,
+            "material": "abs",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 0.7006351863061377
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 41.84322425619604,
+            "root": 0.13072579671478482,
+            "height": 0.17240618591059592,
+            "tip": 0.056065720451608646,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 8.384399841052858,
+            "root": 0.05243583817112715,
+            "height": 0.04497353015971337,
+            "position_from_top_m": 0.0756445501295319,
+            "tip": 0.018352543359894502,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 16,
+            "motor_designation": "J510W",
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "radial_offset_m": 0.041999999999999996,
+            "radial_angle_deg": 180.0,
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        }
+      ]
+    },
+    {
+      "score": 0.0499994,
+      "raw_score": 0.999988,
+      "status": "failed",
+      "reason": "constraint_violation:max_height_m 4.000049 > 4.000000",
+      "rust_apogee_m": 0.0,
+      "rust_mach": 0.0,
+      "rust_min_static_margin": -1000000000.0,
+      "rust_margins": [],
+      "rust_features": [],
+      "rust_stage_landings": [],
+      "rust_total_prop_mass_kg": 0.0,
+      "rust_apogee_east_m": 0.0,
+      "rust_apogee_north_m": 0.0,
+      "screen_apogee_m": 0.0,
+      "screen_mach": 0.0,
+      "screen_features": [],
+      "or_metrics": null,
+      "ork": null,
+      "ast": [
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Sustainer",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "NOSE_CONE",
+          "params": {
+            "shape": "parabolic",
+            "length": 0.3125741487839022,
+            "material": "cardboard",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.2097820498589118,
+            "radius": 0.07775431783175071,
+            "material": "pla",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 6.374399611118143
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 5,
+            "sweep": 22.73233477481696,
+            "root": 0.3078538137149836,
+            "height": 0.3261584258434152,
+            "tip": 0.10627325782392597,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 2.6524453738612146,
+            "root": 0.0774576162382135,
+            "height": 0.05363791023816755,
+            "position_from_top_m": 0.07137350812676385,
+            "tip": 0.025514406363499637,
+            "thickness": 0.003,
+            "cross_section": "square",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 5,
+            "motor_designation": "H73J",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 6,
+            "motor_designation": "H128W",
+            "radial_offset_m": 0.04454909523417444,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 1",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.0299940916620642,
+            "radius": 0.073778674070437,
+            "material": "birch",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 43.22597036622068,
+            "root": 0.24991790565200023,
+            "height": 0.183986539867066,
+            "tip": 0.06681315993152,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 4,
+            "sweep": 9.679312063359596,
+            "root": 0.06707164525724361,
+            "height": 0.03,
+            "position_from_top_m": 0.09840948999798603,
+            "tip": 0.017270663766045028,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 15,
+            "motor_designation": "J420R",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 5,
+            "motor_designation": "H73J",
+            "radial_offset_m": 0.049778674070437005,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 2",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.4476991350276274,
+            "radius": 0.066,
+            "material": "abs",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 0.7006351863061377
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 41.84322425619604,
+            "root": 0.13072579671478482,
+            "height": 0.17240618591059592,
+            "tip": 0.056065720451608646,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 8.384399841052858,
+            "root": 0.05243583817112715,
+            "height": 0.04497353015971337,
+            "position_from_top_m": 0.0756445501295319,
+            "tip": 0.018352543359894502,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 16,
+            "motor_designation": "J510W",
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "radial_offset_m": 0.041999999999999996,
+            "radial_angle_deg": 180.0,
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        }
+      ]
+    },
+    {
+      "score": 0.0499994,
+      "raw_score": 0.999988,
+      "status": "failed",
+      "reason": "constraint_violation:max_height_m 4.000049 > 4.000000",
+      "rust_apogee_m": 0.0,
+      "rust_mach": 0.0,
+      "rust_min_static_margin": -1000000000.0,
+      "rust_margins": [],
+      "rust_features": [],
+      "rust_stage_landings": [],
+      "rust_total_prop_mass_kg": 0.0,
+      "rust_apogee_east_m": 0.0,
+      "rust_apogee_north_m": 0.0,
+      "screen_apogee_m": 0.0,
+      "screen_mach": 0.0,
+      "screen_features": [],
+      "or_metrics": null,
+      "ork": null,
+      "ast": [
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Sustainer",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "NOSE_CONE",
+          "params": {
+            "shape": "parabolic",
+            "length": 0.3125741487839022,
+            "material": "cardboard",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.2097820498589118,
+            "radius": 0.07775431783175071,
+            "material": "pla",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 6.374399611118143
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 5,
+            "sweep": 22.73233477481696,
+            "root": 0.3078538137149836,
+            "height": 0.3261584258434152,
+            "tip": 0.10627325782392597,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 2.6524453738612146,
+            "root": 0.0774576162382135,
+            "height": 0.05363791023816755,
+            "position_from_top_m": 0.07137350812676385,
+            "tip": 0.025514406363499637,
+            "thickness": 0.003,
+            "cross_section": "square",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 5,
+            "motor_designation": "H73J",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 6,
+            "motor_designation": "H128W",
+            "radial_offset_m": 0.04454909523417444,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 1",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.0299940916620642,
+            "radius": 0.073778674070437,
+            "material": "birch",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 43.90915495083322,
+            "root": 0.23679763528769485,
+            "height": 0.18803832299079476,
+            "tip": 0.06681315993152,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 4,
+            "sweep": 9.679312063359596,
+            "root": 0.06707164525724361,
+            "height": 0.03,
+            "position_from_top_m": 0.09840948999798603,
+            "tip": 0.017270663766045028,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 15,
+            "motor_designation": "J420R",
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 12,
+            "motor_designation": "I211W",
+            "radial_offset_m": 0.049778674070437005,
+            "radial_angle_deg": 180.0,
+            "ignition": "burnout",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        },
+        {
+          "type": "STAGE",
+          "params": {
+            "name": "Evolved Booster 2",
+            "recovery": "retro_only"
+          }
+        },
+        {
+          "type": "BODY_TUBE",
+          "params": {
+            "length": 1.4476991350276274,
+            "radius": 0.066,
+            "material": "abs",
+            "thickness": 0.002
+          }
+        },
+        {
+          "type": "PAYLOAD",
+          "params": {
+            "mass": 0.6495485228039067
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "count": 3,
+            "sweep": 41.84322425619604,
+            "root": 0.13072579671478482,
+            "height": 0.17240618591059592,
+            "tip": 0.056065720451608646,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "FIN_SET",
+          "params": {
+            "role": "forward_flap",
+            "count": 3,
+            "sweep": 8.384399841052858,
+            "root": 0.05243583817112715,
+            "height": 0.04497353015971337,
+            "position_from_top_m": 0.0756445501295319,
+            "tip": 0.018352543359894502,
+            "thickness": 0.003,
+            "cross_section": "airfoil",
+            "material": "fiberglass"
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "main",
+            "motor_index": 16,
+            "motor_designation": "J510W",
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "MOTOR_MOUNT",
+          "params": {
+            "role": "retro",
+            "motor_index": 14,
+            "motor_designation": "J350W",
+            "radial_offset_m": 0.041999999999999996,
+            "radial_angle_deg": 180.0,
+            "ignition": "automatic",
+            "ignition_delay": 0.0
+          }
+        },
+        {
+          "type": "CLOSE_BODY",
+          "params": {}
+        }
+      ]
+    }
+  ]
+}

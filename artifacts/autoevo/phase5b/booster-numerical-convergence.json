@@ -1,0 +1,1799 @@
+{
+  "candidate": "historical-3p5135-booster-branch (eight-forward-fin booster, H180W retro)",
+  "convergence_by_delay": {
+    "29.86": {
+      "classification_agrees_across_timesteps": false,
+      "contact_mode_by_timestep": {
+        "0.001": "POST_BURN_COAST_CONTACT",
+        "0.005": "POST_BURN_COAST_CONTACT",
+        "0.01": "POST_BURN_COAST_CONTACT",
+        "0.02": "POST_BURN_COAST_CONTACT",
+        "0.05": "POST_BURN_COAST_CONTACT"
+      },
+      "legal_by_timestep": {
+        "0.001": false,
+        "0.005": false,
+        "0.01": false,
+        "0.02": false,
+        "0.05": true
+      },
+      "touchdown_total_mps_by_timestep": {
+        "0.001": 10.919497333064479,
+        "0.005": 14.597518140820377,
+        "0.01": 12.343918116634429,
+        "0.02": 11.460483322189326,
+        "0.05": 4.906824932263131
+      }
+    },
+    "29.8605": {
+      "classification_agrees_across_timesteps": false,
+      "contact_mode_by_timestep": {
+        "0.001": "POST_BURN_COAST_CONTACT",
+        "0.005": "POST_BURN_COAST_CONTACT",
+        "0.01": "POST_BURN_COAST_CONTACT",
+        "0.02": "POST_BURN_COAST_CONTACT",
+        "0.05": "POST_BURN_COAST_CONTACT"
+      },
+      "legal_by_timestep": {
+        "0.001": false,
+        "0.005": false,
+        "0.01": false,
+        "0.02": false,
+        "0.05": true
+      },
+      "touchdown_total_mps_by_timestep": {
+        "0.001": 10.89563239989518,
+        "0.005": 14.56063939077239,
+        "0.01": 12.339048220982216,
+        "0.02": 11.406558075549677,
+        "0.05": 4.923774917483575
+      }
+    },
+    "29.861": {
+      "classification_agrees_across_timesteps": false,
+      "contact_mode_by_timestep": {
+        "0.001": "POST_BURN_COAST_CONTACT",
+        "0.005": "POST_BURN_COAST_CONTACT",
+        "0.01": "POST_BURN_COAST_CONTACT",
+        "0.02": "POST_BURN_COAST_CONTACT",
+        "0.05": "DIRECT_DESCENT_CONTACT"
+      },
+      "legal_by_timestep": {
+        "0.001": false,
+        "0.005": false,
+        "0.01": false,
+        "0.02": false,
+        "0.05": true
+      },
+      "touchdown_total_mps_by_timestep": {
+        "0.001": 10.872143244164379,
+        "0.005": 14.556838303032842,
+        "0.01": 12.376404905362099,
+        "0.02": 11.278877395251822,
+        "0.05": 2.7621953505464543
+      }
+    },
+    "29.8625": {
+      "classification_agrees_across_timesteps": false,
+      "contact_mode_by_timestep": {
+        "0.001": "POST_BURN_COAST_CONTACT",
+        "0.005": "POST_BURN_COAST_CONTACT",
+        "0.01": "POST_BURN_COAST_CONTACT",
+        "0.02": "POST_BURN_COAST_CONTACT",
+        "0.05": "DIRECT_DESCENT_CONTACT"
+      },
+      "legal_by_timestep": {
+        "0.001": false,
+        "0.005": false,
+        "0.01": false,
+        "0.02": false,
+        "0.05": true
+      },
+      "touchdown_total_mps_by_timestep": {
+        "0.001": 10.794150503547725,
+        "0.005": 14.510729482813396,
+        "0.01": 12.251808071347643,
+        "0.02": 11.346091703174562,
+        "0.05": 3.0358348213854756
+      }
+    },
+    "29.864": {
+      "classification_agrees_across_timesteps": false,
+      "contact_mode_by_timestep": {
+        "0.001": "POST_BURN_COAST_CONTACT",
+        "0.005": "POST_BURN_COAST_CONTACT",
+        "0.01": "POST_BURN_COAST_CONTACT",
+        "0.02": "POST_BURN_COAST_CONTACT",
+        "0.05": "DIRECT_DESCENT_CONTACT"
+      },
+      "legal_by_timestep": {
+        "0.001": false,
+        "0.005": false,
+        "0.01": false,
+        "0.02": false,
+        "0.05": true
+      },
+      "touchdown_total_mps_by_timestep": {
+        "0.001": 10.714213099729397,
+        "0.005": 14.457193937642757,
+        "0.01": 12.255069583732006,
+        "0.02": 11.12285619709102,
+        "0.05": 3.5891545566551666
+      }
+    },
+    "29.8645": {
+      "classification_agrees_across_timesteps": false,
+      "contact_mode_by_timestep": {
+        "0.001": "POST_BURN_COAST_CONTACT",
+        "0.005": "POST_BURN_COAST_CONTACT",
+        "0.01": "POST_BURN_COAST_CONTACT",
+        "0.02": "POST_BURN_COAST_CONTACT",
+        "0.05": "DIRECT_DESCENT_CONTACT"
+      },
+      "legal_by_timestep": {
+        "0.001": false,
+        "0.005": false,
+        "0.01": false,
+        "0.02": false,
+        "0.05": true
+      },
+      "touchdown_total_mps_by_timestep": {
+        "0.001": 10.679533770012563,
+        "0.005": 14.411081073975437,
+        "0.01": 12.192733423795955,
+        "0.02": 11.093987480075096,
+        "0.05": 3.549325048255636
+      }
+    },
+    "29.865": {
+      "classification_agrees_across_timesteps": false,
+      "contact_mode_by_timestep": {
+        "0.001": "POST_BURN_COAST_CONTACT",
+        "0.005": "POST_BURN_COAST_CONTACT",
+        "0.01": "POST_BURN_COAST_CONTACT",
+        "0.02": "POST_BURN_COAST_CONTACT",
+        "0.05": "DIRECT_DESCENT_CONTACT"
+      },
+      "legal_by_timestep": {
+        "0.001": false,
+        "0.005": false,
+        "0.01": false,
+        "0.02": false,
+        "0.05": true
+      },
+      "touchdown_total_mps_by_timestep": {
+        "0.001": 10.655102907539916,
+        "0.005": 14.408212052595292,
+        "0.01": 12.151873188462895,
+        "0.02": 11.105038515010738,
+        "0.05": 3.8624009298913577
+      }
+    },
+    "29.866": {
+      "classification_agrees_across_timesteps": true,
+      "contact_mode_by_timestep": {
+        "0.001": "POST_BURN_COAST_CONTACT",
+        "0.005": "POST_BURN_COAST_CONTACT",
+        "0.01": "POST_BURN_COAST_CONTACT",
+        "0.02": "POST_BURN_COAST_CONTACT",
+        "0.05": "DIRECT_DESCENT_CONTACT"
+      },
+      "legal_by_timestep": {
+        "0.001": false,
+        "0.005": false,
+        "0.01": false,
+        "0.02": false,
+        "0.05": false
+      },
+      "touchdown_total_mps_by_timestep": {
+        "0.001": 10.60635141089193,
+        "0.005": 14.388446876473393,
+        "0.01": 12.126452095740838,
+        "0.02": 11.034546829692115,
+        "0.05": 6.144010706670083
+      }
+    },
+    "29.8665": {
+      "classification_agrees_across_timesteps": false,
+      "contact_mode_by_timestep": {
+        "0.001": "POST_BURN_COAST_CONTACT",
+        "0.005": "POST_BURN_COAST_CONTACT",
+        "0.01": "POST_BURN_COAST_CONTACT",
+        "0.02": "POST_BURN_COAST_CONTACT",
+        "0.05": "DIRECT_DESCENT_CONTACT"
+      },
+      "legal_by_timestep": {
+        "0.001": false,
+        "0.005": false,
+        "0.01": false,
+        "0.02": false,
+        "0.05": true
+      },
+      "touchdown_total_mps_by_timestep": {
+        "0.001": 10.571889759343815,
+        "0.005": 14.345030951091594,
+        "0.01": 12.098943079186027,
+        "0.02": 11.141890113409177,
+        "0.05": 4.44743922555039
+      }
+    }
+  },
+  "delays_s": [
+    29.86,
+    29.8605,
+    29.861,
+    29.8625,
+    29.864,
+    29.8645,
+    29.865,
+    29.866,
+    29.8665
+  ],
+  "official_timestep_s": 0.05,
+  "rows": [
+    {
+      "burnout_time_s": 31.173,
+      "configured_ignition_delay_s": 29.86,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 31.723000000000006,
+      "first_nonzero_thrust_sample_time_s": 29.8625,
+      "ground_contact_event_state": {
+        "time_s": 31.723000000000006
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.1792551658551777,
+          "time_s": 31.673000000000005
+        },
+        {
+          "altitude_m": -0.011530692265349973,
+          "time_s": 31.723000000000006
+        }
+      ],
+      "ignition_event_time_s": 29.86,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": true,
+      "maximum_altitude_after_ignition_before_contact_m": 26.718781431725745,
+      "minimum_altitude_before_contact_m": -0.011530692265349973,
+      "motor_burning_at_contact": false,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_touchdown_total_mps": 4.906824932263131
+      },
+      "simulation_timestep_s": 0.05,
+      "touchdown_total_mps": 4.906824932263131,
+      "touchdown_vxy_mps": 2.76030452411371,
+      "touchdown_vz_mps": -4.0568029099324585
+    },
+    {
+      "burnout_time_s": 31.173,
+      "configured_ignition_delay_s": 29.86,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.427689897198384,
+      "first_nonzero_thrust_sample_time_s": 29.862456063374324,
+      "ground_contact_event_state": {
+        "time_s": 32.427689897198384
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.0525224925575522,
+          "time_s": 32.40768989719838
+        },
+        {
+          "altitude_m": -0.16026867621858182,
+          "time_s": 32.427689897198384
+        }
+      ],
+      "ignition_event_time_s": 29.86,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.79310180145897,
+      "minimum_altitude_before_contact_m": -0.16026867621858182,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.02,
+      "touchdown_total_mps": 11.460483322189326,
+      "touchdown_vxy_mps": 4.021308560199112,
+      "touchdown_vz_mps": -10.73181044567267
+    },
+    {
+      "burnout_time_s": 31.173051460904095,
+      "configured_ignition_delay_s": 29.86,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.53305146090412,
+      "first_nonzero_thrust_sample_time_s": 29.861551460904096,
+      "ground_contact_event_state": {
+        "time_s": 32.53305146090412
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.11476351000912637,
+          "time_s": 32.52305146090412
+        },
+        {
+          "altitude_m": -0.00254146193325204,
+          "time_s": 32.53305146090412
+        }
+      ],
+      "ignition_event_time_s": 29.86,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 33.19000259215053,
+      "minimum_altitude_before_contact_m": -0.00254146193325204,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.01,
+      "touchdown_total_mps": 12.343918116634429,
+      "touchdown_vxy_mps": 3.6970821701611647,
+      "touchdown_vz_mps": -11.777261901530936
+    },
+    {
+      "burnout_time_s": 31.173,
+      "configured_ignition_delay_s": 29.86,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.78251645398694,
+      "first_nonzero_thrust_sample_time_s": 29.86287209925315,
+      "ground_contact_event_state": {
+        "time_s": 32.78251645398694
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.022429123231135065,
+          "time_s": 32.77751645398694
+        },
+        {
+          "altitude_m": -0.04770221193730868,
+          "time_s": 32.78251645398694
+        }
+      ],
+      "ignition_event_time_s": 29.86,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 36.23050782068153,
+      "minimum_altitude_before_contact_m": -0.04770221193730868,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.005,
+      "touchdown_total_mps": 14.597518140820377,
+      "touchdown_vxy_mps": 3.968704522099282,
+      "touchdown_vz_mps": -14.047666008552762
+    },
+    {
+      "burnout_time_s": 31.173425000014838,
+      "configured_ignition_delay_s": 29.86,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.36842500001659,
+      "first_nonzero_thrust_sample_time_s": 29.86042500001484,
+      "ground_contact_event_state": {
+        "time_s": 32.36842500001659
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.008365382923340286,
+          "time_s": 32.367425000016596
+        },
+        {
+          "altitude_m": -0.001788416207931083,
+          "time_s": 32.36842500001659
+        }
+      ],
+      "ignition_event_time_s": 29.86,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.432220631920227,
+      "minimum_altitude_before_contact_m": -0.001788416207931083,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.001,
+      "touchdown_total_mps": 10.919497333064479,
+      "touchdown_vxy_mps": 4.00525287186757,
+      "touchdown_vz_mps": -10.158413824962974
+    },
+    {
+      "burnout_time_s": 31.17364301171885,
+      "configured_ignition_delay_s": 29.8605,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 31.723643011718856,
+      "first_nonzero_thrust_sample_time_s": 29.86314301171885,
+      "ground_contact_event_state": {
+        "time_s": 31.723643011718856
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.15081231890418695,
+          "time_s": 31.673643011718855
+        },
+        {
+          "altitude_m": -0.03986039852041537,
+          "time_s": 31.723643011718856
+        }
+      ],
+      "ignition_event_time_s": 29.8605,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": true,
+      "maximum_altitude_after_ignition_before_contact_m": 26.68292918972364,
+      "minimum_altitude_before_contact_m": -0.03986039852041537,
+      "motor_burning_at_contact": false,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_touchdown_total_mps": 4.923774917483575
+      },
+      "simulation_timestep_s": 0.05,
+      "touchdown_total_mps": 4.923774917483575,
+      "touchdown_vxy_mps": 2.793593298790166,
+      "touchdown_vz_mps": -4.054552493061974
+    },
+    {
+      "burnout_time_s": 31.173499999999997,
+      "configured_ignition_delay_s": 29.8605,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.42737050918822,
+      "first_nonzero_thrust_sample_time_s": 29.862754175119633,
+      "ground_contact_event_state": {
+        "time_s": 32.42737050918822
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.02704854587791089,
+          "time_s": 32.40737050918822
+        },
+        {
+          "altitude_m": -0.18630265819654632,
+          "time_s": 32.42737050918822
+        }
+      ],
+      "ignition_event_time_s": 29.8605,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.776464384154764,
+      "minimum_altitude_before_contact_m": -0.18630265819654632,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.02,
+      "touchdown_total_mps": 11.406558075549677,
+      "touchdown_vxy_mps": 3.785208168836628,
+      "touchdown_vz_mps": -10.760193597210973
+    },
+    {
+      "burnout_time_s": 31.173499999999997,
+      "configured_ignition_delay_s": 29.8605,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.53350000000002,
+      "first_nonzero_thrust_sample_time_s": 29.862672808643854,
+      "ground_contact_event_state": {
+        "time_s": 32.53350000000002
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.08790605608437438,
+          "time_s": 32.52350000000002
+        },
+        {
+          "altitude_m": -0.029388126867870776,
+          "time_s": 32.53350000000002
+        }
+      ],
+      "ignition_event_time_s": 29.8605,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 33.12745146657536,
+      "minimum_altitude_before_contact_m": -0.029388126867870776,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.01,
+      "touchdown_total_mps": 12.339048220982216,
+      "touchdown_vxy_mps": 3.685203062929948,
+      "touchdown_vz_mps": -11.775881681840053
+    },
+    {
+      "burnout_time_s": 31.173499999999997,
+      "configured_ignition_delay_s": 29.8605,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.77926414948385,
+      "first_nonzero_thrust_sample_time_s": 29.863534081562392,
+      "ground_contact_event_state": {
+        "time_s": 32.77926414948385
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.04908185004325154,
+          "time_s": 32.77426414948385
+        },
+        {
+          "altitude_m": -0.02087094934707294,
+          "time_s": 32.77926414948385
+        }
+      ],
+      "ignition_event_time_s": 29.8605,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 36.19358860922299,
+      "minimum_altitude_before_contact_m": -0.02087094934707294,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.005,
+      "touchdown_total_mps": 14.56063939077239,
+      "touchdown_vxy_mps": 3.9506564864417193,
+      "touchdown_vz_mps": -14.01444015272278
+    },
+    {
+      "burnout_time_s": 31.17442500001484,
+      "configured_ignition_delay_s": 29.8605,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.3664250000166,
+      "first_nonzero_thrust_sample_time_s": 29.86142500001484,
+      "ground_contact_event_state": {
+        "time_s": 32.3664250000166
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.003947903240337692,
+          "time_s": 32.3654250000166
+        },
+        {
+          "altitude_m": -0.006184186295099188,
+          "time_s": 32.3664250000166
+        }
+      ],
+      "ignition_event_time_s": 29.8605,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.376449617479835,
+      "minimum_altitude_before_contact_m": -0.006184186295099188,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.001,
+      "touchdown_total_mps": 10.89563239989518,
+      "touchdown_vxy_mps": 3.995260617694177,
+      "touchdown_vz_mps": -10.13670054753259
+    },
+    {
+      "burnout_time_s": 31.174,
+      "configured_ignition_delay_s": 29.861,
+      "contact_mode": "DIRECT_DESCENT_CONTACT",
+      "first_ground_contact_time_s": 30.825696722642057,
+      "first_nonzero_thrust_sample_time_s": 29.863500000000002,
+      "ground_contact_event_state": {
+        "time_s": 30.825696722642057
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.05046037475880119,
+          "time_s": 30.775696722642056
+        },
+        {
+          "altitude_m": -0.00834151172380617,
+          "time_s": 30.825696722642057
+        }
+      ],
+      "ignition_event_time_s": 29.861,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": true,
+      "maximum_altitude_after_ignition_before_contact_m": 26.66301706262857,
+      "minimum_altitude_before_contact_m": -0.00834151172380617,
+      "motor_burning_at_contact": true,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_touchdown_total_mps": 2.7621953505464543
+      },
+      "simulation_timestep_s": 0.05,
+      "touchdown_total_mps": 2.7621953505464543,
+      "touchdown_vxy_mps": 2.7615815964419164,
+      "touchdown_vz_mps": -0.05822577413624508
+    },
+    {
+      "burnout_time_s": 31.174,
+      "configured_ignition_delay_s": 29.861,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.414000000000044,
+      "first_nonzero_thrust_sample_time_s": 29.86340672246128,
+      "ground_contact_event_state": {
+        "time_s": 32.414000000000044
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.14521537333974613,
+          "time_s": 32.39400000000004
+        },
+        {
+          "altitude_m": -0.06552017932204462,
+          "time_s": 32.414000000000044
+        }
+      ],
+      "ignition_event_time_s": 29.861,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.74006430966424,
+      "minimum_altitude_before_contact_m": -0.06552017932204462,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.02,
+      "touchdown_total_mps": 11.278877395251822,
+      "touchdown_vxy_mps": 3.7720816471487986,
+      "touchdown_vz_mps": -10.629415569275938
+    },
+    {
+      "burnout_time_s": 31.174,
+      "configured_ignition_delay_s": 29.861,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.5328968135207,
+      "first_nonzero_thrust_sample_time_s": 29.863242479258183,
+      "ground_contact_event_state": {
+        "time_s": 32.5328968135207
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.08200486516235159,
+          "time_s": 32.5228968135207
+        },
+        {
+          "altitude_m": -0.03490310738986188,
+          "time_s": 32.5328968135207
+        }
+      ],
+      "ignition_event_time_s": 29.861,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 33.095674242352125,
+      "minimum_altitude_before_contact_m": -0.03490310738986188,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.01,
+      "touchdown_total_mps": 12.376404905362099,
+      "touchdown_vxy_mps": 3.926355257970121,
+      "touchdown_vz_mps": -11.737083656926085
+    },
+    {
+      "burnout_time_s": 31.174,
+      "configured_ignition_delay_s": 29.861,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.77900000000023,
+      "first_nonzero_thrust_sample_time_s": 29.864156967455223,
+      "ground_contact_event_state": {
+        "time_s": 32.77900000000023
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.031821928108126646,
+          "time_s": 32.77400000000023
+        },
+        {
+          "altitude_m": -0.038096333516210376,
+          "time_s": 32.77900000000023
+        }
+      ],
+      "ignition_event_time_s": 29.861,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 36.15884932726041,
+      "minimum_altitude_before_contact_m": -0.038096333516210376,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.005,
+      "touchdown_total_mps": 14.556838303032842,
+      "touchdown_vxy_mps": 3.9698928529986555,
+      "touchdown_vz_mps": -14.005052378208168
+    },
+    {
+      "burnout_time_s": 31.17442500001484,
+      "configured_ignition_delay_s": 29.861,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.3644250000166,
+      "first_nonzero_thrust_sample_time_s": 29.86142500001484,
+      "ground_contact_event_state": {
+        "time_s": 32.3644250000166
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.0025362582155970727,
+          "time_s": 32.363425000016605
+        },
+        {
+          "altitude_m": -0.0075714042282678355,
+          "time_s": 32.3644250000166
+        }
+      ],
+      "ignition_event_time_s": 29.861,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.376449617479835,
+      "minimum_altitude_before_contact_m": -0.0075714042282678355,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.001,
+      "touchdown_total_mps": 10.872143244164379,
+      "touchdown_vxy_mps": 3.9931582621691506,
+      "touchdown_vz_mps": -10.112278962474255
+    },
+    {
+      "burnout_time_s": 31.1755,
+      "configured_ignition_delay_s": 29.8625,
+      "contact_mode": "DIRECT_DESCENT_CONTACT",
+      "first_ground_contact_time_s": 30.80858221489661,
+      "first_nonzero_thrust_sample_time_s": 29.865000000000002,
+      "ground_contact_event_state": {
+        "time_s": 30.80858221489661
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.02132744736916714,
+          "time_s": 30.75858221489661
+        },
+        {
+          "altitude_m": -0.08279087026611073,
+          "time_s": 30.80858221489661
+        }
+      ],
+      "ignition_event_time_s": 29.8625,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": true,
+      "maximum_altitude_after_ignition_before_contact_m": 26.579350078601706,
+      "minimum_altitude_before_contact_m": -0.08279087026611073,
+      "motor_burning_at_contact": true,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_touchdown_total_mps": 3.0358348213854756
+      },
+      "simulation_timestep_s": 0.05,
+      "touchdown_total_mps": 3.0358348213854756,
+      "touchdown_vxy_mps": 2.912926390615032,
+      "touchdown_vz_mps": -0.8550747953220603
+    },
+    {
+      "burnout_time_s": 31.1755,
+      "configured_ignition_delay_s": 29.8625,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.418089410902276,
+      "first_nonzero_thrust_sample_time_s": 29.864734440362323,
+      "ground_contact_event_state": {
+        "time_s": 32.418089410902276
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.028896880780697687,
+          "time_s": 32.39808941090227
+        },
+        {
+          "altitude_m": -0.18177179185782677,
+          "time_s": 32.418089410902276
+        }
+      ],
+      "ignition_event_time_s": 29.8625,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.66599497762131,
+      "minimum_altitude_before_contact_m": -0.18177179185782677,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.02,
+      "touchdown_total_mps": 11.346091703174562,
+      "touchdown_vxy_mps": 3.974829062426183,
+      "touchdown_vz_mps": -10.627065957325136
+    },
+    {
+      "burnout_time_s": 31.175847446053552,
+      "configured_ignition_delay_s": 29.8625,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.525847446053575,
+      "first_nonzero_thrust_sample_time_s": 29.862847446053554,
+      "ground_contact_event_state": {
+        "time_s": 32.525847446053575
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.08778831234098423,
+          "time_s": 32.51584744605358
+        },
+        {
+          "altitude_m": -0.02860991289315548,
+          "time_s": 32.525847446053575
+        }
+      ],
+      "ignition_event_time_s": 29.8625,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 33.11770815898468,
+      "minimum_altitude_before_contact_m": -0.02860991289315548,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.01,
+      "touchdown_total_mps": 12.251808071347643,
+      "touchdown_vxy_mps": 3.6805421662030535,
+      "touchdown_vz_mps": -11.685906485161542
+    },
+    {
+      "burnout_time_s": 31.1755,
+      "configured_ignition_delay_s": 29.8625,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.775500000000235,
+      "first_nonzero_thrust_sample_time_s": 29.865123711452643,
+      "ground_contact_event_state": {
+        "time_s": 32.775500000000235
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.018208168382694775,
+          "time_s": 32.77050000000023
+        },
+        {
+          "altitude_m": -0.051486734933101505,
+          "time_s": 32.775500000000235
+        }
+      ],
+      "ignition_event_time_s": 29.8625,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 36.10492673789427,
+      "minimum_altitude_before_contact_m": -0.051486734933101505,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.005,
+      "touchdown_total_mps": 14.510729482813396,
+      "touchdown_vxy_mps": 3.958578645624734,
+      "touchdown_vz_mps": -13.960333994206362
+    },
+    {
+      "burnout_time_s": 31.17642500001484,
+      "configured_ignition_delay_s": 29.8625,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.35742500001662,
+      "first_nonzero_thrust_sample_time_s": 29.863425000014843,
+      "ground_contact_event_state": {
+        "time_s": 32.35742500001662
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.0025332769572032655,
+          "time_s": 32.35642500001662
+        },
+        {
+          "altitude_m": -0.007494132209679446,
+          "time_s": 32.35742500001662
+        }
+      ],
+      "ignition_event_time_s": 29.8625,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.264907111260424,
+      "minimum_altitude_before_contact_m": -0.007494132209679446,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.001,
+      "touchdown_total_mps": 10.794150503547725,
+      "touchdown_vxy_mps": 3.9842103570944127,
+      "touchdown_vz_mps": -10.03193664870653
+    },
+    {
+      "burnout_time_s": 31.177,
+      "configured_ignition_delay_s": 29.864,
+      "contact_mode": "DIRECT_DESCENT_CONTACT",
+      "first_ground_contact_time_s": 30.786698131031873,
+      "first_nonzero_thrust_sample_time_s": 29.866500000000002,
+      "ground_contact_event_state": {
+        "time_s": 30.786698131031873
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.032313424966770254,
+          "time_s": 30.736698131031872
+        },
+        {
+          "altitude_m": -0.13288247112826573,
+          "time_s": 30.786698131031873
+        }
+      ],
+      "ignition_event_time_s": 29.864,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": true,
+      "maximum_altitude_after_ignition_before_contact_m": 26.495697900303316,
+      "minimum_altitude_before_contact_m": -0.13288247112826573,
+      "motor_burning_at_contact": true,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_touchdown_total_mps": 3.5891545566551666
+      },
+      "simulation_timestep_s": 0.05,
+      "touchdown_total_mps": 3.5891545566551666,
+      "touchdown_vxy_mps": 3.009404853094194,
+      "touchdown_vz_mps": -1.955891832830143
+    },
+    {
+      "burnout_time_s": 31.177,
+      "configured_ignition_delay_s": 29.864,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.39700000000004,
+      "first_nonzero_thrust_sample_time_s": 29.865883652235148,
+      "ground_contact_event_state": {
+        "time_s": 32.39700000000004
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.18352004918936632,
+          "time_s": 32.37700000000004
+        },
+        {
+          "altitude_m": -0.02316639859909944,
+          "time_s": 32.39700000000004
+        }
+      ],
+      "ignition_event_time_s": 29.864,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.60188072033418,
+      "minimum_altitude_before_contact_m": -0.02316639859909944,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.02,
+      "touchdown_total_mps": 11.12285619709102,
+      "touchdown_vxy_mps": 3.875774008549086,
+      "touchdown_vz_mps": -10.425752050371305
+    },
+    {
+      "burnout_time_s": 31.177,
+      "configured_ignition_delay_s": 29.864,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.52700000000002,
+      "first_nonzero_thrust_sample_time_s": 29.866265089324042,
+      "ground_contact_event_state": {
+        "time_s": 32.52700000000002
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.0046333541124143895,
+          "time_s": 32.517000000000024
+        },
+        {
+          "altitude_m": -0.11173432607909643,
+          "time_s": 32.52700000000002
+        }
+      ],
+      "ignition_event_time_s": 29.864,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 32.92705947292629,
+      "minimum_altitude_before_contact_m": -0.11173432607909643,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.01,
+      "touchdown_total_mps": 12.255069583732006,
+      "touchdown_vxy_mps": 3.7012094529469413,
+      "touchdown_vz_mps": -11.682798427069157
+    },
+    {
+      "burnout_time_s": 31.177,
+      "configured_ignition_delay_s": 29.864,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.7714771038578,
+      "first_nonzero_thrust_sample_time_s": 29.866998331122996,
+      "ground_contact_event_state": {
+        "time_s": 32.7714771038578
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.011604375930492628,
+          "time_s": 32.766477103857795
+        },
+        {
+          "altitude_m": -0.05784473362438523,
+          "time_s": 32.7714771038578
+        }
+      ],
+      "ignition_event_time_s": 29.864,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 36.000375509636015,
+      "minimum_altitude_before_contact_m": -0.05784473362438523,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.005,
+      "touchdown_total_mps": 14.457193937642757,
+      "touchdown_vxy_mps": 3.9320624243164874,
+      "touchdown_vz_mps": -13.912201178889445
+    },
+    {
+      "burnout_time_s": 31.177425000014843,
+      "configured_ignition_delay_s": 29.864,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.350425000016635,
+      "first_nonzero_thrust_sample_time_s": 29.864425000014844,
+      "ground_contact_event_state": {
+        "time_s": 32.350425000016635
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.0043308051320337364,
+          "time_s": 32.34942500001664
+        },
+        {
+          "altitude_m": -0.005616306115931849,
+          "time_s": 32.350425000016635
+        }
+      ],
+      "ignition_event_time_s": 29.864,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.20913562200278,
+      "minimum_altitude_before_contact_m": -0.005616306115931849,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.001,
+      "touchdown_total_mps": 10.714213099729397,
+      "touchdown_vxy_mps": 3.9697253261853365,
+      "touchdown_vz_mps": -9.951665347119333
+    },
+    {
+      "burnout_time_s": 31.1775,
+      "configured_ignition_delay_s": 29.8645,
+      "contact_mode": "DIRECT_DESCENT_CONTACT",
+      "first_ground_contact_time_s": 30.787690467978152,
+      "first_nonzero_thrust_sample_time_s": 29.867,
+      "ground_contact_event_state": {
+        "time_s": 30.787690467978152
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.0013713902657565558,
+          "time_s": 30.73769046797815
+        },
+        {
+          "altitude_m": -0.1625458646498652,
+          "time_s": 30.787690467978152
+        }
+      ],
+      "ignition_event_time_s": 29.8645,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": true,
+      "maximum_altitude_after_ignition_before_contact_m": 26.467809076800222,
+      "minimum_altitude_before_contact_m": -0.1625458646498652,
+      "motor_burning_at_contact": true,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_touchdown_total_mps": 3.549325048255636
+      },
+      "simulation_timestep_s": 0.05,
+      "touchdown_total_mps": 3.549325048255636,
+      "touchdown_vxy_mps": 2.977729782504954,
+      "touchdown_vz_mps": -1.9315366008848684
+    },
+    {
+      "burnout_time_s": 31.1775,
+      "configured_ignition_delay_s": 29.8645,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.39750000000004,
+      "first_nonzero_thrust_sample_time_s": 29.867133652235143,
+      "ground_contact_event_state": {
+        "time_s": 32.39750000000004
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.1558920829593827,
+          "time_s": 32.37750000000004
+        },
+        {
+          "altitude_m": -0.051142978484701535,
+          "time_s": 32.39750000000004
+        }
+      ],
+      "ignition_event_time_s": 29.8645,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.532146111116344,
+      "minimum_altitude_before_contact_m": -0.051142978484701535,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.02,
+      "touchdown_total_mps": 11.093987480075096,
+      "touchdown_vxy_mps": 3.7441221393484825,
+      "touchdown_vz_mps": -10.443088988115708
+    },
+    {
+      "burnout_time_s": 31.1775,
+      "configured_ignition_delay_s": 29.8645,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.519807608345545,
+      "first_nonzero_thrust_sample_time_s": 29.867136592730525,
+      "ground_contact_event_state": {
+        "time_s": 32.519807608345545
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.06822584583264663,
+          "time_s": 32.50980760834555
+        },
+        {
+          "altitude_m": -0.04735226338906193,
+          "time_s": 32.519807608345545
+        }
+      ],
+      "ignition_event_time_s": 29.8645,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 32.8784500416005,
+      "minimum_altitude_before_contact_m": -0.04735226338906193,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.01,
+      "touchdown_total_mps": 12.192733423795955,
+      "touchdown_vxy_mps": 3.737447487954642,
+      "touchdown_vz_mps": -11.605784532660108
+    },
+    {
+      "burnout_time_s": 31.17784887951047,
+      "configured_ignition_delay_s": 29.8645,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.7678488795107,
+      "first_nonzero_thrust_sample_time_s": 29.864848879510472,
+      "ground_contact_event_state": {
+        "time_s": 32.7678488795107
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.04036143450966791,
+          "time_s": 32.7628488795107
+        },
+        {
+          "altitude_m": -0.028924258642408246,
+          "time_s": 32.7678488795107
+        }
+      ],
+      "ignition_event_time_s": 29.8645,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 36.12025011020015,
+      "minimum_altitude_before_contact_m": -0.028924258642408246,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.005,
+      "touchdown_total_mps": 14.411081073975437,
+      "touchdown_vxy_mps": 3.8727821365965887,
+      "touchdown_vz_mps": -13.880951561155719
+    },
+    {
+      "burnout_time_s": 31.178425000014844,
+      "configured_ignition_delay_s": 29.8645,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.34742500001664,
+      "first_nonzero_thrust_sample_time_s": 29.865425000014845,
+      "ground_contact_event_state": {
+        "time_s": 32.34742500001664
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.009418070414510593,
+          "time_s": 32.346425000016644
+        },
+        {
+          "altitude_m": -0.0004983870199898235,
+          "time_s": 32.34742500001664
+        }
+      ],
+      "ignition_event_time_s": 29.8645,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.15336397687406,
+      "minimum_altitude_before_contact_m": -0.0004983870199898235,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.001,
+      "touchdown_total_mps": 10.679533770012563,
+      "touchdown_vxy_mps": 3.9529846574482232,
+      "touchdown_vz_mps": -9.921005687067098
+    },
+    {
+      "burnout_time_s": 31.177999999999997,
+      "configured_ignition_delay_s": 29.865,
+      "contact_mode": "DIRECT_DESCENT_CONTACT",
+      "first_ground_contact_time_s": 30.779441784318006,
+      "first_nonzero_thrust_sample_time_s": 29.8675,
+      "ground_contact_event_state": {
+        "time_s": 30.779441784318006
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.01657275432560079,
+          "time_s": 30.729441784318006
+        },
+        {
+          "altitude_m": -0.17190999640291185,
+          "time_s": 30.779441784318006
+        }
+      ],
+      "ignition_event_time_s": 29.865,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": true,
+      "maximum_altitude_after_ignition_before_contact_m": 26.43991969195401,
+      "minimum_altitude_before_contact_m": -0.17190999640291185,
+      "motor_burning_at_contact": true,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_touchdown_total_mps": 3.8624009298913577
+      },
+      "simulation_timestep_s": 0.05,
+      "touchdown_total_mps": 3.8624009298913577,
+      "touchdown_vxy_mps": 3.02453573186081,
+      "touchdown_vz_mps": -2.4021499848932875
+    },
+    {
+      "burnout_time_s": 31.177999999999997,
+      "configured_ignition_delay_s": 29.865,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.39800000000004,
+      "first_nonzero_thrust_sample_time_s": 29.86731284633601,
+      "ground_contact_event_state": {
+        "time_s": 32.39800000000004
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.12084499389336073,
+          "time_s": 32.378000000000036
+        },
+        {
+          "altitude_m": -0.08612535987844691,
+          "time_s": 32.39800000000004
+        }
+      ],
+      "ignition_event_time_s": 29.865,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.522142347263806,
+      "minimum_altitude_before_contact_m": -0.08612535987844691,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.02,
+      "touchdown_total_mps": 11.105038515010738,
+      "touchdown_vxy_mps": 3.7859822700702868,
+      "touchdown_vz_mps": -10.439742270314213
+    },
+    {
+      "burnout_time_s": 31.177999999999997,
+      "configured_ignition_delay_s": 29.865,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.51677429319141,
+      "first_nonzero_thrust_sample_time_s": 29.867695468608574,
+      "ground_contact_event_state": {
+        "time_s": 32.51677429319141
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.07616759642703215,
+          "time_s": 32.50677429319141
+        },
+        {
+          "altitude_m": -0.039171443605200015,
+          "time_s": 32.51677429319141
+        }
+      ],
+      "ignition_event_time_s": 29.865,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 32.84727446789259,
+      "minimum_altitude_before_contact_m": -0.039171443605200015,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.01,
+      "touchdown_total_mps": 12.151873188462895,
+      "touchdown_vxy_mps": 3.6851900159538213,
+      "touchdown_vz_mps": -11.579611242818027
+    },
+    {
+      "burnout_time_s": 31.177999999999997,
+      "configured_ignition_delay_s": 29.865,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.76744654848482,
+      "first_nonzero_thrust_sample_time_s": 29.86672668073429,
+      "ground_contact_event_state": {
+        "time_s": 32.76744654848482
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.02454914076125657,
+          "time_s": 32.76244654848482
+        },
+        {
+          "altitude_m": -0.04468188874846639,
+          "time_s": 32.76744654848482
+        }
+      ],
+      "ignition_event_time_s": 29.865,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 36.015519866873376,
+      "minimum_altitude_before_contact_m": -0.04468188874846639,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.005,
+      "touchdown_total_mps": 14.408212052595292,
+      "touchdown_vxy_mps": 3.9008762442416525,
+      "touchdown_vz_mps": -13.87010234568092
+    },
+    {
+      "burnout_time_s": 31.178425000014844,
+      "configured_ignition_delay_s": 29.865,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.34542500001665,
+      "first_nonzero_thrust_sample_time_s": 29.865425000014845,
+      "ground_contact_event_state": {
+        "time_s": 32.34542500001665
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.007584610577683776,
+          "time_s": 32.34442500001665
+        },
+        {
+          "altitude_m": -0.0023073651662983974,
+          "time_s": 32.34542500001665
+        }
+      ],
+      "ignition_event_time_s": 29.865,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.15336397687406,
+      "minimum_altitude_before_contact_m": -0.0023073651662983974,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.001,
+      "touchdown_total_mps": 10.655102907539916,
+      "touchdown_vxy_mps": 3.94825124481025,
+      "touchdown_vz_mps": -9.896591841544234
+    },
+    {
+      "burnout_time_s": 31.179,
+      "configured_ignition_delay_s": 29.866,
+      "contact_mode": "DIRECT_DESCENT_CONTACT",
+      "first_ground_contact_time_s": 30.729126099376963,
+      "first_nonzero_thrust_sample_time_s": 29.8685,
+      "ground_contact_event_state": {
+        "time_s": 30.729126099376963
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.30069194396480814,
+          "time_s": 30.679126099376962
+        },
+        {
+          "altitude_m": -0.03314339723100962,
+          "time_s": 30.729126099376963
+        }
+      ],
+      "ignition_event_time_s": 29.866,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 26.384156093857367,
+      "minimum_altitude_before_contact_m": -0.03314339723100962,
+      "motor_burning_at_contact": true,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_touchdown_total_mps": 6.144010706670083
+      },
+      "simulation_timestep_s": 0.05,
+      "touchdown_total_mps": 6.144010706670083,
+      "touchdown_vxy_mps": 3.1894027451450926,
+      "touchdown_vz_mps": -5.251340561507848
+    },
+    {
+      "burnout_time_s": 31.179,
+      "configured_ignition_delay_s": 29.866,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.39323776487031,
+      "first_nonzero_thrust_sample_time_s": 29.868273898289548,
+      "ground_contact_event_state": {
+        "time_s": 32.39323776487031
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.12465756285818208,
+          "time_s": 32.373237764870304
+        },
+        {
+          "altitude_m": -0.08129850299331318,
+          "time_s": 32.39323776487031
+        }
+      ],
+      "ignition_event_time_s": 29.866,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.468528643090995,
+      "minimum_altitude_before_contact_m": -0.08129850299331318,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.02,
+      "touchdown_total_mps": 11.034546829692115,
+      "touchdown_vxy_mps": 3.7054970815195984,
+      "touchdown_vz_mps": -10.393772900901675
+    },
+    {
+      "burnout_time_s": 31.179,
+      "configured_ignition_delay_s": 29.866,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.513905326536296,
+      "first_nonzero_thrust_sample_time_s": 29.868151409514077,
+      "ground_contact_event_state": {
+        "time_s": 32.513905326536296
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.06785359633418984,
+          "time_s": 32.5039053265363
+        },
+        {
+          "altitude_m": -0.04704227899511801,
+          "time_s": 32.513905326536296
+        }
+      ],
+      "ignition_event_time_s": 29.866,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 32.82183649887294,
+      "minimum_altitude_before_contact_m": -0.04704227899511801,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.01,
+      "touchdown_total_mps": 12.126452095740838,
+      "touchdown_vxy_mps": 3.7390804427532593,
+      "touchdown_vz_mps": -11.535602189435862
+    },
+    {
+      "burnout_time_s": 31.179,
+      "configured_ignition_delay_s": 29.866,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.76604157777036,
+      "first_nonzero_thrust_sample_time_s": 29.86911792934645,
+      "ground_contact_event_state": {
+        "time_s": 32.76604157777036
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.0021069704335890532,
+          "time_s": 32.76104157777036
+        },
+        {
+          "altitude_m": -0.0670154455257978,
+          "time_s": 32.76604157777036
+        }
+      ],
+      "ignition_event_time_s": 29.866,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 35.882157970012926,
+      "minimum_altitude_before_contact_m": -0.0670154455257978,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.005,
+      "touchdown_total_mps": 14.388446876473393,
+      "touchdown_vxy_mps": 3.9156696718582484,
+      "touchdown_vz_mps": -13.845393982765044
+    },
+    {
+      "burnout_time_s": 31.179425000014845,
+      "configured_ignition_delay_s": 29.866,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.341425000016656,
+      "first_nonzero_thrust_sample_time_s": 29.866425000014846,
+      "ground_contact_event_state": {
+        "time_s": 32.341425000016656
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.0006544739253795586,
+          "time_s": 32.34042500001666
+        },
+        {
+          "altitude_m": -0.009191400040840863,
+          "time_s": 32.341425000016656
+        }
+      ],
+      "ignition_event_time_s": 29.866,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.097592176948563,
+      "minimum_altitude_before_contact_m": -0.009191400040840863,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.001,
+      "touchdown_total_mps": 10.60635141089193,
+      "touchdown_vxy_mps": 3.9324476268914883,
+      "touchdown_vz_mps": -9.850408413516911
+    },
+    {
+      "burnout_time_s": 31.179499999999997,
+      "configured_ignition_delay_s": 29.8665,
+      "contact_mode": "DIRECT_DESCENT_CONTACT",
+      "first_ground_contact_time_s": 30.76619385743366,
+      "first_nonzero_thrust_sample_time_s": 29.869,
+      "ground_contact_event_state": {
+        "time_s": 30.76619385743366
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.01506458485740575,
+          "time_s": 30.71619385743366
+        },
+        {
+          "altitude_m": -0.21470930754441378,
+          "time_s": 30.76619385743366
+        }
+      ],
+      "ignition_event_time_s": 29.8665,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": true,
+      "maximum_altitude_after_ignition_before_contact_m": 26.356268008920832,
+      "minimum_altitude_before_contact_m": -0.21470930754441378,
+      "motor_burning_at_contact": true,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_touchdown_total_mps": 4.44743922555039
+      },
+      "simulation_timestep_s": 0.05,
+      "touchdown_total_mps": 4.44743922555039,
+      "touchdown_vxy_mps": 3.0958980365121547,
+      "touchdown_vz_mps": -3.1929815239810644
+    },
+    {
+      "burnout_time_s": 31.179499999999997,
+      "configured_ignition_delay_s": 29.8665,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.39926221090122,
+      "first_nonzero_thrust_sample_time_s": 29.86871516298823,
+      "ground_contact_event_state": {
+        "time_s": 32.39926221090122
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.04968268224031336,
+          "time_s": 32.37926221090122
+        },
+        {
+          "altitude_m": -0.15645311838548898,
+          "time_s": 32.39926221090122
+        }
+      ],
+      "ignition_event_time_s": 29.8665,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.443913181920614,
+      "minimum_altitude_before_contact_m": -0.15645311838548898,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.02,
+      "touchdown_total_mps": 11.141890113409177,
+      "touchdown_vxy_mps": 4.002721944278446,
+      "touchdown_vz_mps": -10.398073491569336
+    },
+    {
+      "burnout_time_s": 31.179499999999997,
+      "configured_ignition_delay_s": 29.8665,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.509465895212436,
+      "first_nonzero_thrust_sample_time_s": 29.86873553331595,
+      "ground_contact_event_state": {
+        "time_s": 32.509465895212436
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.09967467555547219,
+          "time_s": 32.49946589521244
+        },
+        {
+          "altitude_m": -0.014656370141239453,
+          "time_s": 32.509465895212436
+        }
+      ],
+      "ignition_event_time_s": 29.8665,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 32.78925296379536,
+      "minimum_altitude_before_contact_m": -0.014656370141239453,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.01,
+      "touchdown_total_mps": 12.098943079186027,
+      "touchdown_vxy_mps": 3.824541380747801,
+      "touchdown_vz_mps": -11.478558570671282
+    },
+    {
+      "burnout_time_s": 31.179499999999997,
+      "configured_ignition_delay_s": 29.8665,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.76197446024023,
+      "first_nonzero_thrust_sample_time_s": 29.869458903889022,
+      "ground_contact_event_state": {
+        "time_s": 32.76197446024023
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.03732108201167869,
+          "time_s": 32.75697446024023
+        },
+        {
+          "altitude_m": -0.03160080050501546,
+          "time_s": 32.76197446024023
+        }
+      ],
+      "ignition_event_time_s": 29.8665,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 35.8631392218801,
+      "minimum_altitude_before_contact_m": -0.03160080050501546,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.005,
+      "touchdown_total_mps": 14.345030951091594,
+      "touchdown_vxy_mps": 3.895993118126613,
+      "touchdown_vz_mps": -13.805837555588065
+    },
+    {
+      "burnout_time_s": 31.180425000014846,
+      "configured_ignition_delay_s": 29.8665,
+      "contact_mode": "POST_BURN_COAST_CONTACT",
+      "first_ground_contact_time_s": 32.33842500001666,
+      "first_nonzero_thrust_sample_time_s": 29.867425000014848,
+      "ground_contact_event_state": {
+        "time_s": 32.33842500001666
+      },
+      "ground_contact_interpolation_bracket": [
+        {
+          "altitude_m": 0.005403813008776055,
+          "time_s": 32.337425000016665
+        },
+        {
+          "altitude_m": -0.004411194715794918,
+          "time_s": 32.33842500001666
+        }
+      ],
+      "ignition_event_time_s": 29.8665,
+      "integrator_settings": {
+        "calculator": "BarrowmanCalculator",
+        "simulator": "RK4Simulator"
+      },
+      "legal": false,
+      "maximum_altitude_after_ignition_before_contact_m": 31.041820223225294,
+      "minimum_altitude_before_contact_m": -0.004411194715794918,
+      "motor_burning_at_contact": false,
+      "repeatability": null,
+      "simulation_timestep_s": 0.001,
+      "touchdown_total_mps": 10.571889759343815,
+      "touchdown_vxy_mps": 3.9167393725224193,
+      "touchdown_vz_mps": -9.81957258598618
+    }
+  ],
+  "timesteps_s": [
+    0.05,
+    0.02,
+    0.01,
+    0.005,
+    0.001
+  ]
+}

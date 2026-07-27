@@ -1,0 +1,31 @@
+;AeroTech H73J extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=134, curve_id=154
+; lookup key 'H73J' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+H73J 38 152 4,6,8,10 0.1478 0.3091 A
+0.000 0.00
+0.056 49.25
+0.172 82.00
+0.287 82.13
+0.403 84.60
+0.520 86.88
+0.635 88.89
+0.751 89.65
+0.867 91.34
+0.982 92.98
+1.099 94.57
+1.215 94.64
+1.330 93.55
+1.446 91.45
+1.561 88.19
+1.678 82.44
+1.794 77.40
+1.909 70.77
+2.025 61.17
+2.141 51.16
+2.257 38.54
+2.373 21.56
+2.489 12.21
+2.604 7.33
+2.720 3.71
+2.836 1.78
+2.953 0.00

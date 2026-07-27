@@ -1,0 +1,177 @@
+[
+  {
+    "admission_reasons": [],
+    "admitted": true,
+    "descent_metrics": {
+      "max_horizontal_speed_ms": 11.221533893256327,
+      "mean_angular_rate_norm": 0.08989793556592812,
+      "mean_q_horizontal": 0.9779945726803096,
+      "mean_q_total": 0.5569722780347965,
+      "sustained_positive_q_window_s": 28.24651788246732
+    },
+    "free_descent_final_speed_ms": 14.233,
+    "label": "E8_baseline",
+    "mach": 0.7967,
+    "min_margin_cal": 1.738,
+    "powered_probes": [
+      {
+        "burn_mean_q": -0.9521,
+        "delay_s": 8.575,
+        "final_speed_ms": 60.666,
+        "flip_detected": true,
+        "i_opp_over_i_total": 0.0,
+        "legal_branch": false
+      }
+    ],
+    "staging_legal": true
+  },
+  {
+    "admission_reasons": [],
+    "admitted": true,
+    "descent_metrics": {
+      "max_horizontal_speed_ms": 24.47640404375452,
+      "mean_angular_rate_norm": 0.5724104717722278,
+      "mean_q_horizontal": 0.3434992748571334,
+      "mean_q_total": 0.9906053792647331,
+      "sustained_positive_q_window_s": 7.9822672975954605
+    },
+    "free_descent_final_speed_ms": 51.702,
+    "label": "ST3_triangular",
+    "mach": 0.5238,
+    "min_margin_cal": 1.162,
+    "powered_probes": [
+      {
+        "burn_mean_q": -0.185,
+        "delay_s": 6.674,
+        "final_speed_ms": 49.842,
+        "flip_detected": true,
+        "i_opp_over_i_total": 0.1936,
+        "legal_branch": false
+      }
+    ],
+    "staging_legal": true
+  },
+  {
+    "admission_reasons": [],
+    "admitted": true,
+    "descent_metrics": {
+      "max_horizontal_speed_ms": 24.43554871137702,
+      "mean_angular_rate_norm": 0.5722706911268289,
+      "mean_q_horizontal": 0.3319134527836341,
+      "mean_q_total": 0.9909458676438249,
+      "sustained_positive_q_window_s": 7.99434873310158
+    },
+    "free_descent_final_speed_ms": 51.897,
+    "label": "ST4_triangular",
+    "mach": 0.5158,
+    "min_margin_cal": 1.164,
+    "powered_probes": [
+      {
+        "burn_mean_q": -0.2172,
+        "delay_s": 6.704,
+        "final_speed_ms": 50.43,
+        "flip_detected": true,
+        "i_opp_over_i_total": 0.1694,
+        "legal_branch": false
+      }
+    ],
+    "staging_legal": true
+  },
+  {
+    "admission_reasons": [],
+    "admitted": true,
+    "descent_metrics": {
+      "max_horizontal_speed_ms": 24.353133667973783,
+      "mean_angular_rate_norm": 0.19764082531480576,
+      "mean_q_horizontal": 0.33182712554612476,
+      "mean_q_total": 0.9907238745387563,
+      "sustained_positive_q_window_s": 7.955515289929938
+    },
+    "free_descent_final_speed_ms": 52.104,
+    "label": "ST3_tapered",
+    "mach": 0.5125,
+    "min_margin_cal": 1.166,
+    "powered_probes": [
+      {
+        "burn_mean_q": -0.1951,
+        "delay_s": 6.746,
+        "final_speed_ms": 51.014,
+        "flip_detected": true,
+        "i_opp_over_i_total": 0.1919,
+        "legal_branch": false
+      }
+    ],
+    "staging_legal": true
+  },
+  {
+    "admission_reasons": [],
+    "admitted": true,
+    "descent_metrics": {
+      "max_horizontal_speed_ms": 24.352808988495532,
+      "mean_angular_rate_norm": 0.5906782724846592,
+      "mean_q_horizontal": 0.34092142310840107,
+      "mean_q_total": 0.9904895784741736,
+      "sustained_positive_q_window_s": 7.93556177871935
+    },
+    "free_descent_final_speed_ms": 52.108,
+    "label": "ST4_clipped_delta",
+    "mach": 0.5276,
+    "min_margin_cal": 1.162,
+    "powered_probes": [
+      {
+        "burn_mean_q": -0.189,
+        "delay_s": 6.707,
+        "final_speed_ms": 50.78,
+        "flip_detected": true,
+        "i_opp_over_i_total": 0.1789,
+        "legal_branch": false
+      }
+    ],
+    "staging_legal": true
+  },
+  {
+    "admission_reasons": [],
+    "admitted": true,
+    "descent_metrics": {
+      "max_horizontal_speed_ms": 23.540553482353523,
+      "mean_angular_rate_norm": 0.09585755736279611,
+      "mean_q_horizontal": 0.9467166494708996,
+      "mean_q_total": 0.8793114695143199,
+      "sustained_positive_q_window_s": 26.173041835385554
+    },
+    "free_descent_final_speed_ms": 24.702,
+    "label": "ST4_hybrid_small_fin",
+    "mach": 0.8415,
+    "min_margin_cal": 1.747,
+    "powered_probes": [
+      {
+        "burn_mean_q": -0.9395,
+        "delay_s": 8.736,
+        "final_speed_ms": 57.38,
+        "flip_detected": true,
+        "i_opp_over_i_total": 0.0012,
+        "legal_branch": false
+      }
+    ],
+    "staging_legal": true
+  },
+  {
+    "admission_reasons": [
+      "full-window mean q_total is not positive (-0.428)"
+    ],
+    "admitted": false,
+    "descent_metrics": {
+      "max_horizontal_speed_ms": 8.372576031657776,
+      "mean_angular_rate_norm": 0.26589039194123937,
+      "mean_q_horizontal": 0.34157557719141307,
+      "mean_q_total": -0.4278165961879904,
+      "sustained_positive_q_window_s": 3.3500000000000476
+    },
+    "free_descent_final_speed_ms": 58.139,
+    "label": "ST4_hybrid_full_e8",
+    "mach": 0.7937,
+    "min_margin_cal": 1.739,
+    "powered_probes": [],
+    "staging_legal": true
+  }
+]

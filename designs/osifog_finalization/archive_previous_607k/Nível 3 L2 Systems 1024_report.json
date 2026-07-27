@@ -1,0 +1,644 @@
+{
+ "params": {
+  "s0_main": null,
+  "s0_retro": 20,
+  "s1_main": 20,
+  "s1_retro": 38,
+  "main_cluster_count": 3,
+  "s0_body_len": 0.7,
+  "s0_body_rad": 0.082,
+  "s1_body_len": 1,
+  "s1_body_rad": 0.082,
+  "nose_length_m": 0.12,
+  "s0_retro_delay": 49.2525,
+  "s1_retro_delay": 79.0625,
+  "s0_fin_count": 0,
+  "s0_fin_sweep": 10.0,
+  "s0_fin_root": 0.2,
+  "s0_fin_height": 0.25,
+  "s1_fin_count": 4,
+  "s1_fin_sweep": 10.0,
+  "s1_fin_root": 0.12,
+  "s1_fin_height": 0.1,
+  "nose_mass_kg": 0.05,
+  "s0_mid_ballast_kg": 7.8,
+  "s0_aft_ballast_kg": 1,
+  "s1_mid_ballast_kg": 0,
+  "s1_aft_ballast_kg": 0,
+  "s1_grid_fin_count": 4,
+  "s1_grid_fin_root": 0.08,
+  "s1_grid_fin_height": 0.06,
+  "s0_grid_fin_count": 0,
+  "launch_azimuth": 35,
+  "launch_angle_deg": 1.6,
+  "s1_separation_delay": 23.1,
+  "wind_levels": [
+   [
+    2.0,
+    3.063,
+    215.0,
+    0.466
+   ],
+   [
+    7.0,
+    3.995,
+    215.0,
+    0.336
+   ],
+   [
+    12.0,
+    4.409,
+    214.9,
+    0.369
+   ],
+   [
+    17.0,
+    4.686,
+    214.9,
+    0.41
+   ],
+   [
+    22.0,
+    4.898,
+    214.9,
+    0.443
+   ],
+   [
+    27.0,
+    5.073,
+    214.8,
+    0.471
+   ],
+   [
+    32.0,
+    5.222,
+    214.8,
+    0.496
+   ],
+   [
+    37.0,
+    5.354,
+    214.7,
+    0.518
+   ],
+   [
+    42.0,
+    5.473,
+    214.7,
+    0.538
+   ],
+   [
+    47.0,
+    5.582,
+    214.7,
+    0.556
+   ],
+   [
+    52.0,
+    5.683,
+    214.7,
+    0.573
+   ],
+   [
+    62.0,
+    5.867,
+    214.6,
+    0.605
+   ],
+   [
+    72.0,
+    6.032,
+    214.5,
+    0.632
+   ],
+   [
+    82.0,
+    6.185,
+    214.5,
+    0.657
+   ],
+   [
+    92.0,
+    6.327,
+    214.4,
+    0.681
+   ],
+   [
+    102.0,
+    6.436,
+    214.3,
+    0.702
+   ],
+   [
+    108.0,
+    6.48,
+    207.0,
+    0.194
+   ],
+   [
+    320.0,
+    7.51,
+    208.0,
+    0.611
+   ],
+   [
+    537.0,
+    8.93,
+    211.0,
+    0.801
+   ],
+   [
+    759.0,
+    10.72,
+    214.0,
+    0.833
+   ],
+   [
+    986.0,
+    12.26,
+    215.0,
+    0.711
+   ],
+   [
+    1217.0,
+    13.56,
+    216.0,
+    0.492
+   ],
+   [
+    1455.0,
+    14.22,
+    214.0,
+    0.427
+   ],
+   [
+    1697.0,
+    14.38,
+    211.0,
+    0.431
+   ],
+   [
+    1946.0,
+    13.66,
+    207.0,
+    0.41
+   ],
+   [
+    2202.0,
+    12.75,
+    204.0,
+    0.43
+   ],
+   [
+    2464.0,
+    11.94,
+    202.0,
+    0.385
+   ],
+   [
+    2733.0,
+    11.21,
+    204.0,
+    0.365
+   ]
+  ],
+  "s1_separation_event": "launch",
+  "s1_fin_material": "legal_balsa",
+  "s1_grid_fin_material": "legal_balsa",
+  "s0_aft_ballast_attachment": "airframe_bonded",
+  "s0_aft_ballast_rod_radius_m": 0.025875,
+  "nose_ballast_attachment": "nose_shell_bonded",
+  "nose_ballast_material": "aluminum",
+  "plugged_motors": true,
+  "octaweb_rings": true,
+  "octaweb_ring_width_m": 0.003,
+  "interstage_coupler": true,
+  "interstage_coupler_length_m": 0.05,
+  "interstage_coupler_wall_m": 0.001,
+  "interstage_coupler_sustainer_overlap_m": 0.025,
+  "livery": {
+   "name": "L2 Celestial Datum V7",
+   "components": {
+    "Nose Cone": {
+     "paint": "#07080C",
+     "shine": 0.34
+    },
+    "Sustainer Airframe": {
+     "paint": "#0B0D12",
+     "shine": 0.24,
+     "decal": {
+      "name": "decals/l2-celestial-datum-v7-sustainer.png",
+      "rotation": 1.5707963267948966,
+      "edgemode": "REPEAT",
+      "center": {
+       "x": 0,
+       "y": 0
+      },
+      "offset": {
+       "x": 0,
+       "y": 0
+      },
+      "scale": {
+       "x": 1,
+       "y": 1
+      }
+     }
+    },
+    "Booster Airframe": {
+     "paint": "#0B0D12",
+     "shine": 0.22,
+     "decal": {
+      "name": "decals/l2-celestial-datum-v7-booster.png",
+      "rotation": 1.5707963267948966,
+      "edgemode": "REPEAT",
+      "center": {
+       "x": 0,
+       "y": 0
+      },
+      "offset": {
+       "x": 0,
+       "y": 0
+      },
+      "scale": {
+       "x": 1,
+       "y": 1
+      }
+     }
+    },
+    "Booster Fins": {
+     "paint": "#2A0C43",
+     "shine": 0.27
+    },
+    "Booster Forward Grid Fins": {
+     "paint": "#0D555D",
+     "shine": 0.27
+    },
+    "Booster-Retained Interstage Coupler": {
+     "paint": "#141820",
+     "shine": 0.14
+    }
+   }
+  },
+  "livery_decals": [
+   {
+    "path": "designs/osifog_visuals/assets/generated/l2-celestial-datum-v7-sustainer.png",
+    "zip_name": "decals/l2-celestial-datum-v7-sustainer.png"
+   },
+   {
+    "path": "designs/osifog_visuals/assets/generated/l2-celestial-datum-v7-booster.png",
+    "zip_name": "decals/l2-celestial-datum-v7-booster.png"
+   }
+  ]
+ },
+ "metrics": {
+  "apogee_m": 2998.1579325432162,
+  "mach": 0.9249001784627376,
+  "flight_time_s": 52.8455,
+  "status": "Up To Date",
+  "seed": 30017,
+  "wind_seed": 30017,
+  "event_times": {
+   "SIM_WARN": [
+    0.0,
+    23.123908093277258,
+    52.8455,
+    87.0035
+   ],
+   "LAUNCH": [
+    0.0
+   ],
+   "IGNITION": [
+    0.0,
+    49.2525,
+    79.0625
+   ],
+   "LIFTOFF": [
+    0.05
+   ],
+   "LAUNCHROD": [
+    0.32900000000000007
+   ],
+   "BURNOUT": [
+    3.593,
+    52.8455,
+    87.0035
+   ],
+   "APOGEE": [
+    23.06035796214646
+   ],
+   "STAGE_SEPARATION": [
+    23.1
+   ],
+   "GROUND_HIT": [
+    52.58575952043408,
+    86.27542781428333
+   ],
+   "SIMULATION_END": [
+    52.8455,
+    87.0035
+   ]
+  },
+  "branch_event_times": [
+   {
+    "SIM_WARN": [
+     0.0,
+     23.123908093277258,
+     52.8455
+    ],
+    "LAUNCH": [
+     0.0
+    ],
+    "IGNITION": [
+     0.0,
+     49.2525
+    ],
+    "LIFTOFF": [
+     0.05
+    ],
+    "LAUNCHROD": [
+     0.32900000000000007
+    ],
+    "BURNOUT": [
+     3.593,
+     52.8455
+    ],
+    "APOGEE": [
+     23.06035796214646
+    ],
+    "STAGE_SEPARATION": [
+     23.1
+    ],
+    "GROUND_HIT": [
+     52.58575952043408
+    ],
+    "SIMULATION_END": [
+     52.8455
+    ]
+   },
+   {
+    "IGNITION": [
+     0.0,
+     79.0625
+    ],
+    "BURNOUT": [
+     3.593,
+     87.0035
+    ],
+    "STAGE_SEPARATION": [
+     23.1
+    ],
+    "GROUND_HIT": [
+     86.27542781428333
+    ],
+    "SIM_WARN": [
+     87.0035
+    ],
+    "SIMULATION_END": [
+     87.0035
+    ]
+   }
+  ],
+  "apogee_east_m": -24.306840193624367,
+  "apogee_north_m": -35.611458472962035,
+  "stage_landings": [
+   {
+    "branch": 0,
+    "branch_name": "Sustainer",
+    "stage_key": "s0",
+    "time_s": 52.58575952043408,
+    "east_m": 22.422567630872,
+    "north_m": 60.72618462154742,
+    "dist_m": 64.73361598004001,
+    "vz_ms": -1.8698137551212166,
+    "vxy_ms": 0.8485891753518532,
+    "total_speed": 2.0533648159459736,
+    "mass_kg": 10.642801698096445,
+    "orientation_theta_deg": 56.92904145786647,
+    "orientation_phi_deg": 222.370932517054,
+    "aoa_deg": 100.74627197261074
+   },
+   {
+    "branch": 1,
+    "branch_name": "Booster",
+    "stage_key": "s1",
+    "time_s": 86.27542781428333,
+    "east_m": 280.2696033866958,
+    "north_m": 509.47520719384033,
+    "dist_m": 581.477460722032,
+    "vz_ms": -2.3615727021058777,
+    "vxy_ms": 2.9622311298402546,
+    "total_speed": 3.788382094499752,
+    "mass_kg": 3.45588812154792,
+    "orientation_theta_deg": 83.92144783554572,
+    "orientation_phi_deg": 215.20067509710137,
+    "aoa_deg": 179.11751543828373
+   }
+  ],
+  "branch_identities": [
+   {
+    "branch": 0,
+    "branch_name": "Sustainer",
+    "stage_key": "s0"
+   },
+   {
+    "branch": 1,
+    "branch_name": "Booster",
+    "stage_key": "s1"
+   }
+  ],
+  "ascent_static_margins": [
+   {
+    "branch": 0,
+    "min_calibers": 0.7866798688644359
+   },
+   {
+    "branch": 1,
+    "min_calibers": 0.7866798688644359
+   }
+  ],
+  "ascent_stability_segments": [
+   {
+    "segment": "full_stack",
+    "branch": 0,
+    "min_calibers": 0.7866798688644359
+   },
+   {
+    "segment": "booster",
+    "branch": 1,
+    "min_calibers": 0.7866798688644359
+   }
+  ],
+  "branch_apogee_states": [
+   {
+    "branch": 0,
+    "branch_name": "Sustainer",
+    "stage_key": "s0",
+    "time_s": 23.010357962146458,
+    "altitude_m": 2998.1579325432162,
+    "theta_deg": 29.169715701168276,
+    "phi_deg": 205.4492355794114,
+    "vz_ms": 0.17330596165811024,
+    "vxy_ms": 1.1992093853865622
+   },
+   {
+    "branch": 1,
+    "branch_name": "Booster",
+    "stage_key": "s1",
+    "time_s": 23.010357962146458,
+    "altitude_m": 2998.1579325432162,
+    "theta_deg": 29.169715701168276,
+    "phi_deg": 205.4492355794114,
+    "vz_ms": 0.17330596165811024,
+    "vxy_ms": 1.1992093853865622
+   }
+  ],
+  "separation_states": [
+   {
+    "branch": 0,
+    "time_s": 23.1,
+    "altitude_m": 2998.1356365356487,
+    "theta_deg": 26.554063446497842,
+    "phi_deg": 205.44856213492224,
+    "vz_ms": -0.6700604908807535,
+    "vxy_ms": 1.2191201016698727,
+    "aoa_deg": 30.223081391568865
+   }
+  ],
+  "min_static_margin": 0.7866798688644359,
+  "m_prop_kg_actual": 5.362006876070515,
+  "s0_landing_speed": 2.0533648159459736,
+  "s0_landing_dist": 64.73361598004001,
+  "s0_east_m": 22.422567630872,
+  "s0_north_m": 60.72618462154742,
+  "s1_landing_speed": 3.788382094499752,
+  "s1_landing_dist": 581.477460722032,
+  "s1_east_m": 280.2696033866958,
+  "s1_north_m": 509.47520719384033
+ },
+ "score": {
+  "score": 607219.4959246478,
+  "raw_score": 607219.4959246478,
+  "is_legal": true,
+  "violations": [],
+  "apogee_m": 2998.1579325432162,
+  "apogee_err_m": -1.8420674567837523,
+  "E_ap": -24.306840193624367,
+  "N_ap": -35.611458472962035,
+  "mean_E": 151.3460855087839,
+  "mean_N": 285.1006959076939,
+  "mean_V": 2.920873455222863,
+  "m_prop_kg": 5.362006876070515,
+  "apogee_alt_pen": 10179.637546025282,
+  "apogee_horiz_pen": 29743.97527631828,
+  "touch_pos_pen": 208376.0888117669,
+  "touch_vel_pen": 4265.750870712773,
+  "prop_pen": 40215.05157052886,
+  "metrics_gate": {
+   "is_legal": true,
+   "violations": []
+  }
+ },
+ "seed": 30017,
+ "checklist": [
+  [
+   true,
+   "multi-stage, all stages land",
+   "2 landed branches"
+  ],
+  [
+   true,
+   "touchdown |v| < 5 m/s (Sustainer)",
+   "2.053 m/s at t=52.59 s"
+  ],
+  [
+   true,
+   "tail-first attitude (Sustainer)",
+   "theta=+56.9 deg"
+  ],
+  [
+   true,
+   "touchdown |v| < 5 m/s (Booster)",
+   "3.788 m/s at t=86.28 s"
+  ],
+  [
+   true,
+   "tail-first attitude (Booster)",
+   "theta=+83.9 deg"
+  ],
+  [
+   true,
+   "subsonic throughout",
+   "Mach_max=0.9249"
+  ],
+  [
+   true,
+   "overall length <= 4 m",
+   "1.820 m"
+  ],
+  [
+   true,
+   "launch rod <= 6 m",
+   "6.00 m"
+  ],
+  [
+   true,
+   "no recovery devices",
+   "no parachute/streamer/recoverydevice tags"
+  ],
+  [
+   true,
+   "no mass/CG/CD overrides",
+   "no override tags"
+  ],
+  [
+   true,
+   "two valid airframe-spanning rings per stage",
+   "4 centered nondegenerate rings"
+  ],
+  [
+   true,
+   "booster-owned interstage coupler geometry",
+   "one coupler spanning both stage bores"
+  ],
+  [
+   true,
+   "all sustainer motors ignite after separation",
+   "separation precedes every sustainer ignition"
+  ],
+  [
+   true,
+   "nose ballast rigidly bonded to nose shell",
+   "centered full-radius structural bulkhead"
+  ],
+  [
+   true,
+   "saved flight-event references resolve",
+   "all warning/event IDs resolve within stored branches"
+  ],
+  [
+   true,
+   "material density in [170, 11340] kg/m3",
+   "min=170 max=7900"
+  ],
+  [
+   true,
+   "no ejection charges (plugged motors)",
+   "none"
+  ],
+  [
+   true,
+   "exactly one simulation",
+   "1"
+  ],
+  [
+   true,
+   "simulation not aborted",
+   "Up To Date"
+  ],
+  [
+   true,
+   "appearance is cosmetic only",
+   "telemetry dict exactly equal"
+  ]
+ ]
+}

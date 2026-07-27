@@ -1,0 +1,229 @@
+{
+  "best_result": {
+    "classification": "POWERED",
+    "delay_s": 14.0,
+    "ground_hit_s": 26.1121,
+    "mach": 0.8359,
+    "retro_braking_verified": false,
+    "retro_fired_in_flight": true,
+    "s0_speed_ms": 147.821,
+    "s1_ignitions": [
+      0.0,
+      14.0
+    ],
+    "s1_speed_ms": 50.433,
+    "s1_vxy_ms": 16.939,
+    "s1_vz_ms": -47.503,
+    "warnings": []
+  },
+  "coarse_search_results": [
+    {
+      "classification": "POWERED",
+      "delay_s": 9.0,
+      "ground_hit_s": 37.1238,
+      "mach": 0.8359,
+      "retro_braking_verified": false,
+      "retro_fired_in_flight": true,
+      "s0_speed_ms": 147.821,
+      "s1_ignitions": [
+        0.0,
+        9.0
+      ],
+      "s1_speed_ms": 56.909,
+      "s1_vxy_ms": 4.682,
+      "s1_vz_ms": -56.716,
+      "warnings": []
+    },
+    {
+      "classification": "POWERED",
+      "delay_s": 10.0,
+      "ground_hit_s": 34.6752,
+      "mach": 0.8359,
+      "retro_braking_verified": false,
+      "retro_fired_in_flight": true,
+      "s0_speed_ms": 147.821,
+      "s1_ignitions": [
+        0.0,
+        10.0
+      ],
+      "s1_speed_ms": 56.409,
+      "s1_vxy_ms": 2.768,
+      "s1_vz_ms": -56.341,
+      "warnings": []
+    },
+    {
+      "classification": "POWERED",
+      "delay_s": 11.0,
+      "ground_hit_s": 35.6701,
+      "mach": 0.8359,
+      "retro_braking_verified": false,
+      "retro_fired_in_flight": true,
+      "s0_speed_ms": 147.821,
+      "s1_ignitions": [
+        0.0,
+        11.0
+      ],
+      "s1_speed_ms": 56.38,
+      "s1_vxy_ms": 2.778,
+      "s1_vz_ms": -56.311,
+      "warnings": []
+    },
+    {
+      "classification": "POWERED",
+      "delay_s": 12.0,
+      "ground_hit_s": 31.201,
+      "mach": 0.8359,
+      "retro_braking_verified": false,
+      "retro_fired_in_flight": true,
+      "s0_speed_ms": 147.821,
+      "s1_ignitions": [
+        0.0,
+        12.0
+      ],
+      "s1_speed_ms": 54.558,
+      "s1_vxy_ms": 2.133,
+      "s1_vz_ms": -54.517,
+      "warnings": []
+    },
+    {
+      "classification": "POWERED",
+      "delay_s": 14.0,
+      "ground_hit_s": 26.1121,
+      "mach": 0.8359,
+      "retro_braking_verified": false,
+      "retro_fired_in_flight": true,
+      "s0_speed_ms": 147.821,
+      "s1_ignitions": [
+        0.0,
+        14.0
+      ],
+      "s1_speed_ms": 50.433,
+      "s1_vxy_ms": 16.939,
+      "s1_vz_ms": -47.503,
+      "warnings": []
+    },
+    {
+      "classification": "POWERED",
+      "delay_s": 16.0,
+      "ground_hit_s": 26.0625,
+      "mach": 0.8359,
+      "retro_braking_verified": false,
+      "retro_fired_in_flight": true,
+      "s0_speed_ms": 147.821,
+      "s1_ignitions": [
+        0.0,
+        16.0
+      ],
+      "s1_speed_ms": 50.514,
+      "s1_vxy_ms": 24.474,
+      "s1_vz_ms": -44.189,
+      "warnings": []
+    },
+    {
+      "classification": "POWERED",
+      "delay_s": 18.0,
+      "ground_hit_s": 26.4454,
+      "mach": 0.8359,
+      "retro_braking_verified": false,
+      "retro_fired_in_flight": true,
+      "s0_speed_ms": 147.821,
+      "s1_ignitions": [
+        0.0,
+        18.0
+      ],
+      "s1_speed_ms": 53.091,
+      "s1_vxy_ms": 32.511,
+      "s1_vz_ms": -41.973,
+      "warnings": []
+    },
+    {
+      "classification": "POWERED",
+      "delay_s": 20.0,
+      "ground_hit_s": 29.0946,
+      "mach": 0.8359,
+      "retro_braking_verified": false,
+      "retro_fired_in_flight": true,
+      "s0_speed_ms": 147.821,
+      "s1_ignitions": [
+        0.0,
+        20.0
+      ],
+      "s1_speed_ms": 50.995,
+      "s1_vxy_ms": 29.474,
+      "s1_vz_ms": -41.615,
+      "warnings": []
+    },
+    {
+      "classification": "POWERED",
+      "delay_s": 25.0,
+      "ground_hit_s": 32.7525,
+      "mach": 0.8359,
+      "retro_braking_verified": false,
+      "retro_fired_in_flight": true,
+      "s0_speed_ms": 147.821,
+      "s1_ignitions": [
+        0.0,
+        25.0
+      ],
+      "s1_speed_ms": 53.679,
+      "s1_vxy_ms": 38.264,
+      "s1_vz_ms": -37.647,
+      "warnings": []
+    },
+    {
+      "classification": "POWERED",
+      "delay_s": 30.0,
+      "ground_hit_s": 35.7735,
+      "mach": 0.8359,
+      "retro_braking_verified": false,
+      "retro_fired_in_flight": true,
+      "s0_speed_ms": 147.821,
+      "s1_ignitions": [
+        0.0,
+        30.0
+      ],
+      "s1_speed_ms": 66.95,
+      "s1_vxy_ms": 58.288,
+      "s1_vz_ms": -32.936,
+      "warnings": []
+    },
+    {
+      "classification": "POWERED",
+      "delay_s": 35.0,
+      "ground_hit_s": 39.6391,
+      "mach": 0.8359,
+      "retro_braking_verified": false,
+      "retro_fired_in_flight": true,
+      "s0_speed_ms": 147.821,
+      "s1_ignitions": [
+        0.0,
+        35.0
+      ],
+      "s1_speed_ms": 84.561,
+      "s1_vxy_ms": 79.708,
+      "s1_vz_ms": -28.236,
+      "warnings": []
+    },
+    {
+      "classification": "POWERED",
+      "delay_s": 40.0,
+      "ground_hit_s": 42.1138,
+      "mach": 0.8359,
+      "retro_braking_verified": false,
+      "retro_fired_in_flight": true,
+      "s0_speed_ms": 147.821,
+      "s1_ignitions": [
+        0.0,
+        40.0
+      ],
+      "s1_speed_ms": 183.372,
+      "s1_vxy_ms": 179.825,
+      "s1_vz_ms": -35.895,
+      "warnings": []
+    }
+  ],
+  "free_descent_s1_speed_ms": 21.699,
+  "gate": 7,
+  "legal_branch_found": false,
+  "status": "SEARCH_COMPLETE"
+}

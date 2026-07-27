@@ -1,0 +1,31 @@
+;AeroTech H238T extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=122, curve_id=141
+; lookup key 'H238T' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+H238T 29 194 4,6,8,10 0.0806 0.1882 A
+0.000 0.00
+0.019 173.10
+0.059 206.88
+0.100 211.04
+0.141 214.35
+0.181 217.11
+0.222 219.34
+0.263 221.03
+0.303 224.95
+0.344 229.32
+0.384 229.31
+0.425 228.56
+0.466 226.57
+0.506 222.37
+0.547 219.21
+0.588 217.75
+0.628 213.35
+0.669 208.07
+0.709 200.97
+0.750 196.99
+0.791 151.39
+0.831 96.27
+0.872 59.48
+0.912 18.62
+0.953 7.99
+0.995 3.70
+1.036 0.00

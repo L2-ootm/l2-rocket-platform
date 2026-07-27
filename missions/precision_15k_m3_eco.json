@@ -1,0 +1,12 @@
+{
+  "name": "Precision 15k M3 Eco",
+  "description": "Not more than Mach 3, precise reach 15km apogee, super stable, and with the least powerful motor possible (by minimizing max_accel_g).",
+  "output": "designs/optimized/L2_Precision_15k_M3_Eco.ork",
+  "objectives": [
+    { "metric": "apogee", "kind": "target", "value": 15000.0, "weight": 100.0 },
+    { "metric": "mach", "kind": "atmost", "value": 3.0, "min_value": 0.3, "weight": 100.0 },
+    { "metric": "max_accel_g", "kind": "minimize", "scale": 50.0, "weight": 5.0 }
+  ],
+  "constraints": { "min_static_margin": 2.5 },
+  "stability": { "phase_machs": [0.3, 2.0, 3.0] }
+}

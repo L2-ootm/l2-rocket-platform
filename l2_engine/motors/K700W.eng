@@ -1,0 +1,31 @@
+;AeroTech K700W extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=240, curve_id=265
+; lookup key 'K700W' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+K700W 54 568 0,P 1.2916 2.0353 A
+0.000 0.00
+0.069 1005.47
+0.209 1018.92
+0.350 1026.61
+0.491 1028.64
+0.632 1029.34
+0.773 1004.20
+0.914 970.69
+1.055 946.52
+1.196 918.44
+1.336 873.78
+1.478 821.28
+1.619 773.27
+1.759 735.55
+1.900 692.73
+2.041 658.98
+2.182 626.74
+2.323 591.43
+2.464 508.67
+2.605 420.18
+2.746 328.31
+2.886 202.41
+3.028 121.67
+3.169 80.45
+3.309 50.87
+3.451 31.55
+3.593 0.00

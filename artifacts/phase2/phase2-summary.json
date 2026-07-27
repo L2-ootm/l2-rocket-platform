@@ -1,0 +1,55 @@
+{
+  "phase": 2,
+  "status": "PARTIAL_COMPLETE",
+  "gates": {
+    "gate4_phase_margin_parity": {
+      "status": "DOCUMENTED",
+      "finding": "Rust computes per-stage minimum margin across 5 phases. OpenRocket computes per-sample stability as a time series. These are different quantities. Direct numerical comparison requires a Rust per-phase diagnostic mode. Architectural mismatch documented in phase-margin-parity.md.",
+      "artifact": "artifacts/phase2/phase-margin-parity.json"
+    },
+    "gate6_scenario_matrix": {
+      "status": "DEFERRED",
+      "reason": "Requires running all 6 scenario types. Deferred to prioritize Gate 7 stability search."
+    },
+    "gate7_stability_matrix": {
+      "status": "PASS",
+      "finding": "5 stable subsonic configurations found across 27 tested topologies. Best: J350W×3 with 4.0 kg nose ballast — margin 1.745 cal, Mach 0.836.",
+      "stable_configurations": [
+        {"motors": "J420R×3", "nose_kg": 3.0, "margin_cal": 1.521, "mach": 0.888},
+        {"motors": "J420R×3", "nose_kg": 3.5, "margin_cal": 1.629, "mach": 0.854},
+        {"motors": "J420R×3", "nose_kg": 3.0, "fin_root": 0.18, "fin_height": 0.25, "margin_cal": 1.595, "mach": 0.862},
+        {"motors": "J350W×3", "nose_kg": 3.5, "margin_cal": 1.644, "mach": 0.869},
+        {"motors": "J350W×3", "nose_kg": 4.0, "margin_cal": 1.745, "mach": 0.836}
+      ],
+      "key_finding": "3+1 topology CAN produce stable exposed sustainer with weaker motors (J350W/J420R instead of J510W) and heavier nose ballast (3.0-4.0 kg)",
+      "artifact": "artifacts/phase2/stability-matrix.json"
+    }
+  },
+  "test_collection": {
+    "python_collected": 111,
+    "python_new_files_not_pytest": 3,
+    "rust_total": 160,
+    "status": "PASS with note"
+  },
+  "motor_aliases": {
+    "resolved": 5,
+    "missing_eng_files": 2,
+    "used_by_osifog": ["644J94-P", "949J150-P"],
+    "status": "BLOCKED for authority candidate"
+  },
+  "files_changed": [
+    "tests/test_gate4_parity.py (NEW)",
+    "tests/test_gate7_stability.py (NEW)",
+    "tests/test_gate7_stability_r2.py (NEW)",
+    "tests/test_gate7_stability_r3.py (NEW)",
+    "artifacts/phase2/*.json (6 artifacts)",
+    "artifacts/phase2/phase-margin-parity.md"
+  ],
+  "next_steps": [
+    "Run Gate 6 scenario matrix (6 scenario types)",
+    "Select best stable configuration for powered landing test",
+    "Calibrate retro motor delays for powered landing",
+    "Run delay robustness check",
+    "Save/reopen verification if legal branch found"
+  ]
+}

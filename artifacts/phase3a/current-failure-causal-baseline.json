@@ -1,0 +1,256 @@
+{
+  "absolute_pitch_collapse_vs_relative_misalignment": {
+    "absolute_pitch_collapse": "Theta drops from 62\u00b0 to 6\u00b0 in 6s. This is the PRIMARY driver. The nose falls to near-horizontal because the aerodynamic center is below the CG, creating a nose-down moment during descent.",
+    "primary_driver": "absolute_pitch_collapse",
+    "relative_thrust_velocity_misalignment": "Even if pitch stayed at 62\u00b0, the velocity direction changes during descent. The velocity vector points more horizontally as the rocket falls. So some misalignment is inevitable even with stable pitch. But the current collapse from 62\u00b0 to 6\u00b0 is catastrophic."
+  },
+  "baseline_config": "CURRENT_BEST",
+  "booster_timing": {
+    "apex_time_s": 8.5298,
+    "descent_duration_s": 35.122,
+    "ground_hit_time_s": 43.6519
+  },
+  "braking_alignment_evolution": [
+    {
+      "braking_angle_deg": 119.98,
+      "q_total": 0.4997,
+      "speed_ms": 4.714,
+      "time_s": 8.5298
+    },
+    {
+      "braking_angle_deg": 164.61,
+      "q_total": 0.9641,
+      "speed_ms": 16.519,
+      "time_s": 10.2798
+    },
+    {
+      "braking_angle_deg": 164.0,
+      "q_total": 0.9613,
+      "speed_ms": 25.882,
+      "time_s": 11.9519
+    },
+    {
+      "braking_angle_deg": 159.53,
+      "q_total": 0.9369,
+      "speed_ms": 27.828,
+      "time_s": 13.7019
+    },
+    {
+      "braking_angle_deg": 157.88,
+      "q_total": 0.9264,
+      "speed_ms": 26.758,
+      "time_s": 15.4519
+    },
+    {
+      "braking_angle_deg": 157.75,
+      "q_total": 0.9255,
+      "speed_ms": 26.053,
+      "time_s": 17.2019
+    },
+    {
+      "braking_angle_deg": 157.31,
+      "q_total": 0.9226,
+      "speed_ms": 24.983,
+      "time_s": 18.9519
+    },
+    {
+      "braking_angle_deg": 156.91,
+      "q_total": 0.9199,
+      "speed_ms": 24.968,
+      "time_s": 20.7019
+    },
+    {
+      "braking_angle_deg": 158.03,
+      "q_total": 0.9274,
+      "speed_ms": 24.796,
+      "time_s": 22.4519
+    },
+    {
+      "braking_angle_deg": 158.41,
+      "q_total": 0.9299,
+      "speed_ms": 25.037,
+      "time_s": 24.2019
+    },
+    {
+      "braking_angle_deg": 157.51,
+      "q_total": 0.924,
+      "speed_ms": 24.875,
+      "time_s": 25.9519
+    },
+    {
+      "braking_angle_deg": 158.23,
+      "q_total": 0.9287,
+      "speed_ms": 24.94,
+      "time_s": 27.7019
+    },
+    {
+      "braking_angle_deg": 157.63,
+      "q_total": 0.9247,
+      "speed_ms": 24.826,
+      "time_s": 29.4519
+    },
+    {
+      "braking_angle_deg": 157.51,
+      "q_total": 0.9239,
+      "speed_ms": 24.704,
+      "time_s": 31.2019
+    },
+    {
+      "braking_angle_deg": 156.44,
+      "q_total": 0.9166,
+      "speed_ms": 24.312,
+      "time_s": 32.9519
+    },
+    {
+      "braking_angle_deg": 155.15,
+      "q_total": 0.9074,
+      "speed_ms": 24.088,
+      "time_s": 34.7019
+    },
+    {
+      "braking_angle_deg": 159.73,
+      "q_total": 0.9381,
+      "speed_ms": 24.605,
+      "time_s": 36.4519
+    },
+    {
+      "braking_angle_deg": 155.61,
+      "q_total": 0.9108,
+      "speed_ms": 23.824,
+      "time_s": 38.2019
+    },
+    {
+      "braking_angle_deg": 156.43,
+      "q_total": 0.9166,
+      "speed_ms": 23.801,
+      "time_s": 39.9519
+    },
+    {
+      "braking_angle_deg": 155.37,
+      "q_total": 0.9091,
+      "speed_ms": 22.712,
+      "time_s": 41.7019
+    },
+    {
+      "braking_angle_deg": 153.45,
+      "q_total": 0.8945,
+      "speed_ms": 21.889,
+      "time_s": 43.4519
+    }
+  ],
+  "causal_chain": [
+    "1. Booster separates at t=1.695s while ascending at 110.86 m/s",
+    "2. After burnout, booster coasts to apex at t=8.53s (altitude 414m)",
+    "3. During ascent, wind and aerodynamic forces build horizontal velocity",
+    "4. At apex, vxy=4.71 m/s (mostly from wind interaction during ascent)",
+    "5. During descent, horizontal speed grows to 24.12 m/s at t=14.8s",
+    "6. Nose angle collapses from 62\u00b0 to ~6\u00b0 by t=15s due to aerodynamic torques",
+    "7. After t=15s, q_total < 0.12 \u2014 thrust is nearly perpendicular to velocity",
+    "8. Motor cannot remove horizontal speed because thrust direction is wrong",
+    "9. Horizontal speed slowly decays from 24.12 to 19.04 m/s (aerodynamic drag)",
+    "10. Impact at 21.70 m/s total (19.04 horizontal + 10.40 vertical)"
+  ],
+  "gate": 3,
+  "horizontal_speed_decomposition": {
+    "aerodynamic_side_force_note": "Horizontal speed grows from 0.11 to 24.12 m/s due to wind and aerodynamic forces during unpowered flight",
+    "at_separation_note": "Horizontal speed at separation is near zero (vxy=0.11 m/s)",
+    "impact_horizontal_speed_ms": 19.044,
+    "inheritance_at_separation_ms": 0.11,
+    "peak_horizontal_speed_ms": 24.135,
+    "peak_horizontal_speed_time_s": 14.9519,
+    "wind_driven_acceleration_ms": 24.03
+  },
+  "key_states": {
+    "at_apex": {
+      "altitude_m": 414.02,
+      "aoa_deg": 65.362,
+      "braking_angle_deg": 119.98,
+      "mass_kg": 4.866,
+      "nose_z": 0.8819,
+      "q_horizontal": 0.4699,
+      "q_total": 0.4997,
+      "q_vertical": -0.8819,
+      "speed_ms": 4.714,
+      "static_margin_cal": 0.241,
+      "theta_deg": 61.87,
+      "thrust_n": 0.0,
+      "time_s": 8.5298,
+      "vxy_ms": 4.711,
+      "vz_ms": -0.16
+    },
+    "at_impact": {
+      "altitude_m": 0.86,
+      "aoa_deg": 148.814,
+      "braking_angle_deg": 152.86,
+      "mass_kg": 4.866,
+      "nose_z": 0.025,
+      "q_horizontal": 1.0005,
+      "q_total": 0.8899,
+      "q_vertical": -0.025,
+      "speed_ms": 21.796,
+      "static_margin_cal": 0.21,
+      "theta_deg": 1.43,
+      "thrust_n": 0.0,
+      "time_s": 43.5519,
+      "vxy_ms": 19.125,
+      "vz_ms": -10.454
+    },
+    "loss_of_useful_alignment": {
+      "altitude_m": 414.02,
+      "aoa_deg": 65.362,
+      "braking_angle_deg": 119.98,
+      "mass_kg": 4.866,
+      "nose_z": 0.8819,
+      "q_horizontal": 0.4699,
+      "q_total": 0.4997,
+      "q_vertical": -0.8819,
+      "speed_ms": 4.714,
+      "static_margin_cal": 0.241,
+      "theta_deg": 61.87,
+      "thrust_n": 0.0,
+      "time_s": 8.5298,
+      "vxy_ms": 4.711,
+      "vz_ms": -0.16
+    },
+    "minimum_q_total": {
+      "altitude_m": 0.0,
+      "aoa_deg": NaN,
+      "braking_angle_deg": 90.0,
+      "mass_kg": 4.866,
+      "nose_z": 0.0116,
+      "q_horizontal": 0,
+      "q_total": -0.0,
+      "q_vertical": 0.0116,
+      "speed_ms": 0.0,
+      "static_margin_cal": -12.483,
+      "theta_deg": 0.66,
+      "thrust_n": 0.0,
+      "time_s": 43.6529,
+      "vxy_ms": 0.0,
+      "vz_ms": 0.0
+    },
+    "peak_horizontal_speed": {
+      "altitude_m": 322.96,
+      "aoa_deg": 147.918,
+      "braking_angle_deg": 158.25,
+      "mass_kg": 4.866,
+      "nose_z": 0.0936,
+      "q_horizontal": 0.9954,
+      "q_total": 0.9288,
+      "q_vertical": -0.0936,
+      "speed_ms": 27.11,
+      "static_margin_cal": 0.208,
+      "theta_deg": 5.37,
+      "thrust_n": 0.0,
+      "time_s": 14.9519,
+      "vxy_ms": 24.135,
+      "vz_ms": -12.346
+    }
+  },
+  "landing": {
+    "time_s": 43.6519,
+    "total_speed": 21.699,
+    "vxy_ms": 19.044,
+    "vz_ms": -10.4
+  }
+}

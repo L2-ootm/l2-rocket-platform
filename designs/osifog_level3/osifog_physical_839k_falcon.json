@@ -1,0 +1,75 @@
+{
+  "apogee_m": 3000.031,
+  "mach": 0.943,
+  "flight_time_s": 71.666,
+  "status": "Loaded From File",
+  "seed": 16000,
+  "apogee_east_m": -2.483,
+  "apogee_north_m": 2.154,
+  "stage_landings": [
+    {
+      "branch": 0,
+      "time_s": 55.391,
+      "east_m": 58.164,
+      "north_m": 109.44,
+      "dist_m": 123.93613071255695,
+      "vz_ms": -0.5220000000000002,
+      "vxy_ms": 2.596,
+      "total_speed": 2.647961480082367
+    },
+    {
+      "branch": 1,
+      "time_s": 66.109,
+      "east_m": 70.282,
+      "north_m": 52.926,
+      "dist_m": 87.98136734559199,
+      "vz_ms": -0.0039999999999995595,
+      "vxy_ms": 2.459,
+      "total_speed": 2.4590032533528703
+    }
+  ],
+  "ascent_static_margins": [
+    {
+      "branch": 0,
+      "min_calibers": 1.502
+    },
+    {
+      "branch": 1,
+      "min_calibers": 1.502
+    }
+  ],
+  "min_static_margin": 1.502,
+  "m_prop_kg_actual": 4.725000000000001,
+  "s0_landing_speed": 2.647961480082367,
+  "s0_east_m": 58.164,
+  "s0_north_m": 109.44,
+  "s1_landing_speed": 2.4590032533528703,
+  "s1_east_m": 70.282,
+  "s1_north_m": 52.926,
+  "simulation_count": 1,
+  "branch_count": 2,
+  "extension_count": 1,
+  "anti_tumble_present": true,
+  "legal": true,
+  "violations": [],
+  "official_score": 839696.054385431,
+  "score_terms": {
+    "score": 839696.054385431,
+    "raw_score": 839696.054385431,
+    "is_legal": true,
+    "violations": [],
+    "terms": {
+      "apogee_altitude": -2.8829999999905267,
+      "apogee_horizontal": -172.88008000000002,
+      "touchdown_position": -21430.546435999997,
+      "touchdown_speed": -3260.1360985689057,
+      "propellant_used": -35437.50000000001
+    },
+    "total_prop_mass_kg": 4.725000000000001
+  },
+  "save_attempt": 1,
+  "openearth_csvs": [
+    "designs\\osifog_level3\\openearth\\physical_839k\\osifog_850k_stage_1.csv",
+    "designs\\osifog_level3\\openearth\\physical_839k\\osifog_850k_stage_2.csv"
+  ]
+}

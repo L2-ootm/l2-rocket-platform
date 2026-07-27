@@ -1,0 +1,68 @@
+{
+  "s0_retro": 19,
+  "s0_retro_delay": 200.0,
+  "s1_retro": 19,
+  "s1_retro_delay": 200.0,
+  "s1_separation_delay": 0.5,
+  "nose_mass_kg": 1.0,
+  "launch_azimuth": 270.0,
+  "launch_angle_deg": 3.0,
+  "wind_levels": [
+    [
+      0,
+      3.0,
+      270.0,
+      0.5
+    ],
+    [
+      500,
+      6.0,
+      270.0,
+      1.0
+    ],
+    [
+      1000,
+      9.0,
+      270.0,
+      1.5
+    ],
+    [
+      2000,
+      12.0,
+      270.0,
+      2.0
+    ],
+    [
+      3000,
+      15.0,
+      270.0,
+      2.5
+    ]
+  ],
+  "s0_main": 7,
+  "s0_core_radius": 0.032,
+  "s0_core_length": 0.5,
+  "s0_pod_radius": 0.02,
+  "s0_pod_length": 0.288,
+  "s0_pod_radial_offset": 0.132,
+  "s0_core_fin_count": 4,
+  "s0_core_fin_root": 0.128,
+  "s0_core_fin_height": 0.064,
+  "s0_pod_fin_count": 3,
+  "s0_pod_fin_root": 0.043199999999999995,
+  "s0_pod_fin_height": 0.04,
+  "s0_pod_nose_shape": "ogive",
+  "s1_main": 7,
+  "s1_core_radius": 0.032,
+  "s1_core_length": 0.5,
+  "s1_pod_radius": 0.02,
+  "s1_pod_length": 0.288,
+  "s1_pod_radial_offset": 0.132,
+  "s1_core_fin_count": 4,
+  "s1_core_fin_root": 0.128,
+  "s1_core_fin_height": 0.064,
+  "s1_pod_fin_count": 3,
+  "s1_pod_fin_root": 0.043199999999999995,
+  "s1_pod_fin_height": 0.04,
+  "s1_pod_nose_shape": "ogive"
+}

@@ -1,0 +1,71 @@
+{
+  "phase": "2b",
+  "status": "PARTIAL_COMPLETE",
+  "gates": {
+    "gateA_test_collection": {
+      "status": "PASS",
+      "python_collected": 119,
+      "python_passed": 119,
+      "rust_total": 160,
+      "rust_passed": 160,
+      "new_collected_tests": 8,
+      "scripts_remaining": 7,
+      "artifact": "artifacts/phase2b/test-collection-and-coverage.json"
+    },
+    "gateA_missing_motors": {
+      "status": "MOTOR-INCOMPLETE",
+      "missing": ["644J94-P", "949J150-P"],
+      "current_authority_candidate_blocked": true,
+      "artifact": "artifacts/phase2b/missing-motor-resolution.json"
+    },
+    "gateB_phase_resolved_parity": {
+      "status": "NOT_COMPLETED",
+      "reason": "Deferred to prioritize Gate E+F (free descent and powered landing)"
+    },
+    "gateC_scenario_matrix": {
+      "status": "NOT_COMPLETED",
+      "reason": "Deferred to prioritize Gate E+F"
+    },
+    "gateD_physical_audit": {
+      "status": "PASS",
+      "best_candidate": "J350Wx3, nose=4.0kg, body_rad=74mm",
+      "stable_configurations": 5,
+      "artifact": "artifacts/phase2/stability-matrix.json"
+    },
+    "gateE_free_descent": {
+      "status": "COMPLETE",
+      "best_candidate": "J350Wx3, nose=4.0kg",
+      "booster_touchdown_speed_ms": 14.76,
+      "booster_tail_first_windows": 1,
+      "booster_best_alignment_q": 0.999,
+      "sustainer_touchdown_speed_ms": 147.82,
+      "sustainer_tail_first_windows": 1,
+      "sustainer_best_alignment_q": 0.963,
+      "finding": "Booster has excellent tail-first alignment (q=0.999) but K550W retro fires during ascent (before booster apogee at 13.3s), limiting braking effectiveness",
+      "artifact": "artifacts/phase2b/free-descent-results.json"
+    },
+    "gateF_powered_landing": {
+      "status": "INCOMPLETE",
+      "best_booster_speed_ms": 14.76,
+      "best_delay_s": 3.0,
+      "target_speed_ms": 5.0,
+      "gap_ms": 9.76,
+      "finding": "K550W fires before booster apogee (13.3s). Post-apogee delays give worse results (50+ m/s). Early delays (3-5s) give best results but still above 5 m/s.",
+      "artifact": "artifacts/phase2b/powered-landing-results.json"
+    }
+  },
+  "key_findings": [
+    "5 stable subsonic exposed-sustainer configurations exist (J350W/J420R with 3-4kg nose ballast)",
+    "Booster free-descent has excellent tail-first alignment (q=0.999)",
+    "K550W retro motor fires before booster apogee, limiting braking effectiveness",
+    "Best booster landing: 14.76 m/s (above 5 m/s threshold)",
+    "Gap to legal: 9.76 m/s reduction needed",
+    "Two motor curves (644J94-P, 949J150-P) missing from local .eng pool"
+  ],
+  "recommendations": [
+    "Try a smaller retro motor (e.g., H180W) that fires for longer during descent",
+    "Try a different body/ballast configuration that gives booster a longer tail-first window",
+    "Try different separation timing to give booster more time in tail-first attitude before retro ignition",
+    "Extract missing .eng files for future authority lineage"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "best_candidate": "H_fh0.65",
+  "best_delay": 10.0,
+  "best_motor": "J350W",
+  "best_powered_speed": 57.101,
+  "candidates_tested": 12,
+  "dominant_failure": "stage_3_complete",
+  "evaluations_used": 372,
+  "legal_branch_found": false,
+  "next_action": "report",
+  "powered_evaluations": 312,
+  "total_evaluations": 684
+}

@@ -1,0 +1,37 @@
+{
+  "purpose": "Section 0 corrections to the Phase 4C record, per the historical-3p5135-booster-branch directive's 'correct the record' mandate, plus the section-1 rule/engineering classification.",
+  "correction_0_1_legal_delay_window": {
+    "prior_false_claim": "legal window = 29.862-29.868 s (continuous)",
+    "source_of_false_claim": ["artifacts/autoevo/phase4c-summary.json:30 (now corrected)", "artifacts/autoevo/phase4c-current-rerun.json:56 (now corrected)"],
+    "actual_evidence": "artifacts/autoevo/phase4c-delay-sweep-finest.json, 2ms grid",
+    "actual_2ms_samples": {
+      "29.858": 5.371738645274944,
+      "29.860": 4.906824932263131,
+      "29.862": 3.826842626435237,
+      "29.864": 3.5891545566551666,
+      "29.866": 6.144010706670083,
+      "29.868": 5.127192700605541
+    },
+    "corrected_statement": "Only 29.862s and 29.864s are confirmed legal (<5 m/s) on the recorded 2ms grid. 29.866s (6.144 m/s) and 29.868s (5.127 m/s) are NOT legal. The response is non-monotonic at millisecond scale (dip at 29.862/29.864, rise at 29.866, partial fall at 29.868 that still does not clear 5 m/s). This is a nominal legal point on a narrow, not-yet-fully-characterized basin -- not proof of a continuous legal interval. See booster-delay-basin.json (0.5ms grid, 29.857-29.869s) for the finer characterization."
+  },
+  "correction_0_2_stage_event_map": {
+    "prior_contradiction": "artifacts/autoevo/phase4c-stage-branch-map.json's openrocket_stage_id field claimed s0 ignites at launch and s1 ignites at s0's burnout -- backwards, and contradicted by that same file's own component_ownership_check.",
+    "resolution": "See corrected-stage-event-map.json for the full XML-verified mapping. Summary: stage 0 = Sustainer, main motor ignitionevent=burnout (of stage 1); stage 1 = Booster, main motor ignitionevent=launch (t=0). The already-proven branch-name mapping (branch 0 = Sustainer, branch 1 = Booster) is unchanged.",
+    "additional_finding": "The retro motor's ignitionevent is 'launch' (not 'burnout') with ignitiondelay=29.864 -- confirms the delay is an ABSOLUTE mission time from t=0, exactly as artifacts/autoevo/phase4c-current-rerun.json's root-cause analysis already stated for the literal-33.104s failure."
+  },
+  "section_1_rule_classification": {
+    "rule_legal": "RULE-LEGAL NOMINAL BOOSTER BRANCH",
+    "rule_basis": "docs/research/osifog-2026-deep-audit/03_authority_rules_and_data_lineage.md Rule Matrix, R-001 through R-022 -- no rule prohibits the retro/landing motor being lit or still burning at first ground contact. R-003 (ProjetoFalcon Sec.5) requires only per-stage touchdown total speed <5 m/s, independent of motor burn state. R-007 (ProjetoFalcon Sec.9) prohibits THROTTLE control (varying thrust mid-burn), not burn duration relative to ground contact. No rule ID in the matrix addresses motor-burning-at-contact at all.",
+    "citation_caveat": "This reads the rule matrix as transcribed in the deep-audit doc, not the raw OSIFOG PDF text directly (the PDF is a binary artifact; the matrix doc is this repo's authoritative transcription per prior audits and carries per-rule PDF section citations). If a stricter reading of ProjetoFalcon Sec.5/Sec.9 in the original PDF is later found to implicitly prohibit powered contact, this classification must be revisited."
+  },
+  "section_1_engineering_classification": {
+    "verdict": "ENGINEERING-FRAGILE / NOT YET ROBUST",
+    "basis": [
+      "The motor is still burning at ground contact (burn_remaining_at_contact_s ~0.39s per phase4c-current-rerun.json), i.e. touchdown occurs mid-burn, not after a completed, margin-bearing braking maneuver.",
+      "The known legal region is only 2 confirmed points wide on a 2ms grid (29.862s, 29.864s); 29.866s and 29.868s already fail.",
+      "The delay-vs-touchdown response is non-monotonic at millisecond scale, so simple bracketing/interpolation between known points is not safe.",
+      "+/-10ms and +/-20ms robustness (directive-cited thresholds) do not pass -- e.g. 29.874s = 9.10 m/s, 29.98s = 27.36 m/s (see phase4c-delay-sweep-fine2.json)."
+    ],
+    "not_demoted": "This does not erase or downgrade the real, saved, reopened OpenRocket result at 29.864s (3.589 m/s) -- it is a genuine RULE-LEGAL NOMINAL result, just not yet an engineering-robust one."
+  }
+}

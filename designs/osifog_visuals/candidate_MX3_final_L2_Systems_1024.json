@@ -1,0 +1,118 @@
+{
+ "s1_main": 20,
+ "s1_retro": 38,
+ "s1_separation_event": "launch",
+ "s1_separation_delay": 46.0,
+ "s0_main": null,
+ "s0_retro": 20,
+ "s0_retro_delay": 50.3797631,
+ "s1_retro_delay": 57.4628638,
+ "s0_body_len": 0.7,
+ "s1_body_len": 1,
+ "s0_body_rad": 0.082,
+ "s1_body_rad": 0.082,
+ "s1_fin_count": 4,
+ "s1_fin_root": 0.12,
+ "s1_fin_height": 0.1,
+ "s1_fin_material": "legal_balsa",
+ "s1_grid_fin_count": 4,
+ "s1_grid_fin_root": 0.08,
+ "s1_grid_fin_height": 0.06,
+ "s1_grid_fin_material": "legal_balsa",
+ "s0_fin_count": 0,
+ "s0_grid_fin_count": 0,
+ "s0_mid_ballast_kg": 7.8,
+ "s0_aft_ballast_kg": 1,
+ "s0_aft_ballast_attachment": "airframe_bonded",
+ "s0_aft_ballast_rod_radius_m": 0.025875,
+ "s1_mid_ballast_kg": 0,
+ "s1_aft_ballast_kg": 0,
+ "nose_length_m": 0.12,
+ "nose_mass_kg": 0.05,
+ "nose_ballast_attachment": "nose_shell_bonded",
+ "nose_ballast_material": "aluminum",
+ "launch_azimuth": 35,
+ "launch_angle_deg": 1.6,
+ "plugged_motors": true,
+ "octaweb_rings": true,
+ "octaweb_ring_width_m": 0.003,
+ "interstage_coupler": true,
+ "interstage_coupler_length_m": 0.05,
+ "interstage_coupler_wall_m": 0.001,
+ "interstage_coupler_sustainer_overlap_m": 0.025,
+ "livery": {
+  "name": "L2 Celestial Datum V7",
+  "components": {
+   "Nose Cone": {
+    "paint": "#07080C",
+    "shine": 0.34
+   },
+   "Sustainer Airframe": {
+    "paint": "#0B0D12",
+    "shine": 0.24,
+    "decal": {
+     "name": "decals/l2-celestial-datum-v7-sustainer.png",
+     "rotation": 1.5707963267948966,
+     "edgemode": "REPEAT",
+     "center": {
+      "x": 0,
+      "y": 0
+     },
+     "offset": {
+      "x": 0,
+      "y": 0
+     },
+     "scale": {
+      "x": 1,
+      "y": 1
+     }
+    }
+   },
+   "Booster Airframe": {
+    "paint": "#0B0D12",
+    "shine": 0.22,
+    "decal": {
+     "name": "decals/l2-celestial-datum-v7-booster.png",
+     "rotation": 1.5707963267948966,
+     "edgemode": "REPEAT",
+     "center": {
+      "x": 0,
+      "y": 0
+     },
+     "offset": {
+      "x": 0,
+      "y": 0
+     },
+     "scale": {
+      "x": 1,
+      "y": 1
+     }
+    }
+   },
+   "Booster Fins": {
+    "paint": "#2A0C43",
+    "shine": 0.27
+   },
+   "Booster Forward Grid Fins": {
+    "paint": "#0D555D",
+    "shine": 0.27
+   },
+   "Booster-Retained Interstage Coupler": {
+    "paint": "#141820",
+    "shine": 0.14
+   }
+  }
+ },
+ "livery_decals": [
+  {
+   "path": "designs/osifog_visuals/assets/generated/l2-celestial-datum-v7-sustainer.png",
+   "zip_name": "decals/l2-celestial-datum-v7-sustainer.png"
+  },
+  {
+   "path": "designs/osifog_visuals/assets/generated/l2-celestial-datum-v7-booster.png",
+   "zip_name": "decals/l2-celestial-datum-v7-booster.png"
+  }
+ ],
+ "rocket_name": "Nível 3 L2 Systems 1024",
+ "rocket_comment": "L2 CELESTIAL DATUM - OSIFOG 2026, Nivel 3 (Foguete Falcon).\nVeiculo de dois estagios com pouso propulsivo em ambos os estagios.\nArquitetura interna 3+1 (octaweb): tres motores AeroTech K700W de subida\ndispostos ao redor de uma luva central de retropropulsao.\nSustentador: retro AeroTech K700W. Booster: retro AeroTech I49N.\nSeparacao em 46,0 s; retro do sustentador em 50,3797631 s;\nretro do booster em 57,4628638 s.\nNenhum dispositivo de recuperacao passiva. Voo integralmente subsonico."
+}

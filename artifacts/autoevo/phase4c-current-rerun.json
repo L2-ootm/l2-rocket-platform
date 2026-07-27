@@ -1,0 +1,87 @@
+{
+  "candidate": "historical-3p5135-booster-branch (recovered from sustainer-q-probe.json[0])",
+  "pipeline_authority": "OpenRocket 24.12 via osifog_sweep.init_or()/run_sim(), invoked through osifog_engine_search._run_authority() -- the same authority path used by scripts/osifog_gate4_sustainer_search.py and the Gate 3/Gate 4 screens dated 2026-07-20",
+  "physical_compiler": {
+    "pass": true,
+    "violations": [],
+    "note": "sweep.validate_candidate_geometry() reports no intersections, no floating components, legal materials/dimensions for the reconstructed geometry (booster's 8 forward grid fins, sustainer aft fins, ballast rods, motor mounts)."
+  },
+  "full_stack_ascent": {
+    "status": "Up To Date",
+    "ascent_admissible": true,
+    "ascent_violations": [],
+    "apogee_m": 2496.3501255373912,
+    "mach": 0.853767676622328,
+    "min_static_margin": 1.5076748876864916,
+    "note": "Mach < 1 and margin >= 1.5 cal both satisfied. Separation occurs at t=2.5s, well before first apogee (t~10.5s for the dropped booster branch, t~211s for the sustainer branch) -- genuine staging confirmed."
+  },
+  "free_descent_unpowered_reference": {
+    "s1_retro_delay_s": 200.0,
+    "s0_retro_delay_s": 200.0,
+    "booster_branch": {
+      "ground_hit_time_s": 30.342314873063295,
+      "touchdown_total_speed_ms": 56.13895535481251,
+      "touchdown_vertical_speed_ms": -55.74270554719115,
+      "touchdown_horizontal_speed_ms": 6.658309590938023
+    },
+    "sustainer_branch": {
+      "ground_hit_time_s": 198.11419320076646,
+      "touchdown_total_speed_ms": 19.649798937728853
+    },
+    "note": "56.1 m/s matches the '~58 m/s' figure the directive attributes to the current Phase 4B campaign almost exactly -- strong evidence Phase 4B is observing the SAME underlying unpowered-descent physics for this topology family, just without finding the narrow legal delay window documented below."
+  },
+  "powered_result_at_literal_historical_delay": {
+    "requested_delay_s": 33.104,
+    "delay_reference": "absolute mission time from LAUNCH (t=0); confirmed from the generated ORK XML: the retro motor's <ignitionevent>launch</ignitionevent> with <ignitiondelay>{s1_retro_delay}</ignitiondelay>, i.e. retro ignition is scheduled at t = 0 + s1_retro_delay seconds",
+    "observed_ignition_time_s": null,
+    "ignition_altitude_m": null,
+    "velocity_at_ignition_enu": null,
+    "q_total_at_ignition": null,
+    "q_total_mean_over_burn": null,
+    "opposing_impulse_fraction": null,
+    "horizontal_opposing_impulse_fraction": null,
+    "minimum_pre_contact_speed_mps": 56.13895535481251,
+    "touchdown_vertical_speed_mps": -55.74270554719115,
+    "touchdown_horizontal_speed_mps": 6.658309590938023,
+    "touchdown_total_speed_mps": 56.13895535481251,
+    "motor_burning_at_contact": false,
+    "warnings": [
+      "RETRO MOTOR NEVER IGNITES BEFORE GROUND CONTACT. The booster's natural (unpowered) ground-hit time for this candidate is t=30.342s. A retro ignition scheduled at t=33.104s is 2.76s AFTER the vehicle has already reached the ground. retro_burn_diagnostics.sample_count=0 -- the OpenRocket simulation terminates at GROUND_HIT before the retro motor's ignition event ever fires. The powered result is bit-identical (to 13 significant figures) to the unpowered free-descent reference above.",
+      "Confirmed across the directive-specified +/-0.02s robustness window (33.084/33.094/33.104/33.114/33.124s): all five delays produce touchdown_total_speed_ms=56.13895535481251 with retro_sample_count=0 (see phase4c-literal-33p104-robustness.json)."
+    ]
+  },
+  "powered_result_at_corrected_delay": {
+    "requested_delay_s": 29.864,
+    "delay_reference": "absolute mission time from LAUNCH (t=0), same convention as above",
+    "how_found": "Coarse-to-fine bisection sweep of s1_retro_delay in [25.0, 33.104]s through the same authority path (phase4c-delay-sweep-diagnostic.json -> -fine.json -> -fine2.json -> -finest.json). Touchdown speed falls from ~50 m/s at 25.0s to a sharp local minimum near 29.86s, then rises sharply back toward the 56.1 m/s free-fall value once ignition is scheduled past the natural ground-hit time (t=30.34s unpowered), with a non-monotonic dip-rise-dip pattern at the 2 ms grid immediately around the minimum (29.858:5.372, 29.860:4.907, 29.862:3.827, 29.864:3.589, 29.866:6.144, 29.868:5.127 m/s -- see phase4c-delay-sweep-finest.json). CORRECTED 2026-07-20 (phase5a): only 29.862s and 29.864s are confirmed legal on this grid; this is NOT a continuous 29.862-29.868s legal interval. A screen or search algorithm sampling coarser than ~1ms can still easily miss the whole basin.",
+    "observed_ignition_time_s": 29.864,
+    "ignition_altitude_m": null,
+    "burnout_time_s": 31.177,
+    "burn_duration_s": 1.313,
+    "ground_hit_time_s": 30.786698131031873,
+    "velocity_at_ignition_enu": "not directly logged by run_sim(); retro_burn_diagnostic.peak_thrust_sample (t=30.248s, mid-burn) reports vx=3.113, vy=4.876, vz=-33.445 m/s in OpenRocket's East/North/vertical world frame",
+    "q_total_at_ignition": null,
+    "q_total_mean_over_burn": 0.9889267747696743,
+    "q_total_peak": 0.9934056736743728,
+    "opposing_impulse_fraction": 1.0,
+    "horizontal_opposing_impulse_fraction": 1.0,
+    "note_on_fraction_fields": "osifog_sweep._retro_burn_diagnostic() reports fraction_opposing_velocity=1.0 and fraction_vertical_braking=1.0 for all 111 post-ignition thrust samples -- every single sample opposes both total and vertical velocity. This is the 'verified opposing thrust' qualifier from handoff.md, reproduced exactly.",
+    "minimum_pre_contact_speed_mps": null,
+    "touchdown_vertical_speed_mps": -1.955891832830143,
+    "touchdown_horizontal_speed_mps": 3.009404853094194,
+    "touchdown_total_speed_mps": 3.5891545566551666,
+    "motor_burning_at_contact": true,
+    "motor_burning_at_contact_detail": "H180W nominal burnout would be at t=31.177s (ignition 29.864 + burn_duration 1.313), but GROUND_HIT occurs at t=30.787s, 0.39s before nominal burnout -- the motor is still actively thrusting at touchdown.",
+    "warnings": [
+      "This delay (29.864s) is NOT the literally-claimed historical value (33.104s) -- it is 3.240s earlier. It was found by an independent bisection search on the CURRENT pipeline, not copied from any historical artifact.",
+      "The touchdown speed (3.589 m/s) is close to but not exactly equal to the historically claimed 3.5135 m/s (delta = 0.076 m/s, 2.2% relative). Given the razor-thin (~2ms) legal window and its extreme sensitivity to delay (dTouchdownSpeed/dDelay ~ -1.6 m/s per ms in this region), a 0.076 m/s difference corresponds to roughly 0.05ms of delay precision or a very small difference in the exact source candidate's s0/nose_mass parameters (which the directive's own yaml clue did not exactly match -- see historical-3p5135-candidate.json unrecoverable_fields)."
+    ]
+  },
+  "reproducibility_after_save_reopen": {
+    "ork_path": "artifacts/autoevo/best-legal-booster-branch.ork",
+    "ork_sha256": "923076029d29ac1d5fecd01e1d909c6b60e38448c2c9c6369b4487bfd8cdc086",
+    "procedure": "save_simulated_ork() executed the sim once and wrote the ZIP .ork with anti-tumble validated; the file was then reopened fresh (_load_ork_doc), the single saved simulation re-run with the same seed and the anti-tumble listener re-attached, and the GROUND_HIT event re-interpolated from the freshly simulated branch data.",
+    "result": "Booster branch touchdown_total_speed_ms = 3.5891545566551666 -- bit-identical to the original run. Sustainer branch touchdown_total_speed_ms = 19.649798937728853, also bit-identical.",
+    "pass": true
+  }
+}

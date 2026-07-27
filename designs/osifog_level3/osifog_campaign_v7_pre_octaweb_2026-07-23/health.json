@@ -1,0 +1,11 @@
+{
+  "best_official_score": null,
+  "best_status": "failed",
+  "cumulative_generations": 2498,
+  "cycle": 500,
+  "legality_rate": 0.0,
+  "phase": "evaluating",
+  "pid": 22968,
+  "status": "running",
+  "updated_at": "2026-07-24T02:37:49.252391+00:00"
+}

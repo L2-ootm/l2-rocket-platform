@@ -1,0 +1,112 @@
+{
+  "best_result": {
+    "best_delay_s": 40.0,
+    "best_speed_ms": 16.164,
+    "config": "8f_h0.70",
+    "free_descent_ms": 15.748,
+    "improvement_ms": -0.42,
+    "legal_branch": false,
+    "motor": "J350W",
+    "n_runs": 13
+  },
+  "configs_tested": [
+    "8f_h0.80",
+    "8f_h0.65",
+    "8f_h0.70"
+  ],
+  "free_descent_baseline_ms": 15.748,
+  "gate": 9,
+  "legal_branch_found": false,
+  "results": [
+    {
+      "best_delay_s": 10.0,
+      "best_speed_ms": 58.363,
+      "config": "8f_h0.80",
+      "free_descent_ms": 15.748,
+      "improvement_ms": -42.62,
+      "legal_branch": false,
+      "motor": "H180W",
+      "n_runs": 13
+    },
+    {
+      "best_delay_s": 25.0,
+      "best_speed_ms": 57.628,
+      "config": "8f_h0.80",
+      "free_descent_ms": 15.748,
+      "improvement_ms": -41.88,
+      "legal_branch": false,
+      "motor": "J350W",
+      "n_runs": 13
+    },
+    {
+      "best_delay_s": 25.0,
+      "best_speed_ms": 57.663,
+      "config": "8f_h0.80",
+      "free_descent_ms": 15.748,
+      "improvement_ms": -41.91,
+      "legal_branch": false,
+      "motor": "J420R",
+      "n_runs": 13
+    },
+    {
+      "best_delay_s": 10.0,
+      "best_speed_ms": 58.339,
+      "config": "8f_h0.65",
+      "free_descent_ms": 15.748,
+      "improvement_ms": -42.59,
+      "legal_branch": false,
+      "motor": "H180W",
+      "n_runs": 13
+    },
+    {
+      "best_delay_s": 40.0,
+      "best_speed_ms": 16.609,
+      "config": "8f_h0.65",
+      "free_descent_ms": 15.748,
+      "improvement_ms": -0.86,
+      "legal_branch": false,
+      "motor": "J350W",
+      "n_runs": 13
+    },
+    {
+      "best_delay_s": 25.0,
+      "best_speed_ms": 57.477,
+      "config": "8f_h0.65",
+      "free_descent_ms": 15.748,
+      "improvement_ms": -41.73,
+      "legal_branch": false,
+      "motor": "J420R",
+      "n_runs": 13
+    },
+    {
+      "best_delay_s": 10.0,
+      "best_speed_ms": 58.379,
+      "config": "8f_h0.70",
+      "free_descent_ms": 15.748,
+      "improvement_ms": -42.63,
+      "legal_branch": false,
+      "motor": "H180W",
+      "n_runs": 13
+    },
+    {
+      "best_delay_s": 40.0,
+      "best_speed_ms": 16.164,
+      "config": "8f_h0.70",
+      "free_descent_ms": 15.748,
+      "improvement_ms": -0.42,
+      "legal_branch": false,
+      "motor": "J350W",
+      "n_runs": 13
+    },
+    {
+      "best_delay_s": 25.0,
+      "best_speed_ms": 57.715,
+      "config": "8f_h0.70",
+      "free_descent_ms": 15.748,
+      "improvement_ms": -41.97,
+      "legal_branch": false,
+      "motor": "J420R",
+      "n_runs": 13
+    }
+  ]
+}

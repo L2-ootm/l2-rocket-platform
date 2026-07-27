@@ -1,0 +1,33 @@
+{
+  "phase": "2d",
+  "status": "BLOCKED_BY_THRUST_DIRECTION",
+  "critical_finding": "ALL motors fire NOSE-FIRST (forward). The 'retro' motor is NOT producing retrograde thrust. OpenRocket applies motor thrust along the rocket's longitudinal axis regardless of motor mount name or position. The current 3+1 cage configuration cannot produce retro braking.",
+  "gates": {
+    "gate1_causal_language": {
+      "status": "COMPLETE",
+      "correction": "K550W produced lower touchdown speed in tested runs. Physical cause unresolved until thrust direction proven.",
+      "artifact": "artifacts/phase2d/phase2d-summary.json"
+    },
+    "gate3_retro_thrust_vector": {
+      "status": "PASS — CRITICAL FINDING",
+      "finding": "All 3 tested motors (K550W at 3.0s, K550W at 5.0s, H180W at 4.0s) INCREASE velocity. Thrust is NOSE-FIRST. Motor mount position/name does not reverse thrust direction.",
+      "tests": [
+        {"motor": "K550W", "delay": 3.0, "vz_change_ms": 35.507, "direction": "NOSE_FIRST"},
+        {"motor": "K550W", "delay": 5.0, "vz_change_ms": 36.893, "direction": "NOSE_FIRST"},
+        {"motor": "H180W", "delay": 4.0, "vz_change_ms": 38.373, "direction": "NOSE_FIRST"}
+      ],
+      "conclusion": "OpenRocket applies motor thrust along the rocket longitudinal axis. The motor mount configuration cannot produce retrograde thrust. The current design is fundamentally incapable of powered braking.",
+      "artifact": "artifacts/phase2d/retro-thrust-vector-proof.json"
+    }
+  },
+  "implications": [
+    "The OSIFOG 'retro' motor concept requires physical motor reversal, not just delayed ignition",
+    "OpenRocket InnerTube motor mounts always fire nose-first",
+    "No motor delay timing can produce braking with the current mount configuration",
+    "The 3+1 cage has all 4 motors firing forward — the 'retro' motor adds ascent thrust",
+    "To achieve retro braking, the motor mount must be physically reversed (180° rotation)",
+    "OpenRocket may support reversed motor mounts via component orientation — needs investigation"
+  ],
+  "blocked": true,
+  "blocking_reason": "Retro thrust direction is wrong. No powered landing search can succeed until the motor fires in the correct direction."
+}

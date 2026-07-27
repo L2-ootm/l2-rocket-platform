@@ -1,0 +1,65 @@
+{
+  "families": {
+    "A_separation_state_reduction": {
+      "goal": "Reduce inherited horizontal velocity and angular rate before free descent",
+      "hypothesis": "Delaying separation reduces horizontal velocity by allowing the full stack to fly more vertically before split. Fin placement affects separation attitude.",
+      "measurements": [
+        "separation_horizontal_velocity_ms",
+        "separation_attitude_deg",
+        "separation_angular_rate_rad_s",
+        "booster_apex_altitude_m"
+      ],
+      "variables": [
+        "s1_separation_delay (0.0 to 1.0s after burnout)",
+        "s0_fin_count, s0_fin_root, s0_fin_height (affects full-stack trajectory)",
+        "s1_fin_count, s1_fin_root, s1_fin_height (affects post-separation drag)",
+        "launch_angle_deg (0 to 5\u00b0 from vertical)",
+        "launch_azimuth (into or away from wind)"
+      ]
+    },
+    "B_descent_trim_alignment": {
+      "goal": "Maintain body thrust axis near -v_hat during descent",
+      "hypothesis": "Larger/more fins create stronger aerodynamic restoring torque, keeping nose pointed along velocity. Forward surfaces create weathercocking effect.",
+      "measurements": [
+        "q_total_sustained_above_0.3_duration_s",
+        "minimum_braking_angle_during_burn_deg",
+        "mean_q_horizontal_during_burn",
+        "angular_rate_decay_time_constant_s"
+      ],
+      "variables": [
+        "s1_fin_count (3, 4, 6, 8)",
+        "s1_fin_root (0.15 to 0.30 m)",
+        "s1_fin_height (0.20 to 0.50 m)",
+        "s1_fin_sweep (0 to 30\u00b0)",
+        "s1_grid_fin_count (0, 3, 4)",
+        "s1_grid_fin_position_m (0.03 to 0.20)",
+        "s1_fin_position_m (affects trim)"
+      ]
+    },
+    "C_inertia_mass_distribution": {
+      "goal": "Reduce rapid attitude collapse and create useful rotational time scale",
+      "hypothesis": "Moving CG forward (more nose/mid ballast) increases pitch stability. Longer body increases pitch inertia, slowing collapse. Higher nose ballast creates stronger restoring torque.",
+      "measurements": [
+        "cg_position_m",
+        "pitch_inertia_kg_m2",
+        "angular_rate_response_to_disturbance",
+        "alignment_persistence_s",
+        "ascent_margin_cal"
+      ],
+      "variables": [
+        "s1_mid_ballast_kg (0 to 2.0)",
+        "s1_aft_ballast_kg (0 to 3.0)",
+        "s1_aft_ballast_pos_m (0.08 to 0.60)",
+        "s1_body_len (0.60 to 1.20 m)",
+        "s1_body_rad (0.065 to 0.085 m)"
+      ]
+    },
+    "D_combined_topology": {
+      "goal": "Combine best causal features from A-C",
+      "hypothesis": "The optimal topology combines: (1) reduced horizontal velocity at separation, (2) strong aerodynamic alignment during descent, (3) favorable inertia distribution",
+      "selection_criteria": "Top performer from each family A-C",
+      "variables": "Combination of selected variables from A, B, C"
+    }
+  },
+  "gate": 5
+}

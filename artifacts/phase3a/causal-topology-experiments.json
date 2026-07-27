@@ -1,0 +1,253 @@
+{
+  "experiments": [
+    {
+      "experiment": "separation_timing",
+      "mach": 0.8359,
+      "mean_q_total_descent": 0.925,
+      "min_margin_cal": 1.745,
+      "s1_separation_delay": 0.0,
+      "s1_speed_ms": 21.699,
+      "s1_vxy_ms": 19.044,
+      "s1_vz_ms": -10.4,
+      "staging_legal": true
+    },
+    {
+      "experiment": "separation_timing",
+      "mach": 0.8023,
+      "mean_q_total_descent": 0.9138,
+      "min_margin_cal": 1.809,
+      "s1_separation_delay": 0.2,
+      "s1_speed_ms": 20.927,
+      "s1_vxy_ms": 17.898,
+      "s1_vz_ms": -10.845,
+      "staging_legal": true
+    },
+    {
+      "experiment": "separation_timing",
+      "mach": 0.7524,
+      "mean_q_total_descent": 0.9258,
+      "min_margin_cal": 1.902,
+      "s1_separation_delay": 0.5,
+      "s1_speed_ms": 21.97,
+      "s1_vxy_ms": 19.162,
+      "s1_vz_ms": -10.749,
+      "staging_legal": true
+    },
+    {
+      "experiment": "separation_timing",
+      "mach": 0.7032,
+      "mean_q_total_descent": 0.9302,
+      "min_margin_cal": 1.994,
+      "s1_separation_delay": 0.8,
+      "s1_speed_ms": 21.945,
+      "s1_vxy_ms": 19.274,
+      "s1_vz_ms": -10.491,
+      "staging_legal": true
+    },
+    {
+      "experiment": "separation_timing",
+      "mach": 0.6725,
+      "mean_q_total_descent": 0.925,
+      "min_margin_cal": 1.993,
+      "s1_separation_delay": 1.0,
+      "s1_speed_ms": 21.16,
+      "s1_vxy_ms": 18.259,
+      "s1_vz_ms": -10.694,
+      "staging_legal": true
+    },
+    {
+      "experiment": "fin_area_distribution",
+      "mach": 0.8447,
+      "mean_q_total_descent": 0.9687,
+      "min_margin_cal": 1.742,
+      "s1_fin_height": 0.2,
+      "s1_speed_ms": 30.282,
+      "s1_vxy_ms": 26.702,
+      "s1_vz_ms": -14.283
+    },
+    {
+      "experiment": "fin_area_distribution",
+      "mach": 0.8399,
+      "mean_q_total_descent": 0.9432,
+      "min_margin_cal": 1.746,
+      "s1_fin_height": 0.3,
+      "s1_speed_ms": 24.367,
+      "s1_vxy_ms": 21.593,
+      "s1_vz_ms": -11.292
+    },
+    {
+      "experiment": "fin_area_distribution",
+      "mach": 0.835,
+      "mean_q_total_descent": 0.9205,
+      "min_margin_cal": 1.747,
+      "s1_fin_height": 0.4,
+      "s1_speed_ms": 21.278,
+      "s1_vxy_ms": 18.509,
+      "s1_vz_ms": -10.496
+    },
+    {
+      "experiment": "fin_area_distribution",
+      "mach": 0.8312,
+      "mean_q_total_descent": 0.8906,
+      "min_margin_cal": 1.741,
+      "s1_fin_height": 0.5,
+      "s1_speed_ms": 19.361,
+      "s1_vxy_ms": 16.257,
+      "s1_vz_ms": -10.515
+    },
+    {
+      "experiment": "fin_area_distribution",
+      "mach": 0.8265,
+      "mean_q_total_descent": 0.8448,
+      "min_margin_cal": 1.743,
+      "s1_fin_height": 0.6,
+      "s1_speed_ms": 17.939,
+      "s1_vxy_ms": 14.271,
+      "s1_vz_ms": -10.869
+    },
+    {
+      "experiment": "ballast_distribution",
+      "mach": 0.8445,
+      "mean_q_total_descent": 0.8861,
+      "min_margin_cal": 1.748,
+      "s1_aft_ballast_kg": 0.0,
+      "s1_speed_ms": 20.303,
+      "s1_vxy_ms": 17.002,
+      "s1_vz_ms": -11.097
+    },
+    {
+      "experiment": "ballast_distribution",
+      "mach": 0.8359,
+      "mean_q_total_descent": 0.925,
+      "min_margin_cal": 1.745,
+      "s1_aft_ballast_kg": 0.5,
+      "s1_speed_ms": 21.699,
+      "s1_vxy_ms": 19.044,
+      "s1_vz_ms": -10.4
+    },
+    {
+      "experiment": "ballast_distribution",
+      "mach": 0.828,
+      "mean_q_total_descent": 0.9514,
+      "min_margin_cal": 1.743,
+      "s1_aft_ballast_kg": 1.0,
+      "s1_speed_ms": 23.481,
+      "s1_vxy_ms": 21.235,
+      "s1_vz_ms": -10.023
+    },
+    {
+      "experiment": "ballast_distribution",
+      "mach": 0.8206,
+      "mean_q_total_descent": 0.97,
+      "min_margin_cal": 1.726,
+      "s1_aft_ballast_kg": 1.5,
+      "s1_speed_ms": 25.17,
+      "s1_vxy_ms": 23.574,
+      "s1_vz_ms": -8.82
+    },
+    {
+      "experiment": "ballast_distribution",
+      "mach": 0.8136,
+      "mean_q_total_descent": 0.9842,
+      "min_margin_cal": 1.73,
+      "s1_aft_ballast_kg": 2.0,
+      "s1_speed_ms": 26.28,
+      "s1_vxy_ms": 25.245,
+      "s1_vz_ms": -7.302
+    },
+    {
+      "experiment": "body_length",
+      "mach": 0.8397,
+      "mean_q_total_descent": 0.9574,
+      "min_margin_cal": 1.747,
+      "s1_body_len": 0.6,
+      "s1_speed_ms": 22.291,
+      "s1_vxy_ms": 20.558,
+      "s1_vz_ms": -8.618
+    },
+    {
+      "experiment": "body_length",
+      "mach": 0.8359,
+      "mean_q_total_descent": 0.925,
+      "min_margin_cal": 1.745,
+      "s1_body_len": 0.8,
+      "s1_speed_ms": 21.699,
+      "s1_vxy_ms": 19.044,
+      "s1_vz_ms": -10.4
+    },
+    {
+      "experiment": "body_length",
+      "mach": 0.8324,
+      "mean_q_total_descent": 0.9131,
+      "min_margin_cal": 1.746,
+      "s1_body_len": 1.0,
+      "s1_speed_ms": 21.919,
+      "s1_vxy_ms": 18.991,
+      "s1_vz_ms": -10.944
+    },
+    {
+      "experiment": "body_length",
+      "mach": 0.8286,
+      "mean_q_total_descent": 0.9073,
+      "min_margin_cal": 1.732,
+      "s1_body_len": 1.2,
+      "s1_speed_ms": 21.838,
+      "s1_vxy_ms": 18.773,
+      "s1_vz_ms": -11.156
+    },
+    {
+      "experiment": "grid_fins",
+      "mach": 0.8359,
+      "mean_q_total_descent": 0.925,
+      "min_margin_cal": 1.745,
+      "s1_grid_fin_count": 0,
+      "s1_speed_ms": 21.699,
+      "s1_vxy_ms": 19.044,
+      "s1_vz_ms": -10.4
+    },
+    {
+      "experiment": "grid_fins",
+      "mach": 0.8355,
+      "mean_q_total_descent": 0.9626,
+      "min_margin_cal": 1.746,
+      "s1_grid_fin_count": 3,
+      "s1_speed_ms": 22.304,
+      "s1_vxy_ms": 20.59,
+      "s1_vz_ms": -8.575
+    },
+    {
+      "experiment": "grid_fins",
+      "mach": 0.8354,
+      "mean_q_total_descent": 0.9705,
+      "min_margin_cal": 1.746,
+      "s1_grid_fin_count": 4,
+      "s1_speed_ms": 22.167,
+      "s1_vxy_ms": 20.745,
+      "s1_vz_ms": -7.814
+    }
+  ],
+  "gate": 6,
+  "summary": {
+    "best_by_speed": {
+      "experiment": "fin_area_distribution",
+      "mach": 0.8265,
+      "mean_q_total_descent": 0.8448,
+      "min_margin_cal": 1.743,
+      "s1_fin_height": 0.6,
+      "s1_speed_ms": 17.939,
+      "s1_vxy_ms": 14.271,
+      "s1_vz_ms": -10.869
+    },
+    "best_by_vxy": {
+      "experiment": "fin_area_distribution",
+      "mach": 0.8265,
+      "mean_q_total_descent": 0.8448,
+      "min_margin_cal": 1.743,
+      "s1_fin_height": 0.6,
+      "s1_speed_ms": 17.939,
+      "s1_vxy_ms": 14.271,
+      "s1_vz_ms": -10.869
+    },
+    "total_experiments": 22
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "delay_s": 33.084,
+    "touchdown_total_speed_ms": 56.13895535481251,
+    "touchdown_vz_ms": -55.74270554719115,
+    "touchdown_vxy_ms": 6.658309590938023,
+    "ground_hit_time_s": 30.342314873063295,
+    "retro_sample_count": 0,
+    "retro_fraction_opposing": 0.0
+  },
+  {
+    "delay_s": 33.094,
+    "touchdown_total_speed_ms": 56.13895535481251,
+    "touchdown_vz_ms": -55.74270554719115,
+    "touchdown_vxy_ms": 6.658309590938023,
+    "ground_hit_time_s": 30.342314873063295,
+    "retro_sample_count": 0,
+    "retro_fraction_opposing": 0.0
+  },
+  {
+    "delay_s": 33.104,
+    "touchdown_total_speed_ms": 56.13895535481251,
+    "touchdown_vz_ms": -55.74270554719115,
+    "touchdown_vxy_ms": 6.658309590938023,
+    "ground_hit_time_s": 30.342314873063295,
+    "retro_sample_count": 0,
+    "retro_fraction_opposing": 0.0
+  },
+  {
+    "delay_s": 33.114,
+    "touchdown_total_speed_ms": 56.13895535481251,
+    "touchdown_vz_ms": -55.74270554719115,
+    "touchdown_vxy_ms": 6.658309590938023,
+    "ground_hit_time_s": 30.342314873063295,
+    "retro_sample_count": 0,
+    "retro_fraction_opposing": 0.0
+  },
+  {
+    "delay_s": 33.124,
+    "touchdown_total_speed_ms": 56.13895535481251,
+    "touchdown_vz_ms": -55.74270554719115,
+    "touchdown_vxy_ms": 6.658309590938023,
+    "ground_hit_time_s": 30.342314873063295,
+    "retro_sample_count": 0,
+    "retro_fraction_opposing": 0.0
+  }
+]

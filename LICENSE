@@ -1,0 +1,19 @@
+L2 Rocket Platform
+Copyright (C) 2026 L2 Systems contributors
+
+This project is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This project is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+
+SPDX-License-Identifier: GPL-3.0-or-later
+
+The complete GPL version 3 text is included in
+`licenses/OpenRocket-LICENSE.txt`, following OpenRocket's attribution and
+additional data-packaging permission. Third-party components and data retain
+their own notices and permissions as documented in `NOTICE`,
+`l2_engine/THIRD_PARTY_NOTICES.md`, and `DATA_LICENSES.md`.

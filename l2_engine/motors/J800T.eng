@@ -1,0 +1,31 @@
+;AeroTech J800T extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=208, curve_id=232
+; lookup key 'J800T' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+J800T 54 314 0,6,8,10,12,14 0.6133 1.0859 A
+0.000 0.00
+0.040 841.34
+0.121 818.50
+0.203 776.39
+0.285 784.31
+0.367 785.31
+0.449 783.32
+0.531 782.54
+0.612 779.98
+0.695 773.68
+0.777 765.31
+0.858 755.52
+0.941 744.78
+1.023 733.13
+1.105 719.95
+1.187 702.24
+1.269 685.37
+1.351 668.26
+1.433 650.33
+1.515 630.47
+1.597 615.48
+1.679 470.26
+1.760 256.62
+1.843 108.72
+1.925 15.01
+2.007 1.25
+2.090 0.00

@@ -1,0 +1,11 @@
+{
+  "source": "designs/osifog_level3/osifog_campaign_v7/best-candidate.json",
+  "generated_at_utc": "2026-07-23T21:57:00",
+  "cycle": 307,
+  "cumulative_generations": 1531,
+  "status": "failed",
+  "reason": "constraint_violation:max_height_m 4.000005 > 4.000000",
+  "selection_score": 0.04999995,
+  "raw_score": 0.999999,
+  "NOTE": "This is the highest-ranked candidate found across the ENTIRE campaign history (elitism carries forward the best-so-far) -- it is NOT legal. It fails constraint_violation:max_height_m by ~5 micrometers, the exact same failure signature the campaign has been stuck on since before today's fix. No candidate has passed all hard constraints in this campaign's 1526+ generation history."
+}

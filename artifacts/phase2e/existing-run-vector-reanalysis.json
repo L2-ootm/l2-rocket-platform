@@ -1,0 +1,264 @@
+{
+  "test": "vector_reanalysis",
+  "frame_contract": {
+    "vz_positive": "UPWARD (OpenRocket convention)",
+    "alignment_q_plus_one": "Tail-first (nose opposite velocity)",
+    "motor_thrust": "Nose-directed (forward along rocket axis)",
+    "braking_condition": "thrust_dot_velocity < 0 (thrust opposes velocity)"
+  },
+  "results": [
+    {
+      "label": "free_descent",
+      "separation": {
+        "time_s": 1.695,
+        "vz_ms": 110.85885030003719,
+        "vxy_ms": 0.10622565491143741,
+        "speed_ms": 110.85890119307433,
+        "theta_deg": 86.32128774865643,
+        "nose_z": 0.9979395258120085,
+        "alignment_q": -0.9979395258120085,
+        "mass_kg": 4.866046070426028,
+        "altitude_m": 127.65101274231914
+      },
+      "ignition": {
+        "time_s": 200.0,
+        "vz_ms": 0.0,
+        "vxy_ms": 0.0,
+        "speed_ms": 0.0,
+        "theta_deg": 0.6635608178640665,
+        "nose_z": 0.01158106216605387,
+        "alignment_q": -0.0,
+        "mass_kg": 4.866046070426028,
+        "altitude_m": 0.0
+      },
+      "burnout": {
+        "time_s": 203.356,
+        "vz_ms": 0.0,
+        "vxy_ms": 0.0,
+        "speed_ms": 0.0,
+        "theta_deg": 0.6635608178640665,
+        "nose_z": 0.01158106216605387,
+        "alignment_q": -0.0,
+        "mass_kg": 4.866046070426028,
+        "altitude_m": 0.0
+      },
+      "impact": {
+        "time_s": 43.651888093842516,
+        "vz_ms": -10.399591018656075,
+        "vxy_ms": 19.044475120112438,
+        "speed_ms": 21.698929143068185,
+        "theta_deg": 0.6635608178640665,
+        "nose_z": 0.01158106216605387,
+        "alignment_q": 0.01158106216605387,
+        "mass_kg": 4.866046070426028,
+        "altitude_m": -0.18255210759205187
+      },
+      "velocity_change_during_burn": {
+        "dvz_ms": 0.0,
+        "speed_before_ms": 0.0,
+        "speed_after_ms": 0.0,
+        "speed_change_ms": 0.0
+      },
+      "events": {
+        "IGNITION": [
+          0.0,
+          200.0
+        ],
+        "BURNOUT": [
+          1.695,
+          203.356
+        ],
+        "STAGE_SEPARATION": [
+          1.695
+        ],
+        "SIM_WARN": [
+          1.695,
+          200.0,
+          203.356,
+          203.356,
+          217.356
+        ],
+        "APOGEE": [
+          8.52982984164185
+        ],
+        "EJECTION_CHARGE": [
+          11.695,
+          217.356
+        ],
+        "GROUND_HIT": [
+          43.651888093842516
+        ],
+        "SIMULATION_END": [
+          217.356
+        ]
+      },
+      "total_branch_samples": 970
+    },
+    {
+      "label": "K550W_delay3",
+      "separation": {
+        "time_s": 1.695,
+        "vz_ms": 110.85885030003719,
+        "vxy_ms": 0.10622565491143741,
+        "speed_ms": 110.85890119307433,
+        "theta_deg": 86.32128774865643,
+        "nose_z": 0.9979395258120085,
+        "alignment_q": -0.9979395258120085,
+        "mass_kg": 4.866046070426028,
+        "altitude_m": 127.65101274231914
+      },
+      "ignition": {
+        "time_s": 3.0,
+        "vz_ms": 71.78527298249327,
+        "vxy_ms": 1.8858085296419365,
+        "speed_ms": 71.81003892897948,
+        "theta_deg": 85.63811601011912,
+        "nose_z": 0.9971035689204474,
+        "alignment_q": -0.9971035689204474,
+        "mass_kg": 4.866046070426028,
+        "altitude_m": 244.27619616097178
+      },
+      "burnout": {
+        "time_s": 6.356,
+        "vz_ms": 129.1128865893453,
+        "vxy_ms": 4.170619335887624,
+        "speed_ms": 129.18022894033754,
+        "theta_deg": 83.76165614595998,
+        "nose_z": 0.9940784653245317,
+        "alignment_q": -0.9940784653245318,
+        "mass_kg": 3.9463020704260283,
+        "altitude_m": 787.9594284630824
+      },
+      "impact": {
+        "time_s": 114.98437499999459,
+        "vz_ms": -11.722547636606764,
+        "vxy_ms": 8.975431263416327,
+        "speed_ms": 14.76402687131211,
+        "theta_deg": 10.905989620329995,
+        "nose_z": 0.18919809454132017,
+        "alignment_q": 0.18919809454132017,
+        "mass_kg": 3.9463020704260283,
+        "altitude_m": -0.2158555616548643
+      },
+      "velocity_change_during_burn": {
+        "dvz_ms": 57.327613606852026,
+        "speed_before_ms": 71.81003892897948,
+        "speed_after_ms": 129.18022894033754,
+        "speed_change_ms": 57.37019001135806
+      },
+      "events": {
+        "IGNITION": [
+          0.0,
+          3.0
+        ],
+        "BURNOUT": [
+          1.695,
+          6.356
+        ],
+        "STAGE_SEPARATION": [
+          1.695
+        ],
+        "SIM_WARN": [
+          1.695
+        ],
+        "EJECTION_CHARGE": [
+          11.695,
+          20.356
+        ],
+        "APOGEE": [
+          13.295000000000023
+        ],
+        "GROUND_HIT": [
+          114.98437499999459
+        ],
+        "SIMULATION_END": [
+          114.98437499999459
+        ]
+      },
+      "total_branch_samples": 2418
+    },
+    {
+      "label": "H180W_delay4",
+      "separation": {
+        "time_s": 1.695,
+        "vz_ms": 113.38830190974609,
+        "vxy_ms": 0.08314399754855928,
+        "speed_ms": 113.38833239315258,
+        "theta_deg": 86.45553047135589,
+        "nose_z": 0.9980871155973705,
+        "alignment_q": -0.9980871155973706,
+        "mass_kg": 4.548714310581428,
+        "altitude_m": 130.56982268212212
+      },
+      "ignition": {
+        "time_s": 4.0,
+        "vz_ms": 52.09600187630276,
+        "vxy_ms": 2.5726369921258687,
+        "speed_ms": 52.15948497242851,
+        "theta_deg": 85.677520560415,
+        "nose_z": 0.9971556396058038,
+        "alignment_q": -0.9971556396058038,
+        "mass_kg": 4.548714310581428,
+        "altitude_m": 309.88879328623796
+      },
+      "burnout": {
+        "time_s": 5.313,
+        "vz_ms": 74.18202910035318,
+        "vxy_ms": 0.6338983068607438,
+        "speed_ms": 74.18473743640996,
+        "theta_deg": 83.14868532492854,
+        "nose_z": 0.9928590661011667,
+        "alignment_q": -0.9928590661011667,
+        "mass_kg": 4.427754310581427,
+        "altitude_m": 400.89846173671316
+      },
+      "impact": {
+        "time_s": 50.19593095456763,
+        "vz_ms": -14.446835940676968,
+        "vxy_ms": 10.813192502569356,
+        "speed_ms": 18.045392785818155,
+        "theta_deg": -2.0356101847627617,
+        "nose_z": -0.035520626283234484,
+        "alignment_q": -0.035520626283234484,
+        "mass_kg": 4.427754310581427,
+        "altitude_m": -0.5630484824463007
+      },
+      "velocity_change_during_burn": {
+        "dvz_ms": 22.08602722405042,
+        "speed_before_ms": 52.15948497242851,
+        "speed_after_ms": 74.18473743640996,
+        "speed_change_ms": 22.025252463981452
+      },
+      "events": {
+        "IGNITION": [
+          0.0,
+          4.0
+        ],
+        "BURNOUT": [
+          1.695,
+          5.313
+        ],
+        "STAGE_SEPARATION": [
+          1.695
+        ],
+        "SIM_WARN": [
+          1.695
+        ],
+        "APOGEE": [
+          10.890152729034721
+        ],
+        "EJECTION_CHARGE": [
+          11.695,
+          15.312999999999999
+        ],
+        "GROUND_HIT": [
+          50.19593095456763
+        ],
+        "SIMULATION_END": [
+          50.19593095456763
+        ]
+      },
+      "total_branch_samples": 1149
+    }
+  ]
+}

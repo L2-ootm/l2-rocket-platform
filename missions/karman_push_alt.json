@@ -1,0 +1,39 @@
+{
+  "name": "Karman Push Altitude",
+  "description": "Refinar o melhor design encontrado. Mesma missao, peso maior no maximize de apogeu, semente = genoma vencedor do run anterior.",
+  "output": "designs/optimized/L2_Push_Alt.ork",
+  "payload_kg": 0.3,
+  "stack": [
+    {
+      "name": "Kick",
+      "body_radius": 0.0420,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "9977M2245-P" }
+    },
+    {
+      "name": "Sustainer",
+      "body_radius": 0.0535,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "20146N5800-P" }
+    },
+    {
+      "name": "Booster",
+      "body_radius": 0.0855,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "40960O8000-P" }
+    }
+  ],
+  "objectives": [
+    { "metric": "apogee", "kind": "atleast", "value": 100000, "weight": 1.0 },
+    { "metric": "mach",   "kind": "atleast", "value": 6.0,    "weight": 1.0 },
+    { "metric": "apogee", "kind": "maximize", "scale": 1000000, "weight": 3.0 }
+  ],
+  "constraints": { "min_static_margin": 1.5 },
+  "stability": { "phase_machs": [0.3, 2.0, 3.0] },
+  "seeds": [
+    {
+      "s0_span": 0.0936, "s0_root": 0.2615, "s0_nose_len": 0.4523, "s0_ballast": 0.9177,
+      "s0_delay": 11.1189,
+      "s1_span": 0.1626, "s1_root": 0.2502, "s1_delay": 15.3184,
+      "s2_span": 0.2323, "s2_root": 0.4755,
+      "sep_delay": 0.4561
+    }
+  ]
+}

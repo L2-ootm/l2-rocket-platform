@@ -1,0 +1,19 @@
+;Cesaroni Technology Inc. 644J94-P extracted from OpenRocket 24.12 bundled database via live JVM query (digest=9d3b2a0bbc3b1524571d426ade3c235f)
+; no .eng file existed for this motor at all before this -- MOTOR_DATABASE had a real digest
+; but rocket_ast.py/organic_loop.py could never actually simulate it (Rust has no thrust curve)
+644J94-P 38 367 0,P 0.3930 0.6600 CTI
+0.000 0.00
+0.005 19.48
+0.014 168.65
+0.050 133.97
+0.113 133.97
+0.203 146.08
+0.752 133.97
+1.787 116.86
+3.075 110.45
+4.236 108.31
+4.803 77.67
+5.474 56.30
+6.375 17.58
+6.879 6.41
+6.928 0.00

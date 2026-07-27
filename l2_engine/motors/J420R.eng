@@ -1,0 +1,31 @@
+;AeroTech J420R extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=195, curve_id=219
+; lookup key 'J420R' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+J420R 38 337 0,4,6,8,10 0.3763 0.6496 A
+0.000 0.00
+0.031 61.08
+0.095 563.47
+0.160 525.28
+0.224 521.24
+0.288 527.37
+0.352 537.09
+0.418 535.14
+0.481 534.62
+0.545 530.25
+0.610 526.45
+0.674 517.20
+0.738 510.28
+0.802 500.89
+0.868 479.45
+0.931 460.68
+0.995 438.59
+1.060 409.65
+1.124 383.45
+1.188 361.02
+1.252 339.74
+1.318 319.19
+1.381 296.71
+1.445 195.19
+1.510 61.98
+1.575 7.22
+1.640 0.00

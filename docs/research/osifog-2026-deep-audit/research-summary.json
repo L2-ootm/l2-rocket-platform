@@ -1,0 +1,149 @@
+{
+  "audit_date": "2026-07-20",
+  "research_branch": "research/osifog-2026-deep-audit",
+  "status": "NO LEGAL BRANCH — DIAGNOSTIC ONLY",
+  "authority_artifact": null,
+  "test_baseline": {
+    "python_tests": 52,
+    "rust_library_tests": 137,
+    "rust_bridge_tests": 17,
+    "rust_integration_tests": 6,
+    "total": 212,
+    "failures": 0
+  },
+  "top_blockers": [
+    {
+      "id": "BLOCKER-001",
+      "description": "No legal sustainer branch — all 32 tested candidates failed 1.5-cal exposed-sustainer ascent stability gate",
+      "severity": "BLOCKER",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "id": "BLOCKER-002",
+      "description": "Mach proxy blocks diagnostic parity — Rust/OpenRocket phase-margin comparison never completed",
+      "severity": "BLOCKER",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "id": "BLOCKER-003",
+      "description": "3+1 motor cage topology produces unstable exposed sustainer after booster separation",
+      "severity": "BLOCKER",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "id": "CRITICAL-001",
+      "description": "No powered landing validation at OpenRocket authority",
+      "severity": "CRITICAL",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "CRITICAL-002",
+      "description": "Stale _motor_burn_time() approximation table",
+      "severity": "CRITICAL",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "id": "HIGH-001",
+      "description": "Approximate MOTOR_PROPELLANT_KG values in scoring fallback",
+      "severity": "HIGH",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "id": "HIGH-002",
+      "description": "Hardcoded 0.4 kg dry_mass offset in mission_adapter.rs:374",
+      "severity": "HIGH",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "id": "HIGH-003",
+      "description": "OpenRocket phase parity not established",
+      "severity": "HIGH",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "id": "MEDIUM-001",
+      "description": "Anti-tumble pre-event trajectory equivalence not empirically proven",
+      "severity": "MEDIUM",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "MEDIUM-002",
+      "description": "Search architecture uses scalar GA — cannot preserve behaviorally distinct near-solutions",
+      "severity": "MEDIUM",
+      "confidence": "CONFIRMED"
+    }
+  ],
+  "confirmed_fixes": [
+    "Remove hardcoded 0.4 kg dry_mass offset in mission_adapter.rs:374",
+    "Replace _motor_burn_time() with actual .eng curve integration",
+    "Replace MOTOR_PROPELLANT_KG with exact .eng header values",
+    "Establish Rust/OpenRocket phase-margin parity on shared fixture",
+    "Run anti-tumble pre-event equivalence experiment",
+    "Expand fin geometry search range for exposed-sustainer stability",
+    "Migrate from scalar GA to MAP-Elites with behavior descriptors"
+  ],
+  "controlled_simulations": [
+    {
+      "id": "EXP-001",
+      "name": "Anti-tumble pre-event invariance",
+      "status": "NOT RUN"
+    },
+    {
+      "id": "EXP-002",
+      "name": "Phase-margin Rust/OpenRocket parity",
+      "status": "BLOCKED by BLOCKER-002"
+    },
+    {
+      "id": "EXP-003",
+      "name": "Motor curve integration comparison",
+      "status": "NOT RUN"
+    },
+    {
+      "id": "EXP-004",
+      "name": "Wind parity",
+      "status": "NOT RUN"
+    },
+    {
+      "id": "EXP-005",
+      "name": "Landing screen calibration",
+      "status": "PARTIAL (7 OR cycles, 0 legal landings)"
+    },
+    {
+      "id": "EXP-006",
+      "name": "Expanded stability search",
+      "status": "NOT RUN"
+    },
+    {
+      "id": "EXP-007",
+      "name": "Score formula cross-validation",
+      "status": "NOT RUN"
+    }
+  ],
+  "optimizer_recommendation": "Constrained MAP-Elites with feasibility archive, per-cell CMA-ES, multi-fidelity promotion, calibrated uncertainty",
+  "urgent_path": "Fix bugs → establish parity → expand search → find stable sustainer → calibrate landing → save/reopen",
+  "long_term_path": "MAP-Elites migration → SQLite CKG → powered descent in Rust → body transition support → stochastic wind",
+  "not_proven": [
+    "Rust/OpenRocket phase-margin parity",
+    "Anti-tumble pre-event invariance",
+    "Powered landing feasibility for any candidate",
+    "Score formula cross-validation between Python and Rust",
+    "Wind vector parity between Rust and OpenRocket"
+  ],
+  "research_package": "docs/research/osifog-2026-deep-audit/",
+  "next_implementation_command": "Fix the 0.4 kg dry_mass offset in mission_adapter.rs:374, then create parity fixture",
+  "lines_reviewed": {
+    "python_active": 6500,
+    "rust_active": 8000,
+    "tests": 3000,
+    "docs": 2000,
+    "total": 19500
+  },
+  "files_reviewed": {
+    "python": 15,
+    "rust": 19,
+    "tests": 12,
+    "configs": 5,
+    "docs": 8,
+    "total": 59
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Karman Push Altitude v4 (realism hardening)",
+  "description": "v3 winner rebuilt under the v4 realism contract: minimum-diameter motor fit (>=1 mm radial clearance enforced), shouldered interstages, per-stage drogue+main recovery, separation/retention/avionics masses, fin fillets, real launch site + wind, kick-phase stability judged at Mach 4.9. Checkpoint: 3-round OR polish winner (164.23 km / Mach 6.00, margins +2.14/+2.32/+1.52 cal, all stages land < 7.4 m/s). TARGETS MET.",
+  "output": "designs/optimized/L2_Push_Alt_v4.ork",
+  "payload_kg": 0.3,
+  "stack": [
+    {
+      "name": "Kick",
+      "body_radius": 0.0420,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "9977M2245-P" }
+    },
+    {
+      "name": "Sustainer",
+      "body_radius": 0.0535,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "20146N5800-P" }
+    },
+    {
+      "name": "Booster",
+      "body_radius": 0.0855,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "40960O8000-P" }
+    }
+  ],
+  "sim": {
+    "windaverage": 4.0,
+    "windturbulence": 0.1,
+    "launchaltitude": 600.0,
+    "launchlatitude": -23.55,
+    "launchlongitude": -46.633,
+    "geodeticmethod": "spherical",
+    "launchrodlength": 15.0
+  },
+  "objectives": [
+    { "metric": "apogee", "kind": "atleast", "value": 100000, "weight": 1.0 },
+    { "metric": "mach",   "kind": "atleast", "value": 6.0,    "weight": 1.0 },
+    { "metric": "apogee", "kind": "maximize", "scale": 1000000, "weight": 3.0 }
+  ],
+  "constraints": { "min_static_margin": 1.5 },
+  "stability": { "phase_machs": [0.3, 2.0, 4.9] },
+  "seeds": [
+    {
+      "s0_span": 0.1296, "s0_root": 0.2979, "s0_nose_len": 0.4891, "s0_ballast": 1.4267,
+      "s0_delay": 4.1059,
+      "s1_span": 0.1643, "s1_root": 0.2591, "s1_delay": 17.0403,
+      "s2_span": 0.2475, "s2_root": 0.5229,
+      "sep_delay": 0.4403
+    }
+  ]
+}

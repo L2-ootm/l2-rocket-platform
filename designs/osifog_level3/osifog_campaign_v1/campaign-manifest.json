@@ -1,0 +1,20 @@
+{
+  "campaign_id": "f72e4b08263f5b77102e92f1aa5dd8fb8946f320dc6ab79928abb65b1d3540f4",
+  "elite_count": 12,
+  "execution_profile": "super-speed",
+  "generations_per_cycle": 5,
+  "mission": "missions\\osifog_l3_precision.json",
+  "population": 96,
+  "schema": 1,
+  "seed": 4242,
+  "sources": {
+    "campaign_infra.py": "4bbe708edb717bff592681424e28444db75a54643012edcb2637d73f2d9a9a1b",
+    "ckg_memory.py": "a3fd8779aa49f7ff55c35ca9eb03bf906af20b3cd6c17eda995fae2007368c60",
+    "l2_engine/target/release/ast_eval.exe": "8e0e6eb3ea4ab2eb6987e695afe1a06d297a0154b6e6254e4638d0f6666f09d7",
+    "missions\\osifog_l3_precision.json": "e40c19ef3764a933d17b783fa3ceaf292880a39b06789f8d270e51e7da5ef083",
+    "organic_campaign.py": "53f497349c9a6fd7b4f8fa9e2c70feafb380c568a1c379c9c6e88d507dc0cf49",
+    "organic_loop.py": "2d8cbfe4d2d685db0ce44414b39e5930517e0833e7f849822c523b8fe528cfb7",
+    "rocket_ast.py": "6c86b17d225821d14147a03d0b7a64fa74e03c944dbb40ad61572af2284d268d"
+  },
+  "target_score": 0.0
+}

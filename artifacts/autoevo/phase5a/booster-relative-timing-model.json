@@ -1,0 +1,24 @@
+{
+  "purpose": "Contact-relative landing coordinate (mission section 3), implemented in scripts/relative_timing.py",
+  "definitions": {
+    "tau_free_contact_s": "t_unpowered_ground_contact - t_ignition",
+    "tau_powered_contact_s": "t_powered_ground_contact - t_ignition",
+    "burn_remaining_at_contact_s": "t_burnout - t_powered_ground_contact"
+  },
+  "reference_point": {
+    "candidate": "historical-3p5135-booster-branch (eight-forward-fin booster, H180W retro), s1_retro_delay=29.864s",
+    "source": "artifacts/autoevo/phase4c-current-rerun.json + phase4c-delay-sweep-finest.json, recomputed independently via scripts/relative_timing.py",
+    "ignition_time_s": 29.864,
+    "unpowered_contact_time_s": 30.3423148731,
+    "powered_contact_time_s": 30.786698131031873,
+    "burnout_time_s": 31.177,
+    "tau_free_contact_s": 0.4783148731000004,
+    "tau_powered_contact_s": 0.922698131031872,
+    "burn_remaining_at_contact_s": 0.3903018689681268
+  },
+  "usage": {
+    "seeding": "scripts.relative_timing.seed_absolute_delay(params) runs the candidate's own unpowered (retro disabled at 200s) descent to get its own t_unpowered_ground_contact, then returns absolute_delay_seed = t_unpowered_ground_contact - REFERENCE_TAU_FREE_CONTACT_S as the starting point for a LOCAL delay sweep on that candidate -- not a final answer, since the legal basin is ~2ms wide and non-monotonic at millisecond scale (corrected-phase4c-record.json).",
+    "serialization": "The absolute XML ignitiondelay (ignitionevent=launch) is only computed at ORK-generation time, from whatever tau/seed value won the local sweep for that specific candidate -- never reused verbatim across candidates.",
+    "why_mandatory": "A sustainer mutation changes total separated vehicle mass, separation velocity/attitude, and hence the booster's own natural (unpowered) hang time -- this is the root cause already proven for the literal-33.104s failure (2.76s natural-hang-time mismatch against a different sustainer's implied mass). Reusing 29.864s absolute for a new sustainer candidate repeats that exact failure mode."
+  }
+}

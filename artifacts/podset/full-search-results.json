@@ -1,0 +1,1604 @@
+[
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 3678.1073242288044,
+      "liftoff_mass_kg": 1.1065251801154135,
+      "liftoff_twr": 17.28136503535402,
+      "stage_loaded_mass_kg": 0.4782625900577067
+    },
+    "apogee_m": 579.7580709636461,
+    "apogee_penalty": 2420.241929036354,
+    "geo": {
+      "core_radius": 0.0205,
+      "gap": 0.044000000000000004,
+      "pod_offset": 0.08250000000000002
+    },
+    "label": "F63R_r1.0_m0.15_f1.0",
+    "legal": false,
+    "mach": 0.440648013212834,
+    "min_margin_cal": 0.07172890393909556,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.15,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.05,
+      "s0_core_fin_root": 0.1,
+      "s0_core_length": 0.4,
+      "s0_core_radius": 0.0205,
+      "s0_main": "F63R",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.036000000000000004,
+      "s0_pod_fin_root": 0.021750000000000002,
+      "s0_pod_length": 0.14500000000000002,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.08250000000000002,
+      "s0_pod_radius": 0.018000000000000002,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.05,
+      "s1_core_fin_root": 0.1,
+      "s1_core_length": 0.4,
+      "s1_core_radius": 0.0205,
+      "s1_main": "F63R",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.036000000000000004,
+      "s1_pod_fin_root": 0.021750000000000002,
+      "s1_pod_length": 0.14500000000000002,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.08250000000000002,
+      "s1_pod_radius": 0.018000000000000002,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 4032.2119468104243,
+      "liftoff_mass_kg": 1.0568219475238423,
+      "liftoff_twr": 18.094122291072036,
+      "stage_loaded_mass_kg": 0.4784109737619211
+    },
+    "apogee_m": 453.1673819504837,
+    "apogee_penalty": 2546.8326180495164,
+    "geo": {
+      "core_radius": 0.0369,
+      "gap": 0.044000000000000004,
+      "pod_offset": 0.09890000000000002
+    },
+    "label": "F63R_r1.8_m0.1_f1.0",
+    "legal": false,
+    "mach": 0.35736930206782364,
+    "min_margin_cal": -0.05381242953961703,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.1,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.0738,
+      "s0_core_fin_root": 0.1476,
+      "s0_core_length": 0.4,
+      "s0_core_radius": 0.0369,
+      "s0_main": "F63R",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.036000000000000004,
+      "s0_pod_fin_root": 0.021750000000000002,
+      "s0_pod_length": 0.14500000000000002,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.09890000000000002,
+      "s0_pod_radius": 0.018000000000000002,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.0738,
+      "s1_core_fin_root": 0.1476,
+      "s1_core_length": 0.4,
+      "s1_core_radius": 0.0369,
+      "s1_main": "F63R",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.036000000000000004,
+      "s1_pod_fin_root": 0.021750000000000002,
+      "s1_pod_length": 0.14500000000000002,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.09890000000000002,
+      "s1_pod_radius": 0.018000000000000002,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 7469.885949296279,
+      "liftoff_mass_kg": 1.1467663941126305,
+      "liftoff_twr": 22.75731828163327,
+      "stage_loaded_mass_kg": 0.5233831970563152
+    },
+    "apogee_m": 703.8079541579601,
+    "apogee_penalty": 2296.19204584204,
+    "geo": {
+      "core_radius": 0.0287,
+      "gap": 0.044000000000000004,
+      "pod_offset": 0.0907
+    },
+    "label": "74F85-15A_r1.4_m0.1_f1.0",
+    "legal": false,
+    "mach": 0.5470284306587087,
+    "min_margin_cal": -0.06607650840123312,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.1,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.0574,
+      "s0_core_fin_root": 0.1148,
+      "s0_core_length": 0.4,
+      "s0_core_radius": 0.0287,
+      "s0_main": "74F85-15A",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.036000000000000004,
+      "s0_pod_fin_root": 0.02745,
+      "s0_pod_length": 0.183,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.0907,
+      "s0_pod_radius": 0.018000000000000002,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.0574,
+      "s1_core_fin_root": 0.1148,
+      "s1_core_length": 0.4,
+      "s1_core_radius": 0.0287,
+      "s1_main": "74F85-15A",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.036000000000000004,
+      "s1_pod_fin_root": 0.02745,
+      "s1_pod_length": 0.183,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.0907,
+      "s1_pod_radius": 0.018000000000000002,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 6857.051762703816,
+      "liftoff_mass_kg": 1.1969147778168445,
+      "liftoff_twr": 21.80383124110405,
+      "stage_loaded_mass_kg": 0.5234573889084223
+    },
+    "apogee_m": 626.1959572044408,
+    "apogee_penalty": 2373.8040427955593,
+    "geo": {
+      "core_radius": 0.0369,
+      "gap": 0.044000000000000004,
+      "pod_offset": 0.09890000000000002
+    },
+    "label": "74F85-15A_r1.8_m0.15_f1.0",
+    "legal": false,
+    "mach": 0.4747542135782823,
+    "min_margin_cal": 0.14047328513739565,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.15,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.0738,
+      "s0_core_fin_root": 0.1476,
+      "s0_core_length": 0.4,
+      "s0_core_radius": 0.0369,
+      "s0_main": "74F85-15A",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.036000000000000004,
+      "s0_pod_fin_root": 0.02745,
+      "s0_pod_length": 0.183,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.09890000000000002,
+      "s0_pod_radius": 0.018000000000000002,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.0738,
+      "s1_core_fin_root": 0.1476,
+      "s1_core_length": 0.4,
+      "s1_core_radius": 0.0369,
+      "s1_main": "74F85-15A",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.036000000000000004,
+      "s1_pod_fin_root": 0.02745,
+      "s1_pod_length": 0.183,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.09890000000000002,
+      "s1_pod_radius": 0.018000000000000002,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 11183.104071020207,
+      "liftoff_mass_kg": 1.3026550610955354,
+      "liftoff_twr": 18.920039077517917,
+      "stage_loaded_mass_kg": 0.6013275305477677
+    },
+    "apogee_m": 133.01468264286697,
+    "apogee_penalty": 2866.985317357133,
+    "geo": {
+      "core_radius": 0.0205,
+      "gap": 0.032600000000000004,
+      "pod_offset": 0.0736
+    },
+    "label": "G77R/L_r1.0_m0.1_f0.6",
+    "legal": false,
+    "mach": 0.5012384937142749,
+    "min_margin_cal": -0.46801076138461767,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.1,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.05,
+      "s0_core_fin_root": 0.1,
+      "s0_core_length": 0.4,
+      "s0_core_radius": 0.0205,
+      "s0_main": "G77R/L",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.0246,
+      "s0_pod_fin_root": 0.026099999999999998,
+      "s0_pod_length": 0.174,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.0736,
+      "s0_pod_radius": 0.0205,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.05,
+      "s1_core_fin_root": 0.1,
+      "s1_core_length": 0.4,
+      "s1_core_radius": 0.0205,
+      "s1_main": "G77R/L",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.0246,
+      "s1_pod_fin_root": 0.026099999999999998,
+      "s1_pod_length": 0.174,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.0736,
+      "s1_pod_radius": 0.0205,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 10369.357024670604,
+      "liftoff_mass_kg": 1.3528034447997495,
+      "liftoff_twr": 18.2186737882696,
+      "stage_loaded_mass_kg": 0.6014017223998748
+    },
+    "apogee_m": 911.6469406138687,
+    "apogee_penalty": 2088.3530593861315,
+    "geo": {
+      "core_radius": 0.0287,
+      "gap": 0.032600000000000004,
+      "pod_offset": 0.08180000000000001
+    },
+    "label": "G77R/L_r1.4_m0.15_f0.6",
+    "legal": false,
+    "mach": 0.6610662614677001,
+    "min_margin_cal": -0.13427835395890136,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.15,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.0574,
+      "s0_core_fin_root": 0.1148,
+      "s0_core_length": 0.4,
+      "s0_core_radius": 0.0287,
+      "s0_main": "G77R/L",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.0246,
+      "s0_pod_fin_root": 0.026099999999999998,
+      "s0_pod_length": 0.174,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.08180000000000001,
+      "s0_pod_radius": 0.0205,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.0574,
+      "s1_core_fin_root": 0.1148,
+      "s1_core_length": 0.4,
+      "s1_core_radius": 0.0287,
+      "s1_main": "G77R/L",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.0246,
+      "s1_pod_fin_root": 0.026099999999999998,
+      "s1_pod_length": 0.174,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.08180000000000001,
+      "s1_pod_radius": 0.0205,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 4509.300525988967,
+      "liftoff_mass_kg": 2.5694492848723427,
+      "liftoff_twr": 7.601006794449434,
+      "stage_loaded_mass_kg": 1.2347246424361713
+    },
+    "apogee_m": 769.9658246872559,
+    "apogee_penalty": 2230.034175312744,
+    "geo": {
+      "core_radius": 0.0205,
+      "gap": 0.049,
+      "pod_offset": 0.09
+    },
+    "label": "G69_r1.0_m0.1_f1.0",
+    "legal": false,
+    "mach": 0.42321615135357826,
+    "min_margin_cal": 0.7949236810654603,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.1,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.05,
+      "s0_core_fin_root": 0.1,
+      "s0_core_length": 0.41040000000000004,
+      "s0_core_radius": 0.0205,
+      "s0_main": "G69",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.041,
+      "s0_pod_fin_root": 0.0684,
+      "s0_pod_length": 0.456,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.09,
+      "s0_pod_radius": 0.0205,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.05,
+      "s1_core_fin_root": 0.1,
+      "s1_core_length": 0.41040000000000004,
+      "s1_core_radius": 0.0205,
+      "s1_main": "G69",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.041,
+      "s1_pod_fin_root": 0.0684,
+      "s1_pod_length": 0.456,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.09,
+      "s1_pod_radius": 0.0205,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 4338.292307162129,
+      "liftoff_mass_kg": 2.6196015265528665,
+      "liftoff_twr": 7.455485605098104,
+      "stage_loaded_mass_kg": 1.2348007632764333
+    },
+    "apogee_m": 718.241091408538,
+    "apogee_penalty": 2281.758908591462,
+    "geo": {
+      "core_radius": 0.0287,
+      "gap": 0.049,
+      "pod_offset": 0.09820000000000001
+    },
+    "label": "G69_r1.4_m0.15_f1.0",
+    "legal": false,
+    "mach": 0.40069524869626005,
+    "min_margin_cal": 0.5509316537757802,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.15,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.0574,
+      "s0_core_fin_root": 0.1148,
+      "s0_core_length": 0.41040000000000004,
+      "s0_core_radius": 0.0287,
+      "s0_main": "G69",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.041,
+      "s0_pod_fin_root": 0.0684,
+      "s0_pod_length": 0.456,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.09820000000000001,
+      "s0_pod_radius": 0.0205,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.0574,
+      "s1_core_fin_root": 0.1148,
+      "s1_core_length": 0.41040000000000004,
+      "s1_core_radius": 0.0287,
+      "s1_main": "G69",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.041,
+      "s1_pod_fin_root": 0.0684,
+      "s1_pod_length": 0.456,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.09820000000000001,
+      "s1_pod_radius": 0.0205,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 34426.39108900329,
+      "liftoff_mass_kg": 1.4608414681239545,
+      "liftoff_twr": 11.746673798235722,
+      "stage_loaded_mass_kg": 0.6554207340619773
+    },
+    "apogee_m": 1282.7123653117942,
+    "apogee_penalty": 1717.2876346882058,
+    "geo": {
+      "core_radius": 0.0205,
+      "gap": 0.032600000000000004,
+      "pod_offset": 0.0736
+    },
+    "label": "H55W_r1.0_m0.15_f0.6",
+    "legal": false,
+    "mach": 0.7523899491514121,
+    "min_margin_cal": -0.14699077613983394,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.15,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.05,
+      "s0_core_fin_root": 0.1,
+      "s0_core_length": 0.4,
+      "s0_core_radius": 0.0205,
+      "s0_main": "H55W",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.0246,
+      "s0_pod_fin_root": 0.036149999999999995,
+      "s0_pod_length": 0.241,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.0736,
+      "s0_pod_radius": 0.0205,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.05,
+      "s1_core_fin_root": 0.1,
+      "s1_core_length": 0.4,
+      "s1_core_radius": 0.0205,
+      "s1_main": "H55W",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.0246,
+      "s1_pod_fin_root": 0.036149999999999995,
+      "s1_pod_length": 0.241,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.0736,
+      "s1_pod_radius": 0.0205,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 39654.56656435427,
+      "liftoff_mass_kg": 1.3611382355323833,
+      "liftoff_twr": 12.607116418470197,
+      "stage_loaded_mass_kg": 0.6555691177661916
+    },
+    "apogee_m": 89.07725448867488,
+    "apogee_penalty": 2910.922745511325,
+    "geo": {
+      "core_radius": 0.0369,
+      "gap": 0.032600000000000004,
+      "pod_offset": 0.09000000000000001
+    },
+    "label": "H55W_r1.8_m0.05_f0.6",
+    "legal": false,
+    "mach": 0.3782024244238287,
+    "min_margin_cal": -0.40069803517319524,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.05,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.0738,
+      "s0_core_fin_root": 0.1476,
+      "s0_core_length": 0.4,
+      "s0_core_radius": 0.0369,
+      "s0_main": "H55W",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.0246,
+      "s0_pod_fin_root": 0.036149999999999995,
+      "s0_pod_length": 0.241,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.09000000000000001,
+      "s0_pod_radius": 0.0205,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.0738,
+      "s1_core_fin_root": 0.1476,
+      "s1_core_length": 0.4,
+      "s1_core_radius": 0.0369,
+      "s1_main": "H55W",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.0246,
+      "s1_pod_fin_root": 0.036149999999999995,
+      "s1_pod_length": 0.241,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.09000000000000001,
+      "s1_pod_radius": 0.0205,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 17064.891194915213,
+      "liftoff_mass_kg": 2.5171196875693562,
+      "liftoff_twr": 26.824627572513116,
+      "stage_loaded_mass_kg": 1.1835598437846782
+    },
+    "apogee_m": 1303.8643218210066,
+    "apogee_penalty": 1696.1356781789934,
+    "geo": {
+      "core_radius": 0.0205,
+      "gap": 0.049,
+      "pod_offset": 0.09
+    },
+    "label": "H225R_r1.0_m0.15_f1.0",
+    "legal": false,
+    "mach": 0.9663659013648351,
+    "min_margin_cal": 0.4190886957374213,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.15,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.05,
+      "s0_core_fin_root": 0.1,
+      "s0_core_length": 0.4,
+      "s0_core_radius": 0.0205,
+      "s0_main": "H225R",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.041,
+      "s0_pod_fin_root": 0.051149999999999994,
+      "s0_pod_length": 0.34099999999999997,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.09,
+      "s0_pod_radius": 0.0205,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.05,
+      "s1_core_fin_root": 0.1,
+      "s1_core_length": 0.4,
+      "s1_core_radius": 0.0205,
+      "s1_main": "H225R",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.041,
+      "s1_pod_fin_root": 0.051149999999999994,
+      "s1_pod_length": 0.34099999999999997,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.09,
+      "s1_pod_radius": 0.0205,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 25782.62377945812,
+      "liftoff_mass_kg": 2.694516861464118,
+      "liftoff_twr": 64.54438123259915,
+      "stage_loaded_mass_kg": 1.322258430732059
+    },
+    "apogee_m": 153.64893346324348,
+    "apogee_penalty": 2846.3510665367567,
+    "geo": {
+      "core_radius": 0.0287,
+      "gap": 0.038,
+      "pod_offset": 0.0917
+    },
+    "label": "320H565-14A_r1.4_m0.05_f0.6",
+    "legal": false,
+    "mach": 0.9875119147712758,
+    "min_margin_cal": -0.39501938177007095,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.05,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.0574,
+      "s0_core_fin_root": 0.1148,
+      "s0_core_length": 0.4,
+      "s0_core_radius": 0.0287,
+      "s0_main": "320H565-14A",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.03,
+      "s0_pod_fin_root": 0.04409999999999999,
+      "s0_pod_length": 0.294,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.0917,
+      "s0_pod_radius": 0.025,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.0574,
+      "s1_core_fin_root": 0.1148,
+      "s1_core_length": 0.4,
+      "s1_core_radius": 0.0287,
+      "s1_main": "320H565-14A",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.03,
+      "s1_pod_fin_root": 0.04409999999999999,
+      "s1_pod_length": 0.294,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.0917,
+      "s1_pod_radius": 0.025,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 11182.390865377787,
+      "liftoff_mass_kg": 6.174742394567849,
+      "liftoff_twr": 4.346254751108454,
+      "stage_loaded_mass_kg": 3.0623711972839245
+    },
+    "apogee_m": 1718.1663286247597,
+    "apogee_penalty": 1281.8336713752403,
+    "geo": {
+      "core_radius": 0.0205,
+      "gap": 0.058,
+      "pod_offset": 0.10350000000000001
+    },
+    "label": "460NS-I80_r1.0_m0.05_f1.0",
+    "legal": false,
+    "mach": 0.6055633437066699,
+    "min_margin_cal": 0.4831159866931922,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.05,
+      "s0_ballast_kg": 0.3,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.05,
+      "s0_core_fin_root": 0.1,
+      "s0_core_length": 0.6264000000000001,
+      "s0_core_radius": 0.0205,
+      "s0_main": "460NS-I80",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.05,
+      "s0_pod_fin_root": 0.1044,
+      "s0_pod_length": 0.6960000000000001,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.10350000000000001,
+      "s0_pod_radius": 0.025,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.3,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.05,
+      "s1_core_fin_root": 0.1,
+      "s1_core_length": 0.6264000000000001,
+      "s1_core_radius": 0.0205,
+      "s1_main": "460NS-I80",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.05,
+      "s1_pod_fin_root": 0.1044,
+      "s1_pod_length": 0.6960000000000001,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.10350000000000001,
+      "s1_pod_radius": 0.025,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 13473.96201390213,
+      "liftoff_mass_kg": 5.625207132329448,
+      "liftoff_twr": 4.770847159569013,
+      "stage_loaded_mass_kg": 2.7626035661647244
+    },
+    "apogee_m": 1710.3500689807472,
+    "apogee_penalty": 1289.6499310192528,
+    "geo": {
+      "core_radius": 0.0369,
+      "gap": 0.038,
+      "pod_offset": 0.0999
+    },
+    "label": "460NS-I80_r1.8_m0.1_f0.6",
+    "legal": false,
+    "mach": 0.6134249716655313,
+    "min_margin_cal": 0.08455011135910878,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.1,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.0738,
+      "s0_core_fin_root": 0.1476,
+      "s0_core_length": 0.6264000000000001,
+      "s0_core_radius": 0.0369,
+      "s0_main": "460NS-I80",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.03,
+      "s0_pod_fin_root": 0.1044,
+      "s0_pod_length": 0.6960000000000001,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.0999,
+      "s0_pod_radius": 0.025,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.0738,
+      "s1_core_fin_root": 0.1476,
+      "s1_core_length": 0.6264000000000001,
+      "s1_core_radius": 0.0369,
+      "s1_main": "460NS-I80",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.03,
+      "s1_pod_fin_root": 0.1044,
+      "s1_pod_length": 0.6960000000000001,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.0999,
+      "s1_pod_radius": 0.025,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 34698.00259980538,
+      "liftoff_mass_kg": 4.271460268885569,
+      "liftoff_twr": 9.970281393940022,
+      "stage_loaded_mass_kg": 2.1107301344427847
+    },
+    "apogee_m": 163.76059560676174,
+    "apogee_penalty": 2836.239404393238,
+    "geo": {
+      "core_radius": 0.0205,
+      "gap": 0.038,
+      "pod_offset": 0.08349999999999999
+    },
+    "label": "I130_r1.0_m0.05_f0.6",
+    "legal": false,
+    "mach": 0.5049091344041086,
+    "min_margin_cal": -0.4733176478813972,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.05,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.05,
+      "s0_core_fin_root": 0.1,
+      "s0_core_length": 0.4,
+      "s0_core_radius": 0.0205,
+      "s0_main": "I130",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.03,
+      "s0_pod_fin_root": 0.056999999999999995,
+      "s0_pod_length": 0.38,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.08349999999999999,
+      "s0_pod_radius": 0.025,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.05,
+      "s1_core_fin_root": 0.1,
+      "s1_core_length": 0.4,
+      "s1_core_radius": 0.0205,
+      "s1_main": "I130",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.03,
+      "s1_pod_fin_root": 0.056999999999999995,
+      "s1_pod_length": 0.38,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.08349999999999999,
+      "s1_pod_radius": 0.025,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 33897.39660494512,
+      "liftoff_mass_kg": 4.321608652589783,
+      "liftoff_twr": 9.854585240684067,
+      "stage_loaded_mass_kg": 2.110804326294892
+    },
+    "apogee_m": 178.64924179969816,
+    "apogee_penalty": 2821.3507582003017,
+    "geo": {
+      "core_radius": 0.0287,
+      "gap": 0.038,
+      "pod_offset": 0.0917
+    },
+    "label": "I130_r1.4_m0.1_f0.6",
+    "legal": false,
+    "mach": 0.5224970218881856,
+    "min_margin_cal": -0.3730102600340388,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.1,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.0574,
+      "s0_core_fin_root": 0.1148,
+      "s0_core_length": 0.4,
+      "s0_core_radius": 0.0287,
+      "s0_main": "I130",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.03,
+      "s0_pod_fin_root": 0.056999999999999995,
+      "s0_pod_length": 0.38,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.0917,
+      "s0_pod_radius": 0.025,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.0574,
+      "s1_core_fin_root": 0.1148,
+      "s1_core_length": 0.4,
+      "s1_core_radius": 0.0287,
+      "s1_main": "I130",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.03,
+      "s1_pod_fin_root": 0.056999999999999995,
+      "s1_pod_length": 0.38,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.0917,
+      "s1_pod_radius": 0.025,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 36412.644425404025,
+      "liftoff_mass_kg": 5.057773856330129,
+      "liftoff_twr": 28.5958487084975,
+      "stage_loaded_mass_kg": 2.5038869281650644
+    },
+    "apogee_m": 1973.8859925245729,
+    "apogee_penalty": 1026.1140074754271,
+    "geo": {
+      "core_radius": 0.0205,
+      "gap": 0.058,
+      "pod_offset": 0.10350000000000001
+    },
+    "label": "J474-CT_r1.0_m0.05_f1.0",
+    "legal": false,
+    "mach": 1.3124619703278213,
+    "min_margin_cal": 0.3099645210538704,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.05,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.05,
+      "s0_core_fin_root": 0.1,
+      "s0_core_length": 0.42020999450683594,
+      "s0_core_radius": 0.0205,
+      "s0_main": "J474-CT",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.05,
+      "s0_pod_fin_root": 0.07003499908447265,
+      "s0_pod_length": 0.46689999389648434,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.10350000000000001,
+      "s0_pod_radius": 0.025,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.05,
+      "s1_core_fin_root": 0.1,
+      "s1_core_length": 0.42020999450683594,
+      "s1_core_radius": 0.0205,
+      "s1_main": "J474-CT",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.05,
+      "s1_pod_fin_root": 0.07003499908447265,
+      "s1_pod_length": 0.46689999389648434,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.10350000000000001,
+      "s1_pod_radius": 0.025,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  },
+  {
+    "analytic_est": {
+      "apogee_est_optimistic_m": 35701.06776473073,
+      "liftoff_mass_kg": 5.107929737118961,
+      "liftoff_twr": 28.31505980718269,
+      "stage_loaded_mass_kg": 2.5039648685594806
+    },
+    "apogee_m": 1908.186439070351,
+    "apogee_penalty": 1091.813560929649,
+    "geo": {
+      "core_radius": 0.0287,
+      "gap": 0.058,
+      "pod_offset": 0.1117
+    },
+    "label": "J474-CT_r1.4_m0.1_f1.0",
+    "legal": false,
+    "mach": 1.2677148314226339,
+    "min_margin_cal": 0.31911238909489203,
+    "params": {
+      "launch_angle_deg": 3.0,
+      "launch_azimuth": 270.0,
+      "nose_mass_kg": 0.1,
+      "s0_ballast_kg": 0.0,
+      "s0_core_fin_count": 4,
+      "s0_core_fin_height": 0.0574,
+      "s0_core_fin_root": 0.1148,
+      "s0_core_length": 0.42020999450683594,
+      "s0_core_radius": 0.0287,
+      "s0_main": "J474-CT",
+      "s0_pod_fin_count": 3,
+      "s0_pod_fin_height": 0.05,
+      "s0_pod_fin_root": 0.07003499908447265,
+      "s0_pod_length": 0.46689999389648434,
+      "s0_pod_nose_shape": "ogive",
+      "s0_pod_radial_offset": 0.1117,
+      "s0_pod_radius": 0.025,
+      "s0_retro": "F50T",
+      "s0_retro_delay": 200.0,
+      "s1_ballast_kg": 0.0,
+      "s1_core_fin_count": 4,
+      "s1_core_fin_height": 0.0574,
+      "s1_core_fin_root": 0.1148,
+      "s1_core_length": 0.42020999450683594,
+      "s1_core_radius": 0.0287,
+      "s1_main": "J474-CT",
+      "s1_pod_fin_count": 3,
+      "s1_pod_fin_height": 0.05,
+      "s1_pod_fin_root": 0.07003499908447265,
+      "s1_pod_length": 0.46689999389648434,
+      "s1_pod_nose_shape": "ogive",
+      "s1_pod_radial_offset": 0.1117,
+      "s1_pod_radius": 0.025,
+      "s1_retro": "F50T",
+      "s1_retro_delay": 200.0,
+      "s1_separation_delay": 0.5,
+      "wind_levels": [
+        [
+          0,
+          3.0,
+          270.0,
+          0.5
+        ],
+        [
+          500,
+          6.0,
+          270.0,
+          1.0
+        ],
+        [
+          1000,
+          9.0,
+          270.0,
+          1.5
+        ],
+        [
+          2000,
+          12.0,
+          270.0,
+          2.0
+        ],
+        [
+          3000,
+          15.0,
+          270.0,
+          2.5
+        ]
+      ]
+    }
+  }
+]

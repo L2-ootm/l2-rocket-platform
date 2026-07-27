@@ -1,0 +1,121 @@
+{
+  "test": "phase_margin_parity",
+  "fixture": {
+    "s0_main": 16,
+    "s0_retro": 19,
+    "s1_main": 16,
+    "s1_retro": 19,
+    "main_cluster_count": 3,
+    "s0_body_rad": 0.074,
+    "s1_body_rad": 0.074,
+    "s0_body_len": 0.65,
+    "s1_body_len": 0.65,
+    "s1_separation_delay": 0.0,
+    "s0_retro_delay": 200.0,
+    "s1_retro_delay": 200.0,
+    "nose_mass_kg": 0.3,
+    "nose_ballast_pos_m": 0.2,
+    "nose_length_m": 0.3,
+    "s0_mid_ballast_kg": 0.0,
+    "s1_mid_ballast_kg": 0.0,
+    "s0_aft_ballast_kg": 0.0,
+    "s1_aft_ballast_kg": 0.0,
+    "s0_fin_count": 4,
+    "s0_fin_root": 0.12,
+    "s0_fin_height": 0.1,
+    "s0_fin_sweep": 5.0,
+    "s1_fin_count": 4,
+    "s1_fin_root": 0.12,
+    "s1_fin_height": 0.1,
+    "s1_fin_sweep": 5.0,
+    "s0_grid_fin_count": 0,
+    "s1_grid_fin_count": 0,
+    "s0_fin_thickness_m": 0.003,
+    "s1_fin_thickness_m": 0.003,
+    "s0_grid_fin_thickness_m": 0.001,
+    "s1_grid_fin_thickness_m": 0.001,
+    "s0_fin_material": "fiberglass",
+    "s1_fin_material": "fiberglass",
+    "s0_grid_fin_material": "fiberglass",
+    "s1_grid_fin_material": "fiberglass",
+    "launch_azimuth": 0.0,
+    "launch_angle_deg": 0.0
+  },
+  "rust": {
+    "id": "parity-fixture",
+    "status": "success",
+    "score": 4.034673178033634,
+    "apogee_m": 3792.833116777411,
+    "apogee_east_m": 0.0,
+    "apogee_north_m": 0.0,
+    "stage_landings": [],
+    "total_prop_mass_kg": 3.9720000000000004,
+    "mach": 1.596917321144028,
+    "min_static_margin": -0.18144635964318714,
+    "margins": [
+      -0.0061988192109731334,
+      -0.18144635964318714
+    ],
+    "features": [
+      7082.99862,
+      3167.7000000000003,
+      5.0,
+      0.038,
+      6.48,
+      1.6,
+      0.074,
+      0.3,
+      2.0,
+      8.0,
+      0.12,
+      0.1,
+      0.0447488663525924,
+      0.0,
+      5.286499413621432,
+      3.415967465889058,
+      0.7513478559678956,
+      0.24865214403210445,
+      2.0,
+      1.0,
+      3792.833116777411,
+      1.596917321144028,
+      44.486130210299976,
+      551.132186430711,
+      23.075809589764667
+    ],
+    "reason": "ok"
+  },
+  "openrocket": {
+    "mach": 1.403236195320946,
+    "apogee_m": 1064.6801876604366,
+    "apex_time_s": 7.450039577500833,
+    "phase_stabilities": [
+      {
+        "time_s": 0.7307500000000003,
+        "target_time_s": 0.7450039577500833,
+        "stability_cal": 0.04358033013349739
+      },
+      {
+        "time_s": 1.8584999999999985,
+        "target_time_s": 1.8625098943752083,
+        "stability_cal": 0.17669783729099525
+      },
+      {
+        "time_s": 3.7248264423651647,
+        "target_time_s": 3.7250197887504166,
+        "stability_cal": 1.2262005147063715
+      },
+      {
+        "time_s": 6.700039577500836,
+        "target_time_s": 6.70503561975075,
+        "stability_cal": 1.2837243644092906
+      },
+      {
+        "time_s": 7.400039577500833,
+        "target_time_s": 7.3755391817258245,
+        "stability_cal": 1.2722641966810173
+      }
+    ],
+    "min_stability_cal": 0.04358033013349739
+  }
+}

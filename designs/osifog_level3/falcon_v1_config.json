@@ -1,0 +1,35 @@
+{
+  "design": {
+    "sustainer": {
+      "main_motor": "J800T",
+      "retro_motor": "F50T",
+      "body_radius_mm": 33,
+      "body_length_m": 0.6,
+      "retro_delay_s": 18.0
+    },
+    "booster": {
+      "main_motor": "L1150",
+      "retro_motor": "F50T",
+      "body_radius_mm": 46,
+      "body_length_m": 0.749,
+      "retro_delay_s": 10.0
+    }
+  },
+  "results": {
+    "apogee_m": 2996.0862456123264,
+    "apogee_error_m": 3.9137543876736345,
+    "max_mach": 1.5160994134477603,
+    "flight_time_s": 57.88578577084465,
+    "score": 0.0
+  },
+  "atmosphere": {
+    "temperature_c": 17.4,
+    "pressure_hpa": 1000,
+    "humidity": 0.91
+  },
+  "launch_site": {
+    "latitude": 28.5621,
+    "longitude": -80.5772,
+    "altitude_m": 3.0
+  }
+}

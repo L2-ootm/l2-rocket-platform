@@ -1,0 +1,28 @@
+{
+  "materiais": {
+    "aletas": {
+      "opcoes": [
+        {"nome": "PLA_Impressao_3D", "densidade_kg_m3": 1240, "espessura_min_mm": 3.0, "espessura_max_mm": 6.0},
+        {"nome": "PETG_Impressao_3D", "densidade_kg_m3": 1270, "espessura_min_mm": 3.0, "espessura_max_mm": 6.0},
+        {"nome": "ABS_Impressao_3D", "densidade_kg_m3": 1040, "espessura_min_mm": 3.0, "espessura_max_mm": 6.0},
+        {"nome": "Madeira_Balsa", "densidade_kg_m3": 160, "espessura_min_mm": 2.0, "espessura_max_mm": 5.0}
+      ]
+    },
+    "tubos": {
+      "diametros_comerciais_mm": [18.0, 24.0, 29.0, 38.0, 50.0],
+      "opcoes_material": [
+        {"nome": "Papelao_Kraft", "densidade_kg_m3": 680, "espessura_parede_mm": 1.5},
+        {"nome": "Tubo_PVC", "densidade_kg_m3": 1380, "espessura_parede_mm": 2.0}
+      ]
+    },
+    "ogiva": {
+      "formatos_permitidos": ["VON_KARMAN", "OGIVE", "ELLIPSOID", "PARABOLA"],
+      "comprimento_min_mm": 30.0,
+      "comprimento_max_mm": 150.0
+    }
+  },
+  "constraints_fisicas_gerais": {
+    "twr_minimo": 5.0,
+    "velocidade_saida_haste_min_ms": 15.0
+  }
+}

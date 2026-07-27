@@ -1,0 +1,140 @@
+{
+  "actual_runs_used": 11,
+  "legal_branch_found": false,
+  "legal_hits": [],
+  "matrix_results": [
+    {
+      "apex_t": 8.295,
+      "burn_mean_q": -0.5147,
+      "classification": "PARTIAL_BRAKING",
+      "delay_s": 9.295,
+      "ignition_t": 9.345,
+      "minimum_pre_contact_speed_ms": 8.93,
+      "motor": "H73J",
+      "opposing_impulse_fraction": 0.1562,
+      "topology": "E8_baseline",
+      "touchdown_speed_ms": 58.329
+    },
+    {
+      "apex_t": 8.295,
+      "burn_mean_q": -0.6266,
+      "classification": "PARTIAL_BRAKING",
+      "delay_s": 9.795,
+      "ignition_t": 9.845,
+      "minimum_pre_contact_speed_ms": 11.382,
+      "motor": "H73J",
+      "opposing_impulse_fraction": 0.0842,
+      "topology": "E8_baseline",
+      "touchdown_speed_ms": 58.772
+    },
+    {
+      "apex_t": 8.295,
+      "burn_mean_q": -0.7508,
+      "classification": "PARTIAL_BRAKING",
+      "delay_s": 10.295,
+      "ignition_t": 10.345,
+      "minimum_pre_contact_speed_ms": 13.06,
+      "motor": "H73J",
+      "opposing_impulse_fraction": 0.0279,
+      "topology": "E8_baseline",
+      "touchdown_speed_ms": 59.488
+    },
+    {
+      "apex_t": 8.297,
+      "burn_mean_q": -0.6502,
+      "classification": "PARTIAL_BRAKING",
+      "delay_s": 9.297,
+      "ignition_t": 9.347,
+      "minimum_pre_contact_speed_ms": 7.26,
+      "motor": "H180W",
+      "opposing_impulse_fraction": 0.1038,
+      "topology": "E8_baseline",
+      "touchdown_speed_ms": 58.683
+    },
+    {
+      "apex_t": 8.297,
+      "burn_mean_q": -0.7295,
+      "classification": "PARTIAL_BRAKING",
+      "delay_s": 9.797,
+      "ignition_t": 9.847,
+      "minimum_pre_contact_speed_ms": 10.854,
+      "motor": "H180W",
+      "opposing_impulse_fraction": 0.0428,
+      "topology": "E8_baseline",
+      "touchdown_speed_ms": 59.047
+    },
+    {
+      "apex_t": 8.297,
+      "burn_mean_q": -0.8435,
+      "classification": "PARTIAL_BRAKING",
+      "delay_s": 10.297,
+      "ignition_t": 10.347,
+      "minimum_pre_contact_speed_ms": 13.083,
+      "motor": "H180W",
+      "opposing_impulse_fraction": 0.0022,
+      "topology": "E8_baseline",
+      "touchdown_speed_ms": 60.049
+    },
+    {
+      "apex_t": 8.276,
+      "burn_mean_q": -0.3985,
+      "classification": "PARTIAL_BRAKING",
+      "delay_s": 9.276,
+      "ignition_t": 9.326,
+      "minimum_pre_contact_speed_ms": 9.395,
+      "motor": "H73J",
+      "opposing_impulse_fraction": 0.1941,
+      "topology": "best_controlled_tail_mass_CaseB",
+      "touchdown_speed_ms": 60.051
+    },
+    {
+      "apex_t": 8.276,
+      "burn_mean_q": -0.4952,
+      "classification": "PARTIAL_BRAKING",
+      "delay_s": 9.776,
+      "ignition_t": 9.826,
+      "minimum_pre_contact_speed_ms": 11.624,
+      "motor": "H73J",
+      "opposing_impulse_fraction": 0.1283,
+      "topology": "best_controlled_tail_mass_CaseB",
+      "touchdown_speed_ms": 60.105
+    },
+    {
+      "apex_t": 8.263,
+      "burn_mean_q": -0.5606,
+      "classification": "PARTIAL_BRAKING",
+      "delay_s": 9.263,
+      "ignition_t": 9.313,
+      "minimum_pre_contact_speed_ms": 7.483,
+      "motor": "H180W",
+      "opposing_impulse_fraction": 0.118,
+      "topology": "best_controlled_tail_mass_CaseB",
+      "touchdown_speed_ms": 60.514
+    },
+    {
+      "apex_t": 8.263,
+      "burn_mean_q": -0.6455,
+      "classification": "PARTIAL_BRAKING",
+      "delay_s": 9.763,
+      "ignition_t": 9.813,
+      "minimum_pre_contact_speed_ms": 10.911,
+      "motor": "H180W",
+      "opposing_impulse_fraction": 0.0605,
+      "topology": "best_controlled_tail_mass_CaseB",
+      "touchdown_speed_ms": 60.658
+    },
+    {
+      "apex_t": 8.263,
+      "burn_mean_q": -0.7733,
+      "classification": "PARTIAL_BRAKING",
+      "delay_s": 10.263,
+      "ignition_t": 10.313,
+      "minimum_pre_contact_speed_ms": 13.247,
+      "motor": "H180W",
+      "opposing_impulse_fraction": 0.0125,
+      "topology": "best_controlled_tail_mass_CaseB",
+      "touchdown_speed_ms": 61.344
+    }
+  ],
+  "max_runs_budget": 12
+}

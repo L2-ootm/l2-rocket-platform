@@ -1,0 +1,66 @@
+{
+  "purpose": "Isolate whether an internal forward coupler bulkhead changes OpenRocket aerodynamics independently of mass/CG.",
+  "submission_candidate_mutated": false,
+  "diagnostic_component_legal": false,
+  "openrocket_source_model": "TubeCalc derives internal-tube drag from tube length, inner radius, roughness and flow speed; internal bulkheads are not inputs.",
+  "cases": [
+    {
+      "seed": 16000,
+      "baseline_score": 602553.1654667659,
+      "closed_score": 603176.6165431772,
+      "metric_deltas": {
+        "apogee_m": -2.1373125491663814e-11,
+        "mach": 2.0761170560490427e-13,
+        "s0_landing_speed": 0.009471397517353708,
+        "s1_landing_speed": -0.09477101538099264,
+        "apogee_east_m": 2.2446755565397325e-10,
+        "apogee_north_m": 9.110650012189581e-10,
+        "s0_east_m": -0.04379651049660538,
+        "s0_north_m": 0.05637287731254048,
+        "s1_east_m": -0.24999154368839527,
+        "s1_north_m": -0.703728549285529
+      },
+      "all_metric_deltas_zero": false
+    },
+    {
+      "seed": 30017,
+      "baseline_score": 607219.4959246478,
+      "closed_score": 607367.8267611276,
+      "metric_deltas": {
+        "apogee_m": 1.9554136088117957e-11,
+        "mach": 7.416289804496046e-14,
+        "s0_landing_speed": -0.03365300261617543,
+        "s1_landing_speed": -0.08979015181744954,
+        "apogee_east_m": 3.6499869793260586e-10,
+        "apogee_north_m": -4.562110689221299e-10,
+        "s0_east_m": -0.05285750602696737,
+        "s0_north_m": -0.053686881355304195,
+        "s1_east_m": 0.06586180611134296,
+        "s1_north_m": 0.1011129024773254
+      },
+      "all_metric_deltas_zero": false
+    },
+    {
+      "seed": 1348235082,
+      "baseline_score": 606104.0341649506,
+      "closed_score": 606085.2662774164,
+      "metric_deltas": {
+        "apogee_m": -6.316440703812987e-09,
+        "mach": -3.5355718353002885e-11,
+        "s0_landing_speed": -0.07422906627433301,
+        "s1_landing_speed": 0.008258547224032409,
+        "apogee_east_m": -2.338409643698469e-08,
+        "apogee_north_m": -4.851604273881094e-08,
+        "s0_east_m": -0.011646029292815996,
+        "s0_north_m": -0.025953990279262484,
+        "s1_east_m": 0.28617413461148544,
+        "s1_north_m": 0.06803718754088095
+      },
+      "all_metric_deltas_zero": false
+    }
+  ],
+  "ascent_aerodynamics_invariant": true,
+  "systematic_booster_braking": false,
+  "interpretation": "Apogee and Mach are invariant at numerical-noise scale. Landing deltas change sign across seeds, which is consistent with chaotic tumble sensitivity, not a modeled drag increase.",
+  "conclusion": "The internal closure provides no systematic modeled aerodynamic braking and must not be promoted."
+}

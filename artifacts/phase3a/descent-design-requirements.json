@@ -1,0 +1,69 @@
+{
+  "current_failure_metrics": {
+    "braking_angle_at_ignition_deg": 83.4,
+    "horizontal_speed_at_contact_ms": 19.044,
+    "q_total_at_ignition": 0.115,
+    "total_speed_at_contact_ms": 21.699,
+    "vertical_speed_at_contact_ms": 10.4
+  },
+  "feasibility_levels": {
+    "HIGH_MARGIN": {
+      "desired_attitude_at_apex_deg": 70.0,
+      "desired_attitude_at_ignition_deg": 50.0,
+      "max_angular_rate_during_burn_rad_s": 0.5,
+      "max_braking_alignment_angle_deg": 45.0,
+      "max_horizontal_speed_at_contact_ms": 2.0,
+      "max_horizontal_speed_at_separation_ms": 2.0,
+      "max_vertical_speed_at_contact_ms": 2.5,
+      "min_burn_window_s": 2.5,
+      "min_q_horizontal_over_burn": 0.5,
+      "min_q_total_over_burn": 0.7
+    },
+    "MINIMUM_LEGAL": {
+      "desired_attitude_at_apex_deg": 60.0,
+      "desired_attitude_at_ignition_deg": 30.0,
+      "max_angular_rate_during_burn_rad_s": 2.0,
+      "max_braking_alignment_angle_deg": 72.0,
+      "max_horizontal_speed_at_contact_ms": 4.0,
+      "max_horizontal_speed_at_separation_ms": 5.0,
+      "max_vertical_speed_at_contact_ms": 3.0,
+      "min_burn_window_s": 1.5,
+      "min_q_horizontal_over_burn": 0.2,
+      "min_q_total_over_burn": 0.3
+    },
+    "ROBUST_LEGAL": {
+      "desired_attitude_at_apex_deg": 65.0,
+      "desired_attitude_at_ignition_deg": 40.0,
+      "max_angular_rate_during_burn_rad_s": 1.0,
+      "max_braking_alignment_angle_deg": 60.0,
+      "max_horizontal_speed_at_contact_ms": 3.0,
+      "max_horizontal_speed_at_separation_ms": 3.0,
+      "max_vertical_speed_at_contact_ms": 3.5,
+      "min_burn_window_s": 2.0,
+      "min_q_horizontal_over_burn": 0.3,
+      "min_q_total_over_burn": 0.5
+    }
+  },
+  "gate": 4,
+  "required_impulse_budget": {
+    "H180W": {
+      "feasible_total": true,
+      "feasible_vertically_only": true,
+      "required_opposing_horizontal_ns": 14.6,
+      "required_opposing_vertical_ns": 19.5,
+      "total_impulse_ns": 233.7
+    },
+    "J350W": {
+      "feasible_total": true,
+      "feasible_vertically_only": true,
+      "required_opposing_horizontal_ns": 14.6,
+      "required_opposing_vertical_ns": 19.5,
+      "total_impulse_ns": 689.8
+    }
+  },
+  "target": {
+    "horizontal_speed_ms": 3.0,
+    "total_speed_ms": 5.0,
+    "vertical_speed_ms": 4.0
+  }
+}

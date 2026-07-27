@@ -1,0 +1,132 @@
+[
+  {
+    "delay_s": 25.0,
+    "touchdown_total_speed_ms": 49.71943622633231,
+    "touchdown_vz_ms": -49.45718497781407,
+    "touchdown_vxy_ms": 5.099920855719962,
+    "ground_hit_time_s": 35.08462300288662,
+    "retro_sample_count": 120,
+    "retro_fraction_opposing": 0.95,
+    "retro_verified": true
+  },
+  {
+    "delay_s": 27.0,
+    "touchdown_total_speed_ms": 44.13317950953707,
+    "touchdown_vz_ms": -44.03451247781582,
+    "touchdown_vxy_ms": 2.949448162301957,
+    "ground_hit_time_s": 34.73493083623107,
+    "retro_sample_count": 121,
+    "retro_fraction_opposing": 0.9504132231404959,
+    "retro_verified": true
+  },
+  {
+    "delay_s": 28.0,
+    "touchdown_total_speed_ms": 38.64355189187617,
+    "touchdown_vz_ms": -38.42537147738344,
+    "touchdown_vxy_ms": 4.100601132177273,
+    "ground_hit_time_s": 34.34238125196155,
+    "retro_sample_count": 125,
+    "retro_fraction_opposing": 0.952,
+    "retro_verified": true
+  },
+  {
+    "delay_s": 28.5,
+    "touchdown_total_speed_ms": 34.78675693978574,
+    "touchdown_vz_ms": -34.44631513074201,
+    "touchdown_vxy_ms": 4.854877166452866,
+    "ground_hit_time_s": 34.0999392386191,
+    "retro_sample_count": 116,
+    "retro_fraction_opposing": 0.9396551724137931,
+    "retro_verified": true
+  },
+  {
+    "delay_s": 29.0,
+    "touchdown_total_speed_ms": 29.09345320918087,
+    "touchdown_vz_ms": -28.72694447474165,
+    "touchdown_vxy_ms": 4.6034422750705675,
+    "ground_hit_time_s": 33.71299999999992,
+    "retro_sample_count": 114,
+    "retro_fraction_opposing": 0.9473684210526315,
+    "retro_verified": true
+  },
+  {
+    "delay_s": 29.047859,
+    "touchdown_total_speed_ms": 28.348771968899968,
+    "touchdown_vz_ms": -28.017549864913597,
+    "touchdown_vxy_ms": 4.320853123142283,
+    "ground_hit_time_s": 33.660859472634264,
+    "retro_sample_count": 112,
+    "retro_fraction_opposing": 0.9464285714285714,
+    "retro_verified": true
+  },
+  {
+    "delay_s": 29.1,
+    "touchdown_total_speed_ms": 27.584883904607665,
+    "touchdown_vz_ms": -27.297272095317126,
+    "touchdown_vxy_ms": 3.973003421204673,
+    "ground_hit_time_s": 33.61299999999993,
+    "retro_sample_count": 114,
+    "retro_fraction_opposing": 0.9473684210526315,
+    "retro_verified": true
+  },
+  {
+    "delay_s": 29.2,
+    "touchdown_total_speed_ms": 26.042751854529783,
+    "touchdown_vz_ms": -25.79703006388157,
+    "touchdown_vxy_ms": 3.569056463521547,
+    "ground_hit_time_s": 33.512999999999934,
+    "retro_sample_count": 118,
+    "retro_fraction_opposing": 0.9491525423728814,
+    "retro_verified": true
+  },
+  {
+    "delay_s": 29.5,
+    "touchdown_total_speed_ms": 20.415932516181588,
+    "touchdown_vz_ms": -19.873914821803215,
+    "touchdown_vxy_ms": 4.673094281200754,
+    "ground_hit_time_s": 33.08267252825012,
+    "retro_sample_count": 113,
+    "retro_fraction_opposing": 0.9380530973451328,
+    "retro_verified": true
+  },
+  {
+    "delay_s": 30.0,
+    "touchdown_total_speed_ms": 30.213219080644162,
+    "touchdown_vz_ms": -29.786922203193907,
+    "touchdown_vxy_ms": 5.057457155119985,
+    "ground_hit_time_s": 30.443328107231096,
+    "retro_sample_count": 90,
+    "retro_fraction_opposing": 1.0,
+    "retro_verified": true
+  },
+  {
+    "delay_s": 30.2,
+    "touchdown_total_speed_ms": 48.299584696570925,
+    "touchdown_vz_ms": -47.91533621936257,
+    "touchdown_vxy_ms": 6.080331968459425,
+    "ground_hit_time_s": 30.352198011066417,
+    "retro_sample_count": 51,
+    "retro_fraction_opposing": 1.0,
+    "retro_verified": true
+  },
+  {
+    "delay_s": 30.3,
+    "touchdown_total_speed_ms": 54.758607312372206,
+    "touchdown_vz_ms": -54.36353110290418,
+    "touchdown_vxy_ms": 6.565939446427456,
+    "ground_hit_time_s": 30.343297569617924,
+    "retro_sample_count": 14,
+    "retro_fraction_opposing": 1.0,
+    "retro_verified": true
+  },
+  {
+    "delay_s": 30.34,
+    "touchdown_total_speed_ms": 56.13072021493183,
+    "touchdown_vz_ms": -55.73452764894208,
+    "touchdown_vxy_ms": 6.657340279440997,
+    "ground_hit_time_s": 30.343046843986077,
+    "retro_sample_count": 1,
+    "retro_fraction_opposing": 1.0,
+    "retro_verified": true
+  }
+]

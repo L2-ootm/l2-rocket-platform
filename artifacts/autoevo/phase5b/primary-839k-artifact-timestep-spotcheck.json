@@ -1,0 +1,17 @@
+{
+  "purpose": "User-requested spot-check: is designs/osifog_level3/osifog_physical_839k_falcon.ork's saved data (apogee, mach, touchdown speeds) stable under timestep refinement, given the autoevo booster branch's identical touchdown-vs-timestep instability (see booster-numerical-convergence-classification.json)?",
+  "method": "Reopened the saved .ork directly (same file, same saved simulation/geometry), only overrode SimulationOptions.setTimeStep() before rerunning at 0.05 (official)/0.01/0.005/0.001s. Same seed, same wind seeding, same anti-tumble listener as the official pipeline.",
+  "results": [
+    {"timestep_s": 0.05,  "apogee_m": 3000.031, "mach": 0.9433, "sustainer_touchdown_mps": 2.648, "booster_touchdown_mps": 2.459},
+    {"timestep_s": 0.01,  "apogee_m": 3000.072, "mach": 0.9433, "sustainer_touchdown_mps": 4.752, "booster_touchdown_mps": 39.105},
+    {"timestep_s": 0.005, "apogee_m": 3000.151, "mach": 0.9433, "sustainer_touchdown_mps": 2.707, "booster_touchdown_mps": 37.404},
+    {"timestep_s": 0.001, "apogee_m": 3000.162, "mach": 0.9433, "sustainer_touchdown_mps": 5.948, "booster_touchdown_mps": 41.210}
+  ],
+  "findings": {
+    "ascent_phase": "CONVERGED. Apogee varies by <0.15m (3000.03-3000.16m) and Mach is bit-identical (0.9433) across all 4 timesteps. Ascent/apogee physics is NOT timestep-sensitive in this pipeline.",
+    "sustainer_touchdown": "MARGINALLY UNSTABLE. Ranges 2.65-5.95 m/s across timesteps -- crosses the 5 m/s legal threshold at the finest timestep tested (0.001s: 5.948 m/s, illegal) despite being legal at 0.05s, 0.005s. Not converged, but same order of magnitude throughout (no >10x swings).",
+    "booster_touchdown": "CATEGORICALLY UNSTABLE, same pattern as the autoevo booster branch. Legal (2.459 m/s) ONLY at the official 0.05s timestep; 37-41 m/s (illegal, ~15-17x over threshold) at every finer timestep tested. This is not a small effect -- it is the same qualitative failure mode found in the separate autoevo/phase5a-5b booster-branch audit, now confirmed in the PRIMARY submission-track artifact's own saved simulation."
+  },
+  "conclusion": "The 839,696.05-point score's booster touchdown claim (2.459 m/s) is not numerically converged and should be treated as UNRELIABLE at the official 0.05s timestep, independent of and in addition to the pre-existing staging-order disqualification already recorded in .planning/current-authority.md (stage separation at 39.000s occurs after first apogee at 23.250s, which alone already quarantines this artifact). Both problems must be fixed before any full-vehicle artifact from this pipeline can be trusted: (1) genuine multi-stage separation before apogee, (2) a retro-touchdown search run and validated at a converged timestep, not 0.05s.",
+  "scope_note": "This spot-check only reran the EXISTING saved geometry/delay at different timesteps -- it does not search for a new legal delay at fine resolution. A converged-timestep delay search (analogous to Section 1's booster basin work but for whichever geometry becomes the actual submission candidate) is required before claiming any new legal touchdown."
+}

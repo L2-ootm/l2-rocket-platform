@@ -1,0 +1,58 @@
+{
+  "phase": "2e",
+  "status": "SIGN_CORRECTION_COMPLETE",
+  "frame_sign_contract": {
+    "vz_positive": "UPWARD (OpenRocket TYPE_VELOCITY_Z)",
+    "theta_positive": "Nose above horizontal (radians)",
+    "alignment_q_plus_one": "Tail-first (nose opposite velocity)",
+    "motor_thrust": "Nose-directed (forward along rocket axis)",
+    "braking_condition": "thrust_dot_velocity < 0 (thrust opposes velocity)"
+  },
+  "phase_2d_correction": {
+    "original_conclusion": "Motor fires in wrong direction — cannot produce retrograde thrust",
+    "corrected_conclusion": "Motor fires in correct direction (nose-directed). During tail-first descent, nose-directed thrust IS retrograde braking. The Phase 2d test measured a rocket on the launch pad (ascending), not during tail-first descent.",
+    "error_source": "Phase 2d test used a minimal vehicle starting from rest. The +35.5 m/s velocity change was the rocket launching upward — not relevant to tail-first braking."
+  },
+  "booster_free_descent_timeline": {
+    "separation_t_s": 1.695,
+    "separation_vz_ms": 110.86,
+    "apex_t_s": 8.513,
+    "apex_theta_deg": 62.0,
+    "first_tail_first_t_s": 8.530,
+    "first_tail_first_vz_ms": -0.160,
+    "first_tail_first_theta_deg": 61.9,
+    "impact_t_s": 43.652,
+    "impact_vz_ms": -10.40,
+    "impact_speed_ms": 21.70,
+    "tail_first_window_duration_s": 35.1,
+    "tail_first_theta_range_deg": "62.0 to 1.8"
+  },
+  "k550w_analysis": {
+    "delay_s": 3.0,
+    "ignition_vz_ms": 71.79,
+    "ignition_phase": "ASCENDING (vz > 0)",
+    "ignition_theta_deg": -89.8,
+    "burnout_vz_ms": 129.11,
+    "speed_change_ms": 57.37,
+    "motor_effect": "ACCELERATES during ascent — adds energy",
+    "apex_shifted": true,
+    "impact_speed_ms": 14.76,
+    "explanation": "Motor fires during ascent (before apex at 8.513s). Adds energy, pushes booster higher. Longer fall from greater height. Net effect: lower impact speed than free descent (14.76 vs 21.70 m/s) but not braking during descent."
+  },
+  "h180w_analysis": {
+    "delay_s": 4.0,
+    "ignition_vz_ms": 52.10,
+    "ignition_phase": "ASCENDING (vz > 0)",
+    "burnout_vz_ms": 74.18,
+    "speed_change_ms": 22.03,
+    "motor_effect": "ACCELERATES during ascent",
+    "impact_speed_ms": 18.05,
+    "explanation": "Same pattern — motor fires during ascent, adds energy. Higher impact speed than K550W because less energy added (smaller motor)."
+  },
+  "real_bottleneck": {
+    "primary": "Motor fires during ASCENT (before apex at 8.513s), not during descent. To brake, motor must fire AFTER apex when vz < 0.",
+    "secondary": "Even with post-apogee ignition, horizontal speed (19.04 m/s) limits total touchdown speed. Vertical-only braking cannot reduce total speed below sqrt(0 + 19.04^2) = 19.04 m/s.",
+    "tertiary": "The tail-first window is 35s long (8.5s to 43.7s), but the motor must fire within a specific sub-window where both: (a) vz < 0 (descending), and (b) theta > 0 (tail-first).",
+    "recommendation": "Test delays > 9s (after apex) to find the actual braking regime. Also investigate whether the motor's horizontal thrust component can reduce horizontal speed."
+  }
+}

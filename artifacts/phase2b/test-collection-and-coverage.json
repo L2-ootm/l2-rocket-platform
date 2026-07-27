@@ -1,0 +1,47 @@
+{
+  "test": "test_collection_and_coverage",
+  "python": {
+    "collected": 119,
+    "passed": 119,
+    "failed": 0,
+    "skipped": 0,
+    "per_file": {
+      "test_phase1_collected.py": "8 (NEW — motor data, mass conservation, diagnostic separation, anti-tumble)",
+      "test_mission_evolution.py": 3,
+      "test_or_mode_ast_sweep.py": 5,
+      "test_or_mode_calibrate.py": 2,
+      "test_organic_evolution.py": 48,
+      "test_orhelper.py": 1,
+      "test_osifog_engine_search.py": 18,
+      "test_osifog_falcon_contract.py": 14,
+      "test_osifog_precision.py": 10,
+      "test_osifog_sweep.py": 3,
+      "test_physical_geometry.py": 7
+    },
+    "scripts_not_collected": [
+      "tests/test_motor_data_canonical.py (script, run separately)",
+      "tests/test_gate2_gate3.py (script, run separately)",
+      "tests/test_gate5_antitumble.py (script, run separately)",
+      "tests/test_gate4_parity.py (script, run separately)",
+      "tests/test_gate7_stability.py (script, run separately)",
+      "tests/test_gate7_stability_r2.py (script, run separately)",
+      "tests/test_gate7_stability_r3.py (script, run separately)"
+    ],
+    "note": "7 scripts exist but are not pytest-collected. They were run directly and passed. New test_phase1_collected.py converts critical Phase 1 assertions into collected tests."
+  },
+  "rust": {
+    "lib": 137,
+    "bridge": 17,
+    "or_mode": 3,
+    "validation": 3,
+    "total": 160,
+    "passed": 160,
+    "failed": 0
+  },
+  "total": {
+    "collected": 279,
+    "passed": 279,
+    "failed": 0
+  },
+  "status": "PASS"
+}

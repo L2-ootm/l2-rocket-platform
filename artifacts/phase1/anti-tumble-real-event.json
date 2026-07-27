@@ -1,0 +1,57 @@
+{
+  "test": "anti_tumble_real_event",
+  "ork_used": "designs/osifog_autonomous_hour/gate4-sustainer-search/anti-tumble-verification.ork",
+  "without_listener": {
+    "branches": [
+      {
+        "name": "Sustainer",
+        "length": 4231,
+        "tumble_time": null,
+        "ground_hit_time": 198.11419320076646,
+        "first_time": 0.0,
+        "last_time": 211.313
+      },
+      {
+        "name": "Booster",
+        "length": 482,
+        "tumble_time": 9.985894697090545,
+        "ground_hit_time": 70.56223740470693,
+        "first_time": 0.0,
+        "last_time": 211.313
+      }
+    ],
+    "tumble_event_found": true,
+    "tumble_times": [
+      9.985894697090545
+    ]
+  },
+  "with_listener": {
+    "branches": [
+      {
+        "name": "Sustainer",
+        "length": 4231,
+        "tumble_time": null,
+        "ground_hit_time": 198.11419320076646,
+        "first_time": 0.0,
+        "last_time": 211.313
+      },
+      {
+        "name": "Booster",
+        "length": 5716,
+        "tumble_time": null,
+        "ground_hit_time": 30.342314873063295,
+        "first_time": 0.0,
+        "last_time": 211.313
+      }
+    ],
+    "ground_contact_reached": true,
+    "tumble_times": []
+  },
+  "verification": {
+    "tumble_event_intercepted": true,
+    "listener_continues_past_tumble": true,
+    "serialization_valid": true,
+    "extension_count": 1
+  },
+  "status": "PASS"
+}

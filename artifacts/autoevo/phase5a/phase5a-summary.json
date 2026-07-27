@@ -1,0 +1,68 @@
+{
+  "mission": "Find a legal sustainer landing for the coupled vehicle while preserving/recalibrating/hardening the recovered booster branch, then run one full two-branch authority simulation.",
+  "session_date": "2026-07-20 (phase5a)",
+  "status": "PARTIAL -- infrastructure built and validated; booster basin characterized; Stage 1 sustainer search started (6/96 candidates) but not completed; no legal sustainer branch found yet; no coupled two-branch authority run yet.",
+
+  "section_0_corrections": {
+    "0_1_legal_window": "CORRECTED -- see corrected-phase4c-record.json. Only 29.862s and 29.864s confirmed legal on the original 2ms grid, not a continuous 29.862-29.868s interval.",
+    "0_2_stage_event_map": "CORRECTED -- see corrected-stage-event-map.json, verified directly against the saved .ork's XML. Stage 0=Sustainer (ignitionevent=burnout of stage 1), Stage 1=Booster (ignitionevent=launch). Branch-name mapping (branch 0=Sustainer, branch 1=Booster) unchanged, confirmed correct."
+  },
+
+  "section_1_classification": {
+    "rule_legal": "RULE-LEGAL NOMINAL BOOSTER BRANCH (no rule in the R-001..R-022 matrix prohibits active thrust at first ground contact)",
+    "engineering": "ENGINEERING-FRAGILE / NOT YET ROBUST (2-6 confirmed-legal points on a 0.5ms grid depending on window; non-monotonic; +/-10/20ms robustness fails)"
+  },
+
+  "section_2_locked_phenotype": "Booster (s1_*) fields frozen exactly as artifacts/autoevo/historical-3p5135-candidate.json's complete_parameters_powered_rerun -- see scripts/phase5a_coupled_evaluator.py::FROZEN_BOOSTER_PARAMS. s1_retro_delay is NOT frozen (per section 2's explicit instruction) -- it is recalibrated per candidate via the relative-timing model, though this session's 6 Stage-1 candidates never reached the recalibration step (unpowered-only screening; see below).",
+
+  "section_3_relative_timing_model": {
+    "status": "IMPLEMENTED AND VALIDATED",
+    "file": "scripts/relative_timing.py",
+    "reference_point_recomputed_independently": "tau_free_contact_s=0.4783148731, tau_powered_contact_s=0.9226981310, burn_remaining_at_contact_s=0.3903018690 -- exact match to the directive's cited reference table",
+    "artifact": "booster-relative-timing-model.json"
+  },
+
+  "section_4_booster_basin": {
+    "status": "CHARACTERIZED",
+    "grid": "29.857-29.869s at 0.5ms resolution (25 points)",
+    "legal_count": "12/25 (<5 m/s)",
+    "shape": "near-continuous band 29.860-29.865s plus an isolated legal spike at 29.8665s; non-monotonic at 0.5ms scale",
+    "repeatability": "same-process (12/12), fresh-process (5/12 sampled), save/close/reopen/rerun (2/12: 29.864s from the prior session, 29.8645s new this session) -- all bit-identical",
+    "artifacts": ["booster-delay-basin.json", "booster-fresh-process-repeatability.json"],
+    "note": "Full 12/12 fresh-process + save/reopen repetition was not completed this session (time budget) -- the sampled subset is representative (spans both the main band and the isolated spike) but not exhaustive."
+  },
+
+  "section_5_coupled_evaluator": {
+    "status": "BUILT AND VALIDATED for Stage 1 (unpowered ascent+free-descent) scope",
+    "file": "scripts/phase5a_coupled_evaluator.py",
+    "validation": "Run against the reference candidate (zero sustainer overrides) reproduces every known ground-truth figure exactly: booster_unpowered_touchdown=56.13895535481251 m/s, sustainer_best_alignment_q=0.9006139860749303, sustainer_unpowered_touchdown=19.649798937728853 m/s, sustainer_min_margin_cal=1.5076748876864916, separation_time_s=2.5.",
+    "not_yet_implemented": "Stage 2 (motor-aware screening), Stage 3 (powered sustainer validation), Stage 4 (booster recalibration + coupled two-branch authority run) are DESIGNED per the directive's section 5 sequence and section 9 budgets but have no code yet this session -- scripts/phase5a_booster_basin.py's run_candidate() and scripts/relative_timing.py's seed_absolute_delay() are the building blocks for Stage 4's booster-recalibration step when that work resumes."
+  },
+
+  "section_6_9_sustainer_search": {
+    "status": "STARTED, NOT COMPLETED",
+    "stage_1_budget_used": "6 of 96 candidates (Family S0-A only; Families S0-B/C/D not started)",
+    "stage_1_results": {
+      "artifact": "sustainer-family-results.json",
+      "legal_ascent": 4,
+      "rejected_ascent_illegal": 2,
+      "best_touchdown_vs_baseline": "S0A_more_sweep (s0_fin_sweep=20.0): 19.267 m/s touchdown, q=0.808 -- marginal improvement over the 19.65 m/s baseline",
+      "notable_negative_result": "Two ascent-legal candidates (bigger_fin, nose_heavy) have catastrophically WORSE unpowered touchdown (115.7, 125.6 m/s) with NEGATIVE alignment q (nose-first, not tail-first) -- confirms these perturbation directions actively hurt descent stability.",
+      "important_caveat": "Per section 6, peak alignment q is proven NOT sufficient (the reference candidate's own q=0.9006 baseline produces a documented-unusable powered sustainer window). None of this session's 6 candidates were screened past Stage 1 -- no motor/window screening (Stage 2) or powered validation (Stage 3) was run on any of them. 'Marginal improvement over baseline' is NOT evidence of a usable powered braking window."
+    },
+    "stages_2_3_4": "NOT RUN this session."
+  },
+
+  "section_10_regression": {
+    "status": "COMPLETE",
+    "test_file": "tests/test_phase5a_booster_regression.py",
+    "result": "8/8 passed (7 fast structural checks + 1 slow JVM save/reopen/rerun check)",
+    "artifact": "booster-regression-fixture.json"
+  },
+
+  "section_11_full_vehicle_authority": "NOT REACHED -- no legal sustainer branch exists yet.",
+
+  "nominal_legal_two_stage_recovery": "NO LEGAL TWO-STAGE RECOVERY",
+
+  "next_command": "Continue Family S0-A/B/C/D Stage 1 search (18 more candidates to finish Family S0-A's 24-candidate budget, then S0-B/C/D) via: python scripts/phase5a_coupled_evaluator.py '<JSON array of {_label, ...s0_overrides}>'. Promote any ASCENT_LEGAL_STAGE1 candidate with sustainer_unpowered_touchdown_mps meaningfully below ~19.65 m/s AND positive q_horizontal/q_vertical components (not yet computed by the current evaluator -- extend it with scripts/descent_gates.py's q_components before Stage 2) to motor-aware screening (Stage 2, not yet implemented -- build using scripts/descent_gates.py::passive_descent_admission + PoweredEarlyStop as designed)."
+}

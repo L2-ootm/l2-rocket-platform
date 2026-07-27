@@ -1,0 +1,17 @@
+;AeroTech F50T extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=56, curve_id=65
+; lookup key 'F50T' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+F50T 29 98 4,6,7,9 0.0336 0.0898 A
+0.000 0.00
+0.013 73.76
+0.033 70.38
+0.267 69.82
+0.518 67.00
+0.792 56.87
+0.906 50.68
+1.000 44.48
+1.036 39.98
+1.107 23.65
+1.199 6.19
+1.316 1.13
+1.430 0.00

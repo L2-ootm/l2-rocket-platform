@@ -1,0 +1,40 @@
+;Cesaroni Technology J360 extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=484, curve_id=554
+; lookup key must exactly match MOTOR_DATABASE's designation string in
+; rocket_forge.py -- was "J360_CTI" here, but MOTOR_DATABASE (and the real
+; OpenRocket catalog, confirmed via a working saved reference .ork's own
+; <designation>J360</designation>) both say "J360". This mismatch meant
+; organic_loop.py's _eng_designations() never found this file, so J360
+; (a legal main motor per every mission's motor_pool) was silently
+; reassigned to a random different motor by prepare_ast_for_rust on every
+; single candidate that picked it -- confirmed live via a 2026-07-24
+; reconstruction attempt of the historical 839k-scoring reference design,
+; which uses this exact motor.
+J360 38 419 0,P 0.4090 0.7092 CT
+0.000 0.00
+0.041 618.90
+0.124 616.58
+0.207 563.78
+0.291 557.73
+0.374 558.41
+0.457 562.09
+0.541 561.27
+0.624 563.22
+0.708 565.33
+0.793 566.56
+0.876 549.38
+0.959 529.63
+1.043 511.10
+1.126 483.29
+1.209 445.40
+1.293 421.66
+1.377 378.33
+1.461 261.65
+1.545 197.44
+1.628 146.57
+1.711 101.81
+1.795 78.04
+1.878 47.85
+1.961 31.86
+2.046 9.22
+2.130 0.00

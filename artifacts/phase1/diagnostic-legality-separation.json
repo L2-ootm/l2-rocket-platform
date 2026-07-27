@@ -1,0 +1,16 @@
+{
+  "test": "diagnostic_legality_separation",
+  "mach": 1.1921443704608663,
+  "apogee_m": 2847.6519598250065,
+  "min_static_margin_cal": 1.1680561345048022,
+  "legal": false,
+  "violations": [
+    "Supersonic safety gate: Mach=1.192 >= 0.95",
+    "Static stability during ascent: 1.168 cal < 1.5 cal",
+    "Exactly 2 stage landings are required, found 0",
+    "Retro braking telemetry gate: exactly two branch diagnostics required, found 0",
+    "Telemetry extraction failed: None"
+  ],
+  "diagnostics_present": true,
+  "status": "PASS"
+}

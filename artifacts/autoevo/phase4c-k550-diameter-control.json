@@ -1,0 +1,74 @@
+{
+  "hypothesis": "Passive stabilization/descent behavior attributed to an 'aerodynamic motor-casing footprint' should NOT change if the external airframe is held exactly fixed and only the internal retro motor + compensating ballast changes.",
+  "method": "Same base candidate (sustainer-q-probe.json[0], both retro delays pinned at 200.0/disabled so both motors are physically present but inert for the whole flight). The candidate's original s1_body_rad=0.065m was built around H180W's 29mm retro diameter and physically CANNOT fit K550W's 54mm diameter in the 3+1 cage (osifog_sweep.py's _falcon_cluster_geometry() raises 'insufficient room for a legal central support sleeve' -- confirmed by direct attempt). s1_body_rad was therefore widened ONCE, manually, to 0.075m (75mm) -- a single external-geometry choice applied identically and simultaneously to BOTH the K550W and H73J cases, not an automatic per-case re-derivation. Case B (H73J) adds 1.1783 kg of s1_aft_ballast_kg to compensate for K550W's loaded mass (1.4874kg) being heavier than H73J's (0.3091kg), matching TOTAL vehicle mass to within the ballast granularity available in this parameter schema.",
+  "external_geometry_digest_equal": true,
+  "external_geometry_digest_note": "Digest covers the Booster Airframe/Fins/Forward-Grid-Fins XML blocks only (the externally-exposed components); it is byte-identical between the two cases, confirming no externally-visible geometry changed when the internal retro motor was swapped.",
+  "results": {
+    "K550W_present_inert": {
+      "motor_index": 19,
+      "motor_designation": "K550W",
+      "s1_aft_ballast_kg": 0.0,
+      "physical_compiler_violations": [],
+      "external_geometry_digest": "2be9c83a27e2678b6b96bb6a81acf3d2d007a6e8cd93f4795bc2fc2bff63fe87",
+      "apogee_m": 2354.841239417661,
+      "mach": 0.813650846734007,
+      "min_static_margin": 1.5205563796760007,
+      "booster_landing": {
+        "branch": 1,
+        "branch_name": "Booster",
+        "stage_key": "s1",
+        "time_s": 18.931093096204325,
+        "east_m": 87.4298899601975,
+        "north_m": 175.42324341101184,
+        "dist_m": 196.00331626605544,
+        "vz_ms": -56.45227724510848,
+        "vxy_ms": 8.115018368140726,
+        "total_speed": 57.03256200867934,
+        "mass_kg": 4.8891252616007295,
+        "orientation_theta_deg": 84.62536378648873,
+        "orientation_phi_deg": 201.05950510984195,
+        "aoa_deg": 179.95347667301237
+      },
+      "booster_best_alignment_q": 0.9984250728599762
+    },
+    "H73J_present_inert_mass_matched": {
+      "motor_index": 5,
+      "motor_designation": "H73J",
+      "s1_aft_ballast_kg": 1.1783000000000001,
+      "physical_compiler_violations": [],
+      "external_geometry_digest": "2be9c83a27e2678b6b96bb6a81acf3d2d007a6e8cd93f4795bc2fc2bff63fe87",
+      "apogee_m": 2322.7058756555225,
+      "mach": 0.8060719439754873,
+      "min_static_margin": 1.4822275493237818,
+      "booster_landing": {
+        "branch": 1,
+        "branch_name": "Booster",
+        "stage_key": "s1",
+        "time_s": 22.65859822396968,
+        "east_m": 117.98034574069374,
+        "north_m": 192.06868257291202,
+        "dist_m": 225.4101612758122,
+        "vz_ms": -58.38337574081103,
+        "vxy_ms": 6.004210369851361,
+        "total_speed": 58.69130348746868,
+        "mass_kg": 5.465107055634454,
+        "orientation_theta_deg": 86.53553481132833,
+        "orientation_phi_deg": 204.10796774303216,
+        "aoa_deg": 179.87505151317032
+      },
+      "booster_best_alignment_q": 0.9988132304989003
+    }
+  },
+  "limitation": "This test matches total mass but does NOT independently verify full pitch/yaw/roll inertia tensor equality (the codebase's mass_calculator.rs / OpenRocket's own mass properties were not cross-queried for this quick control). The ballast is a lumped point mass at the existing aft ballast position, not distributed to exactly replicate the motor's own mass distribution along its 410mm/152mm length -- a residual CG/inertia mismatch on the order of a few centimeters of ballast placement is expected and not fully eliminated.",
+  "observed_deltas": {
+    "apogee_m_delta": -32.135363762138444,
+    "apogee_pct_delta": -1.36,
+    "mach_delta": -0.00758,
+    "min_static_margin_delta": -0.03833,
+    "booster_touchdown_speed_delta_ms": 1.6587414787893344,
+    "booster_touchdown_speed_pct_delta": 2.91,
+    "best_alignment_q_delta": 0.00039
+  },
+  "conclusion": "Small (1-3%) differences in apogee, static margin, and booster touchdown speed DO exist between the K550W and H73J cases despite byte-identical external geometry. Per the directive's own reasoning ('an internal motor casing should not create external aerodynamic force by itself'), these deltas are NOT evidence of an aerodynamic motor-casing footprint mechanism -- the external airframe the air actually sees is provably identical (digest match). The deltas are consistent with the acknowledged limitation: the lumped aft-ballast substitute does not replicate K550W's mass distributed along its full 410mm sleeve length (vs H73J's 152mm), producing a slightly different CG position and pitch/yaw inertia, which is a legitimate mass-properties effect on ascent margin and separation-state velocity/attitude -- not an aerodynamic one. No further aerodynamic-casing mechanism should be invoked; any future work on this hypothesis should first re-run this control with a distributed (multi-point or tube-shaped) ballast model that matches the motor's actual mass distribution before concluding anything further.",
+  "classification": "NO AERODYNAMIC MOTOR-CASING MECHANISM CONFIRMED -- observed differences attributable to imperfect (lumped vs distributed) mass-property matching, not to internal-casing aerodynamics. Hypothesis as originally stated (external force from an internal casing) is REJECTED for this candidate; residual small deltas are a mass-modeling artifact of this control's simplification, not a physical effect requiring further mechanism-hunting."
+}

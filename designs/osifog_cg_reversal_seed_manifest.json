@@ -1,0 +1,7 @@
+{
+  "seed_sources": [
+    "osifog_cg_reversal_gate_v1/result.json",
+    "osifog_attitude_campaign_v2/workers/worker-01/state.json",
+    "osifog_attitude_campaign_v2/workers/worker-02/state.json"
+  ]
+}

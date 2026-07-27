@@ -1,0 +1,46 @@
+;AeroTech L2200G extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=263, curve_id=288
+; lookup key 'L2200G' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+; length corrected 665mm -> 681mm: original extraction's length field was
+; stale/wrong -- confirmed against the real OpenRocket 24.12 motor (matched
+; by launchMass=4.751kg/burnoutMass=2.235kg, identical to this file's own
+; propellant(2.516kg)/total(4.751kg) fields) via direct JVM query.
+L2200G 75 681 0,6,10,14,18,P 2.5160 4.7510 A
+0.000 0.00
+0.011 1195.18
+0.024 2029.90
+0.037 2380.87
+0.050 2542.12
+0.100 2570.58
+0.150 2561.09
+0.200 2523.15
+0.250 2485.21
+0.300 2523.15
+0.350 2570.58
+0.400 2674.92
+0.500 2912.06
+0.600 3073.31
+0.700 3073.31
+0.800 3101.77
+0.900 3092.28
+1.000 3092.28
+1.100 2959.49
+1.186 2807.72
+1.227 2437.78
+1.270 2257.56
+1.300 2162.70
+1.400 1991.96
+1.500 1878.13
+1.600 1792.77
+1.700 1688.42
+1.800 1612.54
+1.900 1584.08
+2.000 1536.66
+2.048 1498.71
+2.084 1403.86
+2.102 1166.72
+2.134 796.78
+2.186 455.31
+2.237 237.14
+2.300 94.86
+2.400 0.00

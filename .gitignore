@@ -1,0 +1,59 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Rust
+target/
+Cargo.lock
+!l2_engine/Cargo.lock
+
+# JVM crash logs
+hs_err_pid*.log
+replay_pid*.log
+
+# Large binaries (not source-controlled)
+OpenRocket-23.09.jar
+lib/*.jar
+
+# Node
+node_modules/
+.next/
+
+# Local platform state
+.local/
+runs/
+openrocket/
+openrocket_src/
+
+# Local agent/planning workspaces
+.planning/
+.mimocode/
+.claude/
+.codex/
+.kilo/
+scratch/
+
+# Generated rocket runs
+designs/forge_v3/
+designs/organic/
+designs/**/campaign_ckg.json
+designs/**/.campaign_ckg*.tmp
+.planning/*.tmp
+.planning/**/*.tmp
+.planning/**/*.tmp.json
+designs/optimized/15k_precision_polished.ork
+designs/optimized/L2_AST_Test.ork
+designs/optimized/L2_Weird_Speed_Demon.ork
+designs/optimized/L2_Weird_Speed_Demon_params.json
+temp_ork/
+.planning/organic_ckg.json
+.planning/**/*ckg*.json
+designs/or_mode_sweep_*/
+designs/**/ckg/
+*.log
+elite_*.json
+
+# Competition materials (proprietary/large; per OSIFOG/'s own note)
+OSIFOG/

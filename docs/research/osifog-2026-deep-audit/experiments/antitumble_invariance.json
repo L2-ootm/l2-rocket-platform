@@ -1,0 +1,204 @@
+{
+  "experiment": "A_anti_tumble_invariance",
+  "candidate": {
+    "s0_main": 37,
+    "s1_main": 18,
+    "s0_retro": 19,
+    "s1_retro": 19,
+    "main_cluster_count": 3,
+    "s0_body_rad": 0.074,
+    "s1_body_rad": 0.074,
+    "s0_body_len": 0.7,
+    "s1_body_len": 0.75,
+    "s1_separation_delay": 0.0,
+    "s0_retro_delay": 200.0,
+    "s1_retro_delay": 200.0,
+    "nose_mass_kg": 1.72,
+    "nose_ballast_pos_m": 0.45,
+    "s0_mid_ballast_kg": 0.0,
+    "s1_mid_ballast_kg": 0.0,
+    "s0_aft_ballast_kg": 0.0,
+    "s1_aft_ballast_kg": 2.725,
+    "s1_aft_ballast_pos_m": 0.084,
+    "s1_aft_ballast_rod_radius_m": 0.014,
+    "s1_aft_ballast_attachment": "central_bonded",
+    "s0_fin_count": 4,
+    "s0_fin_root": 0.2,
+    "s0_fin_height": 0.25,
+    "s0_fin_sweep": 10.0,
+    "s1_fin_count": 4,
+    "s1_fin_root": 0.24,
+    "s1_fin_height": 0.38,
+    "s1_fin_sweep": 0.05,
+    "s1_grid_fin_count": 4,
+    "s1_grid_fin_root": 0.1,
+    "s1_grid_fin_height": 0.08,
+    "s1_grid_fin_position_m": 0.03,
+    "s0_grid_fin_count": 0,
+    "s0_grid_fin_root": 0.06,
+    "s0_grid_fin_height": 0.06,
+    "s0_grid_fin_position_m": 0.03,
+    "s0_fin_thickness_m": 0.003,
+    "s1_fin_thickness_m": 0.003,
+    "s0_grid_fin_thickness_m": 0.001,
+    "s1_grid_fin_thickness_m": 0.003,
+    "s0_fin_material": "fiberglass",
+    "s1_fin_material": "fiberglass",
+    "s0_grid_fin_material": "fiberglass",
+    "s1_grid_fin_material": "fiberglass",
+    "launch_azimuth": 34.0,
+    "launch_angle_deg": 3.85
+  },
+  "seed": 16000,
+  "tolerance_abs": 1e-06,
+  "tolerance_rel": 1e-06,
+  "branches_on": [
+    {
+      "name": "Sustainer",
+      "length": 1461,
+      "tumble_time": null,
+      "ground_hit_time": 54.13542704710281
+    },
+    {
+      "name": "Booster",
+      "length": 701,
+      "tumble_time": null,
+      "ground_hit_time": 22.9043872233975
+    }
+  ],
+  "branches_off": [
+    {
+      "name": "Sustainer",
+      "length": 1461,
+      "tumble_time": null,
+      "ground_hit_time": 54.13542704710281
+    },
+    {
+      "name": "Booster",
+      "length": 701,
+      "tumble_time": null,
+      "ground_hit_time": 22.9043872233975
+    }
+  ],
+  "comparison": [
+    {
+      "branch": 0,
+      "name": "Sustainer",
+      "common_samples": 1461,
+      "tumble_on": null,
+      "tumble_off": null,
+      "tumble_time_match": null,
+      "field_differences": {
+        "altitudes": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "positions_x": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "positions_y": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "velocities_z": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "velocities_xy": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "masses": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "thetas": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "phis": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        }
+      },
+      "all_within_tolerance": true
+    },
+    {
+      "branch": 1,
+      "name": "Booster",
+      "common_samples": 701,
+      "tumble_on": null,
+      "tumble_off": null,
+      "tumble_time_match": null,
+      "field_differences": {
+        "altitudes": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "positions_x": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "positions_y": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "velocities_z": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "velocities_xy": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "masses": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "thetas": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        },
+        "phis": {
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "within_abs_tol": true,
+          "within_rel_tol": true
+        }
+      },
+      "all_within_tolerance": true
+    }
+  ],
+  "overall": true
+}

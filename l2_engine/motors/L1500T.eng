@@ -1,0 +1,31 @@
+;AeroTech L1500T extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=260, curve_id=285
+; lookup key 'L1500T' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+L1500T 98 443 0,P 2.4640 4.6592 A
+0.000 0.00
+0.073 1320.33
+0.222 1454.82
+0.372 1508.99
+0.522 1556.78
+0.672 1602.41
+0.822 1642.00
+0.971 1670.10
+1.120 1694.80
+1.270 1701.30
+1.420 1704.29
+1.570 1701.01
+1.720 1694.55
+1.869 1683.86
+2.018 1659.69
+2.168 1620.16
+2.318 1570.03
+2.468 1517.93
+2.618 1463.32
+2.767 1400.99
+2.916 1331.42
+3.066 1279.48
+3.216 1108.99
+3.366 217.79
+3.516 10.58
+3.666 3.25
+3.816 0.00

@@ -1,0 +1,56 @@
+{
+  "name": "Precision 350m — Exact Altitude + Minimal Drift",
+  "description": "Reach exactly 350m and land as close to the launch pad as possible. Motor: Cesaroni 163H133-14A (163 Ns, 29mm, 0.190 kg, 1.2s burn). Body: 50mm OD (r=0.025m) CFRP, 4mm radial clearance over motor. Strategy: s0_ballast (GA range 0-1.0 kg) deadweights the rocket into the 350m apogee corridor — estimates show ~0.8 kg ballast hits this band. Recovery: since apogee < MAIN_DEPLOY_ALT (500m), only the drogue deploys (28 m/s descent) — intentionally faster descent minimizes wind-driven drift, aligning with the minimize-flight_time proxy. flight_time minimize is the mathematical proxy for landing distance from base. Stability judged at Mach 0.3 only — this rocket stays well subsonic throughout.",
+  "output": "designs/optimized/precision_350m.ork",
+  "payload_kg": 0.3,
+  "stack": [
+    {
+      "name": "Precision",
+      "body_radius": 0.025,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "163H133-14A" }
+    }
+  ],
+  "sim": {
+    "windaverage": 4.0,
+    "windturbulence": 0.0,
+    "launchaltitude": 0.0,
+    "launchlatitude": -23.55,
+    "launchlongitude": -46.633,
+    "geodeticmethod": "spherical",
+    "launchrodlength": 6.0,
+    "timestep": 0.005
+  },
+  "_calibration_note": "With windturbulence=0.0: GUI 24.12 matches headless 23.09 (~0m offset). Target 350m directly. Previous note (turbulence=0.1) had -1m GUI offset.",
+  "objectives": [
+    { "metric": "apogee", "kind": "target",  "value": 350,   "tolerance": 0.5, "weight": 10.0 },
+    { "metric": "apogee", "kind": "atmost",  "value": 350.5, "min_value": 349.5, "weight": 5.0 },
+    { "metric": "apogee", "kind": "atleast", "value": 349.5, "weight": 5.0 },
+    { "metric": "flight_time", "kind": "minimize", "scale": 120, "weight": 2.0 }
+  ],
+  "constraints": { "min_static_margin": 1.5 },
+  "stability": { "phase_machs": [0.3] },
+  "seeds": [
+    {
+      "_comment": "Final bisection champion (2026-07-02). Ballast precision-converged. Headless quanta: 349.968m / 350.005m — both display as 350m in OR GUI 24.12. windturbulence=0.0, dt=0.005s.",
+      "s0_span": 0.0688,
+      "s0_root": 0.1640,
+      "s0_nose_len": 0.2632,
+      "s0_ballast": 0.7837500,
+      "sep_delay": 0.4377
+    },
+    {
+      "s0_span": 0.065,
+      "s0_root": 0.160,
+      "s0_nose_len": 0.285,
+      "s0_ballast": 0.800,
+      "sep_delay": 0.5
+    },
+    {
+      "s0_span": 0.060,
+      "s0_root": 0.150,
+      "s0_nose_len": 0.320,
+      "s0_ballast": 0.900,
+      "sep_delay": 0.5
+    }
+  ]
+}

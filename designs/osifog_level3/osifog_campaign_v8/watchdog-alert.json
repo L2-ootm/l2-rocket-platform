@@ -1,0 +1,7 @@
+{
+  "message": "campaign process was absent and has been restarted idempotently",
+  "new_pid": 27592,
+  "restart_count": 1,
+  "status": "auto_recovered",
+  "updated_at": "2026-07-24T17:41:26.496733+00:00"
+}

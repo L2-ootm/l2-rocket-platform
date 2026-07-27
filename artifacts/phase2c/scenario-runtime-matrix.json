@@ -1,0 +1,761 @@
+{
+  "scenario_matrix": [
+    {
+      "label": "OFFICIAL_FULL_MISSION",
+      "scenario_type": "OFFICIAL_FULL_MISSION",
+      "mach": 0.8359239151073004,
+      "apogee_m": 2312.2208025113473,
+      "branches": [
+        {
+          "branch": 0,
+          "name": "Sustainer",
+          "samples": 1398,
+          "apex_time_s": 20.68332596122048,
+          "apex_alt_m": 2312.2208025113473,
+          "hit_time_s": 45.361302803291004,
+          "tumble_time_s": null,
+          "ignition_times_s": [
+            0.0,
+            1.695,
+            54.31
+          ],
+          "burnout_times_s": [
+            1.695,
+            3.39,
+            57.666000000000004
+          ],
+          "td_vz": -147.6907127906303,
+          "td_vxy": 6.196005120549961,
+          "td_speed": 147.82062482636965,
+          "tail_first_windows": 1,
+          "best_q": 0.962566260340455,
+          "orientation_at_apex_theta": 0.15130029424887181
+        },
+        {
+          "branch": 1,
+          "name": "Booster",
+          "samples": 970,
+          "apex_time_s": 8.52982984164185,
+          "apex_alt_m": 414.0208203847814,
+          "hit_time_s": 43.651888093842516,
+          "tumble_time_s": null,
+          "ignition_times_s": [
+            0.0,
+            65.28
+          ],
+          "burnout_times_s": [
+            1.695,
+            68.636
+          ],
+          "td_vz": -10.399591018656075,
+          "td_vxy": 19.044475120112438,
+          "td_speed": 21.698929143068185,
+          "tail_first_windows": 1,
+          "best_q": 0.9992799385380866,
+          "orientation_at_apex_theta": 1.079858208445114
+        }
+      ],
+      "events": {
+        "Sustainer": {
+          "SIM_WARN": [
+            0.0,
+            54.31,
+            57.666000000000004,
+            71.666
+          ],
+          "LAUNCH": [
+            0.0
+          ],
+          "IGNITION": [
+            0.0,
+            1.695,
+            54.31
+          ],
+          "LIFTOFF": [
+            0.041
+          ],
+          "LAUNCHROD": [
+            0.33206249999999987
+          ],
+          "BURNOUT": [
+            1.695,
+            3.39,
+            57.666000000000004
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ],
+          "EJECTION_CHARGE": [
+            13.39,
+            71.666
+          ],
+          "APOGEE": [
+            20.68332596122048
+          ],
+          "GROUND_HIT": [
+            45.361302803291004
+          ],
+          "SIMULATION_END": [
+            71.666
+          ]
+        },
+        "Booster": {
+          "IGNITION": [
+            0.0,
+            65.28
+          ],
+          "BURNOUT": [
+            1.695,
+            68.636
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ],
+          "SIM_WARN": [
+            1.695,
+            65.28,
+            68.636,
+            68.636,
+            82.636
+          ],
+          "APOGEE": [
+            8.52982984164185
+          ],
+          "EJECTION_CHARGE": [
+            11.695,
+            82.636
+          ],
+          "GROUND_HIT": [
+            43.651888093842516
+          ],
+          "SIMULATION_END": [
+            82.636
+          ]
+        }
+      },
+      "anti_tumble_valid": true,
+      "anti_tumble_digest": "1c4aecd0044eb6f143aba8038ecb197250eee49508375dc56703507f37775e0d",
+      "extension_count": 1
+    },
+    {
+      "label": "EXPOSED_SUSTAINER_ASCENT",
+      "scenario_type": "EXPOSED_SUSTAINER_ASCENT",
+      "mach": 0.8359239151073004,
+      "apogee_m": 2312.2208025113473,
+      "branches": [
+        {
+          "branch": 0,
+          "name": "Sustainer",
+          "samples": 1398,
+          "apex_time_s": 20.68332596122048,
+          "apex_alt_m": 2312.2208025113473,
+          "hit_time_s": 45.361302803291004,
+          "tumble_time_s": null,
+          "ignition_times_s": [
+            0.0,
+            1.695,
+            200.0
+          ],
+          "burnout_times_s": [
+            1.695,
+            3.39,
+            203.356
+          ],
+          "td_vz": -147.6907127906303,
+          "td_vxy": 6.196005120549961,
+          "td_speed": 147.82062482636965,
+          "tail_first_windows": 1,
+          "best_q": 0.962566260340455,
+          "orientation_at_apex_theta": 0.15130029424887181
+        },
+        {
+          "branch": 1,
+          "name": "Booster",
+          "samples": 970,
+          "apex_time_s": 8.52982984164185,
+          "apex_alt_m": 414.0208203847814,
+          "hit_time_s": 43.651888093842516,
+          "tumble_time_s": null,
+          "ignition_times_s": [
+            0.0,
+            200.0
+          ],
+          "burnout_times_s": [
+            1.695,
+            203.356
+          ],
+          "td_vz": -10.399591018656075,
+          "td_vxy": 19.044475120112438,
+          "td_speed": 21.698929143068185,
+          "tail_first_windows": 1,
+          "best_q": 0.9992799385380866,
+          "orientation_at_apex_theta": 1.079858208445114
+        }
+      ],
+      "events": {
+        "Sustainer": {
+          "SIM_WARN": [
+            0.0,
+            200.0,
+            203.356,
+            217.356
+          ],
+          "LAUNCH": [
+            0.0
+          ],
+          "IGNITION": [
+            0.0,
+            1.695,
+            200.0
+          ],
+          "LIFTOFF": [
+            0.041
+          ],
+          "LAUNCHROD": [
+            0.33206249999999987
+          ],
+          "BURNOUT": [
+            1.695,
+            3.39,
+            203.356
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ],
+          "EJECTION_CHARGE": [
+            13.39,
+            217.356
+          ],
+          "APOGEE": [
+            20.68332596122048
+          ],
+          "GROUND_HIT": [
+            45.361302803291004
+          ],
+          "SIMULATION_END": [
+            217.356
+          ]
+        },
+        "Booster": {
+          "IGNITION": [
+            0.0,
+            200.0
+          ],
+          "BURNOUT": [
+            1.695,
+            203.356
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ],
+          "SIM_WARN": [
+            1.695,
+            200.0,
+            203.356,
+            203.356,
+            217.356
+          ],
+          "APOGEE": [
+            8.52982984164185
+          ],
+          "EJECTION_CHARGE": [
+            11.695,
+            217.356
+          ],
+          "GROUND_HIT": [
+            43.651888093842516
+          ],
+          "SIMULATION_END": [
+            217.356
+          ]
+        }
+      },
+      "anti_tumble_valid": true,
+      "anti_tumble_digest": "1c4aecd0044eb6f143aba8038ecb197250eee49508375dc56703507f37775e0d",
+      "extension_count": 1
+    },
+    {
+      "label": "STAGE_FREE_DESCENT_DIAGNOSTIC",
+      "scenario_type": "STAGE_FREE_DESCENT_DIAGNOSTIC",
+      "mach": 0.8359239151073004,
+      "apogee_m": 2312.2208025113473,
+      "branches": [
+        {
+          "branch": 0,
+          "name": "Sustainer",
+          "samples": 1398,
+          "apex_time_s": 20.68332596122048,
+          "apex_alt_m": 2312.2208025113473,
+          "hit_time_s": 45.361302803291004,
+          "tumble_time_s": null,
+          "ignition_times_s": [
+            0.0,
+            1.695,
+            200.0
+          ],
+          "burnout_times_s": [
+            1.695,
+            3.39,
+            203.356
+          ],
+          "td_vz": -147.6907127906303,
+          "td_vxy": 6.196005120549961,
+          "td_speed": 147.82062482636965,
+          "tail_first_windows": 1,
+          "best_q": 0.962566260340455,
+          "orientation_at_apex_theta": 0.15130029424887181
+        },
+        {
+          "branch": 1,
+          "name": "Booster",
+          "samples": 970,
+          "apex_time_s": 8.52982984164185,
+          "apex_alt_m": 414.0208203847814,
+          "hit_time_s": 43.651888093842516,
+          "tumble_time_s": null,
+          "ignition_times_s": [
+            0.0,
+            200.0
+          ],
+          "burnout_times_s": [
+            1.695,
+            203.356
+          ],
+          "td_vz": -10.399591018656075,
+          "td_vxy": 19.044475120112438,
+          "td_speed": 21.698929143068185,
+          "tail_first_windows": 1,
+          "best_q": 0.9992799385380866,
+          "orientation_at_apex_theta": 1.079858208445114
+        }
+      ],
+      "events": {
+        "Sustainer": {
+          "SIM_WARN": [
+            0.0,
+            200.0,
+            203.356,
+            217.356
+          ],
+          "LAUNCH": [
+            0.0
+          ],
+          "IGNITION": [
+            0.0,
+            1.695,
+            200.0
+          ],
+          "LIFTOFF": [
+            0.041
+          ],
+          "LAUNCHROD": [
+            0.33206249999999987
+          ],
+          "BURNOUT": [
+            1.695,
+            3.39,
+            203.356
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ],
+          "EJECTION_CHARGE": [
+            13.39,
+            217.356
+          ],
+          "APOGEE": [
+            20.68332596122048
+          ],
+          "GROUND_HIT": [
+            45.361302803291004
+          ],
+          "SIMULATION_END": [
+            217.356
+          ]
+        },
+        "Booster": {
+          "IGNITION": [
+            0.0,
+            200.0
+          ],
+          "BURNOUT": [
+            1.695,
+            203.356
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ],
+          "SIM_WARN": [
+            1.695,
+            200.0,
+            203.356,
+            203.356,
+            217.356
+          ],
+          "APOGEE": [
+            8.52982984164185
+          ],
+          "EJECTION_CHARGE": [
+            11.695,
+            217.356
+          ],
+          "GROUND_HIT": [
+            43.651888093842516
+          ],
+          "SIMULATION_END": [
+            217.356
+          ]
+        }
+      },
+      "anti_tumble_valid": true,
+      "anti_tumble_digest": "1c4aecd0044eb6f143aba8038ecb197250eee49508375dc56703507f37775e0d",
+      "extension_count": 1
+    },
+    {
+      "label": "DEBUG_ONLY",
+      "scenario_type": "DEBUG_ONLY",
+      "mach": 0.8359239151073004,
+      "apogee_m": 2312.2208025113473,
+      "branches": [
+        {
+          "branch": 0,
+          "name": "Sustainer",
+          "samples": 1398,
+          "apex_time_s": 20.68332596122048,
+          "apex_alt_m": 2312.2208025113473,
+          "hit_time_s": 45.361302803291004,
+          "tumble_time_s": null,
+          "ignition_times_s": [
+            0.0,
+            1.695,
+            200.0
+          ],
+          "burnout_times_s": [
+            1.695,
+            3.39,
+            203.356
+          ],
+          "td_vz": -147.6907127906303,
+          "td_vxy": 6.196005120549961,
+          "td_speed": 147.82062482636965,
+          "tail_first_windows": 1,
+          "best_q": 0.962566260340455,
+          "orientation_at_apex_theta": 0.15130029424887181
+        },
+        {
+          "branch": 1,
+          "name": "Booster",
+          "samples": 970,
+          "apex_time_s": 8.52982984164185,
+          "apex_alt_m": 414.0208203847814,
+          "hit_time_s": 43.651888093842516,
+          "tumble_time_s": null,
+          "ignition_times_s": [
+            0.0,
+            200.0
+          ],
+          "burnout_times_s": [
+            1.695,
+            203.356
+          ],
+          "td_vz": -10.399591018656075,
+          "td_vxy": 19.044475120112438,
+          "td_speed": 21.698929143068185,
+          "tail_first_windows": 1,
+          "best_q": 0.9992799385380866,
+          "orientation_at_apex_theta": 1.079858208445114
+        }
+      ],
+      "events": {
+        "Sustainer": {
+          "SIM_WARN": [
+            0.0,
+            200.0,
+            203.356,
+            217.356
+          ],
+          "LAUNCH": [
+            0.0
+          ],
+          "IGNITION": [
+            0.0,
+            1.695,
+            200.0
+          ],
+          "LIFTOFF": [
+            0.041
+          ],
+          "LAUNCHROD": [
+            0.33206249999999987
+          ],
+          "BURNOUT": [
+            1.695,
+            3.39,
+            203.356
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ],
+          "EJECTION_CHARGE": [
+            13.39,
+            217.356
+          ],
+          "APOGEE": [
+            20.68332596122048
+          ],
+          "GROUND_HIT": [
+            45.361302803291004
+          ],
+          "SIMULATION_END": [
+            217.356
+          ]
+        },
+        "Booster": {
+          "IGNITION": [
+            0.0,
+            200.0
+          ],
+          "BURNOUT": [
+            1.695,
+            203.356
+          ],
+          "STAGE_SEPARATION": [
+            1.695
+          ],
+          "SIM_WARN": [
+            1.695,
+            200.0,
+            203.356,
+            203.356,
+            217.356
+          ],
+          "APOGEE": [
+            8.52982984164185
+          ],
+          "EJECTION_CHARGE": [
+            11.695,
+            217.356
+          ],
+          "GROUND_HIT": [
+            43.651888093842516
+          ],
+          "SIMULATION_END": [
+            217.356
+          ]
+        }
+      },
+      "anti_tumble_valid": true,
+      "anti_tumble_digest": "1c4aecd0044eb6f143aba8038ecb197250eee49508375dc56703507f37775e0d",
+      "extension_count": 1
+    }
+  ],
+  "true_free_descent": {
+    "label": "TRUE_FREE_DESCENT",
+    "scenario_type": "STAGE_FREE_DESCENT_DIAGNOSTIC",
+    "mach": 0.8359239151073004,
+    "apogee_m": 2312.2208025113473,
+    "branches": [
+      {
+        "branch": 0,
+        "name": "Sustainer",
+        "samples": 1398,
+        "apex_time_s": 20.68332596122048,
+        "apex_alt_m": 2312.2208025113473,
+        "hit_time_s": 45.361302803291004,
+        "tumble_time_s": null,
+        "ignition_times_s": [
+          0.0,
+          1.695,
+          200.0
+        ],
+        "burnout_times_s": [
+          1.695,
+          3.39,
+          203.356
+        ],
+        "td_vz": -147.6907127906303,
+        "td_vxy": 6.196005120549961,
+        "td_speed": 147.82062482636965,
+        "tail_first_windows": 1,
+        "best_q": 0.962566260340455,
+        "orientation_at_apex_theta": 0.15130029424887181
+      },
+      {
+        "branch": 1,
+        "name": "Booster",
+        "samples": 970,
+        "apex_time_s": 8.52982984164185,
+        "apex_alt_m": 414.0208203847814,
+        "hit_time_s": 43.651888093842516,
+        "tumble_time_s": null,
+        "ignition_times_s": [
+          0.0,
+          200.0
+        ],
+        "burnout_times_s": [
+          1.695,
+          203.356
+        ],
+        "td_vz": -10.399591018656075,
+        "td_vxy": 19.044475120112438,
+        "td_speed": 21.698929143068185,
+        "tail_first_windows": 1,
+        "best_q": 0.9992799385380866,
+        "orientation_at_apex_theta": 1.079858208445114
+      }
+    ],
+    "events": {
+      "Sustainer": {
+        "SIM_WARN": [
+          0.0,
+          200.0,
+          203.356,
+          217.356
+        ],
+        "LAUNCH": [
+          0.0
+        ],
+        "IGNITION": [
+          0.0,
+          1.695,
+          200.0
+        ],
+        "LIFTOFF": [
+          0.041
+        ],
+        "LAUNCHROD": [
+          0.33206249999999987
+        ],
+        "BURNOUT": [
+          1.695,
+          3.39,
+          203.356
+        ],
+        "STAGE_SEPARATION": [
+          1.695
+        ],
+        "EJECTION_CHARGE": [
+          13.39,
+          217.356
+        ],
+        "APOGEE": [
+          20.68332596122048
+        ],
+        "GROUND_HIT": [
+          45.361302803291004
+        ],
+        "SIMULATION_END": [
+          217.356
+        ]
+      },
+      "Booster": {
+        "IGNITION": [
+          0.0,
+          200.0
+        ],
+        "BURNOUT": [
+          1.695,
+          203.356
+        ],
+        "STAGE_SEPARATION": [
+          1.695
+        ],
+        "SIM_WARN": [
+          1.695,
+          200.0,
+          203.356,
+          203.356,
+          217.356
+        ],
+        "APOGEE": [
+          8.52982984164185
+        ],
+        "EJECTION_CHARGE": [
+          11.695,
+          217.356
+        ],
+        "GROUND_HIT": [
+          43.651888093842516
+        ],
+        "SIMULATION_END": [
+          217.356
+        ]
+      }
+    },
+    "anti_tumble_valid": true,
+    "anti_tumble_digest": "1c4aecd0044eb6f143aba8038ecb197250eee49508375dc56703507f37775e0d",
+    "extension_count": 1
+  },
+  "booster_free_descent": {
+    "separation_time_s": 1.695,
+    "apogee_time_s": 8.52982984164185,
+    "impact_time_s": 43.651888093842516,
+    "unpowered_vz_ms": 10.399591018656075,
+    "unpowered_vxy_ms": 19.044475120112438,
+    "unpowered_total_ms": 21.698929143068185
+  },
+  "motor_feasibility": [
+    {
+      "designation": "H180W",
+      "index": 7,
+      "total_impulse_ns": 233.686205,
+      "burn_duration_s": 1.313,
+      "loaded_mass_kg": 0.2464,
+      "propellant_kg": 0.121,
+      "available_dv_ms": 58.42155125,
+      "gravity_loss_ms": 6.440265,
+      "net_dv_ms": 51.98128625,
+      "required_dv_ms": 21.698929143068185,
+      "feasible": true,
+      "burn_fits_window": true
+    },
+    {
+      "designation": "J360_CTI",
+      "index": 18,
+      "total_impulse_ns": 815.81004,
+      "burn_duration_s": 2.13,
+      "loaded_mass_kg": 0.7092,
+      "propellant_kg": 0.409,
+      "available_dv_ms": 203.95251,
+      "gravity_loss_ms": 10.44765,
+      "net_dv_ms": 193.50485999999998,
+      "required_dv_ms": 21.698929143068185,
+      "feasible": true,
+      "burn_fits_window": true
+    },
+    {
+      "designation": "K550W",
+      "index": 19,
+      "total_impulse_ns": 1624.8713,
+      "burn_duration_s": 3.356,
+      "loaded_mass_kg": 1.4874,
+      "propellant_kg": 0.9197,
+      "available_dv_ms": 406.217825,
+      "gravity_loss_ms": 16.46118,
+      "net_dv_ms": 389.756645,
+      "required_dv_ms": 21.698929143068185,
+      "feasible": true,
+      "burn_fits_window": true
+    },
+    {
+      "designation": "J350W",
+      "index": 14,
+      "total_impulse_ns": 689.75566,
+      "burn_duration_s": 1.981,
+      "loaded_mass_kg": 0.6509,
+      "propellant_kg": 0.3759,
+      "available_dv_ms": 172.438915,
+      "gravity_loss_ms": 9.716805,
+      "net_dv_ms": 162.72211000000001,
+      "required_dv_ms": 21.698929143068185,
+      "feasible": true,
+      "burn_fits_window": true
+    }
+  ],
+  "powered_landing": {
+    "motor": "H180W",
+    "best_delay_s": 4.0,
+    "best_speed_ms": 18.045392785818155,
+    "is_legal_branch": false
+  }
+}

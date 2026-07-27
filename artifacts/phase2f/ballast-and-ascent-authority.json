@@ -1,0 +1,74 @@
+{
+  "ascent_authority": {
+    "apogee_m": 2312.2208025113473,
+    "apogee_times": [
+      8.5298,
+      20.6833
+    ],
+    "genuine_staging_before_apogee": true,
+    "mach": 0.8359239151073004,
+    "mach_pass": true,
+    "max_mach_limit": 0.95,
+    "min_static_margin_cal": 1.7454179417166482,
+    "min_static_margin_limit": 1.5,
+    "separation_times": [
+      1.695
+    ],
+    "stage_landings_count": 2,
+    "static_margin_pass": true,
+    "status": "Up To Date",
+    "target_apogee_m": 3000.0
+  },
+  "ballast_variants": [
+    {
+      "axial_position_m": 0.45,
+      "computed_length_m": 0.023979,
+      "computed_mass_kg": 3.0,
+      "computed_radius_m": 0.071,
+      "density_kg_m3": 7900,
+      "fits_inside_airframe": true,
+      "fits_inside_nose_cone": false,
+      "legal_density": true,
+      "legal_dimensions": true,
+      "mass_kg": 3.0,
+      "material": "steel",
+      "no_collision_with_motor_tube": false,
+      "shape": "solid_cylinder",
+      "volume_m3": 0.00037975
+    },
+    {
+      "axial_position_m": 0.45,
+      "computed_length_m": 0.027975,
+      "computed_mass_kg": 3.5,
+      "computed_radius_m": 0.071,
+      "density_kg_m3": 7900,
+      "fits_inside_airframe": true,
+      "fits_inside_nose_cone": false,
+      "legal_density": true,
+      "legal_dimensions": true,
+      "mass_kg": 3.5,
+      "material": "steel",
+      "no_collision_with_motor_tube": false,
+      "shape": "solid_cylinder",
+      "volume_m3": 0.00044304
+    },
+    {
+      "axial_position_m": 0.45,
+      "computed_length_m": 0.031972,
+      "computed_mass_kg": 4.0,
+      "computed_radius_m": 0.071,
+      "density_kg_m3": 7900,
+      "fits_inside_airframe": true,
+      "fits_inside_nose_cone": false,
+      "legal_density": true,
+      "legal_dimensions": true,
+      "mass_kg": 4.0,
+      "material": "steel",
+      "no_collision_with_motor_tube": false,
+      "shape": "solid_cylinder",
+      "volume_m3": 0.00050633
+    }
+  ],
+  "gate": 2,
+  "status": "PASS"
+}

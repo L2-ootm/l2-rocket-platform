@@ -1,0 +1,56 @@
+{
+  "phase": "2c",
+  "status": "PARTIAL_COMPLETE",
+  "gates": {
+    "gate0_scenario_forensics": {
+      "status": "PASS",
+      "finding": "14.76 m/s was a POWERED result (retro enabled at 3.0s), not free descent. Free descent was 21.70 m/s. Contradiction resolved.",
+      "artifact": "artifacts/phase2c/scenario-forensics.json"
+    },
+    "gate1_scenario_matrix": {
+      "status": "PASS_WITH_FINDING",
+      "finding": "All 4 scenario types produce identical results because ORK XML does not differentiate scenario types. The scenario type distinction exists in the Python manifest layer, not in the generated ORK. Retro delay parameter controls behavior, not scenario label.",
+      "scenarios_tested": ["OFFICIAL_FULL_MISSION", "EXPOSED_SUSTAINER_ASCENT", "STAGE_FREE_DESCENT_DIAGNOSTIC", "DEBUG_ONLY"],
+      "artifact": "artifacts/phase2c/scenario-runtime-matrix.json"
+    },
+    "gate4_true_free_descent": {
+      "status": "PASS",
+      "booster_touchdown_ms": 21.70,
+      "booster_vz_ms": 10.40,
+      "booster_vxy_ms": 19.04,
+      "booster_apogee_s": 8.530,
+      "booster_impact_s": 43.652,
+      "booster_windows": 1,
+      "booster_best_q": 0.9993,
+      "no_retro_ignition_confirmed": true,
+      "artifact": "artifacts/phase2c/booster-descent-timeline.json"
+    },
+    "gate5_motor_feasibility": {
+      "status": "PASS",
+      "feasible_motors": ["H180W", "J360_CTI", "K550W", "J350W"],
+      "all_have_sufficient_impulse": true,
+      "all_burn_within_window": true,
+      "artifact": "artifacts/phase2c/landing-motor-feasibility.json"
+    },
+    "gate6_powered_landing": {
+      "status": "INCOMPLETE",
+      "best_motor": "H180W",
+      "best_delay_s": 4.0,
+      "best_speed_ms": 18.05,
+      "target_speed_ms": 5.0,
+      "gap_ms": 13.05,
+      "k550w_best_speed_ms": 14.76,
+      "k550w_best_delay_s": 3.0,
+      "finding": "K550W performs better than H180W despite higher impulse — longer burn duration provides more sustained braking. Both still above 5 m/s.",
+      "artifact": "artifacts/phase2c/powered-landing-results.json"
+    }
+  },
+  "key_findings": [
+    "14.76 m/s was powered (retro enabled), not free descent (21.70 m/s)",
+    "Scenario types are not differentiated at ORK XML level — all produce identical results",
+    "K550W (1625 Ns) outperforms H180W (234 Ns) for booster landing — longer burn matters more than impulse magnitude",
+    "Booster has excellent tail-first alignment (q=0.999) but neither motor achieves <5 m/s",
+    "The gap is 9.76 m/s (K550W) or 13.05 m/s (H180W) from the 5 m/s threshold",
+    "All scenario types produce identical ORK XML — scenario differentiation is a Python-layer concept only"
+  ]
+}

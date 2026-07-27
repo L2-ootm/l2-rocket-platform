@@ -1,0 +1,42 @@
+{
+  "test": "frame_sign_contract",
+  "world_frame": {
+    "axes": "ENU (East-North-Up) per OpenRocket",
+    "vertical_positive_direction": "UP (positive Z is upward)",
+    "east_positive_direction": "East (positive X)",
+    "north_positive_direction": "North (positive Y)",
+    "velocity_z_sign": "POSITIVE UPWARD — OpenRocket TYPE_VELOCITY_Z is positive when ascending",
+    "source": "OpenRocket FlightDataType.TYPE_VELOCITY_Z documentation"
+  },
+  "body_frame": {
+    "body_axis_definition": "Rocket longitudinal axis (nose-to-tail)",
+    "nose_direction": "Positive body-Z (OpenRocket convention)",
+    "tail_direction": "Negative body-Z",
+    "theta": "Elevation angle of nose above horizontal (radians). theta=+pi/2 means nose straight up, theta=0 means nose horizontal, theta=-pi/2 means nose straight down"
+  },
+  "motor": {
+    "thrust_axis_definition": "Motor thrust acts along the rocket's positive longitudinal axis (nose direction)",
+    "exhaust_direction": "Exhaust exits opposite to thrust — toward the tail",
+    "force_on_vehicle_direction": "Nose-directed (forward along rocket axis)",
+    "source": "OpenRocket MotorMount ThrustVector — always aligned with rocket body-Z axis"
+  },
+  "kinematics": {
+    "velocity_vector": "World-frame velocity (ENU components)",
+    "vertical_velocity_sign": "POSITIVE when ascending, NEGATIVE when descending",
+    "acceleration_vector": "World-frame acceleration (derivative of velocity)",
+    "delta_velocity": "Change in velocity vector over a time interval"
+  },
+  "alignment": {
+    "q_total_formula": "q = -cosine(body_nose_axis · velocity_vector / speed)",
+    "q_vertical_formula": "q_vertical = sin(theta) when vz < 0, -sin(theta) when vz >= 0",
+    "q_equals_plus_one_meaning": "Nose axis is exactly opposite to velocity — full tail-first",
+    "q_equals_zero_meaning": "Nose axis is perpendicular to velocity",
+    "q_equals_minus_one_meaning": "Nose axis is aligned with velocity — full nose-first",
+    "source": "osifog_sweep.py line 1218: alignment_q = -axis_velocity_cosine"
+  },
+  "critical_interpretation": {
+    "during_tail_first_descent": "Nose points upward (theta > 0), velocity points downward (vz < 0). Motor thrust is nose-directed (upward). Therefore thrust OPPOSES velocity — this is retrograde braking.",
+    "phase_2d_error": "The Phase 2d test measured a rocket starting from rest on the launch pad. The +35.5 m/s velocity change was the rocket launching upward — expected behavior for a nose-directed motor. This does NOT prove the motor fires in the wrong direction during tail-first descent.",
+    "correct_conclusion": "The motor fires in the correct direction (nose-directed). During tail-first descent, nose-directed thrust IS retrograde braking. The motor IS braking the stage."
+  }
+}

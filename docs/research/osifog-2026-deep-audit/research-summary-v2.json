@@ -1,0 +1,123 @@
+{
+  "version": 2,
+  "audit_date": "2026-07-20",
+  "research_branch": "research/osifog-2026-deep-audit",
+  "status": "NO LEGAL BRANCH - DIAGNOSTIC ONLY",
+  "authority_artifact": null,
+  "corrections": {
+    "C1_motor_burn_duration": "J510W=2.500s (not 5.84s), K550W=3.356s (not 4.10s)",
+    "C2_propellant_masses": "J510W=0.6620kg (not 0.310kg), K550W=0.9197kg (not 0.620kg)",
+    "C3_score_arithmetic": "Largest penalty is propellant (35,438), not touchdown position (21,431). Ceiling with zero touchdown=864,387. Binding constraint for 850k is touchdown, not propellant.",
+    "C4_topology_overclaim": "3+1 topology NOT proven inherently unstable. Only 32 narrow candidates tested.",
+    "C5_central_motor_torque": "UNVERIFIED. Coaxial motor through CG creates no torque without measured moment arm.",
+    "C6_6dof_overclaim": "Implementation CONFIRMED, accuracy UNVERIFIED. No parity fixture exists.",
+    "C7_burn_time_stale": "CONFIRMED. osifog_sweep.py BURN_TIMES table uses wrong values.",
+    "C8_dry_mass_offset": "CONFIRMED. mission_adapter.rs:374 adds hardcoded 0.4 kg."
+  },
+  "experiments_completed": [
+    {
+      "id": "A",
+      "name": "Anti-tumble pre-event invariance",
+      "status": "PASS",
+      "finding": "Zero differences between with/without listener. Neither run produced TUMBLE event.",
+      "artifact": "experiments/antitumble_invariance.json"
+    },
+    {
+      "id": "C",
+      "name": "Motor data parity",
+      "status": "PASS",
+      "finding": "Corrected 4 motor values. Naming mismatch between .eng and MOTOR_DATABASE found.",
+      "artifact": "experiments/motor_data_parity.json"
+    },
+    {
+      "id": "D",
+      "name": "Score cross-validation",
+      "status": "PASS",
+      "finding": "Hand calc matches Python formula. Touchdown penalties are binding constraint for 850k.",
+      "artifact": "experiments/score_crossvalidation.json"
+    },
+    {
+      "id": "E",
+      "name": "Wind parity",
+      "status": "PASS",
+      "finding": "28-level AGL profile, correct conventions. Surface 3.1 m/s from 215 deg.",
+      "artifact": "experiments/wind_parity.json"
+    }
+  ],
+  "experiments_not_run": [
+    {"id": "B", "name": "Rust/OpenRocket parity", "reason": "Requires fixing dry_mass offset first"},
+    {"id": "F", "name": "Branch identity", "reason": "Requires parity fixture"},
+    {"id": "G", "name": "Landing calibration", "reason": "Requires parity fixture"}
+  ],
+  "blockers": [
+    {"id": "B1", "description": "All 32 tested sustainer candidates failed 1.5-cal stability gate", "severity": "BLOCKER", "confidence": "CONFIRMED"},
+    {"id": "B2", "description": "Rust/OpenRocket parity never established", "severity": "BLOCKER", "confidence": "CONFIRMED"},
+    {"id": "B3", "description": "Touchdown penalties are binding score constraint", "severity": "HIGH", "confidence": "CONFIRMED"}
+  ],
+  "downgraded_claims": [
+    {"claim": "3+1 topology is inherently unstable", "from": "CONFIRMED", "to": "HIGH (narrow evidence)"},
+    {"claim": "6-DOF is production-grade", "from": "CONFIRMED", "to": "Implementation CONFIRMED, accuracy UNVERIFIED"},
+    {"claim": "Central motor creates asymmetric torque", "from": "MEDIUM", "to": "UNVERIFIED"},
+    {"claim": "MAP-Elites is recommended optimizer", "from": "CONFIRMED", "to": "LOW (no empirical evidence)"}
+  ],
+  "score_analysis": {
+    "largest_absolute_penalty": "Propellant (35,437.50)",
+    "largest_reducible_penalty": "Touchdown speed (3,260.18)",
+    "binding_constraint_850k": "Touchdown penalties (position + speed = 24,691 total)",
+    "ceiling_zero_touchdown": 864387,
+    "current_score": 839696,
+    "gap_to_850k": 10304,
+    "required_touchdown_reduction": "Reduce combined touch penalties by ~3,256 points"
+  },
+  "motor_data_corrected": {
+    "J510W": {"burn_time_s": 2.500, "propellant_kg": 0.6620, "loaded_kg": 1.0800, "impulse_ns": 1180.5},
+    "K550W": {"burn_time_s": 3.356, "propellant_kg": 0.9197, "loaded_kg": 1.4874, "impulse_ns": 1624.9},
+    "H180W": {"burn_time_s": 1.313, "propellant_kg": 0.1210, "loaded_kg": 0.2464, "impulse_ns": 233.7},
+    "J360": {"burn_time_s": 2.130, "propellant_kg": 0.4090, "loaded_kg": 0.7092, "impulse_ns": 815.8}
+  },
+  "urgent_path": {
+    "phase_1": "Fix motor/mass data + dry_mass offset (2.5h likely)",
+    "phase_2": "Establish Rust/OpenRocket parity (1.5d likely)",
+    "phase_3": "Expand search space (6h likely)",
+    "phase_4": "Targeted stability search (1d likely)",
+    "phase_5": "Powered landing calibration (1.5d likely)",
+    "phase_6": "Save/reopen verification (4h likely)",
+    "total_likely": "~6 days"
+  },
+  "not_proven": [
+    "Rust/OpenRocket phase-margin parity",
+    "Powered landing feasibility for any candidate",
+    "Score formula cross-validation between Python and Rust",
+    "3+1 topology stability across broader search space",
+    "MAP-Elites superiority over current GA",
+    "Central motor torque contribution"
+  ],
+  "files_created": [
+    "00_executive_findings.md",
+    "01_evidence_and_reading_ledger.md",
+    "02_repository_and_active_path_map.md",
+    "03_authority_rules_and_data_lineage.md",
+    "04_ast_geometry_and_constructability.md",
+    "05_mass_motors_and_inertia.md",
+    "06_aerodynamics_stability_and_6dof.md",
+    "07_staging_events_descent_and_landing.md",
+    "08_openrocket_compiler_scenarios_and_parity.md",
+    "09_optimizer_evolution_and_ckg.md",
+    "10_testing_numerics_and_reproducibility.md",
+    "11_performance_concurrency_and_caching.md",
+    "12_artifact_forensics_and_historical_claims.md",
+    "13_controlled_experiments.md",
+    "14_risk_register.md",
+    "15_target_architecture.md",
+    "16_implementation_roadmap.md",
+    "17_urgent_osifog_path.md",
+    "18_adversarial_review.md",
+    "19_corrections_and_errata.md",
+    "20_completed_experiment_results.md",
+    "21_revised_executive_findings.md",
+    "22_revised_urgent_path.md",
+    "research-summary.json",
+    "research-summary-v2.json"
+  ],
+  "next_implementation_command": "Replace MOTOR_PROPELLANT_KG and _motor_burn_time() with actual .eng values, remove 0.4 kg dry_mass offset, then create parity fixture"
+}

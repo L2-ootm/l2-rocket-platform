@@ -1,0 +1,122 @@
+[
+  {
+    "apex_t": 8.485,
+    "burn_direction_cosine_mean": 0.8708747671273644,
+    "burn_window_diagnostic": {
+      "end_time_s": 11.169652599538914,
+      "fraction_opposing_velocity": 0.06521739130434782,
+      "fraction_vertical_braking": 0.15217391304347827,
+      "mean_direction_cosine": 0.8708747671273644,
+      "retro_braking_verified": false,
+      "sample_count": 46,
+      "start_time_s": 9.521852880043745
+    },
+    "hit_t": 21.345,
+    "ignition_t": 9.522,
+    "label": "E8_8_J350W_d9.5",
+    "min_speed_after_ignition": {
+      "mass_kg": 8.2957,
+      "q": 0.2112,
+      "speed_ms": 5.719,
+      "stability_cal": 0.3804,
+      "t": 9.6038,
+      "theta_rate_rad_s": -0.4761,
+      "thrust_n": 688.23
+    },
+    "q_flip_delay_after_ignition_s": 0.132,
+    "q_flip_time_s": 9.6538,
+    "q_mean_post_ignition": -0.9747,
+    "q_mean_pre_ignition": 0.9191,
+    "thrust_line_moment": "zero_by_construction (axisymmetric single centerline retro motor + symmetric 3-motor ring + centerline nose ballast; r_thrust and F_thrust colinear with body axis, CG on axis)"
+  },
+  {
+    "apex_t": 8.485,
+    "burn_direction_cosine_mean": 0.868346880296579,
+    "burn_window_diagnostic": {
+      "end_time_s": 11.457130144287586,
+      "fraction_opposing_velocity": 0.0625,
+      "fraction_vertical_braking": 0.3333333333333333,
+      "mean_direction_cosine": 0.868346880296579,
+      "retro_braking_verified": false,
+      "sample_count": 48,
+      "start_time_s": 9.82185288004374
+    },
+    "hit_t": 20.207,
+    "ignition_t": 9.822,
+    "label": "E8_8_J350W_d9.8",
+    "min_speed_after_ignition": {
+      "mass_kg": 8.2957,
+      "q": 0.1647,
+      "speed_ms": 8.16,
+      "stability_cal": 0.3655,
+      "t": 9.9038,
+      "theta_rate_rad_s": -0.5251,
+      "thrust_n": 688.23
+    },
+    "q_flip_delay_after_ignition_s": 0.132,
+    "q_flip_time_s": 9.9538,
+    "q_mean_post_ignition": -0.9708,
+    "q_mean_pre_ignition": 0.8942,
+    "thrust_line_moment": "zero_by_construction (axisymmetric single centerline retro motor + symmetric 3-motor ring + centerline nose ballast; r_thrust and F_thrust colinear with body axis, CG on axis)"
+  },
+  {
+    "apex_t": 8.485,
+    "burn_direction_cosine_mean": 0.8690490921103345,
+    "burn_window_diagnostic": {
+      "end_time_s": 11.668582917406372,
+      "fraction_opposing_velocity": 0.061224489795918366,
+      "fraction_vertical_braking": 0.2653061224489796,
+      "mean_direction_cosine": 0.8690490921103345,
+      "retro_braking_verified": false,
+      "sample_count": 49,
+      "start_time_s": 10.021852880043735
+    },
+    "hit_t": 19.513,
+    "ignition_t": 10.022,
+    "label": "E8_8_J350W_d10.0",
+    "min_speed_after_ignition": {
+      "mass_kg": 8.2957,
+      "q": 0.099,
+      "speed_ms": 9.645,
+      "stability_cal": 0.3542,
+      "t": 10.1038,
+      "theta_rate_rad_s": -0.5368,
+      "thrust_n": 688.23
+    },
+    "q_flip_delay_after_ignition_s": 0.132,
+    "q_flip_time_s": 10.1538,
+    "q_mean_post_ignition": -0.9685,
+    "q_mean_pre_ignition": 0.8718,
+    "thrust_line_moment": "zero_by_construction (axisymmetric single centerline retro motor + symmetric 3-motor ring + centerline nose ballast; r_thrust and F_thrust colinear with body axis, CG on axis)"
+  },
+  {
+    "apex_t": 8.485,
+    "burn_direction_cosine_mean": 0.9943428642762533,
+    "burn_window_diagnostic": {
+      "end_time_s": 16.655758772085814,
+      "fraction_opposing_velocity": 0.0,
+      "fraction_vertical_braking": 0.0,
+      "mean_direction_cosine": 0.9943428642762533,
+      "retro_braking_verified": false,
+      "sample_count": 39,
+      "start_time_s": 15.003911881859343
+    },
+    "hit_t": 17.649,
+    "ignition_t": 15.004,
+    "label": "E8_8_J350W_d15.0",
+    "min_speed_after_ignition": {
+      "mass_kg": 8.4228,
+      "q": -0.9811,
+      "speed_ms": 39.245,
+      "stability_cal": 0.4283,
+      "t": 15.0098,
+      "theta_rate_rad_s": 0.0221,
+      "thrust_n": 200.71
+    },
+    "q_flip_delay_after_ignition_s": null,
+    "q_flip_time_s": null,
+    "q_mean_post_ignition": -0.9971,
+    "q_mean_pre_ignition": -0.2161,
+    "thrust_line_moment": "zero_by_construction (axisymmetric single centerline retro motor + symmetric 3-motor ring + centerline nose ballast; r_thrust and F_thrust colinear with body axis, CG on axis)"
+  }
+]

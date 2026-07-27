@@ -1,0 +1,20 @@
+;AeroTech J510W extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=201, curve_id=225
+; lookup key 'J510W' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+J510W 38 584 6,8,10,12,14,P 0.6620 1.0800 A
+0.000 0.00
+0.032 1055.90
+0.110 865.54
+0.161 829.93
+0.267 794.33
+0.351 780.63
+0.512 705.31
+0.682 654.63
+1.318 624.50
+1.461 475.23
+1.623 345.12
+1.934 153.39
+2.039 115.04
+2.177 41.09
+2.317 5.48
+2.500 0.00

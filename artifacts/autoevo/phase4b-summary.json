@@ -1,0 +1,69 @@
+{
+  "date": "2026-07-20",
+  "phase": "4b-corrective-loop",
+  "status": "NO_LEGAL_BRANCH_DIAGNOSTIC_ONLY",
+
+  "corpus_naming": {
+    "replay_corpus_json": "artifacts/autoevo/replay-corpus.json (58 rows) is a HISTORICAL EVIDENCE LEDGER, not a calibrated candidate-level replay corpus -- it mixes aggregate historical summaries, null candidate lineages, and 22 unclassified rows. From this session forward, new candidate-level data (strake-batch-results.json, phase4b-focused-powered-experiment.json, tail-mass-cg-inertia-matrix.json, low-thrust-long-burn-results.json) carries per-row identity (label/topology/motor/delay) and should be the basis for any future candidate-level corpus build; the 58-row ledger should not be treated as calibration-grade."
+  },
+
+  "bugs_found_and_fixed": [
+    "apex-detection-second-peak (scripts/descent_gates.py::apex_time_from_apogee_events)",
+    "apex-detection-delayed-own-apogee (scripts/strake_batch.py::run_ork apex_t_hint parameter)",
+    "ground-contact-contamination-in-min-speed (scripts/flip_diagnosis.py::_min_speed_after_ignition)"
+  ],
+  "full_detail": "artifacts/autoevo/diagnostic-integrity-audit.json",
+
+  "section_6_ignition_gap": {
+    "prior_claim_refuted": true,
+    "conclusion": "No real ignition-arming-window gap exists in osifog_sweep.py. 11/11 delays (8.50-9.50s, 0.1s steps) on the K550W/E8_8 topology ignited exactly on schedule once the apex-detection bug was fixed. The prior session's Finding 4 ('narrow arming window') was itself an artifact of that bug.",
+    "evidence": "artifacts/autoevo/ignition-window-resolution.json"
+  },
+
+  "section_1_and_3_q_decomposition": {
+    "method": "dq/dt = -(du_T/dt . v_hat) - (u_T . d(v_hat)/dt), integrated over the burn window (trapezoid rule), validated by closure_error (actual measured dq/dt minus the sum of the two terms) staying within ~1-2% of the actual derivative magnitude.",
+    "cases_tested": ["E8_8 / H180W / delay=9.5s", "E8_8 / H180W / delay=10.0s"],
+    "result": "Both cases classify VELOCITY_VECTOR_OVERSHOOT_DOMINANT (burn-window-integrated |velocity_direction_contribution| ~2.1-2.8x |body_rotation_contribution|). The q sign change during these burns is driven predominantly by the VELOCITY VECTOR reorienting (consistent with the burn decelerating the vehicle toward a near-hover speed minimum, where small residual/horizontal velocity components make v_hat swing rapidly), not by the body physically tumbling in the world frame. Body rotation is a real, non-negligible secondary contributor (not zero) in both cases.",
+    "reframing": "The prior report's language ('irreversible aerodynamic reorientation', 'flip to nose-first') implied a body-tumble mechanism. This data does not support that as the dominant mechanism for these two reference cases; it supports a velocity-vector-overshoot-dominant mechanism instead. Do not use 'motor-induced flip' as a body-rotation claim without per-case decomposition -- per the directive, INSUFFICIENT_TELEMETRY/BODY_ROTATION_DOMINANT/MIXED remain possible classifications for other candidates and were not assumed to generalize from these two cases.",
+    "full_detail": "artifacts/autoevo/q-derivative-decomposition.json"
+  },
+
+  "section_4_tail_mass_matrix": {
+    "cases": "A: H73J no ballast. B: H73J + ballast matched to K550W's total loaded mass (1.1783 kg gap). C: H73J + same total ballast mass as B, split mid/aft. D: K550W present, never ignited (the real configuration).",
+    "key_result": "Case D (real K550W, mass=17.765kg, pitch_I=9.116 kg*m^2) achieves mean_q=+0.557 and a 28.3s sustained tail-first window. Case C (H73J + ballast, mass=18.583kg [HIGHER than D], pitch_I=9.244 [HIGHER than D]) achieves only mean_q=-0.622 and a 1.85s window -- worse on every stability metric despite matching or exceeding D's mass, CG proximity, and pitch inertia.",
+    "classification": "unresolved_not_attributable_to_mass_cg_or_pitch_inertia",
+    "implication": "The prior report's causal claim ('a heavier inert tail mass ... likely by increasing pitch moment of inertia') is NOT supported by this controlled data: matching or exceeding K550W's mass/CG/pitch-inertia via physical ballast on H73J did not reproduce K550W's passive stabilization. The most likely uncontrolled variable is K550W's larger motor-casing diameter (0.054m vs H73J's 0.038m) and its associated aerodynamic footprint at the tail, which this ballast-only matrix does not test.",
+    "full_detail": "artifacts/autoevo/tail-mass-cg-inertia-matrix.json"
+  },
+
+  "section_5_low_thrust_long_burn": {
+    "motors_compared": "H73J (188.3 Ns / 2.953s, mean thrust 63.8N) vs H180W (233.7 Ns / 1.313s, mean thrust 178.0N), same E8_8 topology, delay=9.5s",
+    "result": "H73J has a measurably gentler initial deceleration (-0.58 m/s^2 vs -11.55 m/s^2), a higher opposing-impulse fraction (0.130 vs 0.096), and a higher horizontal-opposing-impulse fraction (0.243 vs 0.153) than H180W. Neither reaches a legal (<5 m/s) touchdown (58.5 vs 58.8 m/s) -- total impulse and burn shape differences at this delay/topology are not sufficient by themselves to solve the flip.",
+    "full_detail": "artifacts/autoevo/low-thrust-long-burn-results.json"
+  },
+
+  "section_7_focused_powered_experiment": {
+    "budget": "12 runs maximum",
+    "actual_runs_used": 11,
+    "matrix": "2 topologies (E8 baseline; E8 + Case-B mass-matched ballast) x 2 motors (H73J, H180W) x up to 3 delays each",
+    "early_stops": "1 of 4 topology/motor pairs early-stopped after 2 runs ('powered result worse than free descent twice': best_controlled_tail_mass_CaseB / H73J)",
+    "legal_branch_found": false,
+    "best_result_this_experiment": "touchdown 58.33 m/s (E8_baseline / H73J / delay=9.295s) -- still far from the <5 m/s legal threshold",
+    "full_detail": "artifacts/autoevo/phase4b-focused-powered-experiment.json"
+  },
+
+  "proven": [
+    "No ignition-arming-window bug exists (Section 6 hypothesis refuted).",
+    "The 16-powered-probe strake batch and the flip-diagnosis min-speed field were both corrupted by apex-detection/ground-contact bugs, now fixed and regenerated with real data.",
+    "For the two H180W reference cases analyzed, q's sign change is velocity-vector-overshoot-dominant, not body-rotation-dominant.",
+    "Matching or exceeding K550W's mass/CG/pitch-inertia via ballast on H73J does not reproduce K550W's passive tail-first stabilization.",
+    "H73J's lower-thrust/longer-burn profile measurably improves opposing-impulse fraction vs H180W at the same delay, but does not close the gap to a legal touchdown.",
+    "Across the 11-run focused matrix (2 topologies x 2 motors, up to 3 delays each), no configuration reached a legal (<5 m/s) touchdown."
+  ],
+  "not_proven": [
+    "What generalizes from the 2-case q-decomposition to other candidates/motors/delays (only H180W @ 9.5s/10.0s on E8_8 was decomposed).",
+    "What actually causes K550W's passive stabilization if not mass/CG/pitch-inertia (motor-diameter/aerodynamic-footprint hypothesis stated but not tested).",
+    "Whether a wider strake span/placement sweep (section 8, deliberately not re-run this session) or a genuinely different topology can close the gap to a legal branch.",
+    "850k or any legal full-vehicle score in this track -- this remains a diagnostic-only phase per the directive."
+  ]
+}

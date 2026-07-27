@@ -1,0 +1,32 @@
+{
+  "test": "missing_motor_resolution",
+  "status": "MOTOR-INCOMPLETE — current authority lineage cannot be used",
+  "motors": [
+    {
+      "designation": "644J94-P",
+      "manufacturer": "Cesaroni Technology Inc.",
+      "diameter_m": 0.038,
+      "length_m": 0.367,
+      "propellant_kg": null,
+      "loaded_kg": null,
+      "eng_file": null,
+      "resolution": "MOTOR_DATABASE references this motor (index 36) but no .eng file was extracted from OpenRocket 24.12. The motor database entry has a digest hash but no local curve data.",
+      "used_by_osifog": true,
+      "action_required": "Extract .eng from OpenRocket 24.12 bundled motor database using extract_motors.py"
+    },
+    {
+      "designation": "949J150-P",
+      "manufacturer": "Cesaroni Technology Inc.",
+      "diameter_m": 0.038,
+      "length_m": 0.500,
+      "propellant_kg": null,
+      "loaded_kg": null,
+      "eng_file": null,
+      "resolution": "MOTOR_DATABASE references this motor (index 37) but no .eng file was extracted. This is the motor used by the current authority candidate (s0_main=37).",
+      "used_by_osifog": true,
+      "action_required": "Extract .eng from OpenRocket 24.12 bundled motor database"
+    }
+  ],
+  "impact": "The current authority candidate (osifog_precision.py falcon_submission_candidate) uses s0_main=37 (949J150-P) which has no .eng file. This motor cannot be loaded by motor_data.py. The candidate cannot be used for authority validation until the .eng file is extracted.",
+  "recommendation": "Use J350W or J420R based candidates (which have .eng files) for the current search. Extract 644J94-P and 949J150-P .eng files for future authority lineage."
+}

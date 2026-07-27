@@ -1,0 +1,45 @@
+{
+  "name": "Ballistic Max — Single Stage Peak Performance",
+  "description": "Best possible single-stage rocket on the O8000 (41 kNs class O). Maximize apogee and Mach number with full v4 realism: shouldered nose/interstage, min-diameter motor fit enforced (161mm motor in 87mm OD airframe), per-stage recovery train, structural masses. No multi-stage complexity — a pure ballistic performance baseline. No Rust Stage 1 (engine is 3-stage-only); run Stage 2 only with a generous GA. Target: highest apogee a single O8000 can reach.",
+  "output": "designs/optimized/ballistic_max_ss.ork",
+  "payload_kg": 0.3,
+  "stack": [
+    {
+      "name": "Ballistic",
+      "body_radius": 0.087,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "40960O8000-P" }
+    }
+  ],
+  "sim": {
+    "windaverage": 2.0,
+    "windturbulence": 0.05,
+    "launchaltitude": 600.0,
+    "launchlatitude": -23.55,
+    "launchlongitude": -46.633,
+    "geodeticmethod": "spherical",
+    "launchrodlength": 15.0
+  },
+  "objectives": [
+    { "metric": "apogee", "kind": "maximize", "scale": 1000000, "weight": 5.0 },
+    { "metric": "mach",   "kind": "maximize", "scale": 10,      "weight": 2.0 }
+  ],
+  "constraints": { "min_static_margin": 1.5 },
+  "stability": { "phase_machs": [0.3, 2.0] },
+  "seeds": [
+    {
+      "_comment": "OR-validated champion — 15.28 km / Mach 3.12, +1.59 cal margin (2026-07-02)",
+      "s0_span": 0.1981,
+      "s0_root": 0.3565,
+      "s0_nose_len": 1.0513,
+      "s0_ballast": 2.4016,
+      "sep_delay": 1.1947
+    },
+    {
+      "s0_span": 0.215,
+      "s0_root": 0.560,
+      "s0_nose_len": 1.100,
+      "s0_ballast": 0.0,
+      "sep_delay": 0.5
+    }
+  ]
+}

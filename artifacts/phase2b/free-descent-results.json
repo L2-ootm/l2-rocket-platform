@@ -1,0 +1,128 @@
+{
+  "test": "free_descent_and_powered_landing",
+  "candidate": {
+    "s0_main": 14,
+    "s1_main": 14,
+    "s0_retro": 19,
+    "s1_retro": 19,
+    "main_cluster_count": 3,
+    "s0_body_rad": 0.074,
+    "s1_body_rad": 0.074,
+    "s0_body_len": 0.75,
+    "s1_body_len": 0.8,
+    "s1_separation_delay": 0.0,
+    "s0_retro_delay": 200.0,
+    "s1_retro_delay": 200.0,
+    "nose_mass_kg": 4.0,
+    "nose_ballast_pos_m": 0.45,
+    "nose_length_m": 0.5,
+    "s0_mid_ballast_kg": 0.0,
+    "s1_mid_ballast_kg": 0.0,
+    "s0_aft_ballast_kg": 0.0,
+    "s1_aft_ballast_kg": 0.5,
+    "s0_fin_count": 4,
+    "s0_fin_root": 0.15,
+    "s0_fin_height": 0.2,
+    "s0_fin_sweep": 8.0,
+    "s1_fin_count": 4,
+    "s1_fin_root": 0.22,
+    "s1_fin_height": 0.38,
+    "s1_fin_sweep": 5.0,
+    "s1_grid_fin_count": 0,
+    "s1_grid_fin_root": 0.06,
+    "s1_grid_fin_height": 0.06,
+    "s1_grid_fin_position_m": 0.03,
+    "s0_grid_fin_count": 0,
+    "s0_grid_fin_root": 0.06,
+    "s0_grid_fin_height": 0.06,
+    "s0_grid_fin_position_m": 0.03,
+    "s0_fin_thickness_m": 0.003,
+    "s1_fin_thickness_m": 0.003,
+    "s0_grid_fin_thickness_m": 0.001,
+    "s1_grid_fin_thickness_m": 0.001,
+    "s0_fin_material": "fiberglass",
+    "s1_fin_material": "fiberglass",
+    "s0_grid_fin_material": "fiberglass",
+    "s1_grid_fin_material": "fiberglass",
+    "launch_azimuth": 34.0,
+    "launch_angle_deg": 3.85
+  },
+  "free_descent": {
+    "branches": [
+      {
+        "branch": 0,
+        "name": "Sustainer",
+        "samples": 1398,
+        "apex_time_s": 20.68332596122048,
+        "apex_altitude_m": 2312.2208025113473,
+        "hit_time_s": 45.361302803291004,
+        "touchdown_vz_ms": -147.6907127906303,
+        "touchdown_vxy_ms": 6.196005120549961,
+        "touchdown_total_speed_ms": 147.82062482636965,
+        "tail_first_windows": 1,
+        "best_alignment_q": 0.962566260340455,
+        "alignment_candidates": 2
+      },
+      {
+        "branch": 1,
+        "name": "Booster",
+        "samples": 970,
+        "apex_time_s": 8.52982984164185,
+        "apex_altitude_m": 414.0208203847814,
+        "hit_time_s": 43.651888093842516,
+        "touchdown_vz_ms": -10.399591018656075,
+        "touchdown_vxy_ms": 19.044475120112438,
+        "touchdown_total_speed_ms": 21.698929143068185,
+        "tail_first_windows": 1,
+        "best_alignment_q": 0.9992799385380866,
+        "alignment_candidates": 32
+      }
+    ],
+    "mach": 0.8359239151073004,
+    "apogee": 2312.2208025113473
+  },
+  "powered_landing": {
+    "best_delay_s0": 43.205302803291005,
+    "best_delay_s1": 41.49588809384252,
+    "best_speed": 266.43511277458845,
+    "is_legal_branch": false,
+    "final_result": {
+      "landings": [
+        {
+          "branch": 0,
+          "name": "Sustainer",
+          "time_s": 44.72994304165252,
+          "vz_ms": -266.3720090678081,
+          "vxy_ms": 5.798457069532044,
+          "total_speed": 266.43511277458845,
+          "total_speed_ms": 266.43511277458845,
+          "east_m": 12.569310201072275,
+          "north_m": 12.857259043953702,
+          "dist_m": 17.98045241516767
+        },
+        {
+          "branch": 1,
+          "name": "Booster",
+          "time_s": 43.08562548457613,
+          "vz_ms": -31.066619974823734,
+          "vxy_ms": 173.39028261555794,
+          "total_speed": 176.15142628478253,
+          "total_speed_ms": 176.15142628478253,
+          "east_m": 292.6652785666405,
+          "north_m": 489.13683551595125,
+          "dist_m": 570.0068500790566
+        }
+      ],
+      "mach": 0.8359239151073004,
+      "min_margin": 1.7454179417166482,
+      "legal": false,
+      "violations": [
+        "Stage 0 crash: 266.44 m/s >= 5.0 m/s (total speed limit)",
+        "Stage 1 crash: 176.15 m/s >= 5.0 m/s (total speed limit)",
+        "Retro braking telemetry gate: exactly two branch diagnostics required, found 0"
+      ],
+      "retro_delay_s0": 43.205302803291005,
+      "retro_delay_s1": 41.49588809384252
+    }
+  }
+}

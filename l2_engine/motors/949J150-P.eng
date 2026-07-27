@@ -1,0 +1,17 @@
+;Cesaroni Technology Inc. 949J150-P extracted from OpenRocket 24.12 bundled database via live JVM query (digest=2a49c07ae36061aedd2af01c57a83d81)
+; no .eng file existed for this motor at all before this -- MOTOR_DATABASE had a real digest
+; but rocket_ast.py/organic_loop.py could never actually simulate it (Rust has no thrust curve)
+949J150-P 38 500 0,P 0.5960 0.9510 CTI
+0.000 0.00
+0.004 33.05
+0.030 324.58
+0.120 248.73
+0.617 225.00
+1.385 201.27
+2.306 183.47
+3.425 177.12
+4.149 123.73
+4.934 79.66
+5.590 42.37
+6.318 19.49
+6.434 0.00

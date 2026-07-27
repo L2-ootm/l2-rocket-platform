@@ -1,0 +1,46 @@
+{
+  "design": {
+    "sustainer": {
+      "main_motor": "J800T",
+      "retro_motor": "F50T",
+      "body_radius_mm": 34,
+      "body_length_m": 0.6,
+      "nose_mass_kg": 0.3,
+      "retro_delay_s": 174.0
+    },
+    "booster": {
+      "main_motor": "L1150",
+      "retro_motor": "F50T",
+      "body_radius_mm": 43,
+      "body_length_m": 0.749,
+      "retro_delay_s": 30.0
+    }
+  },
+  "results": {
+    "apogee_m": 3009.960207009985,
+    "apogee_error_m": 9.96020700998497,
+    "max_mach": 1.6044175834974754,
+    "flight_time_s": 179.42,
+    "s0_landing_vz": 0.0,
+    "s0_landing_dist": 270.56062714044054,
+    "s1_landing_vz": 14.053657892840594,
+    "s1_landing_dist": 2113.696372506594,
+    "total_penalty": 107613108.13720457,
+    "score": 0.0
+  },
+  "anti_tumbling_extension": {
+    "description": "JavaScript SimulationListener that prevents OpenRocket from aborting on tumble",
+    "code": "function handleFlightEvent(status, event) { if (event.getType().name() === 'TUMBLE') { return false; } return true; }",
+    "install": "Simulation > Simulation listeners > Scripting"
+  },
+  "atmosphere": {
+    "temperature_c": 17.4,
+    "pressure_hpa": 1000,
+    "humidity": 0.91
+  },
+  "launch_site": {
+    "latitude": 28.5621,
+    "longitude": -80.5772,
+    "altitude_m": 3.0
+  }
+}

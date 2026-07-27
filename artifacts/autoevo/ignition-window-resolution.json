@@ -1,0 +1,628 @@
+{
+  "conclusion": "no_real_arming_gap_all_delays_ignite_on_schedule",
+  "delays_tested_s": [
+    8.5,
+    8.6,
+    8.7,
+    8.8,
+    8.9,
+    9.0,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5
+  ],
+  "delays_where_ignition_matched_request": 11,
+  "delays_where_motor_genuinely_never_ignited": 0,
+  "motor": "K550W",
+  "results": [
+    {
+      "all_events": [
+        [
+          "IGNITION",
+          0.0
+        ],
+        [
+          "BURNOUT",
+          1.695
+        ],
+        [
+          "STAGE_SEPARATION",
+          1.695
+        ],
+        [
+          "SIM_WARN",
+          1.695
+        ],
+        [
+          "APOGEE",
+          8.2747
+        ],
+        [
+          "IGNITION",
+          8.5
+        ],
+        [
+          "EJECTION_CHARGE",
+          11.695
+        ],
+        [
+          "BURNOUT",
+          11.856
+        ],
+        [
+          "EJECTION_CHARGE",
+          25.856
+        ],
+        [
+          "GROUND_HIT",
+          30.718
+        ],
+        [
+          "SIMULATION_END",
+          30.718
+        ]
+      ],
+      "genuinely_never_ignited": false,
+      "ignition_matches_request": true,
+      "max_thrust_after_requested_delay_n": 797.88,
+      "natural_apogee_s": 8.2747,
+      "observed_ignition_event_s": 8.5,
+      "requested_delay_s": 8.5
+    },
+    {
+      "all_events": [
+        [
+          "IGNITION",
+          0.0
+        ],
+        [
+          "BURNOUT",
+          1.695
+        ],
+        [
+          "STAGE_SEPARATION",
+          1.695
+        ],
+        [
+          "SIM_WARN",
+          1.695
+        ],
+        [
+          "APOGEE",
+          8.2747
+        ],
+        [
+          "IGNITION",
+          8.6
+        ],
+        [
+          "EJECTION_CHARGE",
+          11.695
+        ],
+        [
+          "BURNOUT",
+          11.956
+        ],
+        [
+          "EJECTION_CHARGE",
+          25.956
+        ],
+        [
+          "GROUND_HIT",
+          30.333
+        ],
+        [
+          "SIMULATION_END",
+          30.333
+        ]
+      ],
+      "genuinely_never_ignited": false,
+      "ignition_matches_request": true,
+      "max_thrust_after_requested_delay_n": 797.93,
+      "natural_apogee_s": 8.2747,
+      "observed_ignition_event_s": 8.6,
+      "requested_delay_s": 8.6
+    },
+    {
+      "all_events": [
+        [
+          "IGNITION",
+          0.0
+        ],
+        [
+          "BURNOUT",
+          1.695
+        ],
+        [
+          "STAGE_SEPARATION",
+          1.695
+        ],
+        [
+          "SIM_WARN",
+          1.695
+        ],
+        [
+          "APOGEE",
+          8.2747
+        ],
+        [
+          "IGNITION",
+          8.7
+        ],
+        [
+          "EJECTION_CHARGE",
+          11.695
+        ],
+        [
+          "BURNOUT",
+          12.056
+        ],
+        [
+          "EJECTION_CHARGE",
+          26.056
+        ],
+        [
+          "GROUND_HIT",
+          29.8339
+        ],
+        [
+          "SIMULATION_END",
+          29.8339
+        ]
+      ],
+      "genuinely_never_ignited": false,
+      "ignition_matches_request": true,
+      "max_thrust_after_requested_delay_n": 797.93,
+      "natural_apogee_s": 8.2747,
+      "observed_ignition_event_s": 8.7,
+      "requested_delay_s": 8.7
+    },
+    {
+      "all_events": [
+        [
+          "IGNITION",
+          0.0
+        ],
+        [
+          "BURNOUT",
+          1.695
+        ],
+        [
+          "STAGE_SEPARATION",
+          1.695
+        ],
+        [
+          "SIM_WARN",
+          1.695
+        ],
+        [
+          "APOGEE",
+          8.2747
+        ],
+        [
+          "IGNITION",
+          8.8
+        ],
+        [
+          "EJECTION_CHARGE",
+          11.695
+        ],
+        [
+          "BURNOUT",
+          12.156
+        ],
+        [
+          "EJECTION_CHARGE",
+          26.156
+        ],
+        [
+          "GROUND_HIT",
+          29.4113
+        ],
+        [
+          "SIMULATION_END",
+          29.4113
+        ]
+      ],
+      "genuinely_never_ignited": false,
+      "ignition_matches_request": true,
+      "max_thrust_after_requested_delay_n": 797.83,
+      "natural_apogee_s": 8.2747,
+      "observed_ignition_event_s": 8.8,
+      "requested_delay_s": 8.8
+    },
+    {
+      "all_events": [
+        [
+          "IGNITION",
+          0.0
+        ],
+        [
+          "BURNOUT",
+          1.695
+        ],
+        [
+          "STAGE_SEPARATION",
+          1.695
+        ],
+        [
+          "SIM_WARN",
+          1.695
+        ],
+        [
+          "APOGEE",
+          8.2747
+        ],
+        [
+          "IGNITION",
+          8.9
+        ],
+        [
+          "EJECTION_CHARGE",
+          11.695
+        ],
+        [
+          "BURNOUT",
+          12.256
+        ],
+        [
+          "EJECTION_CHARGE",
+          26.256
+        ],
+        [
+          "GROUND_HIT",
+          28.8513
+        ],
+        [
+          "SIMULATION_END",
+          28.8513
+        ]
+      ],
+      "genuinely_never_ignited": false,
+      "ignition_matches_request": true,
+      "max_thrust_after_requested_delay_n": 797.91,
+      "natural_apogee_s": 8.2747,
+      "observed_ignition_event_s": 8.9,
+      "requested_delay_s": 8.9
+    },
+    {
+      "all_events": [
+        [
+          "IGNITION",
+          0.0
+        ],
+        [
+          "BURNOUT",
+          1.695
+        ],
+        [
+          "STAGE_SEPARATION",
+          1.695
+        ],
+        [
+          "SIM_WARN",
+          1.695
+        ],
+        [
+          "APOGEE",
+          8.2747
+        ],
+        [
+          "IGNITION",
+          9.0
+        ],
+        [
+          "EJECTION_CHARGE",
+          11.695
+        ],
+        [
+          "BURNOUT",
+          12.356
+        ],
+        [
+          "EJECTION_CHARGE",
+          26.356
+        ],
+        [
+          "GROUND_HIT",
+          28.2926
+        ],
+        [
+          "SIMULATION_END",
+          28.2926
+        ]
+      ],
+      "genuinely_never_ignited": false,
+      "ignition_matches_request": true,
+      "max_thrust_after_requested_delay_n": 797.83,
+      "natural_apogee_s": 8.2747,
+      "observed_ignition_event_s": 9.0,
+      "requested_delay_s": 9.0
+    },
+    {
+      "all_events": [
+        [
+          "IGNITION",
+          0.0
+        ],
+        [
+          "BURNOUT",
+          1.695
+        ],
+        [
+          "STAGE_SEPARATION",
+          1.695
+        ],
+        [
+          "SIM_WARN",
+          1.695
+        ],
+        [
+          "APOGEE",
+          8.2747
+        ],
+        [
+          "IGNITION",
+          9.1
+        ],
+        [
+          "EJECTION_CHARGE",
+          11.695
+        ],
+        [
+          "BURNOUT",
+          12.456
+        ],
+        [
+          "EJECTION_CHARGE",
+          26.456
+        ],
+        [
+          "GROUND_HIT",
+          27.6815
+        ],
+        [
+          "SIMULATION_END",
+          27.6815
+        ]
+      ],
+      "genuinely_never_ignited": false,
+      "ignition_matches_request": true,
+      "max_thrust_after_requested_delay_n": 797.93,
+      "natural_apogee_s": 8.2747,
+      "observed_ignition_event_s": 9.1,
+      "requested_delay_s": 9.1
+    },
+    {
+      "all_events": [
+        [
+          "IGNITION",
+          0.0
+        ],
+        [
+          "BURNOUT",
+          1.695
+        ],
+        [
+          "STAGE_SEPARATION",
+          1.695
+        ],
+        [
+          "SIM_WARN",
+          1.695
+        ],
+        [
+          "APOGEE",
+          8.2747
+        ],
+        [
+          "IGNITION",
+          9.2
+        ],
+        [
+          "EJECTION_CHARGE",
+          11.695
+        ],
+        [
+          "BURNOUT",
+          12.556
+        ],
+        [
+          "EJECTION_CHARGE",
+          26.556
+        ],
+        [
+          "GROUND_HIT",
+          27.09
+        ],
+        [
+          "SIMULATION_END",
+          27.09
+        ]
+      ],
+      "genuinely_never_ignited": false,
+      "ignition_matches_request": true,
+      "max_thrust_after_requested_delay_n": 797.84,
+      "natural_apogee_s": 8.2747,
+      "observed_ignition_event_s": 9.2,
+      "requested_delay_s": 9.2
+    },
+    {
+      "all_events": [
+        [
+          "IGNITION",
+          0.0
+        ],
+        [
+          "BURNOUT",
+          1.695
+        ],
+        [
+          "STAGE_SEPARATION",
+          1.695
+        ],
+        [
+          "SIM_WARN",
+          1.695
+        ],
+        [
+          "APOGEE",
+          8.2747
+        ],
+        [
+          "IGNITION",
+          9.3
+        ],
+        [
+          "EJECTION_CHARGE",
+          11.695
+        ],
+        [
+          "BURNOUT",
+          12.656
+        ],
+        [
+          "GROUND_HIT",
+          26.4654
+        ],
+        [
+          "EJECTION_CHARGE",
+          26.656
+        ],
+        [
+          "SIM_WARN",
+          26.656
+        ],
+        [
+          "SIMULATION_END",
+          26.656
+        ]
+      ],
+      "genuinely_never_ignited": false,
+      "ignition_matches_request": true,
+      "max_thrust_after_requested_delay_n": 797.93,
+      "natural_apogee_s": 8.2747,
+      "observed_ignition_event_s": 9.3,
+      "requested_delay_s": 9.3
+    },
+    {
+      "all_events": [
+        [
+          "IGNITION",
+          0.0
+        ],
+        [
+          "BURNOUT",
+          1.695
+        ],
+        [
+          "STAGE_SEPARATION",
+          1.695
+        ],
+        [
+          "SIM_WARN",
+          1.695
+        ],
+        [
+          "APOGEE",
+          8.2747
+        ],
+        [
+          "IGNITION",
+          9.4
+        ],
+        [
+          "EJECTION_CHARGE",
+          11.695
+        ],
+        [
+          "BURNOUT",
+          12.756
+        ],
+        [
+          "GROUND_HIT",
+          25.837
+        ],
+        [
+          "EJECTION_CHARGE",
+          26.756
+        ],
+        [
+          "SIM_WARN",
+          26.756
+        ],
+        [
+          "SIMULATION_END",
+          26.756
+        ]
+      ],
+      "genuinely_never_ignited": false,
+      "ignition_matches_request": true,
+      "max_thrust_after_requested_delay_n": 797.85,
+      "natural_apogee_s": 8.2747,
+      "observed_ignition_event_s": 9.4,
+      "requested_delay_s": 9.4
+    },
+    {
+      "all_events": [
+        [
+          "IGNITION",
+          0.0
+        ],
+        [
+          "BURNOUT",
+          1.695
+        ],
+        [
+          "STAGE_SEPARATION",
+          1.695
+        ],
+        [
+          "SIM_WARN",
+          1.695
+        ],
+        [
+          "APOGEE",
+          8.2747
+        ],
+        [
+          "IGNITION",
+          9.5
+        ],
+        [
+          "EJECTION_CHARGE",
+          11.695
+        ],
+        [
+          "BURNOUT",
+          12.856
+        ],
+        [
+          "GROUND_HIT",
+          25.2519
+        ],
+        [
+          "EJECTION_CHARGE",
+          26.856
+        ],
+        [
+          "SIM_WARN",
+          26.856
+        ],
+        [
+          "SIMULATION_END",
+          26.856
+        ]
+      ],
+      "genuinely_never_ignited": false,
+      "ignition_matches_request": true,
+      "max_thrust_after_requested_delay_n": 797.87,
+      "natural_apogee_s": 8.2747,
+      "observed_ignition_event_s": 9.5,
+      "requested_delay_s": 9.5
+    }
+  ],
+  "topology": "E8_8 (campaign default retro motor)"
+}

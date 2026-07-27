@@ -1,0 +1,36 @@
+# Copyright and provenance notices
+
+## L2 Rocket Platform
+
+Original L2 source and modifications are:
+
+Copyright (C) 2026 L2 Systems contributors
+
+Licensed under GPL-3.0-or-later. See `LICENSE`.
+
+## OpenRocket-derived engine behavior
+
+Parts of `l2_engine/src/barrowman.rs` and
+`l2_engine/src/sim_core/sim/adaptive.rs` were ported or adapted from OpenRocket
+24.12 implementation details during June and July 2026.
+
+Upstream:
+
+- Project: OpenRocket
+- Source: https://github.com/openrocket/openrocket
+- Audited commit: `6e18add7055a66dcae580f9d1e0dc1538c0454c7`
+- Copyright: Copyright (C) 2007-2025 Sampo Niskanen and others
+- License: GPL-3.0-or-later with the additional permission reproduced in
+  `licenses/OpenRocket-LICENSE.txt`
+
+The Rust implementation is modified and is not an official OpenRocket release.
+OpenRocket remains an independently distributed external authority runtime.
+
+## rocket-sim-derived engine modules
+
+`l2_engine/src/sim_core/` contains code derived from the MIT-licensed
+ZenAlexa/rocket-sim project. Its complete copyright and license notice is
+preserved in `l2_engine/THIRD_PARTY_NOTICES.md`.
+
+No affiliation with or endorsement by OpenRocket, Squad, Take-Two Interactive,
+Kerbal Space Program, CKAN, or third-party mod authors is implied.

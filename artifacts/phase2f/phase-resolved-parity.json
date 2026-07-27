@@ -1,0 +1,81 @@
+{
+  "gate": 3,
+  "openrocket_ascent_segments": [
+    {
+      "branch": 0,
+      "min_calibers": 2.875998433015421,
+      "segment": "full_stack"
+    },
+    {
+      "branch": 0,
+      "min_calibers": 1.7454179417166482,
+      "segment": "sustainer"
+    },
+    {
+      "branch": 1,
+      "min_calibers": 2.875998433015421,
+      "segment": "booster"
+    }
+  ],
+  "openrocket_ascent_stability": [
+    {
+      "branch": 0,
+      "min_calibers": 1.7454179417166482
+    },
+    {
+      "branch": 1,
+      "min_calibers": 2.875998433015421
+    }
+  ],
+  "openrocket_events": {
+    "APOGEE": [
+      8.5298,
+      20.6833
+    ],
+    "BURNOUT": [
+      1.695,
+      3.39,
+      203.356
+    ],
+    "EJECTION_CHARGE": [
+      11.695,
+      13.39,
+      217.356
+    ],
+    "GROUND_HIT": [
+      43.6519,
+      45.3613
+    ],
+    "IGNITION": [
+      0.0,
+      1.695,
+      200.0
+    ],
+    "LAUNCH": [
+      0.0
+    ],
+    "LAUNCHROD": [
+      0.3321
+    ],
+    "LIFTOFF": [
+      0.041
+    ],
+    "SIMULATION_END": [
+      217.356
+    ],
+    "SIM_WARN": [
+      0.0,
+      1.695,
+      200.0,
+      203.356,
+      217.356
+    ],
+    "STAGE_SEPARATION": [
+      1.695
+    ]
+  },
+  "openrocket_mach": 0.8359,
+  "openrocket_min_static_margin": 1.745,
+  "rust_available": false,
+  "rust_error": "evaluate_rust_population() missing 2 required positional arguments: 'ckg' and 'config'"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Anomaly 200km",
+  "description": "4 or more stages, maximum burn time possible, weakest combination of motors to reach 200km (minimize mass to force weak motors + max burn time).",
+  "target_apogee_m": 200000.0,
+  "objectives": [
+    { "metric": "apogee", "kind": "target", "value": 205000.0, "weight": 5000.0 },
+    { "metric": "burn_time", "kind": "maximize", "scale": 30.0, "weight": 50.0 },
+    { "metric": "mass", "kind": "minimize", "scale": 100.0, "weight": 50.0 }
+  ],
+  "constraints": {
+    "target_apogee_m": 200000.0,
+    "min_stages": 4,
+    "max_stages": 6,
+    "min_static_margin": 1.0
+  },
+  "stability": { "phase_machs": [0.3, 2.0, 5.0] }
+}

@@ -1,0 +1,45 @@
+{
+  "delay_s": 9.5,
+  "ranking": {
+    "either_legal_branch_lt_5ms": false,
+    "min_pre_contact_speed_winner": "H180W",
+    "opposing_impulse_fraction_winner": "H73J",
+    "touchdown_speed_winner": "H73J"
+  },
+  "results": {
+    "H180W": {
+      "body_rotation_contribution_integral": -0.4577,
+      "burnout_t": 10.813,
+      "delay_s": 9.5,
+      "horizontal_opposing_impulse_fraction": 0.1533,
+      "ignition_t": 9.505,
+      "initial_deceleration_mps2": -11.548,
+      "measured_peak_thrust_n": 242.65,
+      "minimum_pre_contact_speed_ms": 8.829538653920192,
+      "opposing_impulse_fraction": 0.0962,
+      "static_burn_duration_s": 1.313,
+      "static_loaded_mass_kg": 0.2464,
+      "static_mean_thrust_n": 177.98,
+      "static_total_impulse_ns": 233.686205,
+      "touchdown_speed_ms": 58.788,
+      "velocity_direction_contribution_integral": -1.2829
+    },
+    "H73J": {
+      "body_rotation_contribution_integral": -0.8241,
+      "burnout_t": 12.434,
+      "delay_s": 9.5,
+      "horizontal_opposing_impulse_fraction": 0.2434,
+      "ignition_t": 9.507,
+      "initial_deceleration_mps2": -0.578,
+      "measured_peak_thrust_n": 94.63,
+      "minimum_pre_contact_speed_ms": 10.047362700796233,
+      "opposing_impulse_fraction": 0.1299,
+      "static_burn_duration_s": 2.953,
+      "static_loaded_mass_kg": 0.3091,
+      "static_mean_thrust_n": 63.76,
+      "static_total_impulse_ns": 188.28838000000002,
+      "touchdown_speed_ms": 58.461,
+      "velocity_direction_contribution_integral": -0.9938
+    }
+  }
+}

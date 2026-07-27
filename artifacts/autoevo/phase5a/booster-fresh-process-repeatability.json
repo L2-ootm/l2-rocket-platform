@@ -1,0 +1,60 @@
+{
+  "note": "scripts/phase5a_repeatability.py's own JSON capture had a display bug (OpenRocket's JVM-startup banner line printed to the same stdout stream ahead of the JSON payload, breaking json.loads on the driver side) -- the underlying per-run values below are copied verbatim from the raw subprocess output, not re-derived.",
+  "runs": [
+    {
+      "delay_s": 29.86,
+      "touchdown_total_mps": 4.906824932263131,
+      "ground_contact_time_s": 31.723000000000006,
+      "burnout_time_s": 31.173,
+      "burn_remaining_at_contact_s": -0.55,
+      "retro_sample_count": 116,
+      "matches_in_process_sweep": true
+    },
+    {
+      "delay_s": 29.8645,
+      "touchdown_total_mps": 3.549325048255636,
+      "ground_contact_time_s": 30.787690467978152,
+      "burnout_time_s": 31.1775,
+      "burn_remaining_at_contact_s": 0.38981,
+      "retro_sample_count": 112,
+      "matches_in_process_sweep": true
+    },
+    {
+      "delay_s": 29.865,
+      "touchdown_total_mps": 3.8624009298913577,
+      "ground_contact_time_s": 30.779441784318006,
+      "burnout_time_s": 31.177999999999997,
+      "burn_remaining_at_contact_s": 0.398558,
+      "retro_sample_count": 110,
+      "matches_in_process_sweep": true
+    },
+    {
+      "delay_s": 29.8665,
+      "touchdown_total_mps": 4.44743922555039,
+      "ground_contact_time_s": 30.76619385743366,
+      "burnout_time_s": 31.179499999999997,
+      "burn_remaining_at_contact_s": 0.413306,
+      "retro_sample_count": 110,
+      "matches_in_process_sweep": true
+    },
+    {
+      "delay_s": 29.864,
+      "touchdown_total_mps": 3.5891545566551666,
+      "ground_contact_time_s": 30.786698131031873,
+      "burnout_time_s": 31.177,
+      "burn_remaining_at_contact_s": 0.390302,
+      "retro_sample_count": 111,
+      "matches_in_process_sweep": true,
+      "matches_historical_claim": "3.5891545566551666 vs historical 3.5135 m/s, 2.2% off (unchanged from phase4c)"
+    }
+  ],
+  "save_reopen_check": {
+    "29.8645": {
+      "saved_path": "artifacts/autoevo/phase5a/booster-29p8645-candidate.ork",
+      "first_run_touchdown_mps": 3.549325048255636,
+      "reopened_rerun_touchdown_mps": 3.549325048255636,
+      "bit_identical": true
+    }
+  },
+  "conclusion": "All 5 fresh-process reruns are bit-identical to the same-process 0.5ms sweep values in booster-delay-basin.json. Fresh-process and save/close/reopen/rerun repeatability confirmed for the sampled subset (5/12 and 1/12 legal grid points respectively, time-budget-limited -- not exhaustive over all 12)."
+}

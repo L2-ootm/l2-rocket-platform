@@ -1,0 +1,40 @@
+{
+  "historical_rows": 49,
+  "known_gaps": [
+    "Phases 1-4A never persisted per-candidate raw parameters or geometry digests -- only aggregate phase summaries survive. candidate_id/parent_id/generation/geometry_digest are null for every historical row; they cannot be reconstructed after the fact without rerunning the original (undocumented) parameter sweeps.",
+    "No engine-version manifest existed before this session (engine_version='pre-autoevo' is a placeholder marking everything before 2026-07-20's autoevo work, not a real version identifier).",
+    "Format is JSON, not parquet: no pandas/pyarrow dependency exists in this repo and corpus size (hundreds of rows) does not justify adding one."
+  ],
+  "rows_by_outcome": {
+    "ANALYSIS": 2,
+    "BLOCKED for authority candidate \u2014 949J150-P missing": 1,
+    "BLOCKED_BY_THRUST_DIRECTION": 1,
+    "IN_PROGRESS": 1,
+    "MOTOR-INCOMPLETE \u2014 current authority lineage cannot be used": 1,
+    "PARTIAL_COMPLETE": 3,
+    "PASS": 7,
+    "PASS with note": 1,
+    "SIGN_CORRECTION_COMPLETE": 1,
+    "descent_rejected": 1,
+    "diagnostic_only": 2,
+    "illegal_or_incomplete": 7,
+    "powered_early_stopped": 6,
+    "stage_1_complete": 1,
+    "stage_2_complete": 1,
+    "unclassified": 22
+  },
+  "rows_by_phase": {
+    "autoevo-2026-07-20": 9,
+    "phase1": 5,
+    "phase2": 5,
+    "phase2b": 5,
+    "phase2c": 6,
+    "phase2d": 2,
+    "phase2e": 3,
+    "phase2f": 8,
+    "phase3a": 11,
+    "phase4a": 4
+  },
+  "session_rows": 9,
+  "total_rows": 58
+}

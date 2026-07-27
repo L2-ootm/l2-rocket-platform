@@ -1,0 +1,29 @@
+{
+  "name": "Weird Speed Demon",
+  "description": "Achieve Mach 4+ while artificially capping apogee at exactly 15,000m using a massive 3-stage stack.",
+  "output": "designs/optimized/weird_speed_demon.ork",
+  "payload_kg": 0.3,
+  "stack": [
+    {
+      "name": "Kick",
+      "body_radius": 0.0420,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "9977M2245-P" }
+    },
+    {
+      "name": "Sustainer",
+      "body_radius": 0.0535,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "20146N5800-P" }
+    },
+    {
+      "name": "Booster",
+      "body_radius": 0.0855,
+      "motor": { "manufacturer": "Cesaroni Technology Inc.", "designation": "40960O8000-P" }
+    }
+  ],
+  "objectives": [
+    { "metric": "apogee", "kind": "target", "value": 15000, "tolerance": 50.0, "weight": 10.0 },
+    { "metric": "mach", "kind": "maximize", "scale": 10, "weight": 5.0 }
+  ],
+  "constraints": { "min_static_margin": 1.5 },
+  "stability": { "phase_machs": [0.3, 2.0, 3.0] }
+}

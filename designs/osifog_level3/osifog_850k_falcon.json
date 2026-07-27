@@ -1,0 +1,80 @@
+{
+  "apogee_m": 3000.016,
+  "mach": 0.943,
+  "flight_time_s": 71.434,
+  "status": "Loaded From File",
+  "seed": 16000,
+  "apogee_east_m": -3.615,
+  "apogee_north_m": 0.527,
+  "stage_landings": [
+    {
+      "branch": 0,
+      "time_s": 55.138,
+      "east_m": 54.462,
+      "north_m": 118.313,
+      "dist_m": 130.2462107433456,
+      "vz_ms": -4.304,
+      "vxy_ms": 2.205,
+      "total_speed": 4.835952956760436
+    },
+    {
+      "branch": 1,
+      "time_s": 65.47,
+      "east_m": 20.899,
+      "north_m": 36.929,
+      "dist_m": 42.43252575560404,
+      "vz_ms": -0.1980000000000004,
+      "vxy_ms": 2.962,
+      "total_speed": 2.968610449351683
+    }
+  ],
+  "ascent_static_margins": [
+    {
+      "branch": 0,
+      "min_calibers": 1.525
+    },
+    {
+      "branch": 1,
+      "min_calibers": 1.525
+    }
+  ],
+  "min_static_margin": 1.525,
+  "m_prop_kg_actual": 4.713000000000001,
+  "s0_landing_speed": 4.835952956760436,
+  "s0_east_m": 54.462,
+  "s0_north_m": 118.313,
+  "s1_landing_speed": 2.968610449351683,
+  "s1_east_m": 20.899,
+  "s1_north_m": 36.929,
+  "simulation_count": 1,
+  "branch_count": 2,
+  "extension_count": 1,
+  "anti_tumble_present": true,
+  "legal": true,
+  "violations": [],
+  "official_score": 841934.6160484969,
+  "score_terms": {
+    "score": 841934.6160484969,
+    "raw_score": 841934.6160484969,
+    "is_legal": true,
+    "violations": [],
+    "apogee_m": 3000.016,
+    "apogee_err_m": 0.016000000000076398,
+    "E_ap": -3.615,
+    "N_ap": 0.527,
+    "mean_E": 37.6805,
+    "mean_N": 77.62100000000001,
+    "mean_V": 3.9022817030560595,
+    "m_prop_kg": 4.713000000000001,
+    "apogee_alt_pen": 0.7680000000073341,
+    "apogee_horiz_pen": 213.53526400000004,
+    "touch_pos_pen": 14889.679442500004,
+    "touch_vel_pen": 7613.9012450030505,
+    "prop_pen": 35347.50000000001
+  },
+  "save_attempt": 1,
+  "openearth_csvs": [
+    "designs\\osifog_level3\\openearth\\osifog_850k_stage_1.csv",
+    "designs\\osifog_level3\\openearth\\osifog_850k_stage_2.csv"
+  ]
+}

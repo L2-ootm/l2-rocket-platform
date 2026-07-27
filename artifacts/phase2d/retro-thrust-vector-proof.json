@@ -1,0 +1,49 @@
+{
+  "test": "retro_thrust_vector_proof",
+  "findings": {
+    "openrocket_thrust_direction": "NOSE_FIRST",
+    "motor_mount_cannot_reverse_thrust": true,
+    "conclusion": "OpenRocket applies motor thrust along the rocket longitudinal axis. The motor mount position/orientation does not reverse thrust direction. The current 3+1 cage configuration has all motors firing forward (nose-first)."
+  },
+  "tests": [
+    {
+      "ignition_time_s": 3.0,
+      "vz_at_ignition_ms": 0.0,
+      "vz_after_burn_ms": 35.50734692347903,
+      "vz_change_ms": 35.50734692347903,
+      "motor_increases_velocity": true,
+      "thrust_direction": "NOSE_FIRST",
+      "ignition_altitude_m": 0.0,
+      "theta_at_ignition_deg": 90.0,
+      "mass_at_ignition_kg": 1.8285727528166436,
+      "total_time_s": 13.07068343738501,
+      "max_altitude_m": 158.31383270350076
+    },
+    {
+      "ignition_time_s": 5.0,
+      "vz_at_ignition_ms": 0.0,
+      "vz_after_burn_ms": 36.892605213114734,
+      "vz_change_ms": 36.892605213114734,
+      "motor_increases_velocity": true,
+      "thrust_direction": "NOSE_FIRST",
+      "ignition_altitude_m": 0.0,
+      "theta_at_ignition_deg": 90.0,
+      "mass_at_ignition_kg": 1.8285727528166436,
+      "total_time_s": 15.049127141396712,
+      "max_altitude_m": 157.56281094609287
+    },
+    {
+      "ignition_time_s": 4.0,
+      "vz_at_ignition_ms": 0.0,
+      "vz_after_burn_ms": 38.372791894498704,
+      "vz_change_ms": 38.372791894498704,
+      "motor_increases_velocity": true,
+      "thrust_direction": "NOSE_FIRST",
+      "ignition_altitude_m": 0.0,
+      "theta_at_ignition_deg": 90.0,
+      "mass_at_ignition_kg": 0.5876127528166435,
+      "total_time_s": 10.270579213752546,
+      "max_altitude_m": 102.38523889074256
+    }
+  ]
+}

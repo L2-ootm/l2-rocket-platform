@@ -1,0 +1,183 @@
+[
+  {
+    "type": "STAGE",
+    "params": {
+      "name": "Evolved Sustainer",
+      "recovery": "retro_only"
+    }
+  },
+  {
+    "type": "NOSE_CONE",
+    "params": {
+      "shape": "haack",
+      "length": 0.74,
+      "material": "fiberglass",
+      "thickness": 0.002
+    }
+  },
+  {
+    "type": "BODY_TUBE",
+    "params": {
+      "length": 0.7,
+      "radius": 0.0775,
+      "material": "cardboard",
+      "thickness": 0.002
+    }
+  },
+  {
+    "type": "BALLAST",
+    "params": {
+      "mass": 1.7200000134428617,
+      "position": "forward",
+      "material": "steel"
+    }
+  },
+  {
+    "type": "FIN_SET",
+    "params": {
+      "count": 4,
+      "sweep": 10.0,
+      "root": 0.2,
+      "height": 0.25,
+      "material": "fiberglass",
+      "cross_section": "airfoil",
+      "tip": 0.06999999999999999,
+      "thickness": 0.003
+    }
+  },
+  {
+    "type": "MOTOR_MOUNT",
+    "params": {
+      "role": "main",
+      "motor_index": 37,
+      "motor_designation": "949J150-P",
+      "multiplicity": 3,
+      "radial_offset_m": 0.0535,
+      "radial_angle_deg": 0.0,
+      "instance_angle_step_deg": 120.0,
+      "ignition": "automatic",
+      "cluster_configuration": "3-ring",
+      "cluster_scale": 2.2880177334551832,
+      "main_outer_radius_m": 0.02025,
+      "retro_sleeve_outer_radius_m": 0.02825,
+      "mount_material": "kraft",
+      "mount_material_density": 950.0,
+      "ring_material": "carbon",
+      "ignition_delay": 0.0
+    }
+  },
+  {
+    "type": "MOTOR_MOUNT",
+    "params": {
+      "role": "retro",
+      "motor_index": 19,
+      "motor_designation": "K550W",
+      "multiplicity": 1,
+      "radial_offset_m": 0.0,
+      "ignition": "burnout",
+      "ignition_delay": 20.0,
+      "mount_material": "aluminum",
+      "mount_material_density": 2700.0
+    }
+  },
+  {
+    "type": "CLOSE_BODY",
+    "params": {}
+  },
+  {
+    "type": "STAGE",
+    "params": {
+      "name": "Evolved Booster 1",
+      "recovery": "retro_only"
+    }
+  },
+  {
+    "type": "BODY_TUBE",
+    "params": {
+      "length": 0.75,
+      "radius": 0.0775,
+      "material": "cardboard",
+      "thickness": 0.002
+    }
+  },
+  {
+    "type": "BALLAST",
+    "params": {
+      "mass": 3.019991391957439,
+      "material": "carbon",
+      "radius": 0.02025,
+      "length": 0.439,
+      "instance_count": 3,
+      "radial_offset_m": 0.0485,
+      "angle_offset_deg": 30.0,
+      "position": "aft"
+    }
+  },
+  {
+    "type": "FIN_SET",
+    "params": {
+      "count": 4,
+      "sweep": 0.5,
+      "root": 0.24,
+      "height": 0.38,
+      "material": "fiberglass",
+      "cross_section": "airfoil",
+      "tip": 0.08399999999999999,
+      "thickness": 0.003
+    }
+  },
+  {
+    "type": "FIN_SET",
+    "params": {
+      "role": "forward_flap",
+      "count": 4,
+      "root": 0.1,
+      "height": 0.08,
+      "material": "fiberglass",
+      "position_from_top_m": 0.03,
+      "sweep": 5.0,
+      "tip": 0.034999999999999996,
+      "thickness": 0.003,
+      "cross_section": "airfoil"
+    }
+  },
+  {
+    "type": "MOTOR_MOUNT",
+    "params": {
+      "role": "main",
+      "motor_index": 18,
+      "motor_designation": "J360",
+      "multiplicity": 3,
+      "radial_offset_m": 0.0535,
+      "radial_angle_deg": 0.0,
+      "instance_angle_step_deg": 120.0,
+      "ignition": "automatic",
+      "cluster_configuration": "3-ring",
+      "cluster_scale": 2.2880177334551832,
+      "main_outer_radius_m": 0.02025,
+      "retro_sleeve_outer_radius_m": 0.02825,
+      "mount_material": "fiberglass",
+      "mount_material_density": 1850.0,
+      "ring_material": "fiberglass",
+      "ignition_delay": 0.0
+    }
+  },
+  {
+    "type": "MOTOR_MOUNT",
+    "params": {
+      "role": "retro",
+      "motor_index": 19,
+      "motor_designation": "K550W",
+      "multiplicity": 1,
+      "radial_offset_m": 0.0,
+      "ignition": "burnout",
+      "ignition_delay": 20.0,
+      "mount_material": "carbon",
+      "mount_material_density": 1780.0
+    }
+  },
+  {
+    "type": "CLOSE_BODY",
+    "params": {}
+  }
+]

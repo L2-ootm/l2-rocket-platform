@@ -1,0 +1,146 @@
+{
+  "name": "OSIFOG Level 3 Precision",
+  "target_apogee": 3000.0,
+  "apogee_tolerance_m": 0.5,
+  "max_mach": 0.95,
+  "scoring": {
+    "base_score": 900000.0,
+    "terms": [
+      {"name": "apogee_altitude", "metrics": ["apogee_m"], "reference": [3000.0], "power": 2, "coefficient": -3000.0},
+      {"name": "apogee_horizontal", "metrics": ["apogee_east_m", "apogee_north_m"], "reference": [0.0, 0.0], "power": 2, "coefficient": -16.0},
+      {"name": "touchdown_position", "metrics": ["stage_landing_east_m", "stage_landing_north_m"], "reference": [0.0, 0.0], "power": 2, "coefficient": -2.0, "aggregate": "mean_over_stages"},
+      {"name": "touchdown_speed", "metrics": ["stage_landing_total_speed_ms"], "reference": [0.0], "power": 2, "coefficient": -500.0, "aggregate": "mean_over_stages"},
+      {"name": "propellant_used", "metrics": ["total_prop_mass_kg"], "reference": [0.0], "power": 1, "coefficient": -7500.0}
+    ]
+  },
+  "atmosphere": {
+    "model": "extended_isa",
+    "base_temperature_k": 303.25,
+    "base_pressure_pa": 100000.0,
+    "humidity": 0.82,
+    "launch_altitude_m": 3.0,
+    "launch_lat": 28.5621,
+    "launch_lon": -80.5772,
+    "provenance": {
+      "event_time_utc": "2024-09-28T17:17:21Z",
+      "source": "OSIFOG OpenWind Historical Forecast profile",
+      "pressure_rule": "OpenWind displayed nearest observed pressure level",
+      "pressure_display_hpa": 1000.0,
+      "audit": "OSIFOG/ATMOSPHERE_PRESSURE_AUDIT_2026-07-25.md"
+    }
+  },
+  "wind": {
+    "source": "csv",
+    "path": "../OSIFOG/OpenWind_File.csv",
+    "altitude_ref": "agl",
+    "column_order": ["altitude_m", "speed_ms", "direction_deg", "std_dev_ms"]
+  },
+  "launch": {
+    "rod_length_m": 6.0,
+    "azimuth_deg": 34.0,
+    "azimuth_range_deg": [34.0, 34.0],
+    "angle_from_vertical_deg": 3.85,
+    "seed": 16000
+  },
+  "authority_robustness": {
+    "minimum_contiguous_window_ms_per_stage": 50.0,
+    "stretch_contiguous_window_ms_per_stage": 100.0,
+    "development_seeds": [16000, 16001, 16002, 16003, 16004],
+    "promotion_seed_count": 30,
+    "held_out_certification_seed_count": 300,
+    "held_out_confidence": 0.95,
+    "maximum_certified_failure_probability": 0.01,
+    "require_zero_seed_failures": true,
+    "require_complete_multilevel_wind_seeding": true,
+    "timestep_ladder_s": [0.01, 0.005, 0.0025],
+    "objective_order": [
+      "physical_legality",
+      "numerical_convergence",
+      "seed_legality",
+      "continuous_timing_window",
+      "worst_touchdown_speed",
+      "apogee_precision",
+      "official_score"
+    ]
+  },
+  "motor_pool": {
+    "allowed_designations": ["H73J", "H128W", "H180W", "H238T", "I161W", "I218R", "I357T", "I211W", "I284W", "J350W", "J420R", "J510W", "J800T", "J360", "644J94-P", "949J150-P", "K550W", "K700W", "K1050W", "K510", "L1000", "L1150", "L1500T", "L2200G"],
+    "retro_allowed_designations": ["F50T", "F67W", "G71R", "G104T", "G80T", "H73J", "H128W", "H180W", "H238T", "I161W", "I218R", "I357T", "I211W", "I284W", "J350W", "J420R", "J510W", "644J94-P", "K550W", "K700W"]
+  },
+  "constraints": {
+    "min_stages": 2,
+    "max_stages": 3,
+    "max_mach": 0.95,
+    "max_height_m": 4.0,
+    "max_touchdown_speed_ms": 5.0,
+    "require_all_stages_land": true,
+    "no_recovery_devices": true
+  },
+  "topology": {
+    "stage_count": 2,
+    "main_cluster": {"configuration": "3-ring", "count": 3},
+    "retro_motor": {"configuration": "single", "count": 1, "position": "center"},
+    "retro_ignition": "launch_delay",
+    "ballast_points": ["nose", "mid", "aft"],
+    "separation_event": "burnout"
+  },
+  "evolution": {
+    "population": 400,
+    "generations": 60,
+    "elite_count": 8,
+    "validate_openrocket": 6,
+    "calibrate_every": 5,
+    "polish": true,
+    "physical_repair_space": {
+      "s0_retro_designations": ["I161W", "I218R", "I357T", "I211W", "I284W", "J350W", "J420R", "J510W", "644J94-P", "K550W"],
+      "s1_retro_designations": ["H73J", "H128W", "H180W", "H238T", "I161W", "I218R", "I357T", "I211W", "I284W", "J350W", "J420R", "644J94-P"],
+      "nose_ballast_mass_kg": [0.00, 0.02, 0.04, 0.06, 0.08, 0.10, 0.15, 0.20, 0.50, 1.00, 1.50, 2.00, 3.00, 4.00, 5.00],
+      "nose_length_range_m": [0.45, 1.50],
+      "s0_body_radius_m": [0.065, 0.070, 0.075, 0.076, 0.078, 0.080, 0.085, 0.090],
+      "s0_fin_count": [3, 4, 6, 8],
+      "s0_fin_root_m": [0.03, 0.05, 0.08, 0.12, 0.15],
+        "s0_fin_height_m": [0.08, 0.12, 0.16, 0.20, 0.30, 0.40, 0.50, 0.60, 0.80],
+      "s0_fin_thickness_m": [0.001, 0.002, 0.003, 0.004, 0.005],
+      "s0_fin_material": ["legal_balsa", "cardboard", "fiberglass"],
+      "s1_fin_root_m": [0.18, 0.20, 0.25, 0.30, 0.40],
+        "s1_fin_height_m": [0.08, 0.12, 0.16, 0.20, 0.25, 0.33, 0.40, 0.50],
+      "forward_fin_count": [2, 2, 3],
+      "forward_fin_root_m": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+      "forward_fin_height_m": [0.08, 0.12, 0.18, 0.24, 0.30, 0.35],
+      "forward_fin_position_range_m": [0.02, 0.15],
+      "s1_separation_delay_s": [0.0, 0.25, 0.5, 0.75, 1.0],
+      "s1_aft_ballast_rod_radius_m": [0.014, 0.016, 0.018, 0.020],
+      "s1_aft_ballast_attachment": ["central_bonded", "airframe_bonded"],
+      "ascent_polish": {
+        "nose_ballast_mass_range_kg": [1.15, 1.30],
+        "nose_ballast_mass_step_kg": 0.01,
+        "s1_fin_root_range_m": [0.19, 0.20],
+        "s1_fin_root_step_m": 0.0025,
+        "s1_fin_height_range_m": [0.35, 0.37],
+        "s1_fin_height_step_m": 0.005,
+        "nose_bulkhead_position_range_m": [0.45, 0.555],
+        "nose_bulkhead_position_step_m": 0.01
+      },
+      "delay_search": {
+        "rounds": 3,
+        "samples_per_round": 9,
+        "window_before_ground_s": 5.0,
+        "window_after_ground_s": 0.5
+      },
+      "trajectory_polish": {
+        "azimuth_range_deg": [20.0, 50.0],
+        "azimuth_step_deg": 2.0,
+        "angle_from_vertical_range_deg": [5.5, 8.5],
+        "angle_step_deg": 0.25,
+        "beam_width": 4,
+        "coordinate_rounds": 2
+      },
+      "descent_alignment": {
+        "minimum_best_q": 0.9,
+        "minimum_tail_first_window_s": 3.0,
+        "prefer_windows_near_ground": true,
+        "retro_braking_fraction_required": 0.9
+      }
+    }
+  }
+}

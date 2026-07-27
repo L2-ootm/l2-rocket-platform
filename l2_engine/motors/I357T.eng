@@ -1,0 +1,31 @@
+;AeroTech I357T extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=163, curve_id=186
+; lookup key 'I357T' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+I357T 38 203 6,8,10,12,14 0.1792 0.3494 A
+0.000 0.00
+0.028 311.63
+0.087 351.77
+0.147 349.07
+0.206 346.18
+0.266 341.23
+0.325 336.86
+0.384 333.75
+0.444 326.96
+0.503 319.68
+0.563 312.53
+0.622 300.79
+0.681 292.79
+0.741 283.77
+0.800 274.58
+0.859 264.92
+0.919 254.27
+0.978 241.75
+1.037 229.02
+1.097 216.24
+1.156 187.78
+1.216 109.94
+1.275 56.46
+1.334 24.48
+1.394 10.98
+1.454 3.45
+1.515 0.00

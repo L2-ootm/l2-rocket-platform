@@ -1,0 +1,1424 @@
+{
+  "candidate": "historical-3p5135-booster-branch (eight-forward-fin booster, H180W retro)",
+  "grid": {
+    "end_s": 29.869,
+    "start_s": 29.857,
+    "step_s": 0.0005
+  },
+  "basin_shape_summary": "12/25 points on the 0.5ms grid are legal (<5 m/s): a near-continuous band 29.860-29.865s (one gap at 29.8605->29.861 is a local dip not a break) plus one isolated legal spike at 29.8665s surrounded by illegal neighbors (29.866=6.144, 29.867=5.360). Non-monotonic at millisecond and sub-millisecond scale -- confirms section 0.1's correction that this is not a single smooth interval. Best point on this grid is 29.8645s (3.549 m/s), marginally better than the previously-designated authority point 29.864s (3.589 m/s); the authority artifact is NOT changed on this basis alone (see phase5a-summary.json).",
+  "burn_state_at_contact_note": "burn_remaining_at_contact_s is negative for some legal points (e.g. 29.86s: burnout_time_s=31.173 < ground_contact_time_s=31.723), meaning the retro motor had ALREADY burned out before touchdown at that delay -- 'motor still burning at contact' is true for the 29.862-29.8665s cluster but not uniformly across the whole legal set.",
+  "repeatability_verification": {
+    "same_process_rerun": "Every legal row's 'repeatability' field (below) is an immediate same-process rerun; all bit-identical.",
+    "fresh_process_rerun": "5 of 12 legal points (29.860, 29.8645, 29.865, 29.8665, 29.864) rerun in fresh Python/JVM subprocesses via scripts/phase5a_repeatability.py -- all bit-identical to the in-process sweep values (see artifacts/autoevo/phase5a/booster-fresh-process-repeatability.json). NOT all 12 legal points were fresh-process-repeated (time budget); the remaining 7 (29.8605, 29.861, 29.8615, 29.862, 29.8625, 29.863, 29.8635) carry only same-process repeatability evidence.",
+    "save_reopen_rerun": "29.864s: proven in the prior session (artifacts/autoevo/best-legal-booster-branch.ork, sha256 923076029d29ac1d5fecd01e1d909c6b60e38448c2c9c6369b4487bfd8cdc086). 29.8645s: saved this session (artifacts/autoevo/phase5a/booster-29p8645-candidate.ork), reopened fresh, rerun -- bit-identical (3.549325048255636 m/s both times). Other legal points not save/reopen-verified this session."
+  },
+  "legal_delays_s": [
+    29.86,
+    29.8605,
+    29.861,
+    29.8615,
+    29.862,
+    29.8625,
+    29.863,
+    29.8635,
+    29.864,
+    29.8645,
+    29.865,
+    29.8665
+  ],
+  "legal_rows": [
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016447643087436386,
+        "y": -0.036921859464844366,
+        "z": 0.9991827917506019
+      },
+      "burn_remaining_at_contact_s": -0.55,
+      "burnout_time_s": 31.173,
+      "delay_s": 29.86,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.1792551658551777,
+          "time_s": 31.673000000000005
+        },
+        {
+          "altitude_m": -0.011530692265349973,
+          "time_s": 31.723000000000006
+        }
+      ],
+      "ground_contact_time_s": 31.723000000000006,
+      "ignition_altitude_m": 26.718781431725745,
+      "ignition_time_s": 29.8625,
+      "q_at_ignition": 0.9962481427639561,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 4.906824932263131
+      },
+      "retro_fraction_opposing": 0.9396551724137931,
+      "retro_fraction_vertical": 0.9396551724137931,
+      "retro_sample_count": 116,
+      "touchdown_total_mps": 4.906824932263131,
+      "touchdown_vxy_mps": 2.76030452411371,
+      "touchdown_vz_mps": -4.0568029099324585,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6886494632535576,
+        "vy": 6.064122391367472,
+        "vz": -55.76433112919664
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016480355794892505,
+        "y": -0.0369268464320279,
+        "z": 0.9991820684367084
+      },
+      "burn_remaining_at_contact_s": -0.55,
+      "burnout_time_s": 31.17364301171885,
+      "delay_s": 29.8605,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.15081231890418695,
+          "time_s": 31.673643011718855
+        },
+        {
+          "altitude_m": -0.03986039852041537,
+          "time_s": 31.723643011718856
+        }
+      ],
+      "ground_contact_time_s": 31.723643011718856,
+      "ignition_altitude_m": 26.68292918972364,
+      "ignition_time_s": 29.86314301171885,
+      "q_at_ignition": 0.9962489137215014,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 4.923774917483575
+      },
+      "retro_fraction_opposing": 0.9495798319327731,
+      "retro_fraction_vertical": 0.9495798319327731,
+      "retro_sample_count": 119,
+      "touchdown_total_mps": 4.923774917483575,
+      "touchdown_vxy_mps": 2.793593298790166,
+      "touchdown_vz_mps": -4.054552493061974,
+      "velocity_at_ignition_enu": {
+        "vx": 3.690616237028154,
+        "vy": 6.063595873197609,
+        "vz": -55.763581097201076
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.0164992026905284,
+        "y": -0.036956345041542465,
+        "z": 0.9991806667824129
+      },
+      "burn_remaining_at_contact_s": 0.348303,
+      "burnout_time_s": 31.174,
+      "delay_s": 29.861,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.05046037475880119,
+          "time_s": 30.775696722642056
+        },
+        {
+          "altitude_m": -0.00834151172380617,
+          "time_s": 30.825696722642057
+        }
+      ],
+      "ground_contact_time_s": 30.825696722642057,
+      "ignition_altitude_m": 26.66301706262857,
+      "ignition_time_s": 29.863500000000002,
+      "q_at_ignition": 0.9962513790764737,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 2.7621953505464543
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 114,
+      "touchdown_total_mps": 2.7621953505464543,
+      "touchdown_vxy_mps": 2.7615815964419164,
+      "touchdown_vz_mps": -0.05822577413624508,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6914840487919363,
+        "vy": 6.063534162921964,
+        "vz": -55.76417001634459
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016525557116987666,
+        "y": -0.03699961818131221,
+        "z": 0.999178629783689
+      },
+      "burn_remaining_at_contact_s": 0.345246,
+      "burnout_time_s": 31.1745,
+      "delay_s": 29.8615,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.016068798722947364,
+          "time_s": 30.779254145942488
+        },
+        {
+          "altitude_m": -0.03530023449774365,
+          "time_s": 30.82925414594249
+        }
+      ],
+      "ground_contact_time_s": 30.82925414594249,
+      "ignition_altitude_m": 26.635128629736847,
+      "ignition_time_s": 29.864,
+      "q_at_ignition": 0.9962548100130969,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 2.7581063384704096
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 0.990909090909091,
+      "retro_sample_count": 110,
+      "touchdown_total_mps": 2.7581063384704096,
+      "touchdown_vxy_mps": 2.757162698609942,
+      "touchdown_vz_mps": 0.07214171958439097,
+      "velocity_at_ignition_enu": {
+        "vx": 3.692735208548002,
+        "vy": 6.063413217463871,
+        "vz": -55.76411986756297
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016551868732591145,
+        "y": -0.03704512661724282,
+        "z": 0.9991765080481884
+      },
+      "burn_remaining_at_contact_s": 0.398904,
+      "burnout_time_s": 31.174999999999997,
+      "delay_s": 29.862,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.18538273446997722,
+          "time_s": 30.72609604767627
+        },
+        {
+          "altitude_m": -0.004301117602145826,
+          "time_s": 30.77609604767627
+        }
+      ],
+      "ground_contact_time_s": 30.77609604767627,
+      "ignition_altitude_m": 26.607239635953942,
+      "ignition_time_s": 29.8645,
+      "q_at_ignition": 0.9962583452620919,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 3.826842626435237
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 108,
+      "touchdown_total_mps": 3.826842626435237,
+      "touchdown_vxy_mps": 2.960141483791054,
+      "touchdown_vz_mps": -2.425342632174069,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6940371527857536,
+        "vy": 6.063297451842427,
+        "vz": -55.76407112732205
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.01657813933033156,
+        "y": -0.037092864899158064,
+        "z": 0.9991743014459074
+      },
+      "burn_remaining_at_contact_s": 0.366918,
+      "burnout_time_s": 31.1755,
+      "delay_s": 29.8625,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.02132744736916714,
+          "time_s": 30.75858221489661
+        },
+        {
+          "altitude_m": -0.08279087026611073,
+          "time_s": 30.80858221489661
+        }
+      ],
+      "ground_contact_time_s": 30.80858221489661,
+      "ignition_altitude_m": 26.579350078601706,
+      "ignition_time_s": 29.865000000000002,
+      "q_at_ignition": 0.9962619782347562,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 3.0358348213854756
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 109,
+      "touchdown_total_mps": 3.0358348213854756,
+      "touchdown_vxy_mps": 2.912926390615032,
+      "touchdown_vz_mps": -0.8550747953220603,
+      "velocity_at_ignition_enu": {
+        "vx": 3.695390046700694,
+        "vy": 6.063191664071351,
+        "vz": -55.76402459730521
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016609304294218162,
+        "y": -0.037097341585138305,
+        "z": 0.9991736176752155
+      },
+      "burn_remaining_at_contact_s": 0.407622,
+      "burnout_time_s": 31.17614301171885,
+      "delay_s": 29.863,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.17632252694629486,
+          "time_s": 30.718521444148013
+        },
+        {
+          "altitude_m": -0.03716502047677267,
+          "time_s": 30.768521444148014
+        }
+      ],
+      "ground_contact_time_s": 30.768521444148014,
+      "ignition_altitude_m": 26.543498172863938,
+      "ignition_time_s": 29.865643011718852,
+      "q_at_ignition": 0.9962627567151917,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 4.203797308083617
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 110,
+      "touchdown_total_mps": 4.203797308083617,
+      "touchdown_vxy_mps": 3.0612518386550516,
+      "touchdown_vz_mps": -2.881084689449814,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6970659639829777,
+        "vy": 6.062770273891001,
+        "vz": -55.76327936851728
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016627641607730448,
+        "y": -0.037126580432939225,
+        "z": 0.9991722266756224
+      },
+      "burn_remaining_at_contact_s": 0.412438,
+      "burnout_time_s": 31.176499999999997,
+      "delay_s": 29.8635,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.17758045530298083,
+          "time_s": 30.714061919454153
+        },
+        {
+          "altitude_m": -0.04970381885476707,
+          "time_s": 30.764061919454154
+        }
+      ],
+      "ground_contact_time_s": 30.764061919454154,
+      "ignition_altitude_m": 26.52358616490948,
+      "ignition_time_s": 29.866,
+      "q_at_ignition": 0.9962650851580425,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 4.4212215481412365
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 110,
+      "touchdown_total_mps": 4.4212215481412365,
+      "touchdown_vxy_mps": 3.1071788600174717,
+      "touchdown_vz_mps": -3.1452566683196004,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6980079198140015,
+        "vy": 6.062726817483817,
+        "vz": -55.76386738048816
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.01665325578703332,
+        "y": -0.03716948970833123,
+        "z": 0.9991702047731977
+      },
+      "burn_remaining_at_contact_s": 0.390302,
+      "burnout_time_s": 31.177,
+      "delay_s": 29.864,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.032313424966770254,
+          "time_s": 30.736698131031872
+        },
+        {
+          "altitude_m": -0.13288247112826573,
+          "time_s": 30.786698131031873
+        }
+      ],
+      "ground_contact_time_s": 30.786698131031873,
+      "ignition_altitude_m": 26.495697900303316,
+      "ignition_time_s": 29.866500000000002,
+      "q_at_ignition": 0.9962683211166437,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 3.5891545566551666
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 111,
+      "touchdown_total_mps": 3.5891545566551666,
+      "touchdown_vxy_mps": 3.009404853094194,
+      "touchdown_vz_mps": -1.955891832830143,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6993573073369648,
+        "vy": 6.0626368123562,
+        "vz": -55.76381625930282
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016678791974979467,
+        "y": -0.03721464178797504,
+        "z": 0.9991680981370693
+      },
+      "burn_remaining_at_contact_s": 0.38981,
+      "burnout_time_s": 31.1775,
+      "delay_s": 29.8645,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.0013713902657565558,
+          "time_s": 30.73769046797815
+        },
+        {
+          "altitude_m": -0.1625458646498652,
+          "time_s": 30.787690467978152
+        }
+      ],
+      "ground_contact_time_s": 30.787690467978152,
+      "ignition_altitude_m": 26.467809076800222,
+      "ignition_time_s": 29.867,
+      "q_at_ignition": 0.9962716522159186,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 3.549325048255636
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 112,
+      "touchdown_total_mps": 3.549325048255636,
+      "touchdown_vxy_mps": 2.977729782504954,
+      "touchdown_vz_mps": -1.9315366008848684,
+      "velocity_at_ignition_enu": {
+        "vx": 3.700759061276909,
+        "vy": 6.06255705858106,
+        "vz": -55.76376669913681
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016704249386075138,
+        "y": -0.03726203368325351,
+        "z": 0.9991659065932124
+      },
+      "burn_remaining_at_contact_s": 0.398558,
+      "burnout_time_s": 31.177999999999997,
+      "delay_s": 29.865,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.01657275432560079,
+          "time_s": 30.729441784318006
+        },
+        {
+          "altitude_m": -0.17190999640291185,
+          "time_s": 30.779441784318006
+        }
+      ],
+      "ground_contact_time_s": 30.779441784318006,
+      "ignition_altitude_m": 26.43991969195401,
+      "ignition_time_s": 29.8675,
+      "q_at_ignition": 0.9962750678601346,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 3.8624009298913577
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 110,
+      "touchdown_total_mps": 3.8624009298913577,
+      "touchdown_vxy_mps": 3.02453573186081,
+      "touchdown_vz_mps": -2.4021499848932875,
+      "velocity_at_ignition_enu": {
+        "vx": 3.702218038572862,
+        "vy": 6.06249234093897,
+        "vz": -55.763719419976496
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016777991109446295,
+        "y": -0.03733752734006988,
+        "z": 0.9991618527878559
+      },
+      "burn_remaining_at_contact_s": 0.413306,
+      "burnout_time_s": 31.179499999999997,
+      "delay_s": 29.8665,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.01506458485740575,
+          "time_s": 30.71619385743366
+        },
+        {
+          "altitude_m": -0.21470930754441378,
+          "time_s": 30.76619385743366
+        }
+      ],
+      "ground_contact_time_s": 30.76619385743366,
+      "ignition_altitude_m": 26.356268008920832,
+      "ignition_time_s": 29.869,
+      "q_at_ignition": 0.9962810082824471,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 4.44743922555039
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 110,
+      "touchdown_total_mps": 4.44743922555039,
+      "touchdown_vxy_mps": 3.0958980365121547,
+      "touchdown_vz_mps": -3.1929815239810644,
+      "velocity_at_ignition_enu": {
+        "vx": 3.7062431505257587,
+        "vy": 6.062088828690289,
+        "vz": -55.76351065247658
+      }
+    }
+  ],
+  "rows": [
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016286802177547185,
+        "y": -0.036700600087500236,
+        "z": 0.999193577855686
+      },
+      "burn_remaining_at_contact_s": -0.62643,
+      "burnout_time_s": 31.169999999999998,
+      "delay_s": 29.857,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.040344999113385405,
+          "time_s": 31.746429784815476
+        },
+        {
+          "altitude_m": -0.18724235899717323,
+          "time_s": 31.796429784815476
+        }
+      ],
+      "ground_contact_time_s": 31.796429784815476,
+      "ignition_altitude_m": 26.88610340356158,
+      "ignition_time_s": 29.8595,
+      "q_at_ignition": 0.9962285738156599,
+      "retro_fraction_opposing": 0.9495798319327731,
+      "retro_fraction_vertical": 0.9495798319327731,
+      "retro_sample_count": 119,
+      "touchdown_total_mps": 5.573892739570989,
+      "touchdown_vxy_mps": 2.847767232154243,
+      "touchdown_vz_mps": -4.791503111103107,
+      "velocity_at_ignition_enu": {
+        "vx": 3.682623076501094,
+        "vy": 6.065044424883321,
+        "vz": -55.76463107619834
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016313559440796613,
+        "y": -0.03674908320883929,
+        "z": 0.9991913593810153
+      },
+      "burn_remaining_at_contact_s": -0.6,
+      "burnout_time_s": 31.1705,
+      "delay_s": 29.8575,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.1312229970740583,
+          "time_s": 31.72050000000001
+        },
+        {
+          "altitude_m": -0.08315503705417718,
+          "time_s": 31.77050000000001
+        }
+      ],
+      "ground_contact_time_s": 31.77050000000001,
+      "ignition_altitude_m": 26.85821362019478,
+      "ignition_time_s": 29.860000000000003,
+      "q_at_ignition": 0.9962330461253786,
+      "retro_fraction_opposing": 0.9491525423728814,
+      "retro_fraction_vertical": 0.940677966101695,
+      "retro_sample_count": 118,
+      "touchdown_total_mps": 5.289868705060415,
+      "touchdown_vxy_mps": 2.735357276894376,
+      "touchdown_vz_mps": -4.527751261334762,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6833919297928817,
+        "vy": 6.064749027225697,
+        "vz": -55.764564901436415
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016348580944706467,
+        "y": -0.03675451871833749,
+        "z": 0.9991905870527793
+      },
+      "burn_remaining_at_contact_s": -0.605631,
+      "burnout_time_s": 31.171143011718847,
+      "delay_s": 29.858,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.0778144860886851,
+          "time_s": 31.726773542974144
+        },
+        {
+          "altitude_m": -0.1394903378688587,
+          "time_s": 31.776773542974144
+        }
+      ],
+      "ground_contact_time_s": 31.776773542974144,
+      "ignition_altitude_m": 26.82236099999594,
+      "ignition_time_s": 29.86064301171885,
+      "q_at_ignition": 0.9962344548253066,
+      "retro_fraction_opposing": 0.9473684210526315,
+      "retro_fraction_vertical": 0.9473684210526315,
+      "retro_sample_count": 114,
+      "touchdown_total_mps": 5.371738645274944,
+      "touchdown_vxy_mps": 2.796804010094904,
+      "touchdown_vz_mps": -4.586225398108706,
+      "velocity_at_ignition_enu": {
+        "vx": 3.684302803653841,
+        "vy": 6.064574722838951,
+        "vz": -55.76388230379433
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016367660252486357,
+        "y": -0.03678427958882953,
+        "z": 0.9991891795215708
+      },
+      "burn_remaining_at_contact_s": -0.588211,
+      "burnout_time_s": 31.171499999999998,
+      "delay_s": 29.8585,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.10618648227028035,
+          "time_s": 31.709711426118012
+        },
+        {
+          "altitude_m": -0.10358556181614922,
+          "time_s": 31.759711426118013
+        }
+      ],
+      "ground_contact_time_s": 31.759711426118013,
+      "ignition_altitude_m": 26.80244878340784,
+      "ignition_time_s": 29.861,
+      "q_at_ignition": 0.9962370552494513,
+      "retro_fraction_opposing": 0.9391304347826087,
+      "retro_fraction_vertical": 0.9391304347826087,
+      "retro_sample_count": 115,
+      "touchdown_total_mps": 5.244331586085055,
+      "touchdown_vxy_mps": 2.7974958311371125,
+      "touchdown_vz_mps": -4.435879941970912,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6850655584667513,
+        "vy": 6.064507476531584,
+        "vz": -55.76447358392792
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.01639446139752189,
+        "y": -0.03682791719769663,
+        "z": 0.9991871326985575
+      },
+      "burn_remaining_at_contact_s": -0.6,
+      "burnout_time_s": 31.172,
+      "delay_s": 29.859,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.038736929262328135,
+          "time_s": 31.72200000000001
+        },
+        {
+          "altitude_m": -0.17604563831220396,
+          "time_s": 31.77200000000001
+        }
+      ],
+      "ground_contact_time_s": 31.77200000000001,
+      "ignition_altitude_m": 26.774560217813924,
+      "ignition_time_s": 29.861500000000003,
+      "q_at_ignition": 0.9962406877349935,
+      "retro_fraction_opposing": 0.9482758620689655,
+      "retro_fraction_vertical": 0.9482758620689655,
+      "retro_sample_count": 116,
+      "touchdown_total_mps": 5.293275081441624,
+      "touchdown_vxy_mps": 2.7285733105472625,
+      "touchdown_vz_mps": -4.535818424141334,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6861354610162396,
+        "vy": 6.064397692074148,
+        "vz": -55.764429525473886
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016421146740432466,
+        "y": -0.03687377869946022,
+        "z": 0.9991850030820881
+      },
+      "burn_remaining_at_contact_s": -0.591085,
+      "burnout_time_s": 31.1725,
+      "delay_s": 29.8595,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.03688206882821307,
+          "time_s": 31.713585293656365
+        },
+        {
+          "altitude_m": -0.17442425046536494,
+          "time_s": 31.763585293656366
+        }
+      ],
+      "ground_contact_time_s": 31.763585293656366,
+      "ignition_altitude_m": 26.746671100019636,
+      "ignition_time_s": 29.862000000000002,
+      "q_at_ignition": 0.9962443739834126,
+      "retro_fraction_opposing": 0.9401709401709402,
+      "retro_fraction_vertical": 0.9401709401709402,
+      "retro_sample_count": 117,
+      "touchdown_total_mps": 5.269096047718725,
+      "touchdown_vxy_mps": 2.795335575346328,
+      "touchdown_vz_mps": -4.466483200605181,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6873338788363306,
+        "vy": 6.064275477177456,
+        "vz": -55.7643820428367
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016447643087436386,
+        "y": -0.036921859464844366,
+        "z": 0.9991827917506019
+      },
+      "burn_remaining_at_contact_s": -0.55,
+      "burnout_time_s": 31.173,
+      "delay_s": 29.86,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.1792551658551777,
+          "time_s": 31.673000000000005
+        },
+        {
+          "altitude_m": -0.011530692265349973,
+          "time_s": 31.723000000000006
+        }
+      ],
+      "ground_contact_time_s": 31.723000000000006,
+      "ignition_altitude_m": 26.718781431725745,
+      "ignition_time_s": 29.8625,
+      "q_at_ignition": 0.9962481427639561,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 4.906824932263131
+      },
+      "retro_fraction_opposing": 0.9396551724137931,
+      "retro_fraction_vertical": 0.9396551724137931,
+      "retro_sample_count": 116,
+      "touchdown_total_mps": 4.906824932263131,
+      "touchdown_vxy_mps": 2.76030452411371,
+      "touchdown_vz_mps": -4.0568029099324585,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6886494632535576,
+        "vy": 6.064122391367472,
+        "vz": -55.76433112919664
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016480355794892505,
+        "y": -0.0369268464320279,
+        "z": 0.9991820684367084
+      },
+      "burn_remaining_at_contact_s": -0.55,
+      "burnout_time_s": 31.17364301171885,
+      "delay_s": 29.8605,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.15081231890418695,
+          "time_s": 31.673643011718855
+        },
+        {
+          "altitude_m": -0.03986039852041537,
+          "time_s": 31.723643011718856
+        }
+      ],
+      "ground_contact_time_s": 31.723643011718856,
+      "ignition_altitude_m": 26.68292918972364,
+      "ignition_time_s": 29.86314301171885,
+      "q_at_ignition": 0.9962489137215014,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 4.923774917483575
+      },
+      "retro_fraction_opposing": 0.9495798319327731,
+      "retro_fraction_vertical": 0.9495798319327731,
+      "retro_sample_count": 119,
+      "touchdown_total_mps": 4.923774917483575,
+      "touchdown_vxy_mps": 2.793593298790166,
+      "touchdown_vz_mps": -4.054552493061974,
+      "velocity_at_ignition_enu": {
+        "vx": 3.690616237028154,
+        "vy": 6.063595873197609,
+        "vz": -55.763581097201076
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.0164992026905284,
+        "y": -0.036956345041542465,
+        "z": 0.9991806667824129
+      },
+      "burn_remaining_at_contact_s": 0.348303,
+      "burnout_time_s": 31.174,
+      "delay_s": 29.861,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.05046037475880119,
+          "time_s": 30.775696722642056
+        },
+        {
+          "altitude_m": -0.00834151172380617,
+          "time_s": 30.825696722642057
+        }
+      ],
+      "ground_contact_time_s": 30.825696722642057,
+      "ignition_altitude_m": 26.66301706262857,
+      "ignition_time_s": 29.863500000000002,
+      "q_at_ignition": 0.9962513790764737,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 2.7621953505464543
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 114,
+      "touchdown_total_mps": 2.7621953505464543,
+      "touchdown_vxy_mps": 2.7615815964419164,
+      "touchdown_vz_mps": -0.05822577413624508,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6914840487919363,
+        "vy": 6.063534162921964,
+        "vz": -55.76417001634459
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016525557116987666,
+        "y": -0.03699961818131221,
+        "z": 0.999178629783689
+      },
+      "burn_remaining_at_contact_s": 0.345246,
+      "burnout_time_s": 31.1745,
+      "delay_s": 29.8615,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.016068798722947364,
+          "time_s": 30.779254145942488
+        },
+        {
+          "altitude_m": -0.03530023449774365,
+          "time_s": 30.82925414594249
+        }
+      ],
+      "ground_contact_time_s": 30.82925414594249,
+      "ignition_altitude_m": 26.635128629736847,
+      "ignition_time_s": 29.864,
+      "q_at_ignition": 0.9962548100130969,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 2.7581063384704096
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 0.990909090909091,
+      "retro_sample_count": 110,
+      "touchdown_total_mps": 2.7581063384704096,
+      "touchdown_vxy_mps": 2.757162698609942,
+      "touchdown_vz_mps": 0.07214171958439097,
+      "velocity_at_ignition_enu": {
+        "vx": 3.692735208548002,
+        "vy": 6.063413217463871,
+        "vz": -55.76411986756297
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016551868732591145,
+        "y": -0.03704512661724282,
+        "z": 0.9991765080481884
+      },
+      "burn_remaining_at_contact_s": 0.398904,
+      "burnout_time_s": 31.174999999999997,
+      "delay_s": 29.862,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.18538273446997722,
+          "time_s": 30.72609604767627
+        },
+        {
+          "altitude_m": -0.004301117602145826,
+          "time_s": 30.77609604767627
+        }
+      ],
+      "ground_contact_time_s": 30.77609604767627,
+      "ignition_altitude_m": 26.607239635953942,
+      "ignition_time_s": 29.8645,
+      "q_at_ignition": 0.9962583452620919,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 3.826842626435237
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 108,
+      "touchdown_total_mps": 3.826842626435237,
+      "touchdown_vxy_mps": 2.960141483791054,
+      "touchdown_vz_mps": -2.425342632174069,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6940371527857536,
+        "vy": 6.063297451842427,
+        "vz": -55.76407112732205
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.01657813933033156,
+        "y": -0.037092864899158064,
+        "z": 0.9991743014459074
+      },
+      "burn_remaining_at_contact_s": 0.366918,
+      "burnout_time_s": 31.1755,
+      "delay_s": 29.8625,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.02132744736916714,
+          "time_s": 30.75858221489661
+        },
+        {
+          "altitude_m": -0.08279087026611073,
+          "time_s": 30.80858221489661
+        }
+      ],
+      "ground_contact_time_s": 30.80858221489661,
+      "ignition_altitude_m": 26.579350078601706,
+      "ignition_time_s": 29.865000000000002,
+      "q_at_ignition": 0.9962619782347562,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 3.0358348213854756
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 109,
+      "touchdown_total_mps": 3.0358348213854756,
+      "touchdown_vxy_mps": 2.912926390615032,
+      "touchdown_vz_mps": -0.8550747953220603,
+      "velocity_at_ignition_enu": {
+        "vx": 3.695390046700694,
+        "vy": 6.063191664071351,
+        "vz": -55.76402459730521
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016609304294218162,
+        "y": -0.037097341585138305,
+        "z": 0.9991736176752155
+      },
+      "burn_remaining_at_contact_s": 0.407622,
+      "burnout_time_s": 31.17614301171885,
+      "delay_s": 29.863,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.17632252694629486,
+          "time_s": 30.718521444148013
+        },
+        {
+          "altitude_m": -0.03716502047677267,
+          "time_s": 30.768521444148014
+        }
+      ],
+      "ground_contact_time_s": 30.768521444148014,
+      "ignition_altitude_m": 26.543498172863938,
+      "ignition_time_s": 29.865643011718852,
+      "q_at_ignition": 0.9962627567151917,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 4.203797308083617
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 110,
+      "touchdown_total_mps": 4.203797308083617,
+      "touchdown_vxy_mps": 3.0612518386550516,
+      "touchdown_vz_mps": -2.881084689449814,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6970659639829777,
+        "vy": 6.062770273891001,
+        "vz": -55.76327936851728
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016627641607730448,
+        "y": -0.037126580432939225,
+        "z": 0.9991722266756224
+      },
+      "burn_remaining_at_contact_s": 0.412438,
+      "burnout_time_s": 31.176499999999997,
+      "delay_s": 29.8635,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.17758045530298083,
+          "time_s": 30.714061919454153
+        },
+        {
+          "altitude_m": -0.04970381885476707,
+          "time_s": 30.764061919454154
+        }
+      ],
+      "ground_contact_time_s": 30.764061919454154,
+      "ignition_altitude_m": 26.52358616490948,
+      "ignition_time_s": 29.866,
+      "q_at_ignition": 0.9962650851580425,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 4.4212215481412365
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 110,
+      "touchdown_total_mps": 4.4212215481412365,
+      "touchdown_vxy_mps": 3.1071788600174717,
+      "touchdown_vz_mps": -3.1452566683196004,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6980079198140015,
+        "vy": 6.062726817483817,
+        "vz": -55.76386738048816
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.01665325578703332,
+        "y": -0.03716948970833123,
+        "z": 0.9991702047731977
+      },
+      "burn_remaining_at_contact_s": 0.390302,
+      "burnout_time_s": 31.177,
+      "delay_s": 29.864,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.032313424966770254,
+          "time_s": 30.736698131031872
+        },
+        {
+          "altitude_m": -0.13288247112826573,
+          "time_s": 30.786698131031873
+        }
+      ],
+      "ground_contact_time_s": 30.786698131031873,
+      "ignition_altitude_m": 26.495697900303316,
+      "ignition_time_s": 29.866500000000002,
+      "q_at_ignition": 0.9962683211166437,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 3.5891545566551666
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 111,
+      "touchdown_total_mps": 3.5891545566551666,
+      "touchdown_vxy_mps": 3.009404853094194,
+      "touchdown_vz_mps": -1.955891832830143,
+      "velocity_at_ignition_enu": {
+        "vx": 3.6993573073369648,
+        "vy": 6.0626368123562,
+        "vz": -55.76381625930282
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016678791974979467,
+        "y": -0.03721464178797504,
+        "z": 0.9991680981370693
+      },
+      "burn_remaining_at_contact_s": 0.38981,
+      "burnout_time_s": 31.1775,
+      "delay_s": 29.8645,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.0013713902657565558,
+          "time_s": 30.73769046797815
+        },
+        {
+          "altitude_m": -0.1625458646498652,
+          "time_s": 30.787690467978152
+        }
+      ],
+      "ground_contact_time_s": 30.787690467978152,
+      "ignition_altitude_m": 26.467809076800222,
+      "ignition_time_s": 29.867,
+      "q_at_ignition": 0.9962716522159186,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 3.549325048255636
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 112,
+      "touchdown_total_mps": 3.549325048255636,
+      "touchdown_vxy_mps": 2.977729782504954,
+      "touchdown_vz_mps": -1.9315366008848684,
+      "velocity_at_ignition_enu": {
+        "vx": 3.700759061276909,
+        "vy": 6.06255705858106,
+        "vz": -55.76376669913681
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016704249386075138,
+        "y": -0.03726203368325351,
+        "z": 0.9991659065932124
+      },
+      "burn_remaining_at_contact_s": 0.398558,
+      "burnout_time_s": 31.177999999999997,
+      "delay_s": 29.865,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.01657275432560079,
+          "time_s": 30.729441784318006
+        },
+        {
+          "altitude_m": -0.17190999640291185,
+          "time_s": 30.779441784318006
+        }
+      ],
+      "ground_contact_time_s": 30.779441784318006,
+      "ignition_altitude_m": 26.43991969195401,
+      "ignition_time_s": 29.8675,
+      "q_at_ignition": 0.9962750678601346,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 3.8624009298913577
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 110,
+      "touchdown_total_mps": 3.8624009298913577,
+      "touchdown_vxy_mps": 3.02453573186081,
+      "touchdown_vz_mps": -2.4021499848932875,
+      "velocity_at_ignition_enu": {
+        "vx": 3.702218038572862,
+        "vy": 6.06249234093897,
+        "vz": -55.763719419976496
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.01673539619323478,
+        "y": -0.0372659958219973,
+        "z": 0.9991652376207102
+      },
+      "burn_remaining_at_contact_s": 0.441253,
+      "burnout_time_s": 31.17864301171885,
+      "delay_s": 29.8655,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.26012658313176146,
+          "time_s": 30.6873900992235
+        },
+        {
+          "altitude_m": -0.04867204011916676,
+          "time_s": 30.7373900992235
+        }
+      ],
+      "ground_contact_time_s": 30.7373900992235,
+      "ignition_altitude_m": 26.40406797572432,
+      "ignition_time_s": 29.868143011718853,
+      "q_at_ignition": 0.9962758330210649,
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 108,
+      "touchdown_total_mps": 5.714396229250157,
+      "touchdown_vxy_mps": 3.1756196351980974,
+      "touchdown_vz_mps": -4.7507645908224845,
+      "velocity_at_ignition_enu": {
+        "vx": 3.703758478762135,
+        "vy": 6.062144798681597,
+        "vz": -55.7629757311337
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016753185903840388,
+        "y": -0.03729497772778446,
+        "z": 0.9991638581325665
+      },
+      "burn_remaining_at_contact_s": 0.449874,
+      "burnout_time_s": 31.179,
+      "delay_s": 29.866,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.30069194396480814,
+          "time_s": 30.679126099376962
+        },
+        {
+          "altitude_m": -0.03314339723100962,
+          "time_s": 30.729126099376963
+        }
+      ],
+      "ground_contact_time_s": 30.729126099376963,
+      "ignition_altitude_m": 26.384156093857367,
+      "ignition_time_s": 29.8685,
+      "q_at_ignition": 0.9962780031493396,
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 108,
+      "touchdown_total_mps": 6.144010706670083,
+      "touchdown_vxy_mps": 3.1894027451450926,
+      "touchdown_vz_mps": -5.251340561507848,
+      "velocity_at_ignition_enu": {
+        "vx": 3.7047808934952773,
+        "vy": 6.062131351791063,
+        "vz": -55.76356283067146
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016777991109446295,
+        "y": -0.03733752734006988,
+        "z": 0.9991618527878559
+      },
+      "burn_remaining_at_contact_s": 0.413306,
+      "burnout_time_s": 31.179499999999997,
+      "delay_s": 29.8665,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.01506458485740575,
+          "time_s": 30.71619385743366
+        },
+        {
+          "altitude_m": -0.21470930754441378,
+          "time_s": 30.76619385743366
+        }
+      ],
+      "ground_contact_time_s": 30.76619385743366,
+      "ignition_altitude_m": 26.356268008920832,
+      "ignition_time_s": 29.869,
+      "q_at_ignition": 0.9962810082824471,
+      "repeatability": {
+        "bit_identical": true,
+        "same_process_rerun_total_mps": 4.44743922555039
+      },
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 110,
+      "touchdown_total_mps": 4.44743922555039,
+      "touchdown_vxy_mps": 3.0958980365121547,
+      "touchdown_vz_mps": -3.1929815239810644,
+      "velocity_at_ignition_enu": {
+        "vx": 3.7062431505257587,
+        "vy": 6.062088828690289,
+        "vz": -55.76351065247658
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016802666526097403,
+        "y": -0.03738233146197865,
+        "z": 0.999159762846803
+      },
+      "burn_remaining_at_contact_s": 0.433687,
+      "burnout_time_s": 31.18,
+      "delay_s": 29.867,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.12212080518238988,
+          "time_s": 30.696312769916815
+        },
+        {
+          "altitude_m": -0.1654713692845457,
+          "time_s": 30.746312769916816
+        }
+      ],
+      "ground_contact_time_s": 30.746312769916816,
+      "ignition_altitude_m": 26.328379368961812,
+      "ignition_time_s": 29.869500000000002,
+      "q_at_ignition": 0.9962840935528322,
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 109,
+      "touchdown_total_mps": 5.360211524509727,
+      "touchdown_vxy_mps": 3.1566660588021107,
+      "touchdown_vz_mps": -4.332127304303699,
+      "velocity_at_ignition_enu": {
+        "vx": 3.7077637919504487,
+        "vy": 6.06206282278637,
+        "vz": -55.76346015226137
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.01682720935074603,
+        "y": -0.03742938377817235,
+        "z": 0.9991575882989893
+      },
+      "burn_remaining_at_contact_s": 0.451043,
+      "burnout_time_s": 31.1805,
+      "delay_s": 29.8675,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.22698683240454115,
+          "time_s": 30.67945704181312
+        },
+        {
+          "altitude_m": -0.11020216884520456,
+          "time_s": 30.72945704181312
+        }
+      ],
+      "ground_contact_time_s": 30.72945704181312,
+      "ignition_altitude_m": 26.300490171783487,
+      "ignition_time_s": 29.87,
+      "q_at_ignition": 0.9962872435426677,
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 111,
+      "touchdown_total_mps": 6.192529554773766,
+      "touchdown_vxy_mps": 3.1719187151166883,
+      "touchdown_vz_mps": -5.3184916989160635,
+      "velocity_at_ignition_enu": {
+        "vx": 3.7093517790931183,
+        "vy": 6.062058866177463,
+        "vz": -55.76341198876095
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016858543229721346,
+        "y": -0.03743278359911479,
+        "z": 0.9991569327348899
+      },
+      "burn_remaining_at_contact_s": 0.428349,
+      "burnout_time_s": 31.181143011718852,
+      "delay_s": 29.868,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.027799476834331094,
+          "time_s": 30.702793529170634
+        },
+        {
+          "altitude_m": -0.24420141751785945,
+          "time_s": 30.752793529170635
+        }
+      ],
+      "ground_contact_time_s": 30.752793529170635,
+      "ignition_altitude_m": 26.264638634564527,
+      "ignition_time_s": 29.870643011718855,
+      "q_at_ignition": 0.9962879574362208,
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 109,
+      "touchdown_total_mps": 5.127192700605541,
+      "touchdown_vxy_mps": 3.178606961620356,
+      "touchdown_vz_mps": -4.0230041974476425,
+      "velocity_at_ignition_enu": {
+        "vx": 3.7108069535998767,
+        "vy": 6.061786378665797,
+        "vz": -55.76266876325664
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016875760240433798,
+        "y": -0.037461492021797584,
+        "z": 0.999155566131625
+      },
+      "burn_remaining_at_contact_s": 0.463271,
+      "burnout_time_s": 31.1815,
+      "delay_s": 29.8685,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.274799591059686,
+          "time_s": 30.668228648477047
+        },
+        {
+          "altitude_m": -0.09697845280449263,
+          "time_s": 30.718228648477048
+        }
+      ],
+      "ground_contact_time_s": 30.718228648477048,
+      "ignition_altitude_m": 26.244726888130142,
+      "ignition_time_s": 29.871000000000002,
+      "q_at_ignition": 0.996289938051752,
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 108,
+      "touchdown_total_mps": 6.835834718828377,
+      "touchdown_vxy_mps": 3.2524264148434154,
+      "touchdown_vz_mps": -6.012516837329292,
+      "velocity_at_ignition_enu": {
+        "vx": 3.711921861774192,
+        "vy": 6.061818045642749,
+        "vz": -55.76325488411379
+      }
+    },
+    {
+      "body_axis_at_ignition_enu": {
+        "x": -0.016899710140500908,
+        "y": -0.03750365643589642,
+        "z": 0.9991535795617735
+      },
+      "burn_remaining_at_contact_s": 0.438992,
+      "burnout_time_s": 31.182,
+      "delay_s": 29.869,
+      "ground_contact_bracket": [
+        {
+          "altitude_m": 0.04930933732166409,
+          "time_s": 30.693007950266257
+        },
+        {
+          "altitude_m": -0.2534404397517138,
+          "time_s": 30.743007950266257
+        }
+      ],
+      "ground_contact_time_s": 30.743007950266257,
+      "ignition_altitude_m": 26.216838997956895,
+      "ignition_time_s": 29.8715,
+      "q_at_ignition": 0.9962926620060164,
+      "retro_fraction_opposing": 1.0,
+      "retro_fraction_vertical": 1.0,
+      "retro_sample_count": 108,
+      "touchdown_total_mps": 5.608944621397522,
+      "touchdown_vxy_mps": 3.1650022200941663,
+      "touchdown_vz_mps": -4.630660936918529,
+      "velocity_at_ignition_enu": {
+        "vx": 3.7135189060956906,
+        "vy": 6.0618454035815965,
+        "vz": -55.76320150181626
+      }
+    }
+  ]
+}

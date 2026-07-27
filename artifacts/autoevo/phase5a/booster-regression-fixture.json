@@ -1,0 +1,20 @@
+{
+  "fixture": "artifacts/autoevo/best-legal-booster-branch.ork",
+  "sha256": "923076029d29ac1d5fecd01e1d909c6b60e38448c2c9c6369b4487bfd8cdc086",
+  "test_file": "tests/test_phase5a_booster_regression.py",
+  "test_status": "8/8 passed (7 fast structural + 1 slow JVM reopen/rerun)",
+  "checks": [
+    "sha256 of the saved .ork is unchanged",
+    "component tree has exactly 2 airframe stages named Sustainer, Booster (in that order)",
+    "Booster stage has an 8-fin freeformfinset named '...Forward Grid Fins'",
+    "Booster main motor mount ignitionevent=launch; retro mount ignitionevent=launch, ignitiondelay in (29,31)s, motor designation=H180W",
+    "Sustainer main motor mount ignitionevent=burnout (fires at Booster's burnout)",
+    "corrected-stage-event-map.json's XML-verified claims match the live XML directly (not just prose)",
+    "booster-delay-basin.json reports >=2 legal delays, including 29.864s (not a single hardcoded value)",
+    "[slow] reopening the saved .ork and rerunning its stored simulation reproduces touchdown_total_mps=3.5891545566551666 (booster branch) to 1e-6 -- bit-identical save/close/reopen/rerun"
+  ],
+  "not_covered_yet": [
+    "Does not yet include a coupled two-branch (booster+sustainer) authority check -- no legal sustainer branch exists yet to combine (see phase5a-summary.json).",
+    "Does not sweep robustness at +/-10ms/+/-20ms as a pass/fail gate (that basin is already known to fail those margins per corrected-phase4c-record.json's engineering classification -- the fixture only asserts the fixture's own reproducibility, not robustness)."
+  ]
+}

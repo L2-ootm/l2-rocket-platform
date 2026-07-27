@@ -1,0 +1,15 @@
+;Cesaroni Technology 9977M2245 extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=583, curve_id=657
+; lookup key '9977M2245-P' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+9977M2245-P 75 1025 P 5.3090 8.1820 CT
+0.000 0.00
+0.043 3045.66
+0.136 2629.81
+1.393 3003.30
+2.168 3007.15
+2.708 2972.50
+2.837 2883.94
+3.152 1956.00
+3.397 1409.24
+3.878 562.16
+4.371 0.00

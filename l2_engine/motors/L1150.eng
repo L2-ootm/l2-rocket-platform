@@ -1,0 +1,31 @@
+;AeroTech L1150R extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=252, curve_id=277
+; lookup key 'L1150' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+L1150 75 531 0,P 2.0653 3.6736 A
+0.000 0.00
+0.053 935.86
+0.175 1292.64
+0.300 1260.93
+0.425 1241.48
+0.550 1257.06
+0.675 1272.29
+0.800 1287.61
+0.925 1301.01
+1.048 1309.71
+1.170 1308.42
+1.295 1304.83
+1.420 1285.27
+1.545 1267.66
+1.670 1255.62
+1.795 1227.21
+1.920 1202.44
+2.043 1182.62
+2.165 1150.71
+2.290 1117.91
+2.415 1081.74
+2.540 1037.55
+2.665 1007.09
+2.790 1008.91
+2.915 643.12
+3.040 64.37
+3.165 0.00

@@ -1,0 +1,58 @@
+[
+  {
+    "designation": "H180W",
+    "index": 7,
+    "total_impulse_ns": 233.686205,
+    "burn_duration_s": 1.313,
+    "loaded_mass_kg": 0.2464,
+    "propellant_kg": 0.121,
+    "available_dv_ms": 58.42155125,
+    "gravity_loss_ms": 6.440265,
+    "net_dv_ms": 51.98128625,
+    "required_dv_ms": 21.698929143068185,
+    "feasible": true,
+    "burn_fits_window": true
+  },
+  {
+    "designation": "J360_CTI",
+    "index": 18,
+    "total_impulse_ns": 815.81004,
+    "burn_duration_s": 2.13,
+    "loaded_mass_kg": 0.7092,
+    "propellant_kg": 0.409,
+    "available_dv_ms": 203.95251,
+    "gravity_loss_ms": 10.44765,
+    "net_dv_ms": 193.50485999999998,
+    "required_dv_ms": 21.698929143068185,
+    "feasible": true,
+    "burn_fits_window": true
+  },
+  {
+    "designation": "K550W",
+    "index": 19,
+    "total_impulse_ns": 1624.8713,
+    "burn_duration_s": 3.356,
+    "loaded_mass_kg": 1.4874,
+    "propellant_kg": 0.9197,
+    "available_dv_ms": 406.217825,
+    "gravity_loss_ms": 16.46118,
+    "net_dv_ms": 389.756645,
+    "required_dv_ms": 21.698929143068185,
+    "feasible": true,
+    "burn_fits_window": true
+  },
+  {
+    "designation": "J350W",
+    "index": 14,
+    "total_impulse_ns": 689.75566,
+    "burn_duration_s": 1.981,
+    "loaded_mass_kg": 0.6509,
+    "propellant_kg": 0.3759,
+    "available_dv_ms": 172.438915,
+    "gravity_loss_ms": 9.716805,
+    "net_dv_ms": 162.72211000000001,
+    "required_dv_ms": 21.698929143068185,
+    "feasible": true,
+    "burn_fits_window": true
+  }
+]

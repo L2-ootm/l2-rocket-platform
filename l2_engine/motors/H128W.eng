@@ -1,0 +1,31 @@
+;AeroTech H128W extracted from OpenRocket 24.12 bundled initial_motors.db
+;source: db table motors/thrust_curves/thrust_data, motor_id=107, curve_id=126
+; lookup key 'H128W' must exactly match MOTOR_DATABASE's designation string in rocket_forge.py
+H128W 29 194 4,6,8,10,14 0.0941 0.2016 A
+0.000 0.00
+0.024 102.42
+0.074 175.20
+0.125 181.38
+0.176 179.28
+0.226 181.42
+0.277 186.07
+0.328 190.48
+0.378 189.51
+0.429 186.16
+0.480 184.11
+0.530 180.30
+0.581 174.14
+0.632 172.02
+0.683 169.36
+0.734 166.02
+0.784 161.88
+0.835 157.33
+0.886 153.07
+0.936 151.99
+0.988 139.90
+1.039 87.86
+1.089 40.86
+1.140 14.33
+1.191 4.33
+1.242 1.55
+1.293 0.00

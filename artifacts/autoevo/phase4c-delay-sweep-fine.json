@@ -1,0 +1,79 @@
+[
+  {
+    "delay_s": 29.3,
+    "touchdown_total_speed_ms": 24.383187294329844,
+    "touchdown_vz_ms": -24.099997861120826,
+    "touchdown_vxy_ms": 3.7053914400964443,
+    "ground_hit_time_s": 33.391400633959336
+  },
+  {
+    "delay_s": 29.35,
+    "touchdown_total_speed_ms": 23.701056818656433,
+    "touchdown_vz_ms": -23.27102649613429,
+    "touchdown_vxy_ms": 4.494376501517925,
+    "ground_hit_time_s": 33.33975487823149
+  },
+  {
+    "delay_s": 29.4,
+    "touchdown_total_speed_ms": 22.726206337763777,
+    "touchdown_vz_ms": -22.230313937419197,
+    "touchdown_vxy_ms": 4.721609550820601,
+    "ground_hit_time_s": 33.26439629088091
+  },
+  {
+    "delay_s": 29.45,
+    "touchdown_total_speed_ms": 21.49086351420588,
+    "touchdown_vz_ms": -20.966936417854452,
+    "touchdown_vxy_ms": 4.716438469425236,
+    "ground_hit_time_s": 33.16299999999995
+  },
+  {
+    "delay_s": 29.5,
+    "touchdown_total_speed_ms": 20.415932516181588,
+    "touchdown_vz_ms": -19.873914821803215,
+    "touchdown_vxy_ms": 4.673094281200754,
+    "ground_hit_time_s": 33.08267252825012
+  },
+  {
+    "delay_s": 29.55,
+    "touchdown_total_speed_ms": 18.9055984123577,
+    "touchdown_vz_ms": -18.44841062788929,
+    "touchdown_vxy_ms": 4.132529084486096,
+    "ground_hit_time_s": 32.96299999999996
+  },
+  {
+    "delay_s": 29.6,
+    "touchdown_total_speed_ms": 17.544876769913866,
+    "touchdown_vz_ms": -17.1526215777064,
+    "touchdown_vxy_ms": 3.689210468848859,
+    "ground_hit_time_s": 32.862999999999964
+  },
+  {
+    "delay_s": 29.65,
+    "touchdown_total_speed_ms": 16.108872454963045,
+    "touchdown_vz_ms": -15.62661049180876,
+    "touchdown_vxy_ms": 3.9121370512239864,
+    "ground_hit_time_s": 32.74436702035347
+  },
+  {
+    "delay_s": 29.7,
+    "touchdown_total_speed_ms": 14.221489429511754,
+    "touchdown_vz_ms": -13.718855906900254,
+    "touchdown_vxy_ms": 3.74749972640727,
+    "ground_hit_time_s": 32.58429112501499
+  },
+  {
+    "delay_s": 29.75,
+    "touchdown_total_speed_ms": 12.462724985607796,
+    "touchdown_vz_ms": -11.90739115512417,
+    "touchdown_vxy_ms": 3.678797350461627,
+    "ground_hit_time_s": 32.43817638232654
+  },
+  {
+    "delay_s": 29.8,
+    "touchdown_total_speed_ms": 9.897118038852884,
+    "touchdown_vz_ms": -9.310634336378286,
+    "touchdown_vxy_ms": 3.3563423140735895,
+    "ground_hit_time_s": 32.213
+  }
+]
