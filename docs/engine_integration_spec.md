@@ -2,7 +2,7 @@
 ## Wiring Real Wind, Atmosphere & Corrected Scoring into l2_engine
 
 **Status**: Active implementation — 2026-07-19  
-**Authority**: This doc supersedes any inline comments in osifog_sweep.py and generate_winner.py.
+**Authority**: This doc supersedes any inline comments in osifog_sweep.py and tools/reports/generate_winner.py.
 
 ---
 
@@ -32,7 +32,7 @@ our Rust engine (`l2_engine`) months ago. The correct architecture is:
 │  • Sequential (single JVM), elite only (top 6–10 candidates)        │
 │  • Calibrates Rust proxy bias per topological signature              │
 ├──────────────────────────────────────────────────────────────────────┤
-│  LAYER 4: Polisher (run_polisher.py)                                 │
+│  LAYER 4: Polisher (tools/run_polisher.py)                                 │
 │  • Fine-tunes ballast mass (nose/aft) around OR-validated elite      │
 │  • Targets: apogee err < 0.5m, touchdown speed < 1.0 m/s            │
 │  • Writes final .ork for submission                                  │

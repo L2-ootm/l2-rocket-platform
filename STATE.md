@@ -27,7 +27,7 @@ organic AST pipeline. The repaired five-seed gate is recorded in
 `designs/or_mode_sweep_or24_12_final_5seed/report.json`: 5/5 successful,
 four mission-scale cases within 1.17% apogee, and one 236 m low-altitude case
 with 23.80 m absolute / 10.08% relative error. See
-`docs/or_mode_checkpoint_2026-07-10.md` for root causes and the next boundary.
+`docs/history/or_mode_checkpoint_2026-07-10.md` for root causes and the next boundary.
 
 *(The note that once stood here about an intentionally dirty worktree is no
 longer true. History was squashed to a single audited commit on 2026-07-26.)*

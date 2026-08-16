@@ -18,7 +18,7 @@ O OpenWind usa a Espiral de Ekman e leis de potência baseadas na rugosidade do 
 
 ```mermaid
 graph TD
-    A[L2 Engine Start] --> B[Load constraints_fisicas.json]
+    A[L2 Engine Start] --> B[Load missions/constraints_fisicas.json]
     B --> C[Generate Population 0 XMLs via JPype]
     C --> D[JVM OpenRocket Simulation]
     

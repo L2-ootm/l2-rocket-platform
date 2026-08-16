@@ -107,12 +107,15 @@ Publication audit, re-verified this session by direct inspection:
    `.ork` files are ZIP archives; their contents were never scanned. Run
    gitleaks or trufflehog across all refs before the public flip if you want
    this closed properly.
-2. **`docs/` contains substantial stale internal analysis** — `PROJECT_STATUS.md`,
-   `CODEBASE_ANALYSIS_2026-07-04.md`, `analise_arquitetura_rust.md` (45 KB,
-   Portuguese), `session_report_july_06.md`, and others. None of it is wrong as
-   history; all of it is confusing as documentation. Same for the root-level
-   Portuguese docs (`protocolo_julho_19.md`, `veto_protocol.md`) and ~45 loose
-   Python scripts at the repository root.
+2. **Three tests still fail, two of them pre-existing.** In a fresh clone:
+   `test_orhelper.py::test_simulation` needs the OpenRocket JAR, which is not
+   distributed (README says to download it);
+   `test_organic_evolution.py::test_run_rust_evaluator_batch_defaults_to_openrocket`
+   passes in isolation but fails in a full-suite run — test-order pollution,
+   reproduced on the pre-reorg baseline;
+   `test_osifog_session_check.py::test_immutable_submission_manifest_...` fails
+   on the dev machine too, also reproduced at baseline. None were introduced by
+   the 2026-08-16 reorganization; all three predate it.
 3. **The Rust proxy overestimates apogee by roughly 13.9%** relative to
    OpenRocket, measured 2026-07-04 against `karman_m6` elites. This is why
    OpenRocket is the authority and the Rust core is only a proxy — the design is

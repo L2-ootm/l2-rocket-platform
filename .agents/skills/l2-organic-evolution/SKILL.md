@@ -45,7 +45,7 @@ python organic_loop.py --evaluator rust --population 300 --generations 40 --targ
 python organic_loop.py --evaluator rust --physics openrocket --mission missions/precision_16k_m3_organic.json --population 300 --generations 40 --elite-count 8 --validate-openrocket 8 --calibrate-every 5 --polish --out designs/organic_16k_m3
 
 # Validar/polir um arquivo de elites já salvo contra OpenRocket autoridade
-python run_polisher.py --elite designs/organic_16k_m3_longburn/organic_elite.json --mission missions/precision_16k_m3_organic.json --out designs/organic_16k_m3_longburn
+python tools/run_polisher.py --elite designs/organic_16k_m3_longburn/organic_elite.json --mission missions/precision_16k_m3_organic.json --out designs/organic_16k_m3_longburn
 
 # Avaliação em batch direta (o que organic_loop.py chama internamente por geração)
 cd l2_engine && cargo run --release --bin ast_eval -- --input batch.json   # JSON in, JSON out
@@ -68,7 +68,7 @@ python extract_motors.py   # lê openrocket/.../initial_motors.db, escreve l2_en
 6. **Calibração durante evolução**: `--calibrate-every N` mede deltas de apogeu/Mach OR↔Rust do líder e os grava por assinatura topológica no CKG. Use em missões de precisão; calibração orienta o proxy, mas não relaxa nenhum gate do OpenRocket.
 7. **Margem por fase no mesmo Mach da missão**: `stability.phase_machs` deve viajar até o batch Rust (`phase_machs`) e até o validador OpenRocket. O Rust não pode aceitar margem estática calculada só em Mach `0.3` quando a missão valida fases em Mach `2`, `5` ou `10`.
 8. **Memória contextual de autoridade**: falhas OpenRocket devem ser gravadas como contexto de estágio/pair de estágios (`record_authority`), não como punição genérica a `STAGE` ou `CLOSE_BODY`. O CKG deve aprender que uma arquitetura específica falhou, não bloquear a gramática inteira.
-9. **Polimento ranqueado**: `--polish` ou `run_polisher.py` percorre elites em ordem de score. Antes de ajustar lastro, exige bracket acima do alvo, zero warnings críticos, Mach válido e margem Barrowman válida em todas as fases. Warnings normais/informativos devem ser reportados e explicados. O polidor preserva a topologia e altera massa de payload frontal existente; ele não resgata foguete abaixo do alvo nem corrige topologia instável.
+9. **Polimento ranqueado**: `--polish` ou `tools/run_polisher.py` percorre elites em ordem de score. Antes de ajustar lastro, exige bracket acima do alvo, zero warnings críticos, Mach válido e margem Barrowman válida em todas as fases. Warnings normais/informativos devem ser reportados e explicados. O polidor preserva a topologia e altera massa de payload frontal existente; ele não resgata foguete abaixo do alvo nem corrige topologia instável.
 
 ## Princípios de decisão (o porquê de cada escolha)
 
@@ -112,7 +112,7 @@ python extract_motors.py   # lê openrocket/.../initial_motors.db, escreve l2_en
 
 - OpenRocket via JPype **vai** gerar deadlock se você colocar múltiplos `OpenRocketInstance` dentro de um `ThreadPoolExecutor` para processamento paralelo.
 - Resultado sem `or_metrics` é proxy Rust, não autoridade OpenRocket. Documento de missão deve dizer isso explicitamente.
-- `run_polisher.py` recusar todos os elites significa que nenhum baseline passou os gates de autoridade. Nas missões extremas `anomaly_200km` e `push_limits`, a causa observada foi mismatch Rust/OR: apogeu OpenRocket muito abaixo do alvo e margem Barrowman negativa, não bug do polidor.
+- `tools/run_polisher.py` recusar todos os elites significa que nenhum baseline passou os gates de autoridade. Nas missões extremas `anomaly_200km` e `push_limits`, a causa observada foi mismatch Rust/OR: apogeu OpenRocket muito abaixo do alvo e margem Barrowman negativa, não bug do polidor.
 - Se Rust OR-mode parecer distante do OpenRocket em missões extremas, primeiro verifique se o batch tem `phase_machs` e se as margens Rust estão sendo comparadas com as margens OR no mesmo Mach por fase.
 - Nelder-Mead no Python é inútil para exploração estrutural profunda pois não processa arrays de tamanho variável (mutações topológicas). O solver DEVE ser um algoritmo genético (GA).
 - `constraints.max_mach` e `constraints.min_static_margin` são rejeições duras no Rust (`l2_engine/src/ast.rs`), não apenas preferência de score. Candidatos reprovados ficam auditáveis no JSON, mas não devem gerar `.ork` viável.

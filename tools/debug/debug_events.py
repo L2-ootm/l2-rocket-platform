@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Debug: check all events in both branches."""
 import sys, os, tempfile
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from osifog_sweep import parse_wind_csv, generate_ork, init_or
 from rocket_forge import MOTOR_DATABASE
 

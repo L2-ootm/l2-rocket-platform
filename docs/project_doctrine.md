@@ -7,7 +7,7 @@ L2-OSIFOG has four evidence levels. Never collapse them into one claim.
 1. **Rust proxy**: `organic_loop.py --evaluator rust` or `ast_eval` scores many ASTs quickly. These numbers are exploration signals.
 2. **Calibrated Rust proxy**: `--calibrate-every N` records OpenRocket/Rust deltas in the CKG and improves ranking pressure. These numbers are still proxy results.
 3. **OpenRocket validation**: `--validate-openrocket N` or `run_polisher.py --skip-polish` loads ranked elites in OpenRocket, runs deterministic simulations, and computes Barrowman margins by phase.
-4. **OpenRocket polished authority**: `--polish` or `run_polisher.py` validates ranked elites, preserves the accepted topology, adds forward payload ballast, and writes `precision_polished_elite.ork`.
+4. **OpenRocket polished authority**: `--polish` or `tools/run_polisher.py` validates ranked elites, preserves the accepted topology, adds forward payload ballast, and writes `precision_polished_elite.ork`.
 
 Only levels 3 and 4 are authority results. Reports must label proxy-only missions as proxy-only.
 
@@ -33,7 +33,7 @@ python organic_loop.py `
 Use this for authority testing of an already saved elite file:
 
 ```powershell
-python run_polisher.py `
+python tools/run_polisher.py `
   --elite designs/organic_16k_m3_longburn/organic_elite.json `
   --mission missions/precision_16k_m3_organic.json `
   --out designs/organic_16k_m3_longburn
@@ -42,7 +42,7 @@ python run_polisher.py `
 For high-altitude stress missions, start by validating and reporting existing elites before claiming the structure works in OpenRocket:
 
 ```powershell
-python run_polisher.py `
+python tools/run_polisher.py `
   --elite designs/anomaly_200km/organic_elite.json `
   --mission missions/anomaly_200km.json `
   --out designs/anomaly_200km_or_polish
@@ -79,7 +79,7 @@ The polisher is an authority refinement step, not a topology designer.
 
 ## Current Stress-Test Finding
 
-The July 2026 `anomaly_200km` and `push_limits` saved elites were rechecked through OpenRocket authority using both `run_polisher.py` and short seeded `organic_loop.py --calibrate-every 1 --validate-openrocket 6 --polish` runs.
+The July 2026 `anomaly_200km` and `push_limits` saved elites were rechecked through OpenRocket authority using both `tools/run_polisher.py` and short seeded `organic_loop.py --calibrate-every 1 --validate-openrocket 6 --polish` runs.
 
 - `anomaly_200km`: Rust proxy elites near `201-205 km` validated in OpenRocket around `6.7-8.1 km`, with Mach around `1.2-1.3` and negative OpenRocket Barrowman margins.
 - `push_limits`: Rust proxy elites near `438-522 km` validated in OpenRocket around `6.8-12.8 km`, with Mach around `1.1-4.1` and negative OpenRocket Barrowman margins.

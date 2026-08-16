@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Test bigger motors with 0.08kg nose mass for tail-first descent."""
 import sys, os, tempfile, math
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from osifog_sweep import parse_wind_csv, generate_ork, init_or, LAUNCH_ALT
 from rocket_forge import MOTOR_DATABASE
 

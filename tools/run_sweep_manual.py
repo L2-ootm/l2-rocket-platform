@@ -1,5 +1,12 @@
 import os
 import json
+import sys
+from pathlib import Path
+
+# Run from anywhere: put the repository root on sys.path so the flat
+# top-level modules (osifog_sweep, rocket_forge, ...) resolve.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
 from osifog_sweep import (
     parse_wind_csv, init_or, build_motor_grid, run_sweep, 
     print_top_results, save_results, build_fine_grid, build_precision_grid, save_ork, MOTOR_DATABASE, LAUNCH_ROD_M

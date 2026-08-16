@@ -313,7 +313,7 @@ Evidence:
   `designs/osifog_level3/falcon_best.ork`,
   `designs/osifog_level3/falcon_best_config.json`, OSIFOG mission definitions,
   and multiple authority-model/CKG files under `.planning/`.
-- `docs/CODEBASE_ANALYSIS_2026-07-04.md:25-27` explicitly says this is an
+- `docs/history/CODEBASE_ANALYSIS_2026-07-04.md:25-27` explicitly says this is an
   optimizer for OSIFOG/BIRST 2026 and that teams submit `.ork` files scored
   against competition objectives.
 - Four competition regulation PDFs are tracked. No redistribution permission

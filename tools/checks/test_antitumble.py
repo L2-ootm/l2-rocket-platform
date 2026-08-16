@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Verify best config 5 times for consistency."""
 import sys, os, math
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from osifog_sweep import parse_wind_csv, generate_ork, init_or, run_sim, score
 from rocket_forge import MOTOR_DATABASE
 

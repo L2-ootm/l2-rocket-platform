@@ -22,7 +22,7 @@ organic_campaign.py     -- wraps run_generation in a resumable, crash-hardened, 
 osifog_campaign_watchdog.py -- process supervisor; restarts organic_campaign.py if it dies
 ```
 
-See `SOURCE_MAP.md` for exact file locations, git-tracking status (several of these are currently untracked — see that document), and what NOT to trust (the old `OSIFOG/SOURCE_MAP.md`, the current `README.md` — both stale, cleanup pending).
+See `docs/architecture/source-map.md` for exact file locations, git-tracking status (several of these are currently untracked — see that document), and what NOT to trust (the old `OSIFOG/SOURCE_MAP.md`, the current `README.md` — both stale, cleanup pending).
 
 ## 2. The actual scoring formula (verified against OSIFOG's own PDF, not assumed)
 
@@ -95,7 +95,7 @@ Each of these was empirically reproduced and verified, not inferred. Full detail
 - **Fin/body proportionality after the new octaweb-widening fix.** The widening fix (§5.6) can grow a stage's body radius without re-scaling that stage's fins to match, for the specific case where only this new widening path (not the earlier general diameter-continuity pass) causes the growth. Whether this matters in practice (produces a measurably worse fin/body ratio closeness score) has not been checked.
 - **`dropped_stage_0_simulation_diverged` and `no_liftoff`** (2 each, this snapshot) — new/newly-visible failure categories now that the TWR gate no longer filters them out earlier. Not investigated.
 
-## 7. Known housekeeping/cleanup needs (see `SOURCE_MAP.md` for full detail)
+## 7. Known housekeeping/cleanup needs (see `docs/architecture/source-map.md` for full detail)
 
 - A 1.1GB file is currently committed to git history — will block any push to GitHub as-is.
 - The actual campaign-orchestration entry points (`organic_campaign.py`, `osifog_campaign_watchdog.py`, `campaign_infra.py`) are not tracked by git at all.

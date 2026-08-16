@@ -5,6 +5,13 @@ from pathlib import Path
 import orhelper
 from orhelper import OpenRocketInstance
 
+import sys
+from pathlib import Path
+
+# Run from anywhere: put the repository root on sys.path so the flat
+# top-level modules (osifog_sweep, rocket_forge, ...) resolve.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
 from organic_loop import (
     OrganicCandidate,
     ast_to_dicts,

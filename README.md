@@ -59,12 +59,21 @@ same boundary rather than embedding game-specific behavior into the engine.
 | `organic_campaign.py` | Resumable long-running campaign runner |
 | `campaign_infra.py` | Campaign leases, locking, and recovery |
 | `ckg_memory.py` | Optional local continuous knowledge graph |
+| `rocket_forge.py`, `motor_data.py`, `physical_geometry.py` | Component, motor, and geometry data used by the generators |
+| `osifog_*.py` | The OSIFOG 2026 competition layer built on the engine — retained as worked examples, not part of the reusable platform |
 | `integrations/openrocket/` | OpenRocket adapter contract and dependency instructions |
 | `missions/` | Serializable mission definitions and objectives |
 | `designs/` | Curated design references plus ignored local run output |
+| `tools/` | Standalone developer scripts: `debug/`, `reports/`, `checks/`. Nothing here is imported by the engine |
 | `tests/` | Python integration and regression tests |
 | `docs/architecture/` | Current platform boundaries and contracts |
 | `docs/roadmap/` | Ordered future work, including KSP and WebUI |
+| `docs/history/` | Dated session logs and superseded analyses. Kept for the reasoning they record — **not current** |
+
+The top-level Python modules form one flat import namespace and several resolve
+paths relative to their own location, so they are expected to sit at the
+repository root. `tools/` scripts add the root to `sys.path` themselves and run
+from anywhere.
 
 Generated builds, downloaded simulators, optimizer memory, game installations,
 and campaign populations are local state and are excluded from version control.
