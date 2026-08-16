@@ -155,7 +155,7 @@
           "loaded_mass_kg": 0.0898,
           "point_count": 13,
           "propellant_mass_kg": 0.0336,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\F50T.eng",
+          "source_path": "l2_engine\\motors\\F50T.eng",
           "status": "ok",
           "total_impulse_ns": 68.712625
         },
@@ -171,7 +171,7 @@
           "loaded_mass_kg": 0.08,
           "point_count": 34,
           "propellant_mass_kg": 0.03,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\F67W.eng",
+          "source_path": "l2_engine\\motors\\F67W.eng",
           "status": "ok",
           "total_impulse_ns": 62.076474999999995
         },
@@ -187,7 +187,7 @@
           "loaded_mass_kg": 0.147,
           "point_count": 70,
           "propellant_mass_kg": 0.0569,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\G71R.eng",
+          "source_path": "l2_engine\\motors\\G71R.eng",
           "status": "ok",
           "total_impulse_ns": 109.590065
         },
@@ -203,7 +203,7 @@
           "loaded_mass_kg": 0.136,
           "point_count": 29,
           "propellant_mass_kg": 0.0408,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\G104T.eng",
+          "source_path": "l2_engine\\motors\\G104T.eng",
           "status": "ok",
           "total_impulse_ns": 87.77425499999997
         },
@@ -219,7 +219,7 @@
           "loaded_mass_kg": 0.1049,
           "point_count": 31,
           "propellant_mass_kg": 0.0574,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\G80T.eng",
+          "source_path": "l2_engine\\motors\\G80T.eng",
           "status": "ok",
           "total_impulse_ns": 116.25257500000001
         },
@@ -235,7 +235,7 @@
           "loaded_mass_kg": 0.3091,
           "point_count": 27,
           "propellant_mass_kg": 0.1478,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\H73J.eng",
+          "source_path": "l2_engine\\motors\\H73J.eng",
           "status": "ok",
           "total_impulse_ns": 188.28838000000002
         },
@@ -251,7 +251,7 @@
           "loaded_mass_kg": 0.2016,
           "point_count": 27,
           "propellant_mass_kg": 0.0941,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\H128W.eng",
+          "source_path": "l2_engine\\motors\\H128W.eng",
           "status": "ok",
           "total_impulse_ns": 177.77054499999997
         },
@@ -267,7 +267,7 @@
           "loaded_mass_kg": 0.2464,
           "point_count": 27,
           "propellant_mass_kg": 0.121,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\H180W.eng",
+          "source_path": "l2_engine\\motors\\H180W.eng",
           "status": "ok",
           "total_impulse_ns": 233.686205
         },
@@ -283,7 +283,7 @@
           "loaded_mass_kg": 0.1882,
           "point_count": 27,
           "propellant_mass_kg": 0.0806,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\H238T.eng",
+          "source_path": "l2_engine\\motors\\H238T.eng",
           "status": "ok",
           "total_impulse_ns": 177.56282000000002
         },
@@ -299,7 +299,7 @@
           "loaded_mass_kg": 0.37,
           "point_count": 27,
           "propellant_mass_kg": 0.19,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\I161W.eng",
+          "source_path": "l2_engine\\motors\\I161W.eng",
           "status": "ok",
           "total_impulse_ns": 332.672
         },
@@ -315,7 +315,7 @@
           "loaded_mass_kg": 0.3718,
           "point_count": 27,
           "propellant_mass_kg": 0.1926,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\I218R.eng",
+          "source_path": "l2_engine\\motors\\I218R.eng",
           "status": "ok",
           "total_impulse_ns": 319.15037000000007
         },
@@ -331,7 +331,7 @@
           "loaded_mass_kg": 0.3494,
           "point_count": 27,
           "propellant_mass_kg": 0.1792,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\I357T.eng",
+          "source_path": "l2_engine\\motors\\I357T.eng",
           "status": "ok",
           "total_impulse_ns": 356.2300000000001
         },
@@ -347,7 +347,7 @@
           "loaded_mass_kg": 0.4664,
           "point_count": 27,
           "propellant_mass_kg": 0.2473,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\I211W.eng",
+          "source_path": "l2_engine\\motors\\I211W.eng",
           "status": "ok",
           "total_impulse_ns": 430.8028599999999
         },
@@ -363,7 +363,7 @@
           "loaded_mass_kg": 0.5555,
           "point_count": 27,
           "propellant_mass_kg": 0.3136,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\I284W.eng",
+          "source_path": "l2_engine\\motors\\I284W.eng",
           "status": "ok",
           "total_impulse_ns": 590.8280500000001
         },
@@ -379,7 +379,7 @@
           "loaded_mass_kg": 0.6509,
           "point_count": 27,
           "propellant_mass_kg": 0.3759,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\J350W.eng",
+          "source_path": "l2_engine\\motors\\J350W.eng",
           "status": "ok",
           "total_impulse_ns": 689.75566
         },
@@ -395,7 +395,7 @@
           "loaded_mass_kg": 0.6496,
           "point_count": 27,
           "propellant_mass_kg": 0.3763,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\J420R.eng",
+          "source_path": "l2_engine\\motors\\J420R.eng",
           "status": "ok",
           "total_impulse_ns": 651.221145
         },
@@ -411,7 +411,7 @@
           "loaded_mass_kg": 1.08,
           "point_count": 16,
           "propellant_mass_kg": 0.662,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\J510W.eng",
+          "source_path": "l2_engine\\motors\\J510W.eng",
           "status": "ok",
           "total_impulse_ns": 1180.4997700000001
         },
@@ -427,7 +427,7 @@
           "loaded_mass_kg": 1.0859,
           "point_count": 27,
           "propellant_mass_kg": 0.6133,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\J800T.eng",
+          "source_path": "l2_engine\\motors\\J800T.eng",
           "status": "ok",
           "total_impulse_ns": 1264.44884
         },
@@ -443,7 +443,7 @@
           "loaded_mass_kg": 0.7092,
           "point_count": 27,
           "propellant_mass_kg": 0.409,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\J360_CTI.eng",
+          "source_path": "l2_engine\\motors\\J360_CTI.eng",
           "status": "ok",
           "total_impulse_ns": 815.81004
         },
@@ -459,7 +459,7 @@
           "loaded_mass_kg": 1.4874,
           "point_count": 27,
           "propellant_mass_kg": 0.9197,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\K550W.eng",
+          "source_path": "l2_engine\\motors\\K550W.eng",
           "status": "ok",
           "total_impulse_ns": 1624.8713
         },
@@ -475,7 +475,7 @@
           "loaded_mass_kg": 2.0353,
           "point_count": 27,
           "propellant_mass_kg": 1.2916,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\K700W.eng",
+          "source_path": "l2_engine\\motors\\K700W.eng",
           "status": "ok",
           "total_impulse_ns": 2283.6805999999992
         },
@@ -491,7 +491,7 @@
           "loaded_mass_kg": 2.1284,
           "point_count": 27,
           "propellant_mass_kg": 1.3471,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\K1050W.eng",
+          "source_path": "l2_engine\\motors\\K1050W.eng",
           "status": "ok",
           "total_impulse_ns": 2507.9249250000007
         },
@@ -507,7 +507,7 @@
           "loaded_mass_kg": 2.59,
           "point_count": 18,
           "propellant_mass_kg": 1.19,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\K510_CTI.eng",
+          "source_path": "l2_engine\\motors\\K510_CTI.eng",
           "status": "ok",
           "total_impulse_ns": 2428.5875000000005
         },
@@ -523,7 +523,7 @@
           "loaded_mass_kg": 2.194,
           "point_count": 25,
           "propellant_mass_kg": 1.4,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\L1000.eng",
+          "source_path": "l2_engine\\motors\\L1000.eng",
           "status": "ok",
           "total_impulse_ns": 2702.08179
         },
@@ -539,7 +539,7 @@
           "loaded_mass_kg": 3.6736,
           "point_count": 27,
           "propellant_mass_kg": 2.0653,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\L1150.eng",
+          "source_path": "l2_engine\\motors\\L1150.eng",
           "status": "ok",
           "total_impulse_ns": 3488.5508200000004
         },
@@ -555,7 +555,7 @@
           "loaded_mass_kg": 4.6592,
           "point_count": 27,
           "propellant_mass_kg": 2.464,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\L1500T.eng",
+          "source_path": "l2_engine\\motors\\L1500T.eng",
           "status": "ok",
           "total_impulse_ns": 5056.11238
         },
@@ -571,7 +571,7 @@
           "loaded_mass_kg": 4.751,
           "point_count": 38,
           "propellant_mass_kg": 2.516,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\L2200G.eng",
+          "source_path": "l2_engine\\motors\\L2200G.eng",
           "status": "ok",
           "total_impulse_ns": 5104.135114999999
         },
@@ -587,7 +587,7 @@
           "loaded_mass_kg": 8.9882,
           "point_count": 27,
           "propellant_mass_kg": 5.656,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\M1939W.eng",
+          "source_path": "l2_engine\\motors\\M1939W.eng",
           "status": "ok",
           "total_impulse_ns": 10368.547795
         },
@@ -603,7 +603,7 @@
           "loaded_mass_kg": 8.064,
           "point_count": 27,
           "propellant_mass_kg": 4.6592,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\M2500T.eng",
+          "source_path": "l2_engine\\motors\\M2500T.eng",
           "status": "ok",
           "total_impulse_ns": 9572.995640000001
         },
@@ -619,7 +619,7 @@
           "loaded_mass_kg": 5.125,
           "point_count": 21,
           "propellant_mass_kg": 3.351,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\M650W.eng",
+          "source_path": "l2_engine\\motors\\M650W.eng",
           "status": "ok",
           "total_impulse_ns": 6005.98
         },
@@ -635,7 +635,7 @@
           "loaded_mass_kg": 4.637,
           "point_count": 31,
           "propellant_mass_kg": 2.722,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\M1297W.eng",
+          "source_path": "l2_engine\\motors\\M1297W.eng",
           "status": "ok",
           "total_impulse_ns": 5413.762499999999
         },
@@ -657,7 +657,7 @@
           "loaded_mass_kg": 12.2828,
           "point_count": 27,
           "propellant_mass_kg": 7.6671,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\N2000W.eng",
+          "source_path": "l2_engine\\motors\\N2000W.eng",
           "status": "ok",
           "total_impulse_ns": 13263.43407
         },
@@ -673,7 +673,7 @@
           "loaded_mass_kg": 14.784,
           "point_count": 27,
           "propellant_mass_kg": 9.7664,
-          "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\N4800T.eng",
+          "source_path": "l2_engine\\motors\\N4800T.eng",
           "status": "ok",
           "total_impulse_ns": 19273.861140000005
         },

@@ -17,7 +17,7 @@
       "total_impulse_ns": 68.712625,
       "point_count": 13,
       "curve_digest": "143fb8082a93b15deea9cd4f6c97d4fcbf99e77fb805dfd329f78e38ebb8552c",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\F50T.eng",
+      "source_path": "l2_engine\\motors\\F50T.eng",
       "status": "ok"
     },
     {
@@ -33,7 +33,7 @@
       "total_impulse_ns": 62.076474999999995,
       "point_count": 34,
       "curve_digest": "416af69696e8afdf4b0142e7f8ab0b2736c15c441b5871bd3d6b2976ddef099c",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\F67W.eng",
+      "source_path": "l2_engine\\motors\\F67W.eng",
       "status": "ok"
     },
     {
@@ -49,7 +49,7 @@
       "total_impulse_ns": 109.590065,
       "point_count": 70,
       "curve_digest": "f377fd0a43fc0bed73c6552ddb1f91f402eb9c4a352cd29e443971e6ce895c13",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\G71R.eng",
+      "source_path": "l2_engine\\motors\\G71R.eng",
       "status": "ok"
     },
     {
@@ -65,7 +65,7 @@
       "total_impulse_ns": 87.77425499999997,
       "point_count": 29,
       "curve_digest": "2f0588096563bf952095eeb599f88f415161ba1a2df0427a3a7c247dca47b25b",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\G104T.eng",
+      "source_path": "l2_engine\\motors\\G104T.eng",
       "status": "ok"
     },
     {
@@ -81,7 +81,7 @@
       "total_impulse_ns": 116.25257500000001,
       "point_count": 31,
       "curve_digest": "7dd0423befb34cbf69d4e8ddfe87a03b21d1ed6b9e9dce41f08776d3b15a9d97",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\G80T.eng",
+      "source_path": "l2_engine\\motors\\G80T.eng",
       "status": "ok"
     },
     {
@@ -97,7 +97,7 @@
       "total_impulse_ns": 188.28838000000002,
       "point_count": 27,
       "curve_digest": "f8f8f970f55728906a5dc74f3ee648088623f8533ec5b12480af5a0c0305758d",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\H73J.eng",
+      "source_path": "l2_engine\\motors\\H73J.eng",
       "status": "ok"
     },
     {
@@ -113,7 +113,7 @@
       "total_impulse_ns": 177.77054499999997,
       "point_count": 27,
       "curve_digest": "156772be3d6805c6acab9212b87035aa8256bc2e2d1c5a8541da26ea9259db20",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\H128W.eng",
+      "source_path": "l2_engine\\motors\\H128W.eng",
       "status": "ok"
     },
     {
@@ -129,7 +129,7 @@
       "total_impulse_ns": 233.686205,
       "point_count": 27,
       "curve_digest": "db0bd7fc33d6f1d8c10c2143738db1364d44cd1aaadfce2f7ef2b1963c9df801",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\H180W.eng",
+      "source_path": "l2_engine\\motors\\H180W.eng",
       "status": "ok"
     },
     {
@@ -145,7 +145,7 @@
       "total_impulse_ns": 177.56282000000002,
       "point_count": 27,
       "curve_digest": "5b948067fbf45402939d4464a5de2667b97066a18209018bedbcbc9bb4dd1247",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\H238T.eng",
+      "source_path": "l2_engine\\motors\\H238T.eng",
       "status": "ok"
     },
     {
@@ -161,7 +161,7 @@
       "total_impulse_ns": 332.672,
       "point_count": 27,
       "curve_digest": "50394243e310da590c533699c3d03297f15ff66339ef4b3e47b7a0430a497519",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\I161W.eng",
+      "source_path": "l2_engine\\motors\\I161W.eng",
       "status": "ok"
     },
     {
@@ -177,7 +177,7 @@
       "total_impulse_ns": 319.15037000000007,
       "point_count": 27,
       "curve_digest": "2c0d4e28d1d2df2f14d21c5e7ea7d085a1672b27ee142a259d4ff905cc9f514d",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\I218R.eng",
+      "source_path": "l2_engine\\motors\\I218R.eng",
       "status": "ok"
     },
     {
@@ -193,7 +193,7 @@
       "total_impulse_ns": 356.2300000000001,
       "point_count": 27,
       "curve_digest": "455e97b1663a923f40e5e00be32ac7affe2a1fb3b5fe3fd131b380579771ac73",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\I357T.eng",
+      "source_path": "l2_engine\\motors\\I357T.eng",
       "status": "ok"
     },
     {
@@ -209,7 +209,7 @@
       "total_impulse_ns": 430.8028599999999,
       "point_count": 27,
       "curve_digest": "8753b40113cfad1edb14caa21e468da0f77d7955683520d3a42525d5c8f32684",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\I211W.eng",
+      "source_path": "l2_engine\\motors\\I211W.eng",
       "status": "ok"
     },
     {
@@ -225,7 +225,7 @@
       "total_impulse_ns": 590.8280500000001,
       "point_count": 27,
       "curve_digest": "e6f349ea0d32b4ea9f7befa2f37b87a5cf7b1adf0ea5d1ff6e09c0057a611134",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\I284W.eng",
+      "source_path": "l2_engine\\motors\\I284W.eng",
       "status": "ok"
     },
     {
@@ -241,7 +241,7 @@
       "total_impulse_ns": 689.75566,
       "point_count": 27,
       "curve_digest": "b00b4b1e1cdb26c150eb800b9bee79bba87c80dabddb1c6ae8d4d412f2e8da8d",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\J350W.eng",
+      "source_path": "l2_engine\\motors\\J350W.eng",
       "status": "ok"
     },
     {
@@ -257,7 +257,7 @@
       "total_impulse_ns": 651.221145,
       "point_count": 27,
       "curve_digest": "2fb248a66fb32e5322ae2741192576b5e3b6f19b6b2600c4ab30058f577c8d6b",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\J420R.eng",
+      "source_path": "l2_engine\\motors\\J420R.eng",
       "status": "ok"
     },
     {
@@ -273,7 +273,7 @@
       "total_impulse_ns": 1180.4997700000001,
       "point_count": 16,
       "curve_digest": "2a4d1bb756d2a0abf90d85929ab1e42f39d32f3ceef87f91457cba35ca6ace21",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\J510W.eng",
+      "source_path": "l2_engine\\motors\\J510W.eng",
       "status": "ok"
     },
     {
@@ -289,7 +289,7 @@
       "total_impulse_ns": 1264.44884,
       "point_count": 27,
       "curve_digest": "9ea239c026856f66a99bac1ead2f959c5c15c70a76e455d7fc91f224f7a977c3",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\J800T.eng",
+      "source_path": "l2_engine\\motors\\J800T.eng",
       "status": "ok"
     },
     {
@@ -305,7 +305,7 @@
       "total_impulse_ns": 815.81004,
       "point_count": 27,
       "curve_digest": "ad5386a0d584c8d1630f82389f3aa99ff410d26b02b8f70488b689424ce9bb3a",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\J360_CTI.eng",
+      "source_path": "l2_engine\\motors\\J360_CTI.eng",
       "status": "ok"
     },
     {
@@ -321,7 +321,7 @@
       "total_impulse_ns": 1624.8713,
       "point_count": 27,
       "curve_digest": "0e94ed19df5187eec6229c27a275010547b77598a9beca89d8f0b67799a8ef04",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\K550W.eng",
+      "source_path": "l2_engine\\motors\\K550W.eng",
       "status": "ok"
     },
     {
@@ -337,7 +337,7 @@
       "total_impulse_ns": 2283.6805999999992,
       "point_count": 27,
       "curve_digest": "7d33ae8d2d6c94ab524add4521bda699d4835e1cc1dbafdf28d822afea609ec9",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\K700W.eng",
+      "source_path": "l2_engine\\motors\\K700W.eng",
       "status": "ok"
     },
     {
@@ -353,7 +353,7 @@
       "total_impulse_ns": 2507.9249250000007,
       "point_count": 27,
       "curve_digest": "7512b0c206f7af3d09bcbc4617919624204a46ad13acabffaacd200fb0d1eb3d",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\K1050W.eng",
+      "source_path": "l2_engine\\motors\\K1050W.eng",
       "status": "ok"
     },
     {
@@ -369,7 +369,7 @@
       "total_impulse_ns": 2428.5875000000005,
       "point_count": 18,
       "curve_digest": "e4cf38f9327ac7a5c60917b516c21d8cc1f1fd7dae7c8bd7022a052a4dcdc351",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\K510_CTI.eng",
+      "source_path": "l2_engine\\motors\\K510_CTI.eng",
       "status": "ok"
     },
     {
@@ -385,7 +385,7 @@
       "total_impulse_ns": 2702.08179,
       "point_count": 25,
       "curve_digest": "f9be168985e485b95bfca3179bc524595a65eb2e101986dc47eb236cbf364aa8",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\L1000.eng",
+      "source_path": "l2_engine\\motors\\L1000.eng",
       "status": "ok"
     },
     {
@@ -401,7 +401,7 @@
       "total_impulse_ns": 3488.5508200000004,
       "point_count": 27,
       "curve_digest": "7b110efecd492520c249d0a3df1481fafa10759c26d5bd482ca5ada4d8fdfdef",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\L1150.eng",
+      "source_path": "l2_engine\\motors\\L1150.eng",
       "status": "ok"
     },
     {
@@ -417,7 +417,7 @@
       "total_impulse_ns": 5056.11238,
       "point_count": 27,
       "curve_digest": "4901bbc307c4639b7b97f22eae70233927c2e56b383ab6d59178649f3ec8907f",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\L1500T.eng",
+      "source_path": "l2_engine\\motors\\L1500T.eng",
       "status": "ok"
     },
     {
@@ -433,7 +433,7 @@
       "total_impulse_ns": 5104.135114999999,
       "point_count": 38,
       "curve_digest": "a4341d419371e738dbdedafff2ea3a4fa858a6617e9773882f00320a374003fb",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\L2200G.eng",
+      "source_path": "l2_engine\\motors\\L2200G.eng",
       "status": "ok"
     },
     {
@@ -449,7 +449,7 @@
       "total_impulse_ns": 10368.547795,
       "point_count": 27,
       "curve_digest": "dc41b29f577fb6bab6f5236cd9131dc67e55b71c833e69b731b00cddabdb6824",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\M1939W.eng",
+      "source_path": "l2_engine\\motors\\M1939W.eng",
       "status": "ok"
     },
     {
@@ -465,7 +465,7 @@
       "total_impulse_ns": 9572.995640000001,
       "point_count": 27,
       "curve_digest": "9ca48f346abc5497fa00c304a09cf2eaa49785db8e0b2c40ea7bf9a2280f74d6",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\M2500T.eng",
+      "source_path": "l2_engine\\motors\\M2500T.eng",
       "status": "ok"
     },
     {
@@ -481,7 +481,7 @@
       "total_impulse_ns": 6005.98,
       "point_count": 21,
       "curve_digest": "469670b550bad8b255465bd613a2041a6e0e4bb188eb5851689f9ff3a124f570",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\M650W.eng",
+      "source_path": "l2_engine\\motors\\M650W.eng",
       "status": "ok"
     },
     {
@@ -497,7 +497,7 @@
       "total_impulse_ns": 5413.762499999999,
       "point_count": 31,
       "curve_digest": "1e255cb29b2f562907d4478b327b9395c78652181a678f408e0f1a19e2907b19",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\M1297W.eng",
+      "source_path": "l2_engine\\motors\\M1297W.eng",
       "status": "ok"
     },
     {
@@ -519,7 +519,7 @@
       "total_impulse_ns": 13263.43407,
       "point_count": 27,
       "curve_digest": "ecc6ec6dfa02d68d514ad05950cd8c29acd5b7b7401180509ba716372a9472e3",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\N2000W.eng",
+      "source_path": "l2_engine\\motors\\N2000W.eng",
       "status": "ok"
     },
     {
@@ -535,7 +535,7 @@
       "total_impulse_ns": 19273.861140000005,
       "point_count": 27,
       "curve_digest": "f24c01eb1a78829bb9243c667a900012a3946f56d8cf2bff39ff5777d04c0161",
-      "source_path": "C:\\Users\\Davi\\Desktop\\Projects\\Complete offtopic\\L2-OSIFOG\\l2_engine\\motors\\N4800T.eng",
+      "source_path": "l2_engine\\motors\\N4800T.eng",
       "status": "ok"
     },
     {

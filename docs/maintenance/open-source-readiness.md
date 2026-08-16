@@ -1,5 +1,30 @@
 # F2 — Open-source readiness: licensing, provenance, and publication blockers
 
+> **Status: RESOLVED 2026-08-16. This is a historical audit, retained as the
+> provenance record for the licensing decisions the repository now ships.**
+> The `BLOCK PUBLICATION` verdict below was the state on 2026-07-26 and is no
+> longer current. Remediation taken, verifiable in this tree:
+>
+> - **Option A adopted.** Root `LICENSE` is GPL-3.0-or-later; `l2_engine/Cargo.toml`
+>   declares the matching SPDX expression.
+> - `NOTICE` records OpenRocket provenance (upstream commit
+>   `6e18add7055a66dcae580f9d1e0dc1538c0454c7`, copyright, modification dates)
+>   and points to the preserved rocket-sim MIT notice.
+> - `licenses/OpenRocket-LICENSE.txt` carries the full GPL-3 text plus
+>   OpenRocket's §7 data-packaging permission.
+> - `DATA_LICENSES.md` maps the `l2_engine/motors/*.eng` curves to that permission.
+> - History was squashed to a single audited commit. The 1,078,954,394-byte
+>   `.planning/` blob, all `.planning/` state, the regulation PDFs, the
+>   third-party Wildman Rocketry design, and the broken OpenRocket gitlinks are
+>   absent from every ref. Largest reachable blob is now 10.7 MB.
+> - Absolute local paths were stripped from tracked artifacts on 2026-08-16.
+>   The `C:\Users\Davi\...` references remaining *in this file* are quoted
+>   audit evidence, not live leaks.
+>
+> Not closed, and deliberately so: no professional secret scanner
+> (gitleaks/trufflehog) has been run, and there is no CI dependency-license
+> policy or release SBOM. Both are listed in the checklist at the end.
+
 **Audit date:** 2026-07-26
 **Scope:** repository and all reachable Git refs, with emphasis on `l2_engine/`,
 OpenRocket/rocket-sim provenance, dependency licenses, secrets/PII, and

@@ -50,8 +50,8 @@ All designs enforce the full v4 hardening rules — verified by code inspection 
 
 ## Mission 1: Ballistic Max
 
-**File:** [`missions/ballistic_max_ss.json`](file:///C:/Users/Davi/Desktop/Projects/Complete%20offtopic/L2-OSIFOG/missions/ballistic_max_ss.json)  
-**Output:** [`designs/optimized/ballistic_max_ss.ork`](file:///C:/Users/Davi/Desktop/Projects/Complete%20offtopic/L2-OSIFOG/designs/optimized/ballistic_max_ss.ork)
+**File:** [`missions/ballistic_max_ss.json`](missions/ballistic_max_ss.json)  
+**Output:** [`designs/optimized/ballistic_max_ss.ork`](designs/optimized/ballistic_max_ss.ork)
 
 ### Motor Selection
 
@@ -112,8 +112,8 @@ Stability judged at **Mach 0.3 and Mach 2.0** — the rocket is supersonic for m
 
 ## Mission 2: Precision 350m
 
-**File:** [`missions/precision_350m.json`](file:///C:/Users/Davi/Desktop/Projects/Complete%20offtopic/L2-OSIFOG/missions/precision_350m.json)  
-**Output:** [`designs/optimized/precision_350m.ork`](file:///C:/Users/Davi/Desktop/Projects/Complete%20offtopic/L2-OSIFOG/designs/optimized/precision_350m.ork)
+**File:** [`missions/precision_350m.json`](missions/precision_350m.json)  
+**Output:** [`designs/optimized/precision_350m.ork`](designs/optimized/precision_350m.ork)
 
 ### Motor Selection — The Discovery Process
 
@@ -317,11 +317,11 @@ Full database scan of OR 23.09 — 484+ motors catalogued. Saved to `motors_cata
 
 | File | Purpose |
 |------|---------|
-| [`missions/ballistic_max_ss.json`](file:///C:/Users/Davi/Desktop/Projects/Complete%20offtopic/L2-OSIFOG/missions/ballistic_max_ss.json) | Ballistic max mission definition |
-| [`missions/precision_350m.json`](file:///C:/Users/Davi/Desktop/Projects/Complete%20offtopic/L2-OSIFOG/missions/precision_350m.json) | Precision 350m mission definition |
-| [`designs/optimized/ballistic_max_ss.ork`](file:///C:/Users/Davi/Desktop/Projects/Complete%20offtopic/L2-OSIFOG/designs/optimized/ballistic_max_ss.ork) | Ballistic max — OR file |
-| [`designs/optimized/precision_350m.ork`](file:///C:/Users/Davi/Desktop/Projects/Complete%20offtopic/L2-OSIFOG/designs/optimized/precision_350m.ork) | Precision 350m — OR file (**350m verified**) |
-| [`bisect_350m.py`](file:///C:/Users/Davi/Desktop/Projects/Complete%20offtopic/L2-OSIFOG/bisect_350m.py) | Binary search script for sub-meter apogee tuning |
-| [`scan_motors.py`](file:///C:/Users/Davi/Desktop/Projects/Complete%20offtopic/L2-OSIFOG/scan_motors.py) | Full OR motor database scanner |
-| [`motors_catalog.json`](file:///C:/Users/Davi/Desktop/Projects/Complete%20offtopic/L2-OSIFOG/motors_catalog.json) | Curated motor catalog with digests |
-| [`motor_apogee_estimate.py`](file:///C:/Users/Davi/Desktop/Projects/Complete%20offtopic/L2-OSIFOG/motor_apogee_estimate.py) | Physics altitude estimates per motor class |
+| [`missions/ballistic_max_ss.json`](missions/ballistic_max_ss.json) | Ballistic max mission definition |
+| [`missions/precision_350m.json`](missions/precision_350m.json) | Precision 350m mission definition |
+| [`designs/optimized/ballistic_max_ss.ork`](designs/optimized/ballistic_max_ss.ork) | Ballistic max — OR file |
+| [`designs/optimized/precision_350m.ork`](designs/optimized/precision_350m.ork) | Precision 350m — OR file (**350m verified**) |
+| [`bisect_350m.py`](bisect_350m.py) | Binary search script for sub-meter apogee tuning |
+| [`scan_motors.py`](scan_motors.py) | Full OR motor database scanner |
+| [`motors_catalog.json`](motors_catalog.json) | Curated motor catalog with digests |
+| [`motor_apogee_estimate.py`](motor_apogee_estimate.py) | Physics altitude estimates per motor class |

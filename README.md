@@ -73,8 +73,12 @@ and campaign populations are local state and are excluded from version control.
 
 - Python 3.11+
 - Rust toolchain with Cargo
-- Java for OpenRocket authority validation
-- OpenRocket 24.12 JAR at `lib/OpenRocket-24.12.jar`
+- A JDK 17 or newer for OpenRocket authority validation. JPype resolves the JVM
+  through `JAVA_HOME` first, so point `JAVA_HOME` at that JDK — an older `java`
+  earlier on your `PATH` will not be used, but an older `JAVA_HOME` will be, and
+  OpenRocket 24.12 will not start on it.
+- OpenRocket 24.12 JAR at `lib/OpenRocket-24.12.jar`. It is not distributed with
+  this repository; download it from the OpenRocket project.
 
 ```powershell
 python -m venv .venv

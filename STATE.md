@@ -1,9 +1,26 @@
 # System State
 
-## Current Phase
-OR-mode parity and repository recovery. HyperReal is frozen.
+> **`handoff.md` at the repository root is the current source of truth.** This
+> file is the technical status ledger behind it. Everything below the 2026-08-16
+> section is dated history, kept for the reasoning it records.
 
-## Current Operational Status (2026-07-10)
+## Current Phase (2026-08-16)
+
+**Publication. Engine development is frozen.** No engine behavior has changed
+since the 2026-07-26 open-source baseline. The OSIFOG 2026 Level 3 entry was
+submitted at its deadline and is closed. The repository is being published as
+`L2-ootm/l2-rocket-platform` under GPL-3.0-or-later; see `LICENSE`, `NOTICE`,
+and `docs/maintenance/open-source-readiness.md`.
+
+Verified 2026-08-16: `cargo test` 175 passed; the three README-documented
+pytest files 110 passed.
+
+The next technical blocker is unchanged and still open: **OpenRocket proxy
+parity.** The Rust core overestimates apogee by roughly 13.9% relative to
+OpenRocket authority runs (measured 2026-07-04, not since re-measured). Close it
+with source-backed curve comparisons, not coefficient guesses.
+
+## Operational Status (2026-07-10)
 
 The active authority is OpenRocket 24.12 and the active generator is the
 organic AST pipeline. The repaired five-seed gate is recorded in
@@ -12,8 +29,8 @@ four mission-scale cases within 1.17% apogee, and one 236 m low-altitude case
 with 23.80 m absolute / 10.08% relative error. See
 `docs/or_mode_checkpoint_2026-07-10.md` for root causes and the next boundary.
 
-The worktree is intentionally still dirty from the broader historical cleanup;
-this state is verified but not a clean release/commit boundary.
+*(The note that once stood here about an intentionally dirty worktree is no
+longer true. History was squashed to a single audited commit on 2026-07-26.)*
 
 ### Superseded status below
 
