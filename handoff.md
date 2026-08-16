@@ -24,8 +24,9 @@ Two things finished and one is in flight:
   rocket-sim provenance recorded. That audit file now carries a resolution
   header; read it before touching licensing.
 - **Publication is in flight.** History was squashed to a single audited commit
-  and the repository is being pushed to GitHub as `L2-ootm/l2-rocket-platform`,
-  private first, then flipped public after a rendered review.
+  and pushed to GitHub as **`L2-ootm/l2-rocket-platform`**, currently
+  **private**. One step remains: a human review of the rendered repository,
+  then the flip to public. See §8.
 
 The reusable product is the engine and its organic topology-evolution workflow.
 The competition was the forcing function, not the deliverable.
@@ -144,14 +145,22 @@ Publication audit, re-verified this session by direct inspection:
 
 ## 8. Next actions
 
-Publication, in order:
+Publication:
 
-1. Commit the working tree described in §3.
-2. Create `L2-ootm/l2-rocket-platform` **private**, add the remote, push `main`.
-3. Review the rendered README on github.com — not locally — and confirm the
-   `designs/` artifacts and license files display correctly.
-4. Set the repository description and topics.
-5. Flip to public.
+- [x] Commit the working tree described in §3 — `d524060`.
+- [x] Create `L2-ootm/l2-rocket-platform` **private**, add `origin`, push `main`.
+- [x] Replace the root `LICENSE` with the verbatim GPL-3 text — `31f0cda`.
+      GitHub's detector had classified the repository as `Other`; it now reports
+      `gpl-3.0`. Verified via `gh repo view --json licenseInfo`.
+- [x] Set the repository description and nine topics.
+- [ ] **Human review of the rendered repository on github.com — not locally.**
+      Confirm the README renders, the license banner reads GPL-3.0, and the
+      `designs/` artifacts look right. This is the gate.
+- [ ] Flip to public:
+      `gh repo edit L2-ootm/l2-rocket-platform --visibility public --accept-visibility-change-consequences`
+
+Publication is not reversible. Forks and caches outlive deletion, so the
+review above happens before the flip, not after.
 
 Product work, once publication is done and if the freeze lifts, in dependency
 order:
