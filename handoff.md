@@ -1,17 +1,22 @@
 # HANDOFF — L2 Rocket Platform
 
 **Updated:** 2026-08-16
-**Scope:** whole repository — publication readiness, licensing posture, and the
-frozen state of engine development
-**Status:** ready-for-review (publication in progress; engine work frozen)
+**Scope:** whole repository — publication, licensing posture, repository layout,
+and the frozen state of engine development
+**Status:** active — **published**; engine work frozen; follow-ups in §8
 
 ---
 
 ## 1. Executive state
 
-The platform is **feature-frozen and being published**, not actively developed.
+The platform is **published and feature-frozen**, not actively developed.
 
-Two things finished and one is in flight:
+- **Live at `L2-ootm/l2-rocket-platform`, public since 2026-08-16.**
+  GPL-3.0-or-later, five commits, nine topics. GitHub's license detector reports
+  `gpl-3.0` (verified via `gh repo view --json licenseInfo`). The local directory
+  is still named `L2-OSIFOG`; only the remote carries the new name.
+
+Three things finished:
 
 - **The OSIFOG 2026 Level 3 competition entry is done.** It was submitted at the
   2026-07-26 deadline. Nothing in this repository is waiting on it. The full
@@ -23,10 +28,8 @@ Two things finished and one is in flight:
   adopted: the whole repository is GPL-3.0-or-later, with OpenRocket and
   rocket-sim provenance recorded. That audit file now carries a resolution
   header; read it before touching licensing.
-- **Publication is in flight.** History was squashed to a single audited commit
-  and pushed to GitHub as **`L2-ootm/l2-rocket-platform`**, currently
-  **private**. One step remains: a human review of the rendered repository,
-  then the flip to public. See §8.
+- **The repository layout was reorganized** on 2026-08-16 and a fresh-clone test
+  abort was fixed. Root went from 65 files to 34. See §3.
 
 The reusable product is the engine and its organic topology-evolution workflow.
 The competition was the forcing function, not the deliverable.
@@ -48,10 +51,32 @@ Publication hygiene, all in the working tree:
 | Added a resolution header so the audit's `BLOCK PUBLICATION` verdict is not mistaken for current state | `docs/maintenance/open-source-readiness.md` |
 | Archived the 997-line historical session log and replaced it with this file | `handoff.md` → `docs/history/session-log-through-2026-07-26.md` |
 | Marked superseded operational status as historical | `STATE.md` |
+| Deleted 5 spent one-off codemods. They rewrite source in place; `patch_stage.py` would have corrupted `l2_engine/src/sim_core/vehicle/stage.rs` if run | `patch_stage.py`, `patch_tests.py`, `patch_usages.py`, `unbreak.py`, `inspect_phase1.py` |
+| Moved 13 zero-importer scripts out of root and fixed their `sys.path` bootstraps so they run from anywhere | → `tools/`, `tools/debug/`, `tools/reports/`, `tools/checks/` |
+| Moved 10 loose root docs into `docs/`, and 9 dated analyses from `docs/` into `docs/history/`; updated every live reference | `docs/`, `docs/architecture/`, `docs/history/`, `docs/plans/` |
+| Fixed a fresh-clone test abort (see §4) | `tests/conftest.py` (new) |
+| Documented the resulting layout | `README.md` |
+
+Root went from 65 files to 34. Every `.py` remaining at root is a real module.
 
 Deliberately untouched: `l2_engine/`, `rocket_ast.py`, `organic_loop.py`,
-`organic_campaign.py`, `missions/`, `designs/`, and every test. No engine
-behavior changed this session.
+`organic_campaign.py`, `missions/`, `designs/`, and every test's content. No
+engine behavior changed this session.
+
+**Why the importable modules are still at root** — this is the change that would
+actually empty it, and it was deferred on evidence, not taste:
+
+- `motor_data.py:24` and `organic_loop.py:245,1349,1426` build
+  `Path(__file__).parent / "l2_engine"` — they assume their own directory *is*
+  the repository root.
+- `osifog_engine_search.py:2677` resolves its worker with
+  `Path(__file__).with_name("osifog_authority_worker.py")`, so that worker must
+  stay a sibling. `osifog_campaign_watchdog.py` is likewise named by
+  `campaign_infra.py`, `organic_campaign.py`, and `osifog_engine_search.py`.
+- Several modules spawn subprocesses with `cwd=Path(__file__).resolve().parent`.
+
+Each is a one-line fix, but a wrong `MOTORS_DIR` yields "no motor curves found",
+not a crash. See §8.
 
 ## 4. Verification evidence
 
@@ -79,9 +104,33 @@ Publication audit, re-verified this session by direct inspection:
   `l2_engine/Cargo.toml`'s `license = "GPL-3.0-or-later"` are all present and
   mutually consistent.
 
-**Not run:** OpenRocket authority validation end-to-end; the full
-`tests/` suite beyond the three README-documented files;
-`cargo test --features viz`; any professional secret scanner.
+### The fresh-clone abort, and how it was measured
+
+`OSIFOG/` is gitignored competition material, so it does not exist in a clone.
+Much of the suite reaches `OSIFOG/OpenWind_File.csv`, sometimes several calls
+deep through a helper such as `osifog_precision.falcon_submission_candidate()`.
+Thirteen modules read it at *import* time, and a collection error aborts the
+whole run — so **a stranger cloning this repository ran zero tests.**
+
+Measured with `git worktree add` at `HEAD`, which genuinely lacks `OSIFOG/` and
+the OpenRocket JAR:
+
+| | Fresh clone | Dev machine |
+|---|---|---|
+| Before `tests/conftest.py` | `Interrupted: 13 errors during collection`, 0 tests run | 349 passed, 2 failed, 1 skipped |
+| After | **308 passed, 31 skipped, 3 failed** | 349 passed, 2 failed, 1 skipped — *unchanged* |
+
+`tests/conftest.py` is inert when the CSV is present: it ignores the modules
+that read it at import time, and converts the runtime `FileNotFoundError` into a
+skip with a reason. Detection is done at runtime deliberately — static analysis
+was tried and over-skipped 154 tests, because `osifog_sweep` both defines
+`parse_wind_csv` and calls it inside its own helpers.
+
+Full suite re-run after the reorganization: `cargo test` 175 passed;
+`pytest -m "not slow"` 349 passed, 2 failed, 1 skipped — identical to before.
+
+**Not run:** OpenRocket authority validation end-to-end; the `slow`-marked JVM
+tests; `cargo test --features viz`; any professional secret scanner.
 
 ## 5. Decisions made
 
@@ -105,8 +154,8 @@ Publication audit, re-verified this session by direct inspection:
 1. **No professional secret scan has been run.** The audit's scan was regex-only
    and did not cover entropy, encoded secrets, or binary/archive contents. The
    `.ork` files are ZIP archives; their contents were never scanned. Run
-   gitleaks or trufflehog across all refs before the public flip if you want
-   this closed properly.
+   gitleaks or trufflehog across all refs — see §8 R1. The repo is now public, so
+   anything found is a rotate-and-disclose problem, not a delete problem.
 2. **Three tests still fail, two of them pre-existing.** In a fresh clone:
    `test_orhelper.py::test_simulation` needs the OpenRocket JAR, which is not
    distributed (README says to download it);
@@ -148,37 +197,86 @@ Publication audit, re-verified this session by direct inspection:
 
 ## 8. Next actions
 
-Publication:
+### Publication — DONE 2026-08-16
 
-- [x] Commit the working tree described in §3 — `d524060`.
-- [x] Create `L2-ootm/l2-rocket-platform` **private**, add `origin`, push `main`.
-- [x] Replace the root `LICENSE` with the verbatim GPL-3 text — `31f0cda`.
-      GitHub's detector had classified the repository as `Other`; it now reports
-      `gpl-3.0`. Verified via `gh repo view --json licenseInfo`.
-- [x] Set the repository description and nine topics.
-- [ ] **Human review of the rendered repository on github.com — not locally.**
-      Confirm the README renders, the license banner reads GPL-3.0, and the
-      `designs/` artifacts look right. This is the gate.
-- [ ] Flip to public:
-      `gh repo edit L2-ootm/l2-rocket-platform --visibility public --accept-visibility-change-consequences`
+- [x] Publication hygiene committed — `d524060`.
+- [x] `L2-ootm/l2-rocket-platform` created private, `origin` added, `main` pushed.
+- [x] Root `LICENSE` replaced with verbatim GPL-3 text — `31f0cda`. GitHub had
+      classified the repository as `Other`; it now reports `gpl-3.0`.
+- [x] Description and nine topics set.
+- [x] Repository layout reorganized, fresh-clone test abort fixed — `c8fad62`.
+- [x] **Flipped to public 2026-08-16.** Verified `"visibility":"PUBLIC"`.
 
-Publication is not reversible. Forks and caches outlive deletion, so the
-review above happens before the flip, not after.
+Publication is not reversible — forks and caches outlive deletion. Anything
+sensitive found from here is a rotate-and-disclose problem, not a delete problem.
 
-Product work, once publication is done and if the freeze lifts, in dependency
-order:
+### Remaining — publication follow-ups, in priority order
 
-6. Close the OpenRocket proxy parity gap. Compare Rust trajectory curves against
-   OpenRocket `FlightData` for the worst residual case (seed `2026070408`) using
-   `or_curve_compare.py` and the Rust `ast_trace` binary **before** changing any
-   drag coefficient. Do not guess-tune from a single point.
-7. Podset / parallel-staging support: AST and geometry nodes, 3D CG tracking
-   with the parallel axis theorem, off-axis thrust and torque in the 6-DOF
-   dynamics, and parasitic-drag hooks. Full plan in
-   `docs/engine/podset_upgrade_plan.md`.
-8. Add `l2_hyper` unit tests and a Rust↔Python integration test.
-9. Defer GPU/WGSL work (`docs/l2_gpu_engine.md`) until CPU proxy parity is
-   stable across the five-seed suite.
+**R1. Run a professional secret scanner across all refs.** The only publication
+checklist item never closed, and it now matters more than it did while the repo
+was private. The 2026-07-26 audit's scan was regex-only over text; it never
+opened the `.ork` files, which are ZIP archives, and did not cover entropy or
+encoded secrets.
+
+```powershell
+gitleaks detect --source . --log-opts "--all" --report-path gitleaks.json
+# or: trufflehog git file://. --results=verified
+```
+
+Triage manually. If anything real surfaces, **rotate the credential first**,
+then rewrite history. Also worth enabling GitHub push protection and secret
+scanning on the repo settings page.
+
+**R2. Get a visitor's first `pytest` to a clean result.** Three failures survive
+in a fresh clone (§6.2). None are new, but a first-time reader cannot tell that.
+
+- `test_orhelper.py::test_simulation` — needs the OpenRocket JAR. Should skip
+  with a reason when `lib/OpenRocket-24.12.jar` is absent, exactly as the wind
+  CSV now does in `tests/conftest.py`. Cheapest of the three, and it removes the
+  most misleading failure.
+- `test_organic_evolution.py::test_run_rust_evaluator_batch_defaults_to_openrocket`
+  — passes alone, fails in a full run. Test-order pollution: something earlier
+  mutates shared state so `physics_mode` never reaches the captured payload.
+  Bisect with `pytest -p no:randomly` and `--deselect` to find the polluter.
+- `test_osifog_session_check.py::test_immutable_submission_manifest_...` — fails
+  on the dev machine too, at `scripts/osifog_session_check.py:114` in
+  `audit_candidate`. Genuinely broken, not environmental. Diagnose before fixing.
+
+Also unresolved: `artifacts/phase2f/scenario-semantic-proof.json` is rewritten
+with different hashes whenever the suite runs. Either the artifact is not
+reproducible or a test writes into a tracked path. It was reverted rather than
+committed on 2026-08-16; find out which and fix the cause.
+
+**R3. Finish the root cleanup by moving the importable modules into `src/`.**
+Deferred with evidence in §3 — the modules assume their own directory is the
+repository root. Do it as its own change, not a cosmetic pass:
+
+1. Get the OpenRocket authority suite green first, so there is a real before.
+2. Move all top-level `.py` into `src/` in one commit — sibling imports keep
+   resolving, and `pytest.ini`'s `pythonpath = .` becomes `pythonpath = src`.
+3. Fix every `Path(__file__).parent` that meant "repo root" (start with
+   `motor_data.py:24`, `organic_loop.py:245,1349,1426`) and every
+   `cwd=Path(__file__).resolve().parent` subprocess spawn.
+4. Re-run the authority suite. A wrong `MOTORS_DIR` gives "no motor curves
+   found", not a crash — `cargo test` and the fast pytest suite will not catch
+   it.
+
+### Product work — only if the engine freeze lifts, in dependency order
+
+**P1.** Close the OpenRocket proxy parity gap. Compare Rust trajectory curves
+against OpenRocket `FlightData` for the worst residual case (seed `2026070408`)
+using `or_curve_compare.py` and the Rust `ast_trace` binary **before** changing
+any drag coefficient. Do not guess-tune from a single point.
+
+**P2.** Podset / parallel-staging support: AST and geometry nodes, 3D CG
+tracking with the parallel axis theorem, off-axis thrust and torque in the 6-DOF
+dynamics, and parasitic-drag hooks. Full plan in
+`docs/engine/podset_upgrade_plan.md`.
+
+**P3.** Add `l2_hyper` unit tests and a Rust↔Python integration test.
+
+**P4.** Defer GPU/WGSL work (`docs/l2_gpu_engine.md`) until CPU proxy parity is
+stable across the five-seed suite.
 
 ## 9. Inspect first
 
@@ -198,10 +296,20 @@ Read in this order before doing anything:
 
 The next handoff supersedes this one when it can state, with evidence:
 
-- [ ] The GitHub remote exists, `main` is pushed, and the commit SHA is recorded.
-- [ ] The rendered README was reviewed on github.com and the repository
-      description and topics are set.
-- [ ] The public/private decision is recorded with its date.
-- [ ] Any secret scanner that was run is named, with its result.
-- [ ] If engine work resumed: which of §8's items was started, and the test
-      counts from `cargo test` and `pytest` after the change.
+- [ ] **R1:** the scanner that was run, its exact command, and its result. If
+      anything was found: what was rotated, when, and whether history was
+      rewritten.
+- [ ] **R2:** the fresh-clone `pytest` line, measured in a real `git worktree`
+      without `OSIFOG/` and without the JAR — not asserted from the dev machine.
+      Target is 0 failed. Record which of the three was fixed and how.
+- [ ] **R3:** if attempted — the OpenRocket authority suite result *before* and
+      *after* the move, not just `cargo test` and fast pytest.
+- [ ] Whether the `artifacts/phase2f/scenario-semantic-proof.json` hash churn was
+      diagnosed, and its cause.
+- [ ] If engine work resumed: which of P1–P4 was started, and the counts from
+      `cargo test` and `pytest -m "not slow"` after the change.
+
+Rule carried forward from this session: **measure fresh-clone behavior in a
+worktree.** Every defect found on 2026-08-16 that mattered — the aborted test
+collection, the 13 uncollectable modules — was invisible from the dev machine,
+where the gitignored data happens to exist.
