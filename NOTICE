@@ -6,7 +6,25 @@ Original L2 source and modifications are:
 
 Copyright (C) 2026 L2 Systems contributors
 
-Licensed under GPL-3.0-or-later. See `LICENSE`.
+SPDX-License-Identifier: GPL-3.0-or-later
+
+This project is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version. It is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+
+The complete GPL version 3 text is in `LICENSE`.
+
+`licenses/OpenRocket-LICENSE.txt` reproduces OpenRocket's own license file,
+which is the same GPL version 3 plus an additional permission under section 7
+covering non-compilable data such as thrust curves and component databases.
+That additional permission is OpenRocket's grant, not this project's; it is
+what makes the bundled motor curves redistributable. See `DATA_LICENSES.md`.
+
+Third-party components and data retain their own notices and permissions, as
+documented below and in `l2_engine/THIRD_PARTY_NOTICES.md`.
 
 ## OpenRocket-derived engine behavior
 
