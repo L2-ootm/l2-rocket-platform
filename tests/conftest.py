@@ -150,3 +150,18 @@ def pytest_runtest_makereport(item, call):
     elif not OR_JAR.exists() and _is_missing_or_jar(call.excinfo):
         report.outcome = "skipped"
         report.longrepr = (str(item.fspath), None, f"Skipped: {OR_SKIP_REASON}")
+
+
+def pytest_sessionfinish(session, exitstatus):
+    """Cleanly exit when JPype JVM is started to avoid native thread teardown races on Linux."""
+    import os
+    import sys
+    try:
+        import jpype
+        if jpype.isJVMStarted():
+            sys.stdout.flush()
+            sys.stderr.flush()
+            # os._exit bypasses glibc static destruction races with running JVM daemon threads
+            os._exit(exitstatus)
+    except Exception:
+        pass
