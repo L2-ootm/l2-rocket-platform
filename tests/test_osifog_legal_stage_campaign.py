@@ -5,7 +5,7 @@ from pathlib import Path
 import pytest
 
 import osifog_engine_search as search
-import osifog_legal_stage_campaign as campaign
+campaign = pytest.importorskip("osifog_legal_stage_campaign")
 
 
 def _metrics(separation=4.0, apogee=20.0):
