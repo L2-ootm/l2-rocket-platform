@@ -29,6 +29,9 @@ openrocket_src/
 
 # Local working notes (never published)
 GO-PUBLIC.md
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
 
 # Local agent/planning workspaces
 .planning/

@@ -82,7 +82,7 @@ high-throughput evaluator.
 | Dynamic rocket topology | Verified | `rocket_ast.py` defines serializable AST nodes and mutation/compilation behavior. |
 | Fast local evaluation | Verified | `l2_engine/src/bin/ast_eval.rs` supports one-shot JSON, persistent JSONL, and `--capabilities`; `docs/engine/ast-eval-contract.md` documents the protocol. |
 | Physics/proxy separation | Verified | `organic_loop.py` batches candidates through Rust while `rocket_ast.py` and the OpenRocket path compile and validate elites. |
-| OpenRocket authority | Locked | `AGENTS.md`, `.agents/skills/l2-organic-evolution/SKILL.md`, and `docs/project_doctrine.md`. |
+| OpenRocket authority | Locked | `.agents/skills/l2-organic-evolution/SKILL.md` and `docs/project_doctrine.md`. |
 | Real motor identity discipline | Verified | Motor designation is consistent across AST, `.eng`, and OpenRocket; see `.agents/skills/l2-organic-evolution/references/contracts.md`. |
 | Failure memory/calibration | Verified | The organic loop records structured failures and proxy/authority divergence without making the proxy authoritative. |
 | Generic runtime adapter API | Not present | This is desirable only as a small data contract, not a framework. |
@@ -682,8 +682,8 @@ change.
 
 ### L2-OSIFOG
 
-- [`AGENTS.md`](../../AGENTS.md) — locked execution, authority, and no-manual-
-  polishing decisions.
+- [Project doctrine](../../docs/project_doctrine.md) — locked execution,
+  authority, and no-manual-polishing decisions.
 - [Organic evolution skill](../../.agents/skills/l2-organic-evolution/SKILL.md)
   — active AST -> Rust -> OpenRocket workflow.
 - [AST evaluator contract](../../docs/engine/ast-eval-contract.md) — batch,
