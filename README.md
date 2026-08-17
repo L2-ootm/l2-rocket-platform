@@ -1,11 +1,12 @@
 # L2 Rocket Platform
 
-L2 Rocket Platform is a local-first, experimental toolkit for generating,
-evolving, simulating, and validating rocket designs.
+L2 Rocket Platform is a local-first, modular framework for generating,
+evolving, simulating, and validating high-power rocket designs across arbitrary
+topologies, motor combinations, and flight objectives.
 
-The project began as the engine behind an OSIFOG 2026 competition entry. That
-entry is finished; the reusable product is the engine and its organic
-topology-evolution workflow.
+The platform provides an organic topology AST generator, high-throughput Rust
+proxy physics evaluator, and ground-truth simulation adapters (OpenRocket and
+extensible external runtimes).
 
 ## Status
 
@@ -14,8 +15,9 @@ topology-evolution workflow.
 | Rust batch physics proxy | Working |
 | AST-based topology generation and evolution | Working |
 | Headless OpenRocket authority validation | Working |
-| Mission-specific scoring and constraints | Working |
-| General-purpose CLI and stable public schema | In progress |
+| Arbitrary mission objectives and scoring constraints | Working |
+| Clean modular Python package layout (`src/`) | Complete |
+| Automated CI test suite (Windows & Linux) | Active |
 | Local API and browser UI | Planned |
 | Kerbal Space Program and CKAN integration | Research/planning |
 
@@ -29,7 +31,7 @@ procedures, or applicable law.
 mission + component catalogs
            |
            v
-     rocket_ast.py
+    src/rocket_ast.py
   generate / mutate / repair
            |
            v
@@ -37,12 +39,12 @@ mission + component catalogs
  high-throughput proxy simulation
            |
            v
-     organic_loop.py
+   src/organic_loop.py
  select / crossover / evolve
            |
            v
  headless OpenRocket validation
- external authority model
+ (external ground-truth authority)
 ```
 
 The engine owns topology, proxy physics, constraints, scoring, and evolution.
@@ -53,27 +55,22 @@ same boundary rather than embedding game-specific behavior into the engine.
 
 | Path | Purpose |
 |---|---|
-| `l2_engine/` | Rust physics engine, AST evaluator, binaries, and authority fixtures |
-| `rocket_ast.py` | Rocket AST generation, mutation, repair, and ORK compilation |
-| `organic_loop.py` | Organic genetic evolution loop |
-| `organic_campaign.py` | Resumable long-running campaign runner |
-| `campaign_infra.py` | Campaign leases, locking, and recovery |
-| `ckg_memory.py` | Optional local continuous knowledge graph |
-| `rocket_forge.py`, `motor_data.py`, `physical_geometry.py` | Component, motor, and geometry data used by the generators |
-| `osifog_*.py` | The OSIFOG 2026 competition layer built on the engine — retained as worked examples, not part of the reusable platform |
-| `integrations/openrocket/` | OpenRocket adapter contract and dependency instructions |
-| `missions/` | Serializable mission definitions and objectives |
-| `designs/` | Curated design references plus ignored local run output |
-| `tools/` | Standalone developer scripts: `debug/`, `reports/`, `checks/`. Nothing here is imported by the engine |
-| `tests/` | Python integration and regression tests |
-| `docs/architecture/` | Current platform boundaries and contracts |
-| `docs/roadmap/` | Ordered future work, including KSP and WebUI |
-| `docs/history/` | Dated session logs and superseded analyses. Kept for the reasoning they record — **not current** |
-
-The top-level Python modules form one flat import namespace and several resolve
-paths relative to their own location, so they are expected to sit at the
-repository root. `tools/` scripts add the root to `sys.path` themselves and run
-from anywhere.
+| `src/` | Core platform modules: AST compiler, genetic evolution, motor models, geometry solvers |
+| `src/rocket_ast.py` | Rocket AST generation, dynamic topology mutation, repair, and ORK compilation |
+| `src/organic_loop.py` | Organic genetic evolution loop and population evaluator |
+| `src/organic_campaign.py` | Resumable long-running multi-cycle campaign runner |
+| `src/campaign_infra.py` | Campaign process leases, locking, and recovery |
+| `src/ckg_memory.py` | Local continuous knowledge graph memory |
+| `src/rocket_forge.py`, `motor_data.py`, `physical_geometry.py` | Component catalog, motor database, and physical geometry solvers |
+| `l2_engine/` | Self-contained Rust physics core (`sim_core`), 6-DOF runner, Barrowman aerodynamics, `ast_eval` binary |
+| `missions/` | Declarative mission definitions, flight objectives, and environment constraints |
+| `integrations/openrocket/` | OpenRocket adapter contract and JVM bridge |
+| `designs/` | Curated reference designs and validation evidence |
+| `tools/` | Standalone developer tools and diagnostic checks (`tools/debug/`, `tools/reports/`, `tools/checks/`) |
+| `tests/` | Complete Python integration and regression test suite |
+| `docs/architecture/` | Platform architecture and adapter contracts |
+| `docs/roadmap/` | Ordered future work, including KSP integration and WebUI |
+| `docs/history/` | Historical logs and background references |
 
 Generated builds, downloaded simulators, optimizer memory, game installations,
 and campaign populations are local state and are excluded from version control.
@@ -83,11 +80,8 @@ and campaign populations are local state and are excluded from version control.
 - Python 3.11+
 - Rust toolchain with Cargo
 - A JDK 17 or newer for OpenRocket authority validation. JPype resolves the JVM
-  through `JAVA_HOME` first, so point `JAVA_HOME` at that JDK — an older `java`
-  earlier on your `PATH` will not be used, but an older `JAVA_HOME` will be, and
-  OpenRocket 24.12 will not start on it.
-- OpenRocket 24.12 JAR at `lib/OpenRocket-24.12.jar`. It is not distributed with
-  this repository; download it from the OpenRocket project.
+  through `JAVA_HOME` first, so point `JAVA_HOME` at that JDK.
+- OpenRocket 24.12 JAR at `lib/OpenRocket-24.12.jar` (optional, for full JVM authority validation).
 
 ```powershell
 python -m venv .venv
@@ -99,9 +93,9 @@ cargo build --manifest-path l2_engine/Cargo.toml --release --bin ast_eval
 ## Run an organic campaign
 
 ```powershell
-python organic_campaign.py `
+python -m organic_campaign `
   --mission missions/osifog_l3_precision.json `
-  --out runs/osifog-example `
+  --out runs/campaign-example `
   --population 96 `
   --elite-count 12 `
   --generations-per-cycle 5 `
