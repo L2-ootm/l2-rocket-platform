@@ -19,7 +19,7 @@ import osifog_sweep as sweep
 from mission_evolution import EvolutionEngine, bisect_transition
 
 
-MISSION_FILE = Path(__file__).resolve().parent / "missions" / "osifog_l3_precision.json"
+MISSION_FILE = Path(__file__).resolve().parents[1] / "missions" / "osifog_l3_precision.json"
 
 
 @lru_cache(maxsize=1)

@@ -28,6 +28,7 @@ import sys
 
 os.environ.setdefault("RAYON_NUM_THREADS", "1")
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src"))
 
 from osifog_sweep import init_or
 from scripts.phase5a_coupled_evaluator import FROZEN_BOOSTER_PARAMS, REFERENCE_SUSTAINER_PARAMS

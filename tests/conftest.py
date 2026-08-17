@@ -68,10 +68,11 @@ def _is_trigger_call(node: ast.AST) -> bool:
 
 def _resolve(module: str) -> Path | None:
     """Map a dotted first-party module name to a file in this repository."""
-    candidate = ROOT.joinpath(*module.split("."))
-    for path in (candidate.with_suffix(".py"), candidate / "__init__.py"):
-        if path.is_file():
-            return path
+    for base in (ROOT, ROOT / "src"):
+        candidate = base.joinpath(*module.split("."))
+        for path in (candidate.with_suffix(".py"), candidate / "__init__.py"):
+            if path.is_file():
+                return path
     return None
 
 

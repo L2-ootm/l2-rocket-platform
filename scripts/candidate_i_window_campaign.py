@@ -23,6 +23,7 @@ os.environ.setdefault("RAYON_NUM_THREADS", "1")
 
 REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO))
+sys.path.insert(0, str(REPO / "src"))
 os.chdir(REPO)
 
 from motor_data import load_motor_by_index

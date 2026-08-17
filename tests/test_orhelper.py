@@ -56,11 +56,16 @@ assert metrics["apogee_m"] > 0.0
 assert metrics["mach"] >= 0.0
 print("AUTHORITY_OK")
 """.format(ork_path=ork_path)
+    import os
+    env = os.environ.copy()
+    src_dir = str(Path(__file__).resolve().parents[1] / "src")
+    env["PYTHONPATH"] = os.pathsep.join([src_dir, env.get("PYTHONPATH", "")]) if env.get("PYTHONPATH") else src_dir
     completed = subprocess.run(
         [sys.executable, "-c", script],
         capture_output=True,
         text=True,
         timeout=120,
+        env=env,
     )
 
     assert completed.returncode == 0, completed.stdout + completed.stderr

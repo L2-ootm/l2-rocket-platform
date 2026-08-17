@@ -242,7 +242,7 @@ def _eng_designations(motors_dir=None):
     motors_dir = (
         Path(motors_dir)
         if motors_dir
-        else Path(__file__).resolve().parent / "l2_engine" / "motors"
+        else Path(__file__).resolve().parents[1] / "l2_engine" / "motors"
     )
     return set(_eng_designations_cached(str(motors_dir.resolve())))
 
@@ -1346,7 +1346,7 @@ def run_rust_evaluator(candidates, target_apogee_m, physics_mode="openrocket", o
         "phase_machs": (constraints or {}).get("phase_machs", [0.3]),
         "calibrations": flattened_calibrations,
     }
-    engine_dir = Path(__file__).parent / "l2_engine"
+    engine_dir = Path(__file__).resolve().parents[1] / "l2_engine"
     binary_name = "ast_eval.exe" if os.name == "nt" else "ast_eval"
     binary_path = engine_dir / "target" / "release" / binary_name
     _ensure_ast_eval_binary(engine_dir, binary_path)
@@ -1423,7 +1423,7 @@ def fit_divergence_model(samples, model=None):
     """Fit/update the dependency-free Rust Ridge model and return JSON state."""
     if not samples:
         return model
-    engine_dir = Path(__file__).parent / "l2_engine"
+    engine_dir = Path(__file__).resolve().parents[1] / "l2_engine"
     binary_name = "divergence_fit.exe" if os.name == "nt" else "divergence_fit"
     binary_path = engine_dir / "target" / "release" / binary_name
     if not binary_path.exists():

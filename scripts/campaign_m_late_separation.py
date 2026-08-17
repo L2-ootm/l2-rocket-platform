@@ -16,6 +16,7 @@ import copy, json, math, os, sys, time
 
 _REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, _REPO); os.chdir(_REPO)
+sys.path.insert(0, os.path.join(_REPO, "src"))
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from osifog_sweep import init_or, run_sim, generate_ork

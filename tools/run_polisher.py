@@ -11,6 +11,7 @@ from pathlib import Path
 # Run from anywhere: put the repository root on sys.path so the flat
 # top-level modules (osifog_sweep, rocket_forge, ...) resolve.
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from organic_loop import (
     OrganicCandidate,

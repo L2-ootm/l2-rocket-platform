@@ -63,7 +63,7 @@ NOSE_SHAPES = ("ogive", "conical", "ellipsoid", "parabolic", "haack", "power")
 # live from this DB, so the search isn't restricted to the curated 38.
 # ---------------------------------------------------------------------------
 _MOTOR_DB_PATH = (
-    Path(__file__).resolve().parent
+    Path(__file__).resolve().parents[1]
     / "openrocket/core/src/main/resources/datafiles/thrustcurves/initial_motors.db"
 )
 _motor_db_cache = {}

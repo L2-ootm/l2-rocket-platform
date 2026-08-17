@@ -1,5 +1,6 @@
 import json
 import math
+from pathlib import Path
 import shutil
 import subprocess
 import sys
@@ -1093,10 +1094,12 @@ def test_organic_loop_repeated_rust_failures_never_block_evaluation(tmp_path):
 
 
 def test_organic_loop_cli_heuristic_smoke(tmp_path):
+    import organic_loop
+    script = str(Path(organic_loop.__file__).resolve())
     completed = subprocess.run(
         [
             sys.executable,
-            "organic_loop.py",
+            script,
             "--evaluator",
             "heuristic",
             "--population",
@@ -1119,6 +1122,8 @@ def test_organic_loop_cli_heuristic_smoke(tmp_path):
 
 
 def test_organic_loop_cli_heuristic_mission_smoke(tmp_path):
+    import organic_loop
+    script = str(Path(organic_loop.__file__).resolve())
     mission_path = tmp_path / "mission.json"
     mission_path.write_text(
         json.dumps(
@@ -1132,7 +1137,7 @@ def test_organic_loop_cli_heuristic_mission_smoke(tmp_path):
     completed = subprocess.run(
         [
             sys.executable,
-            "organic_loop.py",
+            script,
             "--evaluator",
             "heuristic",
             "--mission",
@@ -1282,7 +1287,7 @@ def test_ast_eval_stream_handles_three_batches_in_one_process():
     import organic_loop
     from pathlib import Path
 
-    engine_dir = Path(organic_loop.__file__).parent / "l2_engine"
+    engine_dir = Path(organic_loop.__file__).resolve().parents[1] / "l2_engine"
     binary_name = "ast_eval.exe" if organic_loop.os.name == "nt" else "ast_eval"
     binary_path = engine_dir / "target" / "release" / binary_name
     if not binary_path.exists():
@@ -1346,10 +1351,13 @@ def test_organic_loop_cli_rust_smoke_when_cargo_available(tmp_path):
 
         pytest.skip("cargo is not available")
 
+    import organic_loop
+    from pathlib import Path
+    script = str(Path(organic_loop.__file__).resolve())
     completed = subprocess.run(
         [
             sys.executable,
-            "organic_loop.py",
+            script,
             "--evaluator",
             "rust",
             "--population",

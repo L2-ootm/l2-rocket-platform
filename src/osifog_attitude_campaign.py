@@ -107,12 +107,14 @@ def _terminate_tree(pid: int) -> None:
 
 
 def _source_manifest() -> dict:
+    repo_root = Path(__file__).resolve().parents[1]
+    src_dir = Path(__file__).resolve().parent
     paths = (
-        Path(__file__), Path("osifog_engine_search.py"), Path("osifog_podset.py"),
-        Path("osifog_sweep.py"), Path("rocket_ast.py"),
-        Path("missions/osifog_l3_precision.json"),
-        Path("l2_engine/target/release/ast_eval.exe"),
-        Path("lib/OpenRocket-24.12.jar"),
+        Path(__file__), src_dir / "osifog_engine_search.py", src_dir / "osifog_podset.py",
+        src_dir / "osifog_sweep.py", src_dir / "rocket_ast.py",
+        repo_root / "missions" / "osifog_l3_precision.json",
+        repo_root / "l2_engine" / "target" / "release" / ("ast_eval.exe" if os.name == "nt" else "ast_eval"),
+        repo_root / "lib" / "OpenRocket-24.12.jar",
     )
     return {
         str(path): hashlib.sha256(path.read_bytes()).hexdigest()
@@ -780,7 +782,7 @@ def _spawn(command: list[str], root: Path, label: str) -> int:
     stderr = (root / f"{label}.stderr.log").open("a", encoding="utf-8")
     process = subprocess.Popen(
         [sys.executable, *command],
-        cwd=Path(__file__).resolve().parent,
+        cwd=Path(__file__).resolve().parents[1],
         stdout=stdout, stderr=stderr,
         creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
     )
@@ -791,7 +793,7 @@ def _spawn(command: list[str], root: Path, label: str) -> int:
 
 def _worker_command(root: Path, worker_id: int, args) -> list[str]:
     return [
-        str(Path(__file__).name), "--mode", "worker", "--root", str(root),
+        str(Path(__file__).resolve()), "--mode", "worker", "--root", str(root),
         "--worker-id", str(worker_id), "--workers", str(args.workers),
         "--generations", str(args.generations), "--proposals", str(args.proposals),
         "--authority-batch", str(args.authority_batch), "--seed", str(args.seed),
@@ -967,7 +969,7 @@ def ensure_supervisor(args) -> int:
     if _pid_alive(int(lease.get("pid", -1))):
         return 0
     command = [
-        str(Path(__file__).name), "--mode", "supervisor", "--root", str(root),
+        str(Path(__file__).resolve()), "--mode", "supervisor", "--root", str(root),
         "--workers", str(args.workers), "--generations", str(args.generations),
         "--proposals", str(args.proposals), "--authority-batch", str(args.authority_batch),
         "--seed", str(args.seed), "--interval", str(args.interval),

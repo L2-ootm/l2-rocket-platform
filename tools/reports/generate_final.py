@@ -1,6 +1,7 @@
 import sys, os
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 from osifog_sweep import generate_ork, parse_wind_csv, MOTOR_DATABASE, init_or, BEST_KNOWN_PARAMS, _load_ork_doc, run_sim, score_flight
 
 def main():

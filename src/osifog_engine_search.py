@@ -42,7 +42,8 @@ import osifog_sweep
 import osifog_podset
 
 
-MISSION_PATH = Path("missions/osifog_l3_precision.json")
+REPO_ROOT = Path(__file__).resolve().parents[1]
+MISSION_PATH = REPO_ROOT / "missions" / "osifog_l3_precision.json"
 SCENARIO_TYPES = {
     "OFFICIAL_FULL_MISSION",
     "EXPOSED_SUSTAINER_ASCENT",
@@ -1553,7 +1554,7 @@ def _evolve_rust_candidates(
     checkpoint = Path(config.output_dir) / "rust-evolution.json"
     source_digest = _canonical_digest({
         str(path): _sha256_file(path)
-        for path in (Path(__file__), Path("osifog_podset.py"), MISSION_PATH)
+        for path in (Path(__file__), Path(__file__).with_name("osifog_podset.py"), MISSION_PATH)
     })
     archive: list[tuple[dict, object]] = []
     start_generation = 0
@@ -1938,7 +1939,7 @@ def _stage_key_for_branch(metrics: dict, branch: int) -> str:
 def _load_motor_curve(motor_index: int) -> dict:
     """Load one OpenRocket-sourced ENG curve in seconds, newtons, and kg."""
     designation = MOTOR_DATABASE[motor_index][1]
-    path = Path("l2_engine/motors") / f"{designation}.eng"
+    path = REPO_ROOT / "l2_engine" / "motors" / f"{designation}.eng"
     points: list[tuple[float, float]] = []
     header = None
     for raw_line in path.read_text(encoding="utf-8").splitlines():
@@ -2678,8 +2679,10 @@ def _isolated_openrocket_evaluator(parameters: dict):
     worker_python = getattr(sys, "_base_executable", sys.executable)
     worker_env = os.environ.copy()
     site_packages = str(Path(sys.prefix) / "Lib" / "site-packages")
+    src_dir = str(Path(__file__).resolve().parent)
+    repo_root_str = str(REPO_ROOT)
     worker_env["PYTHONPATH"] = os.pathsep.join(
-        item for item in (site_packages, worker_env.get("PYTHONPATH", "")) if item
+        item for item in (src_dir, repo_root_str, site_packages, worker_env.get("PYTHONPATH", "")) if item
     )
     try:
         completed = subprocess.run(
@@ -2688,7 +2691,7 @@ def _isolated_openrocket_evaluator(parameters: dict):
             text=True,
             capture_output=True,
             timeout=timeout_s,
-            cwd=Path(__file__).resolve().parent,
+            cwd=REPO_ROOT,
             env=worker_env,
             check=False,
         )
@@ -2720,15 +2723,17 @@ def _isolated_recovery_gate_evaluator(parameters: dict) -> dict:
     worker_python = getattr(sys, "_base_executable", sys.executable)
     worker_env = os.environ.copy()
     site_packages = str(Path(sys.prefix) / "Lib" / "site-packages")
+    src_dir = str(Path(__file__).resolve().parent)
+    repo_root_str = str(REPO_ROOT)
     worker_env["PYTHONPATH"] = os.pathsep.join(
-        item for item in (site_packages, worker_env.get("PYTHONPATH", "")) if item
+        item for item in (src_dir, repo_root_str, site_packages, worker_env.get("PYTHONPATH", "")) if item
     )
     try:
         completed = subprocess.run(
             [worker_python, str(worker)],
             input=json.dumps({"mode": "recovery_gate", "parameters": parameters}, allow_nan=False),
             text=True, capture_output=True, timeout=timeout_s,
-            cwd=Path(__file__).resolve().parent, env=worker_env, check=False,
+            cwd=REPO_ROOT, env=worker_env, check=False,
         )
     except subprocess.TimeoutExpired as exc:
         raise TimeoutError(
@@ -3168,13 +3173,13 @@ def _campaign_manifest(config: CampaignConfig) -> dict:
         MISSION_PATH,
         Path(config.search.wind_csv),
         Path(__file__),
-        Path("osifog_sweep.py"),
-        Path("osifog_podset.py"),
-        Path("osifog_precision.py"),
-        Path("osifog_campaign_watchdog.py"),
-        Path("rocket_ast.py"),
-        Path("lib/OpenRocket-24.12.jar"),
-        Path("l2_engine/target/release/ast_eval.exe"),
+        Path(__file__).with_name("osifog_sweep.py"),
+        Path(__file__).with_name("osifog_podset.py"),
+        Path(__file__).with_name("osifog_precision.py"),
+        Path(__file__).with_name("osifog_campaign_watchdog.py"),
+        Path(__file__).with_name("rocket_ast.py"),
+        REPO_ROOT / "lib" / "OpenRocket-24.12.jar",
+        REPO_ROOT / "l2_engine" / "target" / "release" / ("ast_eval.exe" if os.name == "nt" else "ast_eval"),
     ]
     sources = {
         str(path): _sha256_file(path)

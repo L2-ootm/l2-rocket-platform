@@ -2056,8 +2056,8 @@ def init_or():
     import jpype
     import jpype.imports
 
-    jar = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                       "lib", "OpenRocket-24.12.jar")
+    repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    jar = os.path.join(repo_root, "lib", "OpenRocket-24.12.jar")
     if not os.path.exists(jar):
         raise FileNotFoundError(f"OpenRocket JAR not found: {jar}")
 

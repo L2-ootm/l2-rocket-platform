@@ -98,7 +98,7 @@ def _spawn(root: Path, command: list[str]) -> int:
     stderr = (root / "campaign.stderr.log").open("a", encoding="utf-8")
     process = subprocess.Popen(
         [sys.executable, *command],
-        cwd=Path(__file__).resolve().parent,
+        cwd=Path(__file__).resolve().parents[1],
         stdout=stdout,
         stderr=stderr,
         creationflags=creationflags,

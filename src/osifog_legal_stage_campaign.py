@@ -654,11 +654,14 @@ def _authority_record(parameters: dict, metrics: dict) -> dict:
 
 
 def _source_digest() -> str:
+    repo_root = Path(__file__).resolve().parents[1]
     return search._canonical_digest({
         str(path): search._sha256_file(path)
         for path in (
-            Path(__file__), Path("osifog_engine_search.py"),
-            Path("osifog_podset.py"), Path("missions/osifog_l3_precision.json"),
+            Path(__file__),
+            Path(__file__).with_name("osifog_engine_search.py"),
+            Path(__file__).with_name("osifog_podset.py"),
+            repo_root / "missions" / "osifog_l3_precision.json",
         )
     })
 

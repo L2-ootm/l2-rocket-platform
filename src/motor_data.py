@@ -21,7 +21,8 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 
-MOTORS_DIR = Path(__file__).resolve().parent / "l2_engine" / "motors"
+REPO_ROOT = Path(__file__).resolve().parents[1]
+MOTORS_DIR = REPO_ROOT / "l2_engine" / "motors"
 
 
 @dataclass(frozen=True)

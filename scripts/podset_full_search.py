@@ -22,6 +22,7 @@ import sys
 
 os.environ.setdefault("RAYON_NUM_THREADS", "1")
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src"))
 
 from osifog_sweep import init_or, SIM_SEED, run_sim, save_simulated_ork, MIN_DIMENSION_M
 from osifog_podset import generate_podset_ork, resolve_motor, motor_stats, _MOTOR_DB_PATH

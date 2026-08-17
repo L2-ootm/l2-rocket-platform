@@ -3,6 +3,7 @@
 import sys, os, tempfile, math
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 from osifog_sweep import parse_wind_csv, generate_ork, init_or, LAUNCH_ALT
 from rocket_forge import MOTOR_DATABASE
 
