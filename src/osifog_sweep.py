@@ -2065,6 +2065,7 @@ def init_or():
         jpype.startJVM(
             jpype.getDefaultJVMPath(),
             "-ea",
+            "-Xrs",
             "-Djava.awt.headless=true",
             "-Dpolyglot.engine.WarnInterpreterOnly=false",
             f"-Djava.class.path={jar}",
