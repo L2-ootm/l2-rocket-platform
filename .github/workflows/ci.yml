@@ -67,6 +67,12 @@ jobs:
       - name: Setup Rust toolchain (for ast_eval compilation)
         uses: dtolnay/rust-toolchain@stable
 
+      - name: Setup Java JDK 17 (for OpenRocket JVM authority)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -78,6 +84,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-dev.txt
+
+      - name: Fetch OpenRocket 24.12 JAR
+        run: |
+          python scripts/fetch_openrocket.py
 
       - name: Build Rust Evaluator Binaries
         run: |

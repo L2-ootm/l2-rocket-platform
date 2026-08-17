@@ -81,13 +81,14 @@ and campaign populations are local state and are excluded from version control.
 - Rust toolchain with Cargo
 - A JDK 17 or newer for OpenRocket authority validation. JPype resolves the JVM
   through `JAVA_HOME` first, so point `JAVA_HOME` at that JDK.
-- OpenRocket 24.12 JAR at `lib/OpenRocket-24.12.jar` (optional, for full JVM authority validation).
+- OpenRocket 24.12 JAR at `lib/OpenRocket-24.12.jar` (auto-downloadable via `python scripts/fetch_openrocket.py`).
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements-dev.txt
 cargo build --manifest-path l2_engine/Cargo.toml --release --bin ast_eval
+python scripts/fetch_openrocket.py
 ```
 
 ## Run an organic campaign
