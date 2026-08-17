@@ -9,7 +9,8 @@ from rocket_ast import ASTCompiler, ASTNode, MOTOR_DATABASE
 
 
 def test_simulation(tmp_path):
-    jar_path = Path("lib/OpenRocket-24.12.jar")
+    repo_root = Path(__file__).resolve().parents[1]
+    jar_path = repo_root / "lib" / "OpenRocket-24.12.jar"
     if not jar_path.is_file():
         pytest.skip(
             "requires lib/OpenRocket-24.12.jar — download OpenRocket 24.12 jar to run full JVM simulation tests"
@@ -47,7 +48,7 @@ import orhelper
 from orhelper import OpenRocketInstance
 from organic_loop import validate_openrocket_ork
 
-with OpenRocketInstance("lib/OpenRocket-24.12.jar") as instance:
+with OpenRocketInstance(r"{jar_path}") as instance:
     metrics = validate_openrocket_ork(
         Path(r"{ork_path}"), orhelper.Helper(instance), phase_machs=[0.3]
     )
@@ -55,16 +56,17 @@ assert metrics["status"] == "success", metrics
 assert metrics["apogee_m"] > 0.0
 assert metrics["mach"] >= 0.0
 print("AUTHORITY_OK")
-""".format(ork_path=ork_path)
+""".format(ork_path=ork_path, jar_path=jar_path)
     import os
     env = os.environ.copy()
-    src_dir = str(Path(__file__).resolve().parents[1] / "src")
-    env["PYTHONPATH"] = os.pathsep.join([src_dir, env.get("PYTHONPATH", "")]) if env.get("PYTHONPATH") else src_dir
+    src_dir = str(repo_root / "src")
+    env["PYTHONPATH"] = os.pathsep.join([src_dir, str(repo_root), env.get("PYTHONPATH", "")]) if env.get("PYTHONPATH") else f"{src_dir}{os.pathsep}{repo_root}"
     completed = subprocess.run(
         [sys.executable, "-c", script],
         capture_output=True,
         text=True,
         timeout=120,
+        cwd=str(repo_root),
         env=env,
     )
 
