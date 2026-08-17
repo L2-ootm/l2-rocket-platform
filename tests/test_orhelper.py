@@ -44,19 +44,23 @@ def test_simulation(tmp_path):
 
     script = """
 from pathlib import Path
-import orhelper
-from orhelper import OpenRocketInstance
+from osifog_sweep import init_or, _load_ork_doc
 from organic_loop import validate_openrocket_ork
 
-with OpenRocketInstance(r"{jar_path}") as instance:
-    metrics = validate_openrocket_ork(
-        Path(r"{ork_path}"), orhelper.Helper(instance), phase_machs=[0.3]
-    )
+init_or()
+
+class OpenRocketHelper:
+    def load_doc(self, path):
+        return _load_ork_doc(str(path))
+
+metrics = validate_openrocket_ork(
+    Path(r"{ork_path}"), OpenRocketHelper(), phase_machs=[0.3]
+)
 assert metrics["status"] == "success", metrics
 assert metrics["apogee_m"] > 0.0
 assert metrics["mach"] >= 0.0
 print("AUTHORITY_OK")
-""".format(ork_path=ork_path, jar_path=jar_path)
+""".format(ork_path=ork_path)
     import os
     env = os.environ.copy()
     src_dir = str(repo_root / "src")
