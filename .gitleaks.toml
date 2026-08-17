@@ -1,0 +1,9 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Ignore local campaign filesystem lock tokens and test fixtures"
+paths = [
+    '''designs/osifog_level3/.*campaign\.lease.*\.json''',
+    '''l2_engine/tests/fixtures/.*'''
+]

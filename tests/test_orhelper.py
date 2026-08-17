@@ -1,11 +1,19 @@
+from pathlib import Path
 import subprocess
 import sys
+
+import pytest
 
 from organic_loop import write_ork_zip
 from rocket_ast import ASTCompiler, ASTNode, MOTOR_DATABASE
 
 
 def test_simulation(tmp_path):
+    jar_path = Path("lib/OpenRocket-24.12.jar")
+    if not jar_path.is_file():
+        pytest.skip(
+            "requires lib/OpenRocket-24.12.jar — download OpenRocket 24.12 jar to run full JVM simulation tests"
+        )
     motor_index = next(
         index for index, motor in enumerate(MOTOR_DATABASE) if motor[1] == "K550W"
     )

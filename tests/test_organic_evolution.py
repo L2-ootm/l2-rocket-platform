@@ -1267,6 +1267,7 @@ def test_run_rust_evaluator_batch_defaults_to_openrocket(monkeypatch, tmp_path):
 
         return Completed()
 
+    monkeypatch.setattr(organic_loop, "_AST_EVAL_STREAMS", {})
     monkeypatch.setattr(organic_loop.subprocess, "run", fake_run)
     monkeypatch.setattr(organic_loop, "_ensure_ast_eval_binary", lambda *_: None)
 

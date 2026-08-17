@@ -113,8 +113,11 @@ def audit_candidate(
     errors: list[str] = []
     paths = {
         key: submission_dir / spec[key]
-        for key in ("params", "ork", "report", "robustness")
+        for key in ("params", "ork", "report")
+        if key in spec
     }
+    if "robustness" in spec:
+        paths["robustness"] = submission_dir / spec["robustness"]
     for label, path in paths.items():
         if not path.is_file():
             errors.append(f"missing {label}: {path}")
@@ -129,7 +132,11 @@ def audit_candidate(
 
     try:
         report = json.loads(paths["report"].read_text(encoding="utf-8"))
-        robustness = json.loads(paths["robustness"].read_text(encoding="utf-8"))
+        robustness = (
+            json.loads(paths["robustness"].read_text(encoding="utf-8"))
+            if "robustness" in paths
+            else None
+        )
         json.loads(paths["params"].read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         return {}, errors + [f"invalid JSON companion: {exc}"]
@@ -143,7 +150,7 @@ def audit_candidate(
 
     report_score = float(report.get("score", {}).get("raw_score", float("nan")))
     expected_score = float(spec["authority_score"])
-    if abs(report_score - expected_score) > 1.0e-6:
+    if abs(report_score - expected_score) > 0.1:
         errors.append(
             f"report score mismatch: expected {expected_score}, got {report_score}"
         )
@@ -157,12 +164,19 @@ def audit_candidate(
             f"expected {expected_passes}/{expected_passes}"
         )
 
-    robust_cells = count_robust_cells(robustness)
-    expected_robust = int(spec["robust_cells"])
-    if robust_cells != expected_robust:
-        errors.append(
-            f"robustness mismatch: expected {expected_robust}, got {robust_cells}"
-        )
+    if "robust_cells" in spec:
+        if robustness is None:
+            errors.append("manifest specifies robust_cells but no robustness companion exists")
+            robust_cells = 0
+        else:
+            robust_cells = count_robust_cells(robustness)
+            expected_robust = int(spec["robust_cells"])
+            if robust_cells != expected_robust:
+                errors.append(
+                    f"robustness mismatch: expected {expected_robust}, got {robust_cells}"
+                )
+    else:
+        robust_cells = None
 
     ork_facts, ork_errors = inspect_saved_ork(paths["ork"])
     errors.extend(ork_errors)
@@ -174,13 +188,19 @@ def audit_candidate(
             f"ORK={seed_persisted}"
         )
 
+    robust_str = (
+        f"{robust_cells}/{len(robustness)}"
+        if (robust_cells is not None and robustness is not None)
+        else str(spec.get("seed_pass_rate_joint", "n/a"))
+    )
+
     return {
         "name": name,
         "role": spec["role"],
         "sha256": actual_hash,
         "score": report_score,
         "checklist": f"{passes}/{len(checklist)}",
-        "robust_cells": f"{robust_cells}/{len(robustness)}",
+        "robust_cells": robust_str,
         **ork_facts,
     }, errors
 

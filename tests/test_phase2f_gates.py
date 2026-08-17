@@ -82,8 +82,9 @@ def _sha256(text: str) -> str:
 
 
 def _json_artifact(name: str, data: dict | list) -> None:
-    path = ARTIFACTS / name
-    path.write_text(json.dumps(data, indent=2, sort_keys=True, default=str), encoding="utf-8")
+    if os.environ.get("WRITE_PHASE2F_ARTIFACTS") == "1":
+        path = ARTIFACTS / name
+        path.write_text(json.dumps(data, indent=2, sort_keys=True, default=str), encoding="utf-8")
 
 
 def _run_ork_simulation(params: dict, seed: int = SIM_SEED) -> dict:

@@ -111,6 +111,12 @@ if not WIND_CSV.exists():
     )
 
 
+OR_JAR = ROOT / "lib" / "OpenRocket-24.12.jar"
+OR_SKIP_REASON = (
+    "requires lib/OpenRocket-24.12.jar — download OpenRocket 24.12 jar to run full JVM simulation tests"
+)
+
+
 def _is_missing_wind_csv(excinfo) -> bool:
     if excinfo is None:
         return False
@@ -118,14 +124,28 @@ def _is_missing_wind_csv(excinfo) -> bool:
     return isinstance(error, (FileNotFoundError, OSError)) and _MISSING in str(error)
 
 
+def _is_missing_or_jar(excinfo) -> bool:
+    if excinfo is None:
+        return False
+    error = excinfo.value
+    return (
+        isinstance(error, (FileNotFoundError, OSError))
+        and ("OpenRocket" in str(error) or "openrocket" in str(error).lower())
+        and "jar" in str(error).lower()
+    )
+
+
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
-    """Report a missing competition CSV as a skip rather than a failure."""
+    """Report a missing competition CSV or OpenRocket JAR as a skip rather than a failure."""
     outcome = yield
-    if WIND_CSV.exists():
+    report = outcome.get_result()
+    if not report.failed or call.excinfo is None:
         return
 
-    report = outcome.get_result()
-    if report.failed and _is_missing_wind_csv(call.excinfo):
+    if not WIND_CSV.exists() and _is_missing_wind_csv(call.excinfo):
         report.outcome = "skipped"
         report.longrepr = (str(item.fspath), None, f"Skipped: {SKIP_REASON}")
+    elif not OR_JAR.exists() and _is_missing_or_jar(call.excinfo):
+        report.outcome = "skipped"
+        report.longrepr = (str(item.fspath), None, f"Skipped: {OR_SKIP_REASON}")
