@@ -40,10 +40,16 @@ class _AstEvalStream:
         return self._process.pid
 
     def _drain_stderr(self):
-        for line in self._process.stderr:
-            self._stderr.append(line.rstrip())
-            if len(self._stderr) > 50:
-                del self._stderr[0]
+        try:
+            stream = self._process.stderr if self._process else None
+            if stream is None:
+                return
+            for line in iter(stream.readline, ""):
+                self._stderr.append(line.rstrip())
+                if len(self._stderr) > 50:
+                    del self._stderr[0]
+        except Exception:
+            pass
 
     def request(self, payload):
         with self._lock:
